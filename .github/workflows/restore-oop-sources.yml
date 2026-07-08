@@ -1,0 +1,54 @@
+name: Restore OOP KG Sources
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".codex_restore/oop_source_chunks/**"
+      - ".github/workflows/restore-oop-sources.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Restore and verify exact source files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cat .codex_restore/oop_source_chunks/chunk_{1..6}.b64 > /tmp/oop_sources.zip.b64
+          base64 -d /tmp/oop_sources.zip.b64 > /tmp/oop_sources.zip
+          echo "7E1D8A291B9CC6E435F80BD99C04BBB98F3695BE34A34A478D18E4269671B08C  /tmp/oop_sources.zip" | sha256sum -c -
+
+          rm -rf /tmp/oop_sources
+          mkdir -p /tmp/oop_sources
+          unzip -o /tmp/oop_sources.zip -d /tmp/oop_sources
+
+          cp /tmp/oop_sources/preprocess_materials.py oop_kg_demo/part1_preprocess/preprocess_materials.py
+          cp /tmp/oop_sources/extract_graph.py oop_kg_demo/part2_extract/extract_graph.py
+
+          test "$(git hash-object oop_kg_demo/part1_preprocess/preprocess_materials.py)" = "adeee24c18eb616149114683c7c57fb5f023cb73"
+          test "$(git hash-object oop_kg_demo/part2_extract/extract_graph.py)" = "9d8afac08479cbf78920095fefcaa1de8e711089"
+
+          rm -rf .codex_restore
+          rm -f .github/workflows/_codex_permission_probe.yml
+          rm -f .github/workflows/restore-oop-sources.yml
+
+      - name: Commit restored sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add oop_kg_demo/part1_preprocess/preprocess_materials.py oop_kg_demo/part2_extract/extract_graph.py .codex_restore .github/workflows/_codex_permission_probe.yml .github/workflows/restore-oop-sources.yml
+          git commit -m "Restore exact local OOP KG source files"
+          git push
