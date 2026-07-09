@@ -1,11 +1,12 @@
 # 面向对象编程知识图谱 Demo
 
-本目录包含知识图谱构建 Demo 的四个核心阶段代码：
+本目录包含知识图谱构建 Demo 的五个核心阶段代码：
 
 - `part1_preprocess/`：多源教学材料预处理，将 PPT/PDF/TXT/JSON 习题清洗并切分为 `clean_chunks.json`。
 - `part2_extract/`：实体与关系抽取，基于 `clean_chunks.json` 调用大模型 API 并进行 Schema 校验、去重和质量统计。
 - `part3_normalize/`：实体融合、关系消歧与标准图谱生成，将抽取结果整理为 `standard_graph.json`。
 - `part4_neo4j/`：Neo4j 入库脚本生成、可选自动导入与 Demo 查询准备。
+- `part5_questions/`：习题节点构建、习题到知识点自动映射、映射质量评估与 Neo4j 习题层入库。
 
 ## 运行顺序
 
@@ -45,6 +46,26 @@ Neo4j Desktop 启动后，也可以配置 `NEO4J_PASSWORD` 并自动导入：
 
 ```powershell
 python part4_neo4j/import_to_neo4j.py --input output/graph_normalized/standard_graph.json --output-dir output/neo4j_import --execute
+```
+
+5. 运行第五部分，把习题纳入图谱并评估映射质量：
+
+```powershell
+python part5_questions/process_questions.py --input part5_questions/data/sample_questions.json --output-dir output/question_mapping
+python part5_questions/map_questions_to_knowledge.py --questions output/question_mapping/questions.json --graph output/graph_normalized/standard_graph.json --output-dir output/question_mapping --provider qwen
+python part5_questions/evaluate_question_mapping.py --questions output/question_mapping/questions.json --links output/question_mapping/question_knowledge_links.json --output output/question_mapping/question_mapping_evaluation.json
+```
+
+只想离线调试第五部分时，可以把映射命令改为：
+
+```powershell
+python part5_questions/map_questions_to_knowledge.py --questions output/question_mapping/questions.json --graph output/graph_normalized/standard_graph.json --output-dir output/question_mapping --no-llm
+```
+
+Neo4j Desktop 启动后，可以把习题层自动导入：
+
+```powershell
+python part5_questions/import_questions_to_neo4j.py --questions output/question_mapping/questions.json --links output/question_mapping/question_knowledge_links.json --output-dir output/neo4j_import --execute --clear-question-layer --uri bolt://127.0.0.1:7687 --database neo4j
 ```
 
 ## API Key
