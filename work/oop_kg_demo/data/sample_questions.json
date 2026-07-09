@@ -1,0 +1,669 @@
+[
+  {
+    "question_id": "Q001",
+    "type": "multiple_choice",
+    "language": "Java",
+    "stem": "在面向对象程序设计中，哪一项最准确地描述了“类”和“对象”的关系？",
+    "code": "",
+    "options": [
+      "A. 类是对象的具体实例",
+      "B. 对象是类的具体实例",
+      "C. 类和对象完全相同",
+      "D. 对象只能包含方法，不能包含属性"
+    ],
+    "answer": "B",
+    "analysis": "类描述对象的共同属性和方法，对象是由类创建出来的具体实例。",
+    "difficulty": 1,
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "type": "true_false",
+    "language": "Java",
+    "stem": "判断正误：封装的一个重要目的，是把对象内部数据隐藏起来，只通过公开方法控制访问。",
+    "code": "",
+    "options": [],
+    "answer": "正确",
+    "analysis": "封装强调把属性和实现细节隐藏在对象内部，通过方法暴露受控访问接口。",
+    "difficulty": 1,
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "封装",
+        "role": "primary"
+      },
+      {
+        "name": "信息隐藏",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，判断程序输出结果。",
+    "code": "class Animal {\n    void speak() { System.out.println(\"Animal\"); }\n}\nclass Dog extends Animal {\n    void speak() { System.out.println(\"Dog\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.speak();\n    }\n}",
+    "options": [],
+    "answer": "Dog",
+    "analysis": "父类引用指向子类对象，调用被子类重写的方法时，运行期根据实际对象类型执行 Dog.speak。",
+    "difficulty": 2,
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "多态",
+        "role": "primary"
+      },
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "动态绑定",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "type": "code_fixing",
+    "language": "Java",
+    "stem": "下面代码想让子类重写父类的 show 方法，但实际没有形成重写。请指出问题。",
+    "code": "class Parent {\n    void show() { System.out.println(\"Parent\"); }\n}\nclass Child extends Parent {\n    void show(String msg) { System.out.println(msg); }\n}",
+    "options": [],
+    "answer": "Child 中的 show(String msg) 参数列表不同，不是重写，而是新的重载式方法。若要重写，应保持方法签名一致。",
+    "analysis": "重写要求子类方法与父类方法具有相同的方法签名。",
+    "difficulty": 2,
+    "abilities": [
+      "代码调试",
+      "概念辨析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "重写",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "type": "multiple_choice",
+    "language": "Java",
+    "stem": "Java 不支持类的多重继承，但可以通过哪种机制在一定程度上实现多重继承的效果？",
+    "code": "",
+    "options": [
+      "A. final 类",
+      "B. 接口",
+      "C. private 属性",
+      "D. 普通对象"
+    ],
+    "answer": "B",
+    "analysis": "Java 类只能继承一个父类，但可以实现多个接口，从而获得类似多重继承的能力。",
+    "difficulty": 1,
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "多重继承",
+        "role": "primary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，判断哪一行会导致编译错误，并说明原因。",
+    "code": "abstract class Shape {\n    abstract double area();\n}\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Shape();\n    }\n}",
+    "options": [],
+    "answer": "Shape s = new Shape(); 会编译错误，因为抽象类不能直接实例化。",
+    "analysis": "abstract 修饰的类是抽象类，抽象类用于表达抽象概念，不能直接创建对象。",
+    "difficulty": 2,
+    "abilities": [
+      "代码阅读",
+      "错误分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "abstract",
+        "role": "primary"
+      },
+      {
+        "name": "抽象",
+        "role": "secondary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "type": "true_false",
+    "language": "Java",
+    "stem": "判断正误：被 final 修饰的方法不能被子类重写。",
+    "code": "",
+    "options": [],
+    "answer": "正确",
+    "analysis": "final 方法不允许被覆盖，因此不能在子类中重写。",
+    "difficulty": 1,
+    "abilities": [
+      "语法识别",
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "final",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "primary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，判断 Person 对象中保存了哪些信息和行为。",
+    "code": "class Person {\n    String name;\n    int age;\n    void sayHello() {\n        System.out.println(\"hello\");\n    }\n}",
+    "options": [],
+    "answer": "Person 对象可以保存 name、age 两个属性，并具有 sayHello 方法。",
+    "analysis": "类中定义的变量描述对象属性，方法描述对象行为。",
+    "difficulty": 1,
+    "abilities": [
+      "代码阅读",
+      "结构识别"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，判断输出结果。",
+    "code": "class A {\n    void print() { System.out.println(\"A\"); }\n}\nclass B extends A {\n    void print() { System.out.println(\"B\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A x = new B();\n        x.print();\n    }\n}",
+    "options": [],
+    "answer": "B",
+    "analysis": "A 类型引用 x 实际指向 B 对象，调用 print 时触发动态绑定，执行 B 中重写后的方法。",
+    "difficulty": 2,
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "动态绑定",
+        "role": "primary"
+      },
+      {
+        "name": "多态",
+        "role": "primary"
+      },
+      {
+        "name": "向上转型",
+        "role": "secondary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "type": "code_fixing",
+    "language": "Java",
+    "stem": "下面代码违反了封装思想。请指出问题并给出改进方向。",
+    "code": "class Account {\n    public double balance;\n}\npublic class Test {\n    public static void main(String[] args) {\n        Account a = new Account();\n        a.balance = -100;\n    }\n}",
+    "options": [],
+    "answer": "balance 被 public 暴露，外部可以随意修改。应使用 private 隐藏属性，并通过方法进行校验后访问或修改。",
+    "analysis": "封装和信息隐藏要求控制对象内部状态的访问方式。",
+    "difficulty": 2,
+    "abilities": [
+      "代码调试",
+      "设计改进"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "封装",
+        "role": "primary"
+      },
+      {
+        "name": "信息隐藏",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "type": "multiple_choice",
+    "language": "Java",
+    "stem": "下列哪一项最能体现“面向对象编程”的思想？",
+    "code": "",
+    "options": [
+      "A. 只使用全局变量保存所有数据",
+      "B. 把数据和操作数据的方法组织到对象中",
+      "C. 所有语句都写在 main 方法中",
+      "D. 只关注程序执行顺序，不关注对象结构"
+    ],
+    "answer": "B",
+    "analysis": "面向对象编程强调对象、类、属性、方法，以及对象之间的协作。",
+    "difficulty": 1,
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "面向对象编程",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "type": "code_fill",
+    "language": "Java",
+    "stem": "补全代码，使 Dog 成为 Animal 的子类。",
+    "code": "class Animal {\n}\nclass Dog ______ Animal {\n}",
+    "options": [],
+    "answer": "extends",
+    "analysis": "Java 中使用 extends 表示类与类之间的继承关系。",
+    "difficulty": 1,
+    "abilities": [
+      "语法识别",
+      "代码补全"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "继承",
+        "role": "primary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "type": "code_fixing",
+    "language": "Java",
+    "stem": "下面代码为什么会报错？应该如何修改？",
+    "code": "abstract class Base {\n    abstract void run();\n}\nclass Sub extends Base {\n}\n",
+    "options": [],
+    "answer": "Sub 继承了抽象类 Base，但没有实现抽象方法 run，因此 Sub 也必须声明为 abstract，或者实现 run 方法。",
+    "analysis": "继承抽象类后，普通子类需要实现父类中的抽象方法。",
+    "difficulty": 3,
+    "abilities": [
+      "代码调试",
+      "错误分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "abstract",
+        "role": "primary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，判断变量 p 的编译期类型和实际对象类型。",
+    "code": "class Parent {}\nclass Child extends Parent {}\npublic class Test {\n    public static void main(String[] args) {\n        Parent p = new Child();\n    }\n}",
+    "options": [],
+    "answer": "p 的编译期类型是 Parent，实际对象类型是 Child。",
+    "analysis": "这是向上转型：子类对象可以赋值给父类引用。",
+    "difficulty": 2,
+    "abilities": [
+      "代码阅读",
+      "类型分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "类型",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "type": "short_programming",
+    "language": "Java",
+    "stem": "写出一个 Java 代码片段，定义接口 Flyable，并让 Bird 类使用该接口表达“会飞”的能力。",
+    "code": "",
+    "options": [],
+    "answer": "interface Flyable { void fly(); } class Bird implements Flyable { public void fly() { } }",
+    "analysis": "接口用于定义能力或规范，类可以实现接口。",
+    "difficulty": 2,
+    "abilities": [
+      "代码实现",
+      "结构设计"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "type": "multiple_choice",
+    "language": "Java",
+    "stem": "关于抽象类和接口，下列说法更合理的是哪一项？",
+    "code": "",
+    "options": [
+      "A. 抽象类和接口完全相同",
+      "B. 抽象类通常表示一类对象的抽象父类，接口更强调行为规范",
+      "C. 接口不能和多重继承有关",
+      "D. 抽象类不能包含方法"
+    ],
+    "answer": "B",
+    "analysis": "抽象类和接口都可表达抽象，但二者定位不同；接口常用于表达行为规范，也能支持多接口实现。",
+    "difficulty": 2,
+    "abilities": [
+      "概念辨析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "抽象",
+        "role": "secondary"
+      },
+      {
+        "name": "多重继承",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "type": "code_fill",
+    "language": "Java",
+    "stem": "补全代码，使 speak 方法禁止被子类重写。",
+    "code": "class Animal {\n    ______ void speak() {\n        System.out.println(\"Animal\");\n    }\n}",
+    "options": [],
+    "answer": "final",
+    "analysis": "final 修饰的方法不能被子类重写。",
+    "difficulty": 1,
+    "abilities": [
+      "语法识别",
+      "代码补全"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "final",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "type": "code_reading",
+    "language": "Java",
+    "stem": "阅读代码，说明 Student 对象通过哪个方法接收外部消息。",
+    "code": "class Student {\n    void study() {\n        System.out.println(\"study\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Student s = new Student();\n        s.study();\n    }\n}",
+    "options": [],
+    "answer": "Student 对象通过 study 方法接收调用消息。",
+    "analysis": "对象之间通过方法调用进行交互，可以理解为向对象发送消息。",
+    "difficulty": 2,
+    "abilities": [
+      "代码阅读",
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "消息传递",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "type": "code_fixing",
+    "language": "Java",
+    "stem": "下面代码希望通过父类引用调用子类特有方法，为什么会编译失败？",
+    "code": "class Animal {}\nclass Dog extends Animal {\n    void bark() { System.out.println(\"wang\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.bark();\n    }\n}",
+    "options": [],
+    "answer": "a 的编译期类型是 Animal，Animal 中没有 bark 方法，因此不能直接调用。需要转回 Dog 类型或在父类中声明相关方法。",
+    "analysis": "向上转型后，引用能访问的成员受编译期类型约束。",
+    "difficulty": 3,
+    "abilities": [
+      "代码调试",
+      "类型分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "类型",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "type": "short_programming",
+    "language": "Java",
+    "stem": "设计一个简单的 Book 类，包含 title 属性和 showTitle 方法，用来输出书名。",
+    "code": "",
+    "options": [],
+    "answer": "class Book { String title; void showTitle() { System.out.println(title); } }",
+    "analysis": "该题考察类的定义、对象属性和方法的组织方式。",
+    "difficulty": 1,
+    "abilities": [
+      "代码实现",
+      "结构设计"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      }
+    ]
+  }
+]
