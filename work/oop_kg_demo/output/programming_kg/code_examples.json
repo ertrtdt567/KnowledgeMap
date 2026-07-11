@@ -1,0 +1,877 @@
+[
+  {
+    "id": "CodeExample_CodeExample_1_java_52_1_5ad81192",
+    "title": "CodeExample_1_java_52_1_5ad81192",
+    "code": "JDK的安装 下载JDK http://www.oracle.com/technetwork/java/javase/downloads/index.html 运行JDK的安装程序 改变环境变量 JAVA_HOME = C:\\Program Files\\Java\\jdk-17.0.5 （安装路径，根据安装版本调整） path = %PATH%; %JAVA_HOME%\\bin classpath = .; %JAVA_HOME%\\lib (JDK5.0之后无需配置classpath)",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_52_1_5ad81192"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_52_1_5ad81192",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 52,
+        "evidence_location": "第52页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_53_1_262605e6",
+    "title": "CodeExample_1_java_53_1_262605e6",
+    "code": "Java应用程序举例 HelloWorld.java public class HelloWorld{ public static void main(String args[]){ System.out.println(\"Hello World!\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_53_1_262605e6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_53_1_262605e6",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 53,
+        "evidence_location": "第53页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_54_1_6f515d94",
+    "title": "CodeExample_1_java_54_1_6f515d94",
+    "code": "Java程序的编写 主类： 与源文件名称相同的类，通常定义为public class 每个源文件中至多有一个public class 主类中的main()方法声明 public static void main(String args[]){…} 是Java程序入口点 源文件扩展名必须是.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_54_1_6f515d94"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_54_1_6f515d94",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 54,
+        "evidence_location": "第54页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_55_1_97f709aa",
+    "title": "CodeExample_1_java_55_1_97f709aa",
+    "code": "Java程序的编译和执行 编译 javac HelloWord.java 生成HelloWorld.class 执行 java HelloWorld",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_55_1_97f709aa"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_55_1_97f709aa",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 55,
+        "evidence_location": "第55页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_56_1_d66c86ba",
+    "title": "CodeExample_1_java_56_1_d66c86ba",
+    "code": "找出并修改下面代码的错误 public class HelloWorld{ public static void Main(String args[]){ System.out.println(“Hello World!”); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_56_1_d66c86ba"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_56_1_d66c86ba",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 56,
+        "evidence_location": "第56页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_17_1_a2a54e8b",
+    "title": "CodeExample_2_17_1_a2a54e8b",
+    "code": "对象 对象之间通过发送消息进行交互与通信 消息通过对方法的调用来实现 消息的组成： 接收消息的对象 方法名称 方法参数 消息由发送者对象编写，由接收者对象解释 消息可以 引起接收者状态变化 返回结果 Bicycle b Person p b.changeGears(lowerGear);",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_17_1_a2a54e8b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_17_1_a2a54e8b",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_18_1_90211507",
+    "title": "CodeExample_2_18_1_90211507",
+    "code": "对象 如何产生有用的对象 确定可能向对象发出的请求 完成交易 在屏幕上画图 打开开关 …… 由对象的接口（interface）定义这些请求 接口：确定了对特定对象所能发出的请求，或者对象接收消息的方式",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_18_1_90211507"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_18_1_90211507",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 18,
+        "evidence_location": "第18页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_21_1_2d1fe122",
+    "title": "CodeExample_2_21_1_2d1fe122",
+    "code": "类 In OOP, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions, methods).",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_21_1_2d1fe122"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_21_1_2d1fe122",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_28_1_ef787406",
+    "title": "CodeExample_2_28_1_ef787406",
+    "code": "封装 定义：把数据和方法包装进类中，并对具体实现进行隐藏 类是基本的封装单元，一个类的所有对象实例有相同的封装特性 “具体实现”包括：对象的数据域、方法实现以及非接口方法的定义等 对数据的完全隐藏是对象的理想结构，现实中使用public、protected、private关键字实现4种隐藏能力（访问权限）",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_28_1_ef787406"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_28_1_ef787406",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_4_1_13d3b0df",
+    "title": "CodeExample_2_4_1_13d3b0df",
+    "code": "为什么程序难写？ 问题 机器模型 问题空间 解空间 编程语言 0000 8B C3 MOV AX,BX 0002 8A CE MOV CL,DH 0004 43 INC BX if(a[i]>a[i+1]) swap(&a[i], &a[i+1]); People people=new People(); people.drink(water); Assembly C Java 目标问题的结构 计算机的结构 机器语言 0001110101…… 语言的发展朝着人类更容易理解的方向前进",
+    "language": "Java",
+    "source_chunk_ids": [
+      "2_4_1_13d3b0df"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_4_1_13d3b0df",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_11_1_cbb51d9a",
+    "title": "CodeExample_3_java_11_1_cbb51d9a",
+    "code": "基本数据类型-逻辑型 逻辑型：boolean 取值： true false（默认值） 例： boolean truth = true; Java中布尔值与整型值之间不能相互转换",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_11_1_cbb51d9a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_11_1_cbb51d9a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 11,
+        "evidence_location": "第11页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_12_1_e4b6ab8f",
+    "title": "CodeExample_3_java_12_1_e4b6ab8f",
+    "code": "基本数据类型-文本型 文本型：char 16位的Unicode字符 ASCII码 例： char mychar=‘Q’;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_12_1_e4b6ab8f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_12_1_e4b6ab8f",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 12,
+        "evidence_location": "第12页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_15_1_f48a61c8",
+    "title": "CodeExample_3_java_15_1_f48a61c8",
+    "code": "public class CharConst{ public static void main(String args[]){ char c1='Q'; char c2='\\u0051'; char c3=0x0051; System.out.println(c1+\";\"+c2+\";\"+c3+\";\"+'\\121'); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_15_1_f48a61c8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_15_1_f48a61c8",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_16_1_b195af9a",
+    "title": "CodeExample_3_java_16_1_b195af9a",
+    "code": "基本数据类型-文本型 String 不是基本数据类型，是类 例： String greeting=\"Good Morning! \"; String对象表示的字符串不能修改，如需修改字符串，应使用StringBuilder类。 StringBuffer类与StringBuilder类相似，也是可修改类，他的执行效率低于StringBuilder类，但他是线程安全的。",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_16_1_b195af9a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_16_1_b195af9a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_21_1_42085378",
+    "title": "CodeExample_3_java_21_1_42085378",
+    "code": "public class Assign { public static void main(String args[]) { int x, y; // 声明整型变量 float z = 3.414f; // 声明并赋值float型变量 double w = 3.1415; // 声明并赋值double型变量 boolean truth = true; // 声明并赋值boolean型变量 char c; // 声明字符变量 String str; // 声明String类型变量 String str1 = \"bye\"; // 声明并赋值String类型变量 x = 6; y = 1000; // 给int型变量赋值 c = 'A'; // 给字符变量赋值 str = \"Hi out there\"; // 给String变量赋值 } } 例：SomeConstTest.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_21_1_42085378"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_21_1_42085378",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_25_1_98c75cb0",
+    "title": "CodeExample_3_java_25_1_98c75cb0",
+    "code": "复合数据类型 类的初步概念 “日期”类型的两种不同表达： 方式一： int day, month, year; //定义年、月、日 int d1,m1,y1; // 定义一个日期 int d2,m2,y2; //定义另一个日期 方式二： class Date{ int day; int month; int year; void setDate( int a, int b, int c){... } } // Java用class创建新的类型（复合数据类型）",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_25_1_98c75cb0"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_25_1_98c75cb0",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 25,
+        "evidence_location": "第25页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_28_1_2fbe3ce4",
+    "title": "CodeExample_3_java_28_1_2fbe3ce4",
+    "code": "变量 引用类型变量的声明与引用 基本类型变量在声明时，直接分配数据空间，如 int a; a = 12; 引用类型变量在声明时，不直接分配数据空间，而仅仅分配引用空间，必须经过实例化，才能开辟数据空间 名字 值",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_28_1_2fbe3ce4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_28_1_2fbe3ce4",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_30_1_088b49b4",
+    "title": "CodeExample_3_java_30_1_088b49b4",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_30_1_088b49b4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_30_1_088b49b4",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 30,
+        "evidence_location": "第30页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_31_1_8d53a87d",
+    "title": "CodeExample_3_java_31_1_8d53a87d",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_31_1_8d53a87d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_31_1_8d53a87d",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_32_1_d4240197",
+    "title": "CodeExample_3_java_32_1_d4240197",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化 today null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_32_1_d4240197"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_32_1_d4240197",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_33_1_aaccbaa7",
+    "title": "CodeExample_3_java_33_1_aaccbaa7",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化 today 0xabcd",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_33_1_aaccbaa7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_33_1_aaccbaa7",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 33,
+        "evidence_location": "第33页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_34_1_f24ed69a",
+    "title": "CodeExample_3_java_34_1_f24ed69a",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); b = a;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_34_1_f24ed69a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_34_1_f24ed69a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 34,
+        "evidence_location": "第34页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_35_1_9f6dfbcd",
+    "title": "CodeExample_3_java_35_1_9f6dfbcd",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a null b null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_35_1_9f6dfbcd"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_35_1_9f6dfbcd",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 35,
+        "evidence_location": "第35页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_36_1_4b76075e",
+    "title": "CodeExample_3_java_36_1_4b76075e",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); a 0xabcd b null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_36_1_4b76075e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_36_1_4b76075e",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_37_1_2edcaab8",
+    "title": "CodeExample_3_java_37_1_2edcaab8",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); b = a; a 0xabcd b 0xabcd",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_37_1_2edcaab8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_37_1_2edcaab8",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 37,
+        "evidence_location": "第37页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_40_1_eda63941",
+    "title": "CodeExample_3_java_40_1_eda63941",
+    "code": "public class TestInit { int x; public static void main(String args[]) { TestInit init = new TestInit(); int x = (int) (Math.random() * 100); int z; int y; // int y=0; if (x > 50) { y = 9; } z = x + y + init.x; System.out.println(\"x=\" + x + \" y=\" + y + \" z=\" + z + \" init.x=\" + init.x); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_40_1_eda63941"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_40_1_eda63941",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_42_1_30ac2937",
+    "title": "CodeExample_3_java_42_1_30ac2937",
+    "code": "运算符与表达式 Java运算符类别 运算符类别 | 运算符列表 算术运算符 | +，-，*，/，%，++，-- 关系运算符 | >，>=，<，<=，==，!= 位运算符 | >>，<<，>>>，&，|，^（逐位异或），~ （逐位取反） 逻辑运算符 | &，|，!，^（异或），&&，|| 赋值运算符 | =，+=，-=，*=，/=，%=，&=，|=，^=，<<=，>>=，>>>= 其它运算符 | ?:，[]，.，()，(type)，new，instanceof",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_42_1_30ac2937"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_42_1_30ac2937",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_44_1_7965f607",
+    "title": "CodeExample_3_java_44_1_7965f607",
+    "code": "public class UnaryConversion{ public static void main(String[] args){ byte b=2; char c='\\u1234'; int x=8,y=3; //byte b2 = -b; //int值不能直接赋给byte类型变量b2 //char c2 = +c; //int值不能直接赋给char类型变量c2 System.out.println((-b) + \";\" + (+c)); int i=~b; //byte转换为int System.out.println(Integer.toHexString(i)); System.out.println(x/y); System.out.println(x/(float)y); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_44_1_7965f607"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_44_1_7965f607",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 44,
+        "evidence_location": "第44页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_46_2_8f1bef30",
+    "title": "CodeExample_3_java_46_2_8f1bef30",
+    "code": "-7%3=-1 20%-13=7 +运算可以连接字符串 String salutation = “Dr. ”; String name = “Pete ” + “Seymour” ; String title = salutation + name ; 则title 值：Dr. Pete Seymour",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_46_2_8f1bef30"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_46_2_8f1bef30",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 46,
+        "evidence_location": "第46页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_47_1_722985fc",
+    "title": "CodeExample_3_java_47_1_722985fc",
+    "code": "假设int a=1和double d=1.0，且每个表达式均独立，以下表达式的结果分别是什么 a = 46 / 9; a = 46 % 9 + 4 * 4 - 2; a = 45 + 43 % 5 * (23 * 3 % 2); d = 4 + d * d + 4; d += 1.5 * 3 + (++a); d -= 1.5 * 3 + a++;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_47_1_722985fc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_47_1_722985fc",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 47,
+        "evidence_location": "第47页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_49_1_83e6ccb1",
+    "title": "CodeExample_3_java_49_1_83e6ccb1",
+    "code": "class Value { int i; public boolean equals(Value v) { return (this.i == v.i) ?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_49_1_83e6ccb1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_49_1_83e6ccb1",
+        "source_f…47918 tokens truncated…Square→Rectangle→object，使用super(Square, self)令其从第一个参数指定的Square之后开始搜索，这样就跳过了Cube的直接超类Square，从而达到了其超类的超类Rectangle super()函数的参数 class Cube(Square): def area(self): return super(Square, self).area() * 6 def volume(self): return super(Square, self).area() * self.length",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_31_1_e7e1f778"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_31_1_e7e1f778",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__32_1_9c90a7ec",
+    "title": "CodeExample__32_1_9c90a7ec",
+    "code": "经过前面的工作，以下是最终版本的Employee和Manager类，及在交互环境中的测试结果 总结 class Employee(AttrDisplay): def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent)) class Manager(Employee): def __init__(self, name, pay=0): super().__init__(name, 'mgr', pay) def give_raise(self, percent, bonus=0.1): super().give_raise(percent + bonus)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_32_1_9c90a7ec"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_32_1_9c90a7ec",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__40_1_3da1e621",
+    "title": "CodeExample__40_1_3da1e621",
+    "code": "定义字典时，每个项目(item)的键(key)和值(value)都要用冒号分隔，形如key: value(好的书写习惯是冒号之前无空格，冒号之后加一个空格)；项目之间用逗号分隔，所有的项目放在一对大括号“{}”中，字典中的键不允许重复 如要创建空字典，可以使用不包含任何内容的一对空大括号“{}”或调用内置函数dict()，例如： 字典的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_40_1_3da1e621"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_40_1_3da1e621",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_447286e7",
+    "title": "CodeExample__4_1_447286e7",
+    "code": "类(class)是对具有共同属性和行为的对象的抽象，是对一类事物共性的描述 Python中定义类需使用关键字class，后跟类名和冒号 类名中单词的首字母习惯上要大写，即使用所谓的CamelCase 冒号后是换行和缩进，之后的代码用于实现类的具体功能 在类的内部定义的变量和函数分别称为属性(attribute)和方法(method)，其中方法的函数头部必须有一个名为self的形参 如何定义类 class MyClass: i = 1 def set_value(self, j): self.j = j def show_msg(self): return 'spam'",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_447286e7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_447286e7",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_b05ac42e",
+    "title": "CodeExample__4_1_b05ac42e",
+    "code": "如下所示，函数的定义包括函数头和函数体两部分 函数头以关键字def开始，后跟一个空格和函数名，接着是一对括号，括号内可列出函数的参数，多个参数用逗号间隔，括号之后是一个冒号 函数体由多条语句构成，与函数头维持一个层级的缩进 函数头和函数体之间可以加入三重引号界定的字符串作为注释，即文档字符串(docstring)，用于简述函数的功能 如何定义函数 def func(arg1, arg2, arg3): \"\"\"Docstring comments\"\"\" statements",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_b05ac42e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_b05ac42e",
+        "source_file": "第五章_函数.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_c3c5495b",
+    "title": "CodeExample__4_1_c3c5495b",
+    "code": "有时候，程序需要处理与类相关的信息，如记录由类创建的实例对象的个数，这些信息需要存储于类对象自身之中 前面所述的类属性恰好满足上面的要求，进一步地，处理这些信息的方法最好也只与类对象相关，而与实例对象无关 实例方法达不到上面要求是因为其有一个位于第一位的固定参数，该参数“期待”一个实例对象，该实例对象就是方法调用时的主体，也就是说，实例方法的调用离不开实例对象 类属性和实例方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(self): # 实例方法 print('Instance created: %d' % Spam.instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_c3c5495b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_c3c5495b",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__57_1_9a2806d5",
+    "title": "CodeExample__57_1_9a2806d5",
+    "code": "字典推导式(dictionary comprehension)的构造方式与列表推导式类似，不同之处在于字典推导式的前部需要以key：value的形式指定字典的键值对，并且整个表达式需要写在一对大括号“{}”中，执行字典推导式返回一个字典对象，例如： 字典推导式",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_57_1_9a2806d5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_57_1_9a2806d5",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__59_1_94e84d55",
+    "title": "CodeExample__59_1_94e84d55",
+    "code": "集合(set)是无序可变对象，使用一对大括号“{}”界定 集合中的元素是唯一的，不可重复，且只能是不可变对象，如数字、字符串、元组等 列表、字典以及集合本身都是可变的，不能作为集合元素，例如： 集合的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_59_1_94e84d55"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_59_1_94e84d55",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 59,
+        "evidence_location": "第59页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__5_1_1adfdbbf",
+    "title": "CodeExample__5_1_1adfdbbf",
+    "code": "有了类之后，可以通过调用类来创建任意多个实例对象，简称实例(instance) 类是抽象的概念，是创建实例时依据的模板；每个实例都有由类规定的相同的方法，但各自的属性值(数据)可以不同 定义类时常会添加一个名为__init__()的方法，它会在由类创建实例对象时被Python自动调用，用于初始化类的成员变量 实例(instance) class MyClass: i = 1 def __init__(self, j=2): self.j = j def set_value(self, j): self.j = j def show_msg(self): print('MyClass(j=%d)' % self.j)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_5_1_1adfdbbf"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_5_1_1adfdbbf",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__60_1_1d2b2e14",
+    "title": "CodeExample__60_1_1d2b2e14",
+    "code": "内置函数set()接受列表、元组等可迭代对象作为参数并使用其元素构建集合，如果原来的对象中存在重复元素，则只会保留一个 创建空集合只能使用不含参数的内置函数set()，而不能使用一对空大括号“{}”，因为后者创建的是一个空字典，例如： 集合的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_60_1_1d2b2e14"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_60_1_1d2b2e14",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 60,
+        "evidence_location": "第60页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__6_1_506863a6",
+    "title": "CodeExample__6_1_506863a6",
+    "code": "为了解决上述问题，需要借助静态方法这种不依赖于实例对象的方法 静态方法(static method)是在类中定义的没有self形参的函数，旨在操作类属性而非实例属性 定义静态方法，还需要将所得的函数对象作为参数传递给一个名为staticmethod()的内置函数，其返回一个静态方法 静态方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(): # 注意函数没有形参self print('Instance created: %d' % Spam.instance_count) # 创建静态方法 print_instance_count = staticmethod(print_instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_6_1_506863a6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_6_1_506863a6",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 6,
+        "evidence_location": "第6页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_18fd6f04",
+    "title": "CodeExample__7_1_18fd6f04",
+    "code": "下例中i = 1这样的定义在方法之外的属性称为类属性(class attribute) 类似于self.j，在方法之中定义，且含有self和点号运算符的属性称为实例属性(instance attribute) 类属性一般通过类对象访问，也可以通过由类创建的实例对象访问；而实例属性只能通过实例对象访问 类属性和实例属性 class MyClass: i = 1 def __init__(self, j): self.j = j",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_18fd6f04"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_18fd6f04",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_201a9ca6",
+    "title": "CodeExample__7_1_201a9ca6",
+    "code": "模块文件b.py和c.py由可执行的Python语句构成，这与任何一个Python源程序文件无异，但作为模块，它们一般不被直接运行，而是定义了供其它程序导入后调用的对象 如下图所示，在文件b.py中定义了如下一个函数spam() 如下图所示，顶层文件a.py使用如下的方式先导入模块文件b.py，再调用其定义的函数spam() 顶层文件a.py使用import语句导入模块b，实际上是在内存中创建了一个被导入的模块对象，并将模块名b赋给该对象 顶层文件a.py就可以通过变量名b指代的模块对象访问原模块文件b.py中定义的函数spam() 模块文件的调用关系 def spam(text): # 文件 b.py print(text) import b # 文件 a.py b.spam('hi')",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_201a9ca6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_201a9ca6",
+        "source_file": "第十章_模块.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_abf94859",
+    "title": "CodeExample__7_1_abf94859",
+    "code": "Python中一切都是对象，函数也不例外 前文提及的函数定义就是一段可执行代码，只有当Python执行了函数定义的代码之后，才会在内存中创建一个函数对象，并将其赋给一个变量(函数名) 因为将函数对象的创建延后到了程序运行时，所以Python可以根据运行时的条件动态地定义函数 条件动态定义函数 if test: def func(): # 以一种形式定义函数 ... else: def func(): # 或者将函数定义成另一种形式 ... ... func() # 调用函数",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_abf94859"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_abf94859",
+        "source_file": "第五章_函数.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__8_1_c1f0e103",
+    "title": "CodeExample__8_1_c1f0e103",
+    "code": "类属性为类对象所有，由类生成的多个实例对象之间共享，因此常用于保存一些共有的属性 实例属性为类的实例所有，对于两个不同的实例对象，实例属性通常是不同的，而类属性是一致的 下例创建一个“Python机器人”，它们都遵循“机器人三定律”。该定律对所有机器人都适用，故将其设置为类属性，而机器人的名字、型号等就是实例属性 “机器人”示例 class Robot: three_laws = ( \"\"\"A robot may not injure a human being or, through inaction, allow a human being to come to harm.\"\"\", \"\"\"A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.\"\"\", \"\"\"A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.\"\"\" ) def __init__(self, name, model): self.name = name self.model = model",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_8_1_c1f0e103"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_8_1_c1f0e103",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 8,
+        "evidence_location": "第8页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__9_1_6a78b8a7",
+    "title": "CodeExample__9_1_6a78b8a7",
+    "code": "类方法(class method)有一个位于参数列表首位的名为cls的形参，其用于接收作为调用主体的类对象，定义后需要使用内置函数classmethod()来生成 类方法可由类对象或实例对象调用，类方法自动地将类对象作为第一个参数接收 类方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(cls): # 约定俗成地使用cls作为类方法的第一个参数 print('Instance created: %d' % cls.instance_count) # 创建类方法 print_instance_count = classmethod(print_instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_9_1_6a78b8a7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_9_1_6a78b8a7",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 9,
+        "evidence_location": "第9页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_31_1_10dd1047",
+    "title": "CodeExample_python_31_1_10dd1047",
+    "code": "跨行书写：括号内元素可以跨行书写，这时第二行开头需较第一行多增加一级缩进，或与左括号后一字符垂直对齐： 还可以通过在最后一行加反斜杠的方式进行跨行。例如： Python编码规范 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) foo = long_function_name(var_one, var_two, var_three, var_four) if (this_is_one_thing and that_is_another_thing): do_something() with open('/path/to/some/file/you/want/to/read') as file_1, \\ open('/path/to/some/file/being/written', 'w') as file_2: file_2.write(file_1.read())",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_31_1_10dd1047"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_31_1_10dd1047",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_37_1_62d83a6e",
+    "title": "CodeExample_python_37_1_62d83a6e",
+    "code": "下例演示了一个用于计算斐波那契数列的Python脚本。斐波那契数列由0和1开始，之后的每一项都等于前两项之和。 注意上例中的条件判断语句“if __name__ == '__main__'”，其中的变量__name__由Python自动维护。当源程序文件被直接运行时，__name__的值为字符串 '__main__'；当作为包被导入时，__name__的值为源程序文件名(没有扩展名.py) Python脚本示例 #! /usr/bin/env python def fib(n): \"\"\"Print a Fibonacci series up to n.\"\"\" a, b = 0, 1 while a < n: print(a) a, b = b, a+b if __ name __ == '__main__': n = int(input('Please enter a number:')) fib(n)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_37_1_62d83a6e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_37_1_62d83a6e",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 37,
+        "evidence_location": "第37页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_5_1_036623bc",
+    "title": "CodeExample_python_5_1_036623bc",
+    "code": "吉多·范·罗苏姆，1956年生于荷兰，计算机程序员，为Python程序设计语言的最初设计者及主要架构师 In December 1989, I was looking for a \"hobby\" programming project that would keep me occupied during the week around Christmas. My office would be closed, but I had a home computer, and not much else on my hands. I decided to write an interpreter for the new scripting language I had been thinking about lately: a descendant of ABC that would appeal to Unix/C hackers.",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_5_1_036623bc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_5_1_036623bc",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_unicode_56_1_147adb72",
+    "title": "CodeExample_unicode_56_1_147adb72",
+    "code": "字符串对象的常用方法 str.replace(old, new[, count])方法返回字符串str的副本，其中出现的所有子字符串old都将被替换为new 如果提供了可选参数count，则只替换前count次 str.startswith(prefix[, start[, end]])方法和str.endswith(suffix[, start[, end]])方法分别用于检查字符串str是否是以参数指定子字符串开始或结束，若是返回True，否则返回False 可选参数start和end用于指定查找范围 第一个参数还可以是一个字符串元组，用于指定供匹配的多个前缀或后缀",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "unicode_56_1_147adb72"
+    ],
+    "sources": [
+      {
+        "chunk_id": "unicode_56_1_147adb72",
+        "source_file": "第四章_Unicode与字符串.pptx",
+        "page": 56,
+        "evidence_location": "第56页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_unicode_57_1_bdf78222",
+    "title": "CodeExample_unicode_57_1_bdf78222",
+    "code": "字符串对象的常用方法 str.format(*args, **kwargs)方法用来格式化字符串，调用此方法的字符串可以包含普通字符及用大括号“{}”表示的替换域 替换域可以包含一个位置参数的数字索引，或一个关键字参数的名称 还可以配合类型标识符使用",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "unicode_57_1_bdf78222"
+    ],
+    "sources": [
+      {
+        "chunk_id": "unicode_57_1_bdf78222",
+        "source_file": "第四章_Unicode与字符串.pptx",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  }
+]
