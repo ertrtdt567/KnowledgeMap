@@ -1,0 +1,43 @@
+{
+  "schema_version": "programming_kg_neo4j_import_v2",
+  "generated_at": "2026-07-17T19:36:51",
+  "input_graph": "work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_candidate_finalized\\standard_graph.json",
+  "node_count": 2560,
+  "edge_count": 5853,
+  "generated_files": {
+    "import_graph": "work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_candidate_finalized\\neo4j_import\\import_graph.cypher",
+    "demo_queries": "work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_candidate_finalized\\neo4j_import\\demo_queries.cypher",
+    "report": "work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_candidate_finalized\\neo4j_import\\neo4j_import_report.json"
+  },
+  "execute_enabled": true,
+  "execute_success": true,
+  "clear_before_import": true,
+  "neo4j": {
+    "uri": "bolt://127.0.0.1:7687",
+    "user": "neo4j",
+    "database": "neo4j",
+    "password_source": "NEO4J_PASSWORD"
+  },
+  "imported_node_count": 2560,
+  "imported_edge_count": 5853,
+  "execution_method": "Neo4j Desktop bundled cypher-shell",
+  "verification": {
+    "database_node_count": 2560,
+    "database_edge_count": 5853,
+    "isolated_node_count": 0,
+    "course_count": 5
+  },
+  "errors": [],
+  "node_label_strategy": "KnowledgeNode + concrete type label",
+  "relationship_type_strategy": "中文展示名；英文内部码保存在关系属性 type 中",
+  "demo_query_groups": [
+    "整体图谱预览",
+    "面向对象核心概念网络",
+    "语法与概念对应",
+    "学习路径查询",
+    "语言差异查询",
+    "知识点详情查询",
+    "节点/关系类型分布",
+    "证据来源查询"
+  ]
+}

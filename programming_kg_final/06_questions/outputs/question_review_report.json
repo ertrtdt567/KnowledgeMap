@@ -1,0 +1,56 @@
+{
+  "schema_version": "unified_verified_questions_review_v1",
+  "generated_at": "2026-07-17T13:35:02.724464+00:00",
+  "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_candidate_finalized\\standard_graph.json",
+  "source_root": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理",
+  "neo4j_import_executed": false,
+  "counts": {
+    "verified_questions": 49,
+    "by_language": {
+      "C++": 35,
+      "Java": 14
+    },
+    "merged_duplicate_sources": 5,
+    "mapped_questions": 47,
+    "unmapped_questions": 2,
+    "formal_candidate_questions": 47,
+    "formal_candidate_links": 78,
+    "precise_formal_questions": 45,
+    "precise_formal_links": 73,
+    "broad_primary_mappings": 2
+  },
+  "unmapped_question_ids": [
+    "XDU_CPP_A_C_A_S01_Q01",
+    "XDU_CPP_COLLECTION_C_S01_Q01"
+  ],
+  "broad_primary_mapping_items": [
+    {
+      "question_id": "XDU_CPP_A_C_A_S01_Q02",
+      "knowledge_node_id": "course_cpp__curriculum_E",
+      "knowledge_name": "面向对象编程",
+      "knowledge_type": "KnowledgeDomain"
+    },
+    {
+      "question_id": "XDU_JAVA_2018_CORRECT_Q01",
+      "knowledge_node_id": "course_java__curriculum_F2",
+      "knowledge_name": "调试与错误模式",
+      "knowledge_type": "KnowledgeUnit"
+    }
+  ],
+  "audit_passed": true,
+  "audit": {
+    "duplicate_question_count": 0,
+    "duplicate_question_ids": [],
+    "question_error_count": 0,
+    "question_errors": {},
+    "invalid_mapping_node_count": 0,
+    "invalid_mapping_nodes": [],
+    "mapping_role_error_count": 0,
+    "mapping_role_error_question_ids": []
+  },
+  "notes": [
+    "C++ 40 题来自同卷编号答案键，复用 v4 映射并校验为当前图谱真实 ID。",
+    "Java 14 题由 JAVA真题.pdf 页面直接核验；编程填空题保留必要公共代码上下文。",
+    "未映射题保留在来源验证题库和复核清单，不进入正式入库候选。"
+  ]
+}

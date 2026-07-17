@@ -1,0 +1,26 @@
+{
+  "schema_version": "programming_kg_question_neo4j_import_v2",
+  "generated_at": "2026-07-17T21:46:19",
+  "input_questions": "work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_questions.json",
+  "input_links": "work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_question_knowledge_links.json",
+  "generated_files": {
+    "import_questions": "work\\oop_kg_demo\\output\\programming_kg\\neo4j_import_questions_precise_v1\\import_questions.cypher",
+    "demo_question_queries": "work\\oop_kg_demo\\output\\programming_kg\\neo4j_import_questions_precise_v1\\demo_question_queries.cypher",
+    "report": "work\\oop_kg_demo\\output\\programming_kg\\neo4j_import_questions_precise_v1\\question_import_report.json"
+  },
+  "question_count": 45,
+  "assesses_relation_count": 73,
+  "ability_count": 7,
+  "difficulty_count": 2,
+  "question_type_count": 4,
+  "execute_enabled": true,
+  "execute_success": true,
+  "clear_question_layer": true,
+  "neo4j": {
+    "uri": "bolt://127.0.0.1:7687",
+    "user": "neo4j",
+    "database": "neo4j",
+    "password_source": "NEO4J_PASSWORD"
+  },
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "neo4j_precise_question_import_audit_v1",
+  "generated_at": "2026-07-17T13:46:30.346747+00:00",
+  "passed": true,
+  "counts": {
+    "knowledge_nodes": 2560,
+    "questions": 45,
+    "assesses_relations": 73
+  },
+  "errors": {
+    "missing_questions": [],
+    "unexpected_questions": [],
+    "missing_assesses": [],
+    "unexpected_assesses": [],
+    "duplicate_assesses": [],
+    "non_knowledge_point_targets": [],
+    "orphan_questions": [],
+    "empty_answers": [],
+    "knowledge_node_count_mismatch": []
+  }
+}

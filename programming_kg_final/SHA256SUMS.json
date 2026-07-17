@@ -1,0 +1,432 @@
+{
+    "schema_version":  "knowledge_map_release_manifest_v1",
+    "generated_at":  "2026-07-18T02:17:56+08:00",
+    "file_count":  85,
+    "files":  [
+                  {
+                      "path":  ".env.example",
+                      "bytes":  106,
+                      "sha256":  "17e1d308a6e248885c7e36dde06f0f253e41ea69fee7efe0576eb68c3ad736d6"
+                  },
+                  {
+                      "path":  "01_preprocess/outputs/data_structures_clean_chunks.json.gz",
+                      "bytes":  141335,
+                      "sha256":  "776360aef9044a34d3ddd935c10288a92b13b41d16cb4901d7724498d5039714"
+                  },
+                  {
+                      "path":  "01_preprocess/outputs/main_courses_clean_chunks.json.gz",
+                      "bytes":  330957,
+                      "sha256":  "858549e45c50656ee2248c0d72f631231fd1f07b79b9cf0333690f09437c296e"
+                  },
+                  {
+                      "path":  "01_preprocess/outputs/uml_clean_chunks.json.gz",
+                      "bytes":  127612,
+                      "sha256":  "f923a82c06f3c1e65f98f7446680196d4563e885dd28f0ca214db02974de8d1a"
+                  },
+                  {
+                      "path":  "01_preprocess/README.md",
+                      "bytes":  517,
+                      "sha256":  "a3d513cdbf76be6b1916ef77f54137925e2ffee9be1e9d0aea6052a417ba3e96"
+                  },
+                  {
+                      "path":  "02_extract/outputs/data_structures_entities.json.gz",
+                      "bytes":  461012,
+                      "sha256":  "a22520bc1d346189d0bca7b18f15343c75a410e47b82d754592f63ced9dd708b"
+                  },
+                  {
+                      "path":  "02_extract/outputs/data_structures_extraction_report.json",
+                      "bytes":  1972,
+                      "sha256":  "decbe7df280765c96d43622e01d36c2542c330d9be909f13a999866fc661bce0"
+                  },
+                  {
+                      "path":  "02_extract/outputs/data_structures_relations.json.gz",
+                      "bytes":  344020,
+                      "sha256":  "ffe7c8b7f26a7703e2d67b8f2da0aa8d5e028b2d9bb3c5b3f75c09dcbdb5f141"
+                  },
+                  {
+                      "path":  "02_extract/outputs/main_courses_entities.json.gz",
+                      "bytes":  1877726,
+                      "sha256":  "343a1363f3d8a8a9a6271b4bdb51abfaae925f09ccd064299d659ca2413bdb96"
+                  },
+                  {
+                      "path":  "02_extract/outputs/main_courses_extraction_report.json",
+                      "bytes":  2009,
+                      "sha256":  "a35ec89a6a60b0ba4b43b9f81e29531f0562f9bf2ee8942c657dfebbfbdc20cd"
+                  },
+                  {
+                      "path":  "02_extract/outputs/main_courses_relations.json.gz",
+                      "bytes":  2034571,
+                      "sha256":  "2279712a4b0b17033b809c288364187a4b37e86b852d968f2b00b9bd869bdf7b"
+                  },
+                  {
+                      "path":  "02_extract/outputs/uml_entities.json.gz",
+                      "bytes":  332123,
+                      "sha256":  "d81c2d1772e474a2db9c9bf3d72077e1a7bee2a83f51f6793ff2a696d2151905"
+                  },
+                  {
+                      "path":  "02_extract/outputs/uml_extraction_report.json",
+                      "bytes":  2070,
+                      "sha256":  "b538849deb0bff218e8665d4a373ed87f52aa92fc7287dd7d3b3ff0a59abbda2"
+                  },
+                  {
+                      "path":  "02_extract/outputs/uml_relations.json.gz",
+                      "bytes":  133381,
+                      "sha256":  "7fcdc26e0da219ee22cbdb2c4e8781418980d4046c774c81c77670a5786deba4"
+                  },
+                  {
+                      "path":  "02_extract/README.md",
+                      "bytes":  450,
+                      "sha256":  "42292272d7cd5e7bb574c4d25e46a4f37269e5961c0163e220e2c9c3c1e9b3c8"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/data_structures_normalization_report.json",
+                      "bytes":  289754,
+                      "sha256":  "59b8f81893c8b6270c9e1ee21fd37c164260907608f7db71f2b1739076713572"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/data_structures_standard_graph.json.gz",
+                      "bytes":  836941,
+                      "sha256":  "1e0532068d63e3d04335b63abfa9cc3586ef841a14053638be714e1c3687699c"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/main_courses_normalization_report.json",
+                      "bytes":  1180111,
+                      "sha256":  "58e3c62ae2840831d9eaaf45852b02ebb34a45e96f7578a08d3775ba7a587604"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/main_courses_standard_graph.json.gz",
+                      "bytes":  3984197,
+                      "sha256":  "48ff7d95fd5b5c955978de34208bfb7d90141b4ee94d6f9cfb7be38a8d03baba"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/uml_normalization_report.json",
+                      "bytes":  221740,
+                      "sha256":  "181b2a614b4bc89b5bf34d2c43ccb4f228eec38d3a01855a952b99236951d26f"
+                  },
+                  {
+                      "path":  "03_normalize/outputs/uml_standard_graph.json.gz",
+                      "bytes":  479289,
+                      "sha256":  "40bd3cb6ec3dc794498ca4f11679ffbdb568d518ca2945446b703b3f0a3a9954"
+                  },
+                  {
+                      "path":  "03_normalize/README.md",
+                      "bytes":  441,
+                      "sha256":  "c61c73c9be3c05b5f5b729fedeaff66cd5d194dacfe15245a1d47cd2277dba30"
+                  },
+                  {
+                      "path":  "04_curriculum/outputs/course_centered_report.json.gz",
+                      "bytes":  304510,
+                      "sha256":  "8ac5b1273d057308b0efee804c4d518b5d15597b76130a1b4088b31aa633e089"
+                  },
+                  {
+                      "path":  "04_curriculum/outputs/course_centered_standard_graph.json.gz",
+                      "bytes":  6489301,
+                      "sha256":  "6f392e17802f2f15f5ad10b118edea8ef8faf83e89d9336732b3991c078b903b"
+                  },
+                  {
+                      "path":  "04_curriculum/README.md",
+                      "bytes":  580,
+                      "sha256":  "f55280672463d275bd0ef8b0eb630dc9179a956a8f80cf5c561d646b314059c8"
+                  },
+                  {
+                      "path":  "05_quality/README.md",
+                      "bytes":  482,
+                      "sha256":  "93e5df0da26980cda7c4324749ab5ab0f5765424b13ef04bf4879c412e6e24f0"
+                  },
+                  {
+                      "path":  "05_quality/reports/course_graph_quality_audit.json",
+                      "bytes":  3421,
+                      "sha256":  "ad15ab8f7e7b126538ec4fa2d4fcbc7161e06391ff32f7a4c4e509c9b02aea2f"
+                  },
+                  {
+                      "path":  "05_quality/reports/relation_gold_sample_v1.json",
+                      "bytes":  145347,
+                      "sha256":  "7204fece10ce1feef9e5f0be6cc6c6d2f33ace9b403551b73db97a0f6ae087ee"
+                  },
+                  {
+                      "path":  "05_quality/reports/relation_gold_sample_v1_first_review.json",
+                      "bytes":  166511,
+                      "sha256":  "268ea88467a4d083c53631a428550e8769bad9cbe8119ff04d62185d13c24e39"
+                  },
+                  {
+                      "path":  "06_questions/outputs/formal_precise_question_knowledge_links.json",
+                      "bytes":  112728,
+                      "sha256":  "ebe735feb4fbc9297972e04dba50a6c63c3abecdbb32cd47b01b30ab30940cc4"
+                  },
+                  {
+                      "path":  "06_questions/outputs/formal_precise_questions.json",
+                      "bytes":  142246,
+                      "sha256":  "87a8c086bf2ac70f6962965e0e364f0cd3a7938989f00cdcf08a09c016b9b761"
+                  },
+                  {
+                      "path":  "06_questions/outputs/question_audit_report.json",
+                      "bytes":  272,
+                      "sha256":  "40ef499f0f222b295733f2dbc0af0ef42505cda80247726de8535a89adfd353a"
+                  },
+                  {
+                      "path":  "06_questions/outputs/question_review_report.json",
+                      "bytes":  2045,
+                      "sha256":  "01df1cca2dbeb1e9738595e8ff96cc49b8d3abdf4e6fb7301239a45be88c8dbc"
+                  },
+                  {
+                      "path":  "06_questions/outputs/习题统一复核报告.md",
+                      "bytes":  1851,
+                      "sha256":  "c85a38b167ce9130ebd72c97e066e39e767c72c7446569d4481c7368ab230b92"
+                  },
+                  {
+                      "path":  "06_questions/README.md",
+                      "bytes":  795,
+                      "sha256":  "7c62eb52bc40414adb5b8e85ceebd2d574f0c6b0134e090926c75603cb00d684"
+                  },
+                  {
+                      "path":  "07_neo4j/README.md",
+                      "bytes":  413,
+                      "sha256":  "4981c06d0112986dcc8249843e63c7c86156dc6191cdfcbe22960f5b25c9de0a"
+                  },
+                  {
+                      "path":  "07_neo4j/reports/course_graph_import_report.json",
+                      "bytes":  1677,
+                      "sha256":  "7ed5b3e152a76ad1559f341d02477f0ce1b99dd498e5d4cbcd464236d1e91dcf"
+                  },
+                  {
+                      "path":  "07_neo4j/reports/question_import_audit.json",
+                      "bytes":  557,
+                      "sha256":  "295d859c315f5ce06a10449c3e47c82f1078151aef821b9e65922c720ce28f8f"
+                  },
+                  {
+                      "path":  "07_neo4j/reports/question_import_report.json",
+                      "bytes":  1188,
+                      "sha256":  "76f30e3dc3308a62c2cbae4eb33ae09423a8495334860775e7b33509162b68d9"
+                  },
+                  {
+                      "path":  "08_delivery/frontend_complete_graph_audit.json",
+                      "bytes":  704,
+                      "sha256":  "a5857ae0acaca6489d2cc5a4f9d4a7406b73067d9ab28f73546d78934647e1fb"
+                  },
+                  {
+                      "path":  "08_delivery/README.md",
+                      "bytes":  470,
+                      "sha256":  "86bb90819c9d6a899692d516a3c800e68e7c762c213a7376678eacb56e4f666e"
+                  },
+                  {
+                      "path":  "08_delivery/standard_graph.json.gz",
+                      "bytes":  6507394,
+                      "sha256":  "d968a95818c12aad76e1b4b3feb1afb8004955109c7ea8562a103cbddd4a2f26"
+                  },
+                  {
+                      "path":  "config/programming_curriculum_v0_13_candidate_finalized.json",
+                      "bytes":  172702,
+                      "sha256":  "5362999a6c3a6a987ecb56e28ae09c67edf5a107ab4f1c9141d429b4764d84ce"
+                  },
+                  {
+                      "path":  "docs/PIPELINE.md",
+                      "bytes":  2998,
+                      "sha256":  "57abe508de46b70ac579404f4fb6160022f64b22aa820386f91474e5afaed1ca"
+                  },
+                  {
+                      "path":  "docs/项目完整实现总结.md",
+                      "bytes":  34218,
+                      "sha256":  "5d70b2810363865667472c04af4f90575f3397112b19a2de9be7a20efae0f213"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  3475,
+                      "sha256":  "1a8facce7be448a0c4c58fc644f8800fb0a672db72405cedf261b76f3478b234"
+                  },
+                  {
+                      "path":  "requirements.txt",
+                      "bytes":  57,
+                      "sha256":  "029a1773cfbecb7db22abfb05412d0891c3d16d37e4bd85901cfc6eda1e26f12"
+                  },
+                  {
+                      "path":  "src/apply_relation_first_review.py",
+                      "bytes":  7967,
+                      "sha256":  "1da5a3b504cbe41fb526bdfba5c5a04576001ea257976aec0d1d6a61e0573a3e"
+                  },
+                  {
+                      "path":  "src/audit_course_centered_graph.py",
+                      "bytes":  5117,
+                      "sha256":  "6c77803d156ba75aacd12943905f5dc755661eba891d239b9722b962a15bc1fc"
+                  },
+                  {
+                      "path":  "src/audit_formal_graph.py",
+                      "bytes":  17726,
+                      "sha256":  "e282c9f75c10d174077e479a0539fe69cdcef311ee01e4f59920a4b68afe7b34"
+                  },
+                  {
+                      "path":  "src/build_course_centered_graph.py",
+                      "bytes":  22998,
+                      "sha256":  "b608dccc6374dd60f0d8fc66a6a18f865bb2ecc9dfcf9f7fa8dc680ac06b2c14"
+                  },
+                  {
+                      "path":  "src/build_frontend_complete_graph.py",
+                      "bytes":  11365,
+                      "sha256":  "05abd320b32b4142edc3150805083dd183ef504e01066f143138d931c20688f8"
+                  },
+                  {
+                      "path":  "src/build_relation_gold_sample.py",
+                      "bytes":  8941,
+                      "sha256":  "1c3d6b95e48d96378b076a6376638d99a4cf2563a4b8a73bb3d68a94ddec7ad0"
+                  },
+                  {
+                      "path":  "src/build_unified_verified_question_bank.py",
+                      "bytes":  47578,
+                      "sha256":  "cc4cbb2e5da7f61756a58d70da7d747877a9ec16ddedd9f28047edb19d5d1e3a"
+                  },
+                  {
+                      "path":  "src/complete_question_answers.py",
+                      "bytes":  10799,
+                      "sha256":  "8cbaef16bc4903ad79146816eeb3daaed9442ba8587ff775af11eeb9088a5baf"
+                  },
+                  {
+                      "path":  "src/curate_questions_for_import.py",
+                      "bytes":  4121,
+                      "sha256":  "c9528f081edb9d5aaf0ef53867ac27748906b393d4bfe8c2fa70d3b955b8364b"
+                  },
+                  {
+                      "path":  "src/curriculum_catalog.py",
+                      "bytes":  22306,
+                      "sha256":  "3619da1f8993a97b5208fe64e395247222bb5157d6a0338f7c4801bdf25cb450"
+                  },
+                  {
+                      "path":  "src/enrich_curriculum_graph.py",
+                      "bytes":  48761,
+                      "sha256":  "2aa57e541cc63ec4f9bc7cfb163bd4ebc0aeb50d85f8f65242b2c555478882ce"
+                  },
+                  {
+                      "path":  "src/evaluate_question_mapping.py",
+                      "bytes":  7759,
+                      "sha256":  "d27b682e7ed8af2f640fc71f12c30fd1d3b7ef5adf1fe0a3ca5ac5644f134057"
+                  },
+                  {
+                      "path":  "src/extract_graph.py",
+                      "bytes":  47409,
+                      "sha256":  "b82eed4c2722662d2c0bea58e1b0e1865b383d4578a2cc8aff3d5e40d0b97985"
+                  },
+                  {
+                      "path":  "src/extract_inline_answer_pdf_questions.py",
+                      "bytes":  20890,
+                      "sha256":  "d2f99312a2852531f34b1078e93cc8a952a24e1e96283f0591d942c3243e8432"
+                  },
+                  {
+                      "path":  "src/finalize_schema_v6_formal.py",
+                      "bytes":  15807,
+                      "sha256":  "d9aee63a4eef92d8bc83ef5490783fa73057f4195ccaeaadd8b54a350b2d430b"
+                  },
+                  {
+                      "path":  "src/formal_schema_v5.py",
+                      "bytes":  16627,
+                      "sha256":  "528ac5fd92f540a3da8f613bbb08315eac0fa1e351ed732d5804cc410f0faef8"
+                  },
+                  {
+                      "path":  "src/formal_schema_v6.py",
+                      "bytes":  4478,
+                      "sha256":  "6215f66e2bf3fc62f62e7b9a3c7e8b77db63beb2979f3c350a49500339e0aeda"
+                  },
+                  {
+                      "path":  "src/formal_schema_v7.py",
+                      "bytes":  4361,
+                      "sha256":  "839489fad9cc9a2ece6b18955791837b2d2ffb2209139c47e014e4be95590099"
+                  },
+                  {
+                      "path":  "src/formal_schema_v8_course_centered.py",
+                      "bytes":  4243,
+                      "sha256":  "e6f928130d884071fe181336720e02e4ed66c9ddfda7f17096d8003682442915"
+                  },
+                  {
+                      "path":  "src/import_questions_to_neo4j.py",
+                      "bytes":  19802,
+                      "sha256":  "9d44479d35ba80a5f650613957172f60774a7e7949f9ea7958d7c2fd7f03d115"
+                  },
+                  {
+                      "path":  "src/import_to_neo4j.py",
+                      "bytes":  23353,
+                      "sha256":  "f343749ab0f7a348e7d8138f04b9af472ecd33d94b3fa554873c01c8b5ae3b9b"
+                  },
+                  {
+                      "path":  "src/map_questions_to_knowledge.py",
+                      "bytes":  46584,
+                      "sha256":  "64bdcbdbb35590c685c0dee702bc1a5858198fcc3531245d567673eb2b8f642f"
+                  },
+                  {
+                      "path":  "src/merge_official_question_banks.py",
+                      "bytes":  4952,
+                      "sha256":  "2766648563e417f5789dfbc57a1e83a0902448e445129efa911ab412413f7fd9"
+                  },
+                  {
+                      "path":  "src/merge_verified_question_sources.py",
+                      "bytes":  4356,
+                      "sha256":  "89612b21a36ac736fb7a3347c633bc94f531e6c4915733fb2de47dbafa76ede7"
+                  },
+                  {
+                      "path":  "src/normalize_graph.py",
+                      "bytes":  60089,
+                      "sha256":  "1a62aab3347b98e2b5731f83dc369e63e134ab467a81f93eee25e44228c115de"
+                  },
+                  {
+                      "path":  "src/parse_docx_questions.py",
+                      "bytes":  9950,
+                      "sha256":  "c42cdc11ff7e3e364976ae7ba616f1f1677c156f99b05987ea4e5bbf1f857fe5"
+                  },
+                  {
+                      "path":  "src/parse_lab_programming_docx.py",
+                      "bytes":  4373,
+                      "sha256":  "58325256d4bea19c04dd82aa7507289d75c8dbb64fb37053d0a9f2f12d64b36e"
+                  },
+                  {
+                      "path":  "src/parse_legacy_doc_mcq.py",
+                      "bytes":  12190,
+                      "sha256":  "0e319cc08d5533b45eddf20fbcb3b1cbded8d6e93e00edf4e46dc0e9dd8473d9"
+                  },
+                  {
+                      "path":  "src/preprocess_materials.py",
+                      "bytes":  39682,
+                      "sha256":  "4775d84055aa8bc9e232b71b02afc1e96bb1f943bff4f8ea52456078d3e57195"
+                  },
+                  {
+                      "path":  "src/process_questions.py",
+                      "bytes":  9883,
+                      "sha256":  "31be20fbd6c2202a227cc157c698114a8b2a876e06e9bf258408de0c31fddd5e"
+                  },
+                  {
+                      "path":  "src/rebase_questions_to_course_tree.py",
+                      "bytes":  5082,
+                      "sha256":  "b453e3a41d5698d08cb50f92340add80109eb2e50c39811310a240d7bd2c9626"
+                  },
+                  {
+                      "path":  "src/review_candidate_nodes.py",
+                      "bytes":  15963,
+                      "sha256":  "0a3d0fd8ecfc4fe08a795fe236deff8291e45931963ef386e1f58b7f2030b932"
+                  },
+                  {
+                      "path":  "src/review_schema_v6_candidates.py",
+                      "bytes":  23244,
+                      "sha256":  "1f2617aacd3aec0d081a133dd92b81a019a631fe7f0d9cd32a0065635f9023d6"
+                  },
+                  {
+                      "path":  "src/upgrade_curriculum_catalog_v13_candidate_finalization.py",
+                      "bytes":  5572,
+                      "sha256":  "c8bb0be978f16e1b441533dd423a7840f75ad5be1d1f9680ae87723fd91d07f8"
+                  },
+                  {
+                      "path":  "src/upgrade_schema_v6_candidate.py",
+                      "bytes":  25143,
+                      "sha256":  "5b6d03b0713b4fb1f23b0c55ae714ebfd232264ccac7d5be673c074365319216"
+                  },
+                  {
+                      "path":  "src/verify_question_import.py",
+                      "bytes":  8585,
+                      "sha256":  "6666e0670e5fdea542508f1ca84ce82ce2fdda1f7356716807315e288e5adba1"
+                  },
+                  {
+                      "path":  "tools/restore_artifacts.py",
+                      "bytes":  1198,
+                      "sha256":  "16f78334e57f01c02bedd34481e59d60ce13523def0793511b4ce6e209cb035e"
+                  },
+                  {
+                      "path":  "tools/validate_release.py",
+                      "bytes":  2090,
+                      "sha256":  "08543fe62646bd49c3372f25e82cd7a3e394ca48f83deaa9d747367925cecfe9"
+                  }
+              ]
+}
