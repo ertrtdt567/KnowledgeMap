@@ -1,0 +1,4779 @@
+[
+  {
+    "id": "CodeExample_CodeExample_1_java_52_1_5ad81192",
+    "title": "CodeExample_1_java_52_1_5ad81192",
+    "code": "JDK的安装 下载JDK http://www.oracle.com/technetwork/java/javase/downloads/index.html 运行JDK的安装程序 改变环境变量 JAVA_HOME = C:\\Program Files\\Java\\jdk-17.0.5 （安装路径，根据安装版本调整） path = %PATH%; %JAVA_HOME%\\bin classpath = .; %JAVA_HOME%\\lib (JDK5.0之后无需配置classpath)",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_52_1_5ad81192"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_52_1_5ad81192",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 52,
+        "evidence_location": "第52页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_53_1_262605e6",
+    "title": "CodeExample_1_java_53_1_262605e6",
+    "code": "Java应用程序举例 HelloWorld.java public class HelloWorld{ public static void main(String args[]){ System.out.println(\"Hello World!\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_53_1_262605e6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_53_1_262605e6",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 53,
+        "evidence_location": "第53页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_54_1_6f515d94",
+    "title": "CodeExample_1_java_54_1_6f515d94",
+    "code": "Java程序的编写 主类： 与源文件名称相同的类，通常定义为public class 每个源文件中至多有一个public class 主类中的main()方法声明 public static void main(String args[]){…} 是Java程序入口点 源文件扩展名必须是.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_54_1_6f515d94"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_54_1_6f515d94",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 54,
+        "evidence_location": "第54页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_55_1_97f709aa",
+    "title": "CodeExample_1_java_55_1_97f709aa",
+    "code": "Java程序的编译和执行 编译 javac HelloWord.java 生成HelloWorld.class 执行 java HelloWorld",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_55_1_97f709aa"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_55_1_97f709aa",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 55,
+        "evidence_location": "第55页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_1_java_56_1_d66c86ba",
+    "title": "CodeExample_1_java_56_1_d66c86ba",
+    "code": "找出并修改下面代码的错误 public class HelloWorld{ public static void Main(String args[]){ System.out.println(“Hello World!”); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "1_java_56_1_d66c86ba"
+    ],
+    "sources": [
+      {
+        "chunk_id": "1_java_56_1_d66c86ba",
+        "source_file": "1_JAVA程序设计.ppt",
+        "page": 56,
+        "evidence_location": "第56页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_17_1_a2a54e8b",
+    "title": "CodeExample_2_17_1_a2a54e8b",
+    "code": "对象 对象之间通过发送消息进行交互与通信 消息通过对方法的调用来实现 消息的组成： 接收消息的对象 方法名称 方法参数 消息由发送者对象编写，由接收者对象解释 消息可以 引起接收者状态变化 返回结果 Bicycle b Person p b.changeGears(lowerGear);",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_17_1_a2a54e8b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_17_1_a2a54e8b",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_18_1_90211507",
+    "title": "CodeExample_2_18_1_90211507",
+    "code": "对象 如何产生有用的对象 确定可能向对象发出的请求 完成交易 在屏幕上画图 打开开关 …… 由对象的接口（interface）定义这些请求 接口：确定了对特定对象所能发出的请求，或者对象接收消息的方式",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_18_1_90211507"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_18_1_90211507",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 18,
+        "evidence_location": "第18页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_21_1_2d1fe122",
+    "title": "CodeExample_2_21_1_2d1fe122",
+    "code": "类 In OOP, a class is an extensible program-code-template for creating objects, providing initial values for state (member variables) and implementations of behavior (member functions, methods).",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_21_1_2d1fe122"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_21_1_2d1fe122",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_28_1_ef787406",
+    "title": "CodeExample_2_28_1_ef787406",
+    "code": "封装 定义：把数据和方法包装进类中，并对具体实现进行隐藏 类是基本的封装单元，一个类的所有对象实例有相同的封装特性 “具体实现”包括：对象的数据域、方法实现以及非接口方法的定义等 对数据的完全隐藏是对象的理想结构，现实中使用public、protected、private关键字实现4种隐藏能力（访问权限）",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "2_28_1_ef787406"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_28_1_ef787406",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_2_4_1_13d3b0df",
+    "title": "CodeExample_2_4_1_13d3b0df",
+    "code": "为什么程序难写？ 问题 机器模型 问题空间 解空间 编程语言 0000 8B C3 MOV AX,BX 0002 8A CE MOV CL,DH 0004 43 INC BX if(a[i]>a[i+1]) swap(&a[i], &a[i+1]); People people=new People(); people.drink(water); Assembly C Java 目标问题的结构 计算机的结构 机器语言 0001110101…… 语言的发展朝着人类更容易理解的方向前进",
+    "language": "Java",
+    "source_chunk_ids": [
+      "2_4_1_13d3b0df"
+    ],
+    "sources": [
+      {
+        "chunk_id": "2_4_1_13d3b0df",
+        "source_file": "2_面向对象程序设计概念.ppt",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_11_1_cbb51d9a",
+    "title": "CodeExample_3_java_11_1_cbb51d9a",
+    "code": "基本数据类型-逻辑型 逻辑型：boolean 取值： true false（默认值） 例： boolean truth = true; Java中布尔值与整型值之间不能相互转换",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_11_1_cbb51d9a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_11_1_cbb51d9a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 11,
+        "evidence_location": "第11页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_12_1_e4b6ab8f",
+    "title": "CodeExample_3_java_12_1_e4b6ab8f",
+    "code": "基本数据类型-文本型 文本型：char 16位的Unicode字符 ASCII码 例： char mychar=‘Q’;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_12_1_e4b6ab8f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_12_1_e4b6ab8f",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 12,
+        "evidence_location": "第12页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_15_1_f48a61c8",
+    "title": "CodeExample_3_java_15_1_f48a61c8",
+    "code": "public class CharConst{ public static void main(String args[]){ char c1='Q'; char c2='\\u0051'; char c3=0x0051; System.out.println(c1+\";\"+c2+\";\"+c3+\";\"+'\\121'); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_15_1_f48a61c8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_15_1_f48a61c8",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_16_1_b195af9a",
+    "title": "CodeExample_3_java_16_1_b195af9a",
+    "code": "基本数据类型-文本型 String 不是基本数据类型，是类 例： String greeting=\"Good Morning! \"; String对象表示的字符串不能修改，如需修改字符串，应使用StringBuilder类。 StringBuffer类与StringBuilder类相似，也是可修改类，他的执行效率低于StringBuilder类，但他是线程安全的。",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_16_1_b195af9a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_16_1_b195af9a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_21_1_42085378",
+    "title": "CodeExample_3_java_21_1_42085378",
+    "code": "public class Assign { public static void main(String args[]) { int x, y; // 声明整型变量 float z = 3.414f; // 声明并赋值float型变量 double w = 3.1415; // 声明并赋值double型变量 boolean truth = true; // 声明并赋值boolean型变量 char c; // 声明字符变量 String str; // 声明String类型变量 String str1 = \"bye\"; // 声明并赋值String类型变量 x = 6; y = 1000; // 给int型变量赋值 c = 'A'; // 给字符变量赋值 str = \"Hi out there\"; // 给String变量赋值 } } 例：SomeConstTest.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_21_1_42085378"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_21_1_42085378",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_25_1_98c75cb0",
+    "title": "CodeExample_3_java_25_1_98c75cb0",
+    "code": "复合数据类型 类的初步概念 “日期”类型的两种不同表达： 方式一： int day, month, year; //定义年、月、日 int d1,m1,y1; // 定义一个日期 int d2,m2,y2; //定义另一个日期 方式二： class Date{ int day; int month; int year; void setDate( int a, int b, int c){... } } // Java用class创建新的类型（复合数据类型）",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_25_1_98c75cb0"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_25_1_98c75cb0",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 25,
+        "evidence_location": "第25页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_28_1_2fbe3ce4",
+    "title": "CodeExample_3_java_28_1_2fbe3ce4",
+    "code": "变量 引用类型变量的声明与引用 基本类型变量在声明时，直接分配数据空间，如 int a; a = 12; 引用类型变量在声明时，不直接分配数据空间，而仅仅分配引用空间，必须经过实例化，才能开辟数据空间 名字 值",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_28_1_2fbe3ce4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_28_1_2fbe3ce4",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_30_1_088b49b4",
+    "title": "CodeExample_3_java_30_1_088b49b4",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_30_1_088b49b4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_30_1_088b49b4",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 30,
+        "evidence_location": "第30页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_31_1_8d53a87d",
+    "title": "CodeExample_3_java_31_1_8d53a87d",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_31_1_8d53a87d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_31_1_8d53a87d",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_32_1_d4240197",
+    "title": "CodeExample_3_java_32_1_d4240197",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化 today null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_32_1_d4240197"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_32_1_d4240197",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_33_1_aaccbaa7",
+    "title": "CodeExample_3_java_33_1_aaccbaa7",
+    "code": "变量 引用类型变量的声明与引用 例： Date today; today = new Date( ); //实例化 today 0xabcd",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_33_1_aaccbaa7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_33_1_aaccbaa7",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 33,
+        "evidence_location": "第33页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_34_1_f24ed69a",
+    "title": "CodeExample_3_java_34_1_f24ed69a",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); b = a;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_34_1_f24ed69a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_34_1_f24ed69a",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 34,
+        "evidence_location": "第34页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_35_1_9f6dfbcd",
+    "title": "CodeExample_3_java_35_1_9f6dfbcd",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a null b null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_35_1_9f6dfbcd"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_35_1_9f6dfbcd",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 35,
+        "evidence_location": "第35页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_36_1_4b76075e",
+    "title": "CodeExample_3_java_36_1_4b76075e",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); a 0xabcd b null",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_36_1_4b76075e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_36_1_4b76075e",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_37_1_2edcaab8",
+    "title": "CodeExample_3_java_37_1_2edcaab8",
+    "code": "变量 引用类型变量之间的赋值 例： Date a, b; a = new Date( ); b = a; a 0xabcd b 0xabcd",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_37_1_2edcaab8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_37_1_2edcaab8",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 37,
+        "evidence_location": "第37页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_40_1_eda63941",
+    "title": "CodeExample_3_java_40_1_eda63941",
+    "code": "public class TestInit { int x; public static void main(String args[]) { TestInit init = new TestInit(); int x = (int) (Math.random() * 100); int z; int y; // int y=0; if (x > 50) { y = 9; } z = x + y + init.x; System.out.println(\"x=\" + x + \" y=\" + y + \" z=\" + z + \" init.x=\" + init.x); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_40_1_eda63941"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_40_1_eda63941",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_42_1_30ac2937",
+    "title": "CodeExample_3_java_42_1_30ac2937",
+    "code": "运算符与表达式 Java运算符类别 运算符类别 | 运算符列表 算术运算符 | +，-，*，/，%，++，-- 关系运算符 | >，>=，<，<=，==，!= 位运算符 | >>，<<，>>>，&，|，^（逐位异或），~ （逐位取反） 逻辑运算符 | &，|，!，^（异或），&&，|| 赋值运算符 | =，+=，-=，*=，/=，%=，&=，|=，^=，<<=，>>=，>>>= 其它运算符 | ?:，[]，.，()，(type)，new，instanceof",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_42_1_30ac2937"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_42_1_30ac2937",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_44_1_7965f607",
+    "title": "CodeExample_3_java_44_1_7965f607",
+    "code": "public class UnaryConversion{ public static void main(String[] args){ byte b=2; char c='\\u1234'; int x=8,y=3; //byte b2 = -b; //int值不能直接赋给byte类型变量b2 //char c2 = +c; //int值不能直接赋给char类型变量c2 System.out.println((-b) + \";\" + (+c)); int i=~b; //byte转换为int System.out.println(Integer.toHexString(i)); System.out.println(x/y); System.out.println(x/(float)y); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_44_1_7965f607"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_44_1_7965f607",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 44,
+        "evidence_location": "第44页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_46_2_8f1bef30",
+    "title": "CodeExample_3_java_46_2_8f1bef30",
+    "code": "-7%3=-1 20%-13=7 +运算可以连接字符串 String salutation = “Dr. ”; String name = “Pete ” + “Seymour” ; String title = salutation + name ; 则title 值：Dr. Pete Seymour",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_46_2_8f1bef30"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_46_2_8f1bef30",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 46,
+        "evidence_location": "第46页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_47_1_722985fc",
+    "title": "CodeExample_3_java_47_1_722985fc",
+    "code": "假设int a=1和double d=1.0，且每个表达式均独立，以下表达式的结果分别是什么 a = 46 / 9; a = 46 % 9 + 4 * 4 - 2; a = 45 + 43 % 5 * (23 * 3 % 2); d = 4 + d * d + 4; d += 1.5 * 3 + (++a); d -= 1.5 * 3 + a++;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_47_1_722985fc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_47_1_722985fc",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 47,
+        "evidence_location": "第47页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_49_1_83e6ccb1",
+    "title": "CodeExample_3_java_49_1_83e6ccb1",
+    "code": "class Value { int i; public boolean equals(Value v) { return (this.i == v.i) ?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_49_1_83e6ccb1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_49_1_83e6ccb1",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_49_2_39ee8e59",
+    "title": "CodeExample_3_java_49_2_39ee8e59",
+    "code": "true : false; } } public class Equivalence { public static void main(String[] args) { Integer n1=new Integer(47); Integer n2=new Integer(47); System.out.println(\"n1==n2: \"+ (n1==n2)); //对引用的比较 System.out.println(\"n1!=n2: \"+ (n1!=n2)); System.out.println(\"n1.equals(n2): \"+ n1.equals(n2)); //Integer已重写equals() Value v1 = new Value(); Value v2 = new Value(); v1.i = v2.i = 10; System.out.println(\"v1.equals(v2): \" + v1.equals(v2)); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_49_2_39ee8e59"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_49_2_39ee8e59",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_51_1_7da293ea",
+    "title": "CodeExample_3_java_51_1_7da293ea",
+    "code": "public class ShortCircuit { static boolean bLessThan1(int n) { System.out.println(\"(n<1)? \" + (n < 1)); return (n < 1); } static boolean bLessThan2(int n) { System.out.println(\"(n<2)?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_51_1_7da293ea"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_51_1_7da293ea",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 51,
+        "evidence_location": "第51页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_51_2_70cc9c2c",
+    "title": "CodeExample_3_java_51_2_70cc9c2c",
+    "code": "\" + (n < 2)); return (n < 2); } public static void main(String[] args) { System.out.println(\"Short Circuit:\"); System.out.println( bLessThan1(1) && bLessThan2(1) ); System.out.println(\"Not Short Circuit:\"); System.out.println( bLessThan1(1) & bLessThan2(1) ); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_51_2_70cc9c2c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_51_2_70cc9c2c",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 51,
+        "evidence_location": "第51页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_53_1_a10094b0",
+    "title": "CodeExample_3_java_53_1_a10094b0",
+    "code": "赋值运算符及赋值中的类型转换 虚箭头表示有可能损失精度 int n = 123456789; float f = n; // f is 1.23456792E8",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_53_1_a10094b0"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_53_1_a10094b0",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 53,
+        "evidence_location": "第53页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_56_1_968beb43",
+    "title": "CodeExample_3_java_56_1_968beb43",
+    "code": "public class CastingRoundingNumber { public static void main(String[] args) { double above = 0.7; double below = 0.4; float fabove = 0.7f; float fbelow = 0.4f; System.out.println(\"(int)above: \" + (int) above); System.out.println(\"(int)below: \" + (int) below); System.out.println(\"(int)fabove: \" + (int) fabove); System.out.println(\"(int)fbelow: \" + (int) fbelow); System.out.println(\"Math.round(above): \" + Math.round(above)); System.out.println(\"Math.round(below): \" + Math.round(below)); System.out.println(\"Math.round(fabove): \" + Math.round(fabove)); System.out.println(\"Math.round(fbelow): \" + Math.round(fbelow)); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_56_1_968beb43"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_56_1_968beb43",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 56,
+        "evidence_location": "第56页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_57_1_8dfd14b2",
+    "title": "CodeExample_3_java_57_1_8dfd14b2",
+    "code": "写出下面语句段的输出 float f=12.5F; int i=(int)f; System.out.println(f); System.out.println(i); 以下类型转换是否合法？ boolean b=true; int i=(int)b; int i=1; boolean b=(boolean) i;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_57_1_8dfd14b2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_57_1_8dfd14b2",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_58_1_1ba68f7f",
+    "title": "CodeExample_3_java_58_1_1ba68f7f",
+    "code": "运算符的优先级与结合方向（非、算、关、与或、赋） [ ]，. ，( ) var++，var-- （后置） | 从左向右 从右向左 ！，+，-（一元），++var，--var（前置） | 从右向左 (type)（类型转换），new | 从右向左",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_58_1_1ba68f7f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_58_1_1ba68f7f",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 58,
+        "evidence_location": "第58页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_59_1_622dfc73",
+    "title": "CodeExample_3_java_59_1_622dfc73",
+    "code": "x和y都是int类型，以下哪些表达式合法？ x > y > 0 x = y && y x /= y x or y x and y (x != 0) || (x = 0) 假设a, b, c初始值均为1，下面语句执行后a, b, c的值分别是多少？ a = b += c = 5;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_59_1_622dfc73"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_59_1_622dfc73",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 59,
+        "evidence_location": "第59页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_5_2_0245883e",
+    "title": "CodeExample_3_java_5_2_0245883e",
+    "code": "--b class public",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_5_2_0245883e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_5_2_0245883e",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_61_1_0a185e3c",
+    "title": "CodeExample_3_java_61_1_0a185e3c",
+    "code": "单向if语句 | if(布尔表达式) { 语句(块); } 双向if语句 | if(布尔表达式) { 语句(块)1; } else { 语句(块)2; } switch语句 | switch(switch表达式) { case 值1: 语句(块)1; break; case 值2: 语句(块)2; break; …… case 值N: 语句(块)N; break; default: 默认情况下执行的语句(块); } while循环 | while(循环继续条件){ 语句(块); } do-while循环 | do{ 语句(块); } while(循环继续条件); for循环 | for(初始操作; 循环继续条件; 每次迭代后操作){ 语句(块); } 增强的for循环 | for(标识符: 可迭代类型的表达式){ 语句(块); } break语句 | break [label]; continue语句 | continue [label]; return语句 | return [表达式];",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_61_1_0a185e3c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_61_1_0a185e3c",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 61,
+        "evidence_location": "第61页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_62_1_40967726",
+    "title": "CodeExample_3_java_62_1_40967726",
+    "code": "循环语句 Java SE 5.0后的for循环新形式： 将一个集合作为一个整体放入for循环中，在for循环中可将集合中的元素进行逐个处理，例： String[] names = {\"Wang\", \"Zhang\", \"Li\", \"Wu\"}; for(String option: names) { System.out.println(option); }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_62_1_40967726"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_62_1_40967726",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 62,
+        "evidence_location": "第62页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_63_1_c992261e",
+    "title": "CodeExample_3_java_63_1_c992261e",
+    "code": "循环语句 在循环条件中不要使用浮点值来比较值是否相等，否则可能导致不精确的循环次数和结果 double item=1, sum=0; while(item!=0){ sum+=item; item-=0.2; }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_63_1_c992261e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_63_1_c992261e",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 63,
+        "evidence_location": "第63页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_64_1_65b7caed",
+    "title": "CodeExample_3_java_64_1_65b7caed",
+    "code": "分支语句 if-else 逻辑型与整型之间不能相互转换，循环与分支条件必须得到一个逻辑型的值，不能像C那样接受整型： C： int x=3; if(x){…} Java： int x=3; if(x!=0){…} 条件运算符?:是if-else的一种紧缩格式表达",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_64_1_65b7caed"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_64_1_65b7caed",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 64,
+        "evidence_location": "第64页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_66_1_558aff73",
+    "title": "CodeExample_3_java_66_1_558aff73",
+    "code": "public class SwitchDemo2 { public static void main(String[] args) { int month = 2; int year = 2000; int numDays = 0; switch (month) { case 1: case 3: case 5: case 7: case 8: case 10: case 12: numDays = 31; break; case 4: case 6: case 9: case 11: numDays = 30; break; case 2: if (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0)) numDays = 29; else numDays = 28; break; } System.out.println(\"The number of Days = “ + numDays); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_66_1_558aff73"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_66_1_558aff73",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 66,
+        "evidence_location": "第66页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_68_1_6ba637f1",
+    "title": "CodeExample_3_java_68_1_6ba637f1",
+    "code": "跳转语句 1 loop: while (true){ 2 for( … ){ 3 switch( ){ 4 case -1: 5 case ‘\\n’: 6 break loop ; //跳出while到11行 7 … 8 } 9 } 10 } 11 test: for( … ){ 12 … 13 while(… ){ 14 if( …){ 15 … 16 continue test ; //跳到11行 17 } 18 } 19 }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_68_1_6ba637f1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_68_1_6ba637f1",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 68,
+        "evidence_location": "第68页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_69_1_7768d120",
+    "title": "CodeExample_3_java_69_1_7768d120",
+    "code": "public class BreakAndContinueWithLabel{ public static void main(String[] args){ String searchMe = \"Look for a substring in me\"; String substring = \"sub\"; boolean found = false; int max = searchMe.length() - substring.length(); test: for (int i = 0; i <= max; i++) { // i:子串查找开始位置 int n = substring.length(); int j = i; // j:当前在主串中的查找位置 int k = 0; // k:当前在子串中的查找位置 while (n-- != 0) { if (searchMe.charAt(j++) != substring.charAt(k++)) { continue test; } } found = true; break test; } System.out.println(found ?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_69_1_7768d120"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_69_1_7768d120",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 69,
+        "evidence_location": "第69页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_69_2_95120d08",
+    "title": "CodeExample_3_java_69_2_95120d08",
+    "code": "\"Found！\" : \"Didn't find！\"); } } //其他例子： BreakDemo.java，BreakWithLabelDemo.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_69_2_95120d08"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_69_2_95120d08",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 69,
+        "evidence_location": "第69页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_74_1_7a58a75d",
+    "title": "CodeExample_3_java_74_1_7a58a75d",
+    "code": "数组声明 声明包含三部分 元素类型：基本类型或引用类型 数组变量名称 数组维度 一维数组声明的格式： 元素类型[] 数组变量名称; 元素类型 数组变量名称[]; 例： char s[]; char[] s; //基本类型数组 Point p[]; Point[] p; //引用类型数组 char[] s,m,n; //三个变量都是字符数组变量",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_74_1_7a58a75d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_74_1_7a58a75d",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 74,
+        "evidence_location": "第74页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_75_1_8457a972",
+    "title": "CodeExample_3_java_75_1_8457a972",
+    "code": "数组创建 在Java中，数组类型是一种引用类型，因此 数组声明不分配数组的数据空间，而是创建一个对该类型数组的引用 数组的数据空间可以看作一个对象实例 建立数组变量与数组对象之间的引用关系（数组实例化）也通过new关键字实现： 数组变量名称=new 元素类型[数组长度]; 例： s = new char[20]; //创建有20个字符的数组 p = new Point[100]; //创建有100个Point引用的数组 数组变量与数组对象不同，数组变量存储了对数组对象的引用",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_75_1_8457a972"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_75_1_8457a972",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 75,
+        "evidence_location": "第75页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_76_1_a6e66a94",
+    "title": "CodeExample_3_java_76_1_a6e66a94",
+    "code": "数组的初始化 在创建数组对象时，使用元素类型的默认值对每个元素进行初始化 进一步初始化 直接对数组的各个元素赋值： Point[ ] p = new Point[100]; p[0] = new Point(); p[1] = new Point(); … 用初始值创建数组 String names[] = {\"Jack\", \"Wang\", \"Lee\"}; int a[] = {1, 2, 3}; Date d[] = {new Date(), new Date(), new Date()};",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_76_1_a6e66a94"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_76_1_a6e66a94",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 76,
+        "evidence_location": "第76页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_77_1_8c077d36",
+    "title": "CodeExample_3_java_77_1_8c077d36",
+    "code": "习题3.13.下列数组定义哪些是合法的？ int i=new int(30); double d[]=new double[30]; Integer[] r=new Integer(1..30); int i[]=(3,4,3,2); float f[]={2.3, 4.5, 5.6}; char[] c=new char(); Integer[][] r=new Integer[2];",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_77_1_8c077d36"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_77_1_8c077d36",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 77,
+        "evidence_location": "第77页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_79_1_55e2b78f",
+    "title": "CodeExample_3_java_79_1_55e2b78f",
+    "code": "数组复制 数组变量之间赋值是引用赋值 int [ ] a= new int [6]; int [ ] b; b = a ; 无法通过变量赋值复制数组 复制方法一：使用循环语句逐个复制 int[] target = new int[source.length]; for(int i = 0; i < source.length; i++) target[i] = source[i];",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_79_1_55e2b78f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_79_1_55e2b78f",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 79,
+        "evidence_location": "第79页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_80_1_f2bd479e",
+    "title": "CodeExample_3_java_80_1_f2bd479e",
+    "code": "数组复制 复制方法二：java.lang.System的静态arraycopy()方法 System.arraycopy(Object source, int srcIndex, Object dest, int destIndex, int length); 注意：dest数组空间必须预先分配好",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_80_1_f2bd479e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_80_1_f2bd479e",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 80,
+        "evidence_location": "第80页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_81_1_31db5bfe",
+    "title": "CodeExample_3_java_81_1_31db5bfe",
+    "code": "public class ArrayCopyDemo { public static void main(String[] args) { char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e', 'i', 'n', 'a', 't', 'e', 'd' }; char[] copyTo = new char[7]; System.arraycopy(copyFrom, 2, copyTo, 0, 7); System.out.println(new String(copyTo)); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_81_1_31db5bfe"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_81_1_31db5bfe",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 81,
+        "evidence_location": "第81页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_82_1_6e37414f",
+    "title": "CodeExample_3_java_82_1_6e37414f",
+    "code": "多维数组 声明：使用连续的[]说明数组维度 例：int a[][]; 或 int[][] a; 创建与初始化： 需指明至少一个嵌套层的长度 必须从最高维指定数组长度 例： a = new int[4][4]; //为每一维分配内存 a = new int[4][]; //为第一维分配内存, 生成不规则数组 a[0] = new int[10]; a[1] = new int[5]; … a = new int[][4]; //不合法",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_82_1_6e37414f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_82_1_6e37414f",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 82,
+        "evidence_location": "第82页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_83_1_56812651",
+    "title": "CodeExample_3_java_83_1_56812651",
+    "code": "多维数组 多维数组的长度 每一维的长度均可通过length变量获取 例： public class ArrayLength{ public static void main(String[] args){ int[][] a={{1,2,3,4,5},{1,2,3}}; System.out.println(a.length+\";\" +a[0].length+\";\"+a[1].length); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_83_1_56812651"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_83_1_56812651",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 83,
+        "evidence_location": "第83页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_84_1_1f58a903",
+    "title": "CodeExample_3_java_84_1_1f58a903",
+    "code": "练习 以下程序执行结束后，i和j的值分别是多少 int i = 5; int j = (i++) + (i++); 实现程序，在字符串“Java is my favorate programming language”中查找字符a的出现次数",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_84_1_1f58a903"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_84_1_1f58a903",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 84,
+        "evidence_location": "第84页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_3_java_8_1_9fde882c",
+    "title": "CodeExample_3_java_8_1_9fde882c",
+    "code": "关键字 指程序语言中预先定义的有特殊意义的标识符 const和goto是C++的关键字，Java虽然将其保留为关键字，但Java尚未使用它们；true, false和null虽然不是关键字，但也被Java保留，不能用作标志符 abstract | assert | boolean | break | byte case | catch | char | class | continue default | do | double | else | enum extends | final | finally | float | for if | implements | import | instanceof | int interface | long | native | new | package private | protected | public | return | strictfp short | static | super | switch | synchronized this | throw | throws | transient | try void | volatile | while | const | goto",
+    "language": "Java",
+    "source_chunk_ids": [
+      "3_java_8_1_9fde882c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "3_java_8_1_9fde882c",
+        "source_file": "3_JAVA语言基础.ppt",
+        "page": 8,
+        "evidence_location": "第8页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_10_1_66ae6f07",
+    "title": "CodeExample_4_java_10_1_66ae6f07",
+    "code": "成员变量声明 [public|protected|private][static][final][transient][volatile] 类型 变量名;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_10_1_66ae6f07"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_10_1_66ae6f07",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 10,
+        "evidence_location": "第10页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_11_1_19d0b3af",
+    "title": "CodeExample_4_java_11_1_19d0b3af",
+    "code": "成员变量声明 [public|protected|private][static][final][transient][volatile] 类型 变量名; public|protected|private：成员变量的访问权限 static：限制该成员变量为类变量（无static：该成员变量为实例变量） final：用于声明一个常量，该常量的值在程序中不能修改 transient：声明一个暂时性变量 volatile：禁止编译器通过保存多线程共享变量的多个拷贝来提高效率",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_11_1_19d0b3af"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_11_1_19d0b3af",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 11,
+        "evidence_location": "第11页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_12_1_e5e2c9c9",
+    "title": "CodeExample_4_java_12_1_e5e2c9c9",
+    "code": "成员变量声明 显式初始化：成员变量声明中可以包含简单的赋值表达式，这种在声明成员变量时对变量的显式赋值称为显式初始化 例： class Rectangle{ private int width = 0; private int height = 0; … }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_12_1_e5e2c9c9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_12_1_e5e2c9c9",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 12,
+        "evidence_location": "第12页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_13_1_d8d0630e",
+    "title": "CodeExample_4_java_13_1_d8d0630e",
+    "code": "成员方法声明 [public|protected|private][static][final|abstract][native][synchronized] 返回类型 方法名([参数列表]) [throws 异常类型列表] { [语句块] } public, protected, private, static：与成员变量类似 abstract：声明该方法是抽象方法，无方法体 final：声明方法不能被重写 native：本地方法 synchronized：多线程访问共享数据 throws：抛出异常的列表（第六章）",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_13_1_d8d0630e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_13_1_d8d0630e",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 13,
+        "evidence_location": "第13页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_15_1_871c9af9",
+    "title": "CodeExample_4_java_15_1_871c9af9",
+    "code": "public class PassTest { public void changeInt(int value) {// 基本类型的参数 value = 55; } public static void main(String args[]) { int val; PassTest pt = new PassTest(); val = 11; pt.changeInt(val); // 基本类型参数的值传递 System.out.println(\"Int value is: \" + val); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_15_1_871c9af9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_15_1_871c9af9",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_16_1_c87ef1a1",
+    "title": "CodeExample_4_java_16_1_c87ef1a1",
+    "code": "public class PassTest { public void changeStr(String value) { // 引用类型参数 value = new String(“different”); //方法中改变形参所指对象 } public static void main(String args[]) { String str; PassTest pt = new PassTest(); str = new String(\"Hello\"); pt.changeStr(str); // 引用类型参数的传递 System.out.println(\"Str value is: \" + str); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_16_1_c87ef1a1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_16_1_c87ef1a1",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_17_1_89ce19d6",
+    "title": "CodeExample_4_java_17_1_89ce19d6",
+    "code": "public class PassTest { float ptValue; public void changeObjValue(PassTest ref) {// 引用类型参数 ref.ptValue = 99.0f; //改变参数所指对象的成员变量值 } public static void main(String args[]) { PassTest pt = new PassTest(); pt.ptValue = 101.0f; pt.changeObjValue(pt); // 引用类型参数的传递 System.out.println(\"Pt value is: \" + pt.ptValue); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_17_1_89ce19d6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_17_1_89ce19d6",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_19_1_9e74c4a1",
+    "title": "CodeExample_4_java_19_1_9e74c4a1",
+    "code": "public class VariousArgs{ public double ratingAverage(double r, int ... points){ int sum=0; for(int p: points) sum+=p; return ((sum*r)/points.length); } public static void main(String[] args){ VariousArgs va=new VariousArgs(); System.out.println( va.ratingAverage(0.5, new int[]{95,90,85}) ); System.out.println( va.ratingAverage(0.5, 94,92,90,88,86)); } } //又例：Calculation.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_19_1_9e74c4a1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_19_1_9e74c4a1",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 19,
+        "evidence_location": "第19页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_21_1_c8c89cf3",
+    "title": "CodeExample_4_java_21_1_c8c89cf3",
+    "code": "public class UnmaskField{ private int x = 1; private int y = 1; public void changeFields(int a, int b) { x = a; //x指成员变量 int y = b; //局部变量y使同名的类成员变量被隐藏 this.y=8; //this.y指成员变量 System.out.println(\"x=\" + x + \"; y=\" + y); //局部变量y的值 } public void PrintFields() { System.out.println(\"x=\" + x + \"; y=\" + y); } public static void main(String args[]) { UnmaskField uf = new UnmaskField(); uf.PrintFields(); uf.changeFields(10,9); uf.PrintFields(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_21_1_c8c89cf3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_21_1_c8c89cf3",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_23_1_755127b7",
+    "title": "CodeExample_4_java_23_1_755127b7",
+    "code": "构造方法声明 [public|protected|private] 类名 ( [参数列表] ) { [语句块] }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_23_1_755127b7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_23_1_755127b7",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 23,
+        "evidence_location": "第23页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_24_1_d9dfe809",
+    "title": "CodeExample_4_java_24_1_d9dfe809",
+    "code": "构造方法声明 构造方法的特点 构造方法的名称必须与类名相同 构造方法没有返回值，这与返回值为void不同 构造方法在创建一个对象时调用，调用时必须使用关键字new 例： class Circle{ private double radius; public Circle(double r){ radius=r; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_24_1_d9dfe809"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_24_1_d9dfe809",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 24,
+        "evidence_location": "第24页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_26_1_0c45234f",
+    "title": "CodeExample_4_java_26_1_0c45234f",
+    "code": "class Bird { int i; // public Bird(int j){ i=j; } } public class DefaultConstructor { public static void main(String[] args) { Bird nc = new Bird(); // 缺省构造方法 } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_26_1_0c45234f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_26_1_0c45234f",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 26,
+        "evidence_location": "第26页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_30_1_1152495a",
+    "title": "CodeExample_4_java_30_1_1152495a",
+    "code": "访问权限控制 基本问题 “如何把变动的事物与保持不变的事物区分开” 对于类库，要求 类库开发者有权限进行修改和改进 客户代码不会因为类库的改动而受到影响 解决方法 权限修饰符：类库开发者向客户程序员指定哪些可用，哪些不可用 权限修饰符 public | protected | private | (default/package)",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_30_1_1152495a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_30_1_1152495a",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 30,
+        "evidence_location": "第30页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_32_1_1b8d31ce",
+    "title": "CodeExample_4_java_32_1_1b8d31ce",
+    "code": "访问权限控制 包的定义 package pkg1[.pkg2[.pkg3…]]; 包存储路径：”包的根路径\\pkg1\\...\\pkgn” 包的根路径由CLASSPATH环境变量指出 包分隔符”.”相当于目录分隔符 从源文件编译出的.class文件应放在包存储路径中 包定义语句在每个源程序中只能有一条，即一个类只能属于一个包 包定义语句必须在程序代码的第一行（除注释之外）",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_32_1_1b8d31ce"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_32_1_1b8d31ce",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_33_1_b14c99a1",
+    "title": "CodeExample_4_java_33_1_b14c99a1",
+    "code": "访问权限控制 包成员：包中的类和接口 包成员的访问方法： 第1步: import pkg1[.pkg2[.pkg3 …]].(类名|*); pkg1[.pkg2[.pkg3 …]]表示包层次，对应于文件目录 “类名”指明所要引入的类 通配符*表示引入该包中的所有类 import语句须在源程序所有类声明之前，package语句之后： [package …] //默认是package .; [import …] //默认是import java.lang.*; [类声明]",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_33_1_b14c99a1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_33_1_b14c99a1",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 33,
+        "evidence_location": "第33页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_35_1_fd1c5af5",
+    "title": "CodeExample_4_java_35_1_fd1c5af5",
+    "code": "访问权限控制 权限修饰符：public|protected|private|(default) 同一个类 | 同一个包 | 子类 | 全局 private | √ default | √ | √ protected | √ | √ | √ public | √ | √ | √ | √ 成员变量 | 方法 | 类 private | √ | √ default | √ | √ | √ protected | √ | √ public | √ | √ | √",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_35_1_fd1c5af5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_35_1_fd1c5af5",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 35,
+        "evidence_location": "第35页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_36_1_978f707e",
+    "title": "CodeExample_4_java_36_1_978f707e",
+    "code": "访问权限控制 权限修饰符：public|protected|private|(default) 该成员可以被任何类访问 同一个类 | 同一个包 | 子类 | 全局 private | √ default | √ | √ protected | √ | √ | √ public | √ | √ | √ | √ 成员变量 | 方法 | 类 private | √ | √ default | √ | √ | √ protected | √ | √ public | √ | √ | √",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_36_1_978f707e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_36_1_978f707e",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_37_1_749f1c68",
+    "title": "CodeExample_4_java_37_1_749f1c68",
+    "code": "访问权限控制 权限修饰符：public|protected|private|(default) 可以被该成员所在的包中的所有类访问 同一个类 | 同一个包 | 子类 | 全局 private | √ default | √ | √ protected | √ | √ | √ public | √ | √ | √ | √ 成员变量 | 方法 | 类 private | √ | √ default | √ | √ | √ protected | √ | √ public | √ | √ | √",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_37_1_749f1c68"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_37_1_749f1c68",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 37,
+        "evidence_location": "第37页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_38_1_9954a38a",
+    "title": "CodeExample_4_java_38_1_9954a38a",
+    "code": "/* pkg1/A.java */ package pkg1; public class A{ public A(){ System.out.println(\"A's constructor\"); } void func(){ System.out.println(“A‘s method”); } //func()为包权限 } class B{//B为包权限 public B(){ System.out.println(\"B's constructor\"); } } /* pkg2/PublicVsPackage.java */ package pkg2; //pkg2与pkg1不是同一个包 import pkg1.*; public class PublicVsPackage{ public static void main(String[] args){ A obj=new A(); //B obj2=new B(); //在pkg1之外不能创建B的对象 //obj.func(); //在pkg1之外不能访问func()方法 } } //又如：Greek/Alpha.java和Greek/Beta.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_38_1_9954a38a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_38_1_9954a38a",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 38,
+        "evidence_location": "第38页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_39_1_56854205",
+    "title": "CodeExample_4_java_39_1_56854205",
+    "code": "访问权限控制 权限修饰符：public|protected|private|(default) 用于成员变量，成员方法：除包含该成员的类之外，其他类都无法访问该成员 用于构造方法：其他类不能生成该类的实例对象 同一个类的不同对象之间可互相访问私有成员 同一个类 | 同一个包 | 子类 | 全局 private | √ default | √ | √ protected | √ | √ | √ public | √ | √ | √ | √ 成员变量 | 方法 | 类 private | √ | √ default | √ | √ | √ protected | √ | √ public | √ | √ | √",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_39_1_56854205"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_39_1_56854205",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 39,
+        "evidence_location": "第39页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_40_1_48a93f9d",
+    "title": "CodeExample_4_java_40_1_48a93f9d",
+    "code": "/* pkg2/PrivateVsPackage.java */ package pkg2; public class PrivateVsPackage{ public static void main(String[] args){ C obj=new C(); //默认构造方法的权限与类的访问权限相同 obj.func2(); //obj.func1(); //与C在同一包中的其他类无法访问func1() } } class C{ private void func1(){ System.out.println(\"C's method 1\"); } void func2(){ System.out.println(\"C's method 2\"); this.func1(); //同一个类内可以调用func1() } } //又如：TestPrivate.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_40_1_48a93f9d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_40_1_48a93f9d",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_41_1_1c9f04d9",
+    "title": "CodeExample_4_java_41_1_1c9f04d9",
+    "code": "访问权限控制 权限修饰符：public|protected|private|(default) 可以被该成员所在的包中的所有类访问 可以被该成员所属类的子类访问（不论子类是否在同一包中） 同一个类 | 同一个包 | 子类 | 全局 private | √ default | √ | √ protected | √ | √ | √ public | √ | √ | √ | √ 成员变量 | 方法 | 类 private | √ | √ default | √ | √ | √ protected | √ | √ public | √ | √ | √",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_41_1_1c9f04d9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_41_1_1c9f04d9",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 41,
+        "evidence_location": "第41页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_42_1_4d4f19d7",
+    "title": "CodeExample_4_java_42_1_4d4f19d7",
+    "code": "/* pkg1/C.java */ public class C{ protected void func(){ System.out.println(\"Protected method of C\"); } } /* pkg2/ProtectedVsPackageAndPublic.java */ import pkg1.C; public class ProtectedVsPackageAndPublic{ public static void main(String[] args){ C obj=new C(); //! obj.func(); //不是C的子类，且与C非同一个包 } } class CSub extends C{ //C的子类，可以访问C的func()方法 void mtd(C parent, CSub sub){ func(); //!",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_42_1_4d4f19d7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_42_1_4d4f19d7",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_42_2_1e814036",
+    "title": "CodeExample_4_java_42_2_1e814036",
+    "code": "parent.func(); //应通过子类引用而非父类引用访问func() sub.func(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_42_2_1e814036"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_42_2_1e814036",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_44_1_e8e8201d",
+    "title": "CodeExample_4_java_44_1_e8e8201d",
+    "code": "访问权限控制 包相关的其他问题：引入其他类的静态成员 程序在使用其他类的static final的常量或static的方法时，每次引用这些常量或方法都用它们所属的类名 例：java.lang.Math类定义了常数PI以及静态方法cos()，需用 double r=Math.cos (Math.PI * theta); 简化方法： import static [静态常量名|静态方法名|*]; 例： import static java.lang.Math.PI; 或 import static java.lang.Math.*; 然后直接使用：double r = cos (PI*theta );",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_44_1_e8e8201d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_44_1_e8e8201d",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 44,
+        "evidence_location": "第44页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_45_1_60c08ca7",
+    "title": "CodeExample_4_java_45_1_60c08ca7",
+    "code": "访问权限控制 源文件(.java)与类文件(.class)的管理 源文件可以按照包名指明的路径放置。如 每个类（而非每个.java文件）对应一个.class文件",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_45_1_60c08ca7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_45_1_60c08ca7",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 45,
+        "evidence_location": "第45页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_46_1_756b7784",
+    "title": "CodeExample_4_java_46_1_756b7784",
+    "code": "访问权限控制 源文件(.java)与类文件(.class)的管理 可将源文件与类文件分别存放，采用如下方式",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_46_1_756b7784"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_46_1_756b7784",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 46,
+        "evidence_location": "第46页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_49_1_0a9ea29d",
+    "title": "CodeExample_4_java_49_1_0a9ea29d",
+    "code": "对象的创建 步骤 声明对象变量：类名 变量名; 对象的实例化：new 类名( [参数列表] ); 对象实例化的过程 为对象分配存储空间，并用默认值对成员变量初始化 执行显式初始化，即执行成员变量声明时的赋值 执行构造方法的主体，完成对象初始化 返回该对象的引用",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_49_1_0a9ea29d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_49_1_0a9ea29d",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_50_1_67b17d90",
+    "title": "CodeExample_4_java_50_1_67b17d90",
+    "code": "public class Point { public int x = 2; public int y; public Point(int y) { this.y = y; } public static void main(String[] args) { Point p = new Point(22); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_50_1_67b17d90"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_50_1_67b17d90",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 50,
+        "evidence_location": "第50页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_51_1_1eecfa86",
+    "title": "CodeExample_4_java_51_1_1eecfa86",
+    "code": "class Window { Window(int m) { System.out.println(\"window \" + m); } } class House { Window w1 = new Window(1); House() { System.out.println(\"House\"); w3 = new Window(33); } Window w2 = new Window(2); void f() { System.out.println(\"f()\"); } Window w3 = new Window(3); } public class OrderOfInit { public static void main(String[] args) { House h = new House(); h.f(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_51_1_1eecfa86"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_51_1_1eecfa86",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 51,
+        "evidence_location": "第51页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_57_1_dc05f982",
+    "title": "CodeExample_4_java_57_1_dc05f982",
+    "code": "类的继承 继承：类之间的“is a”关系 反映出一个类（子类）是另一个类（父类）的特例 继承是从已有的类创建新类的一种方法 public class Employee { String name ; Date hireDate ; Date dateofBirth ; String jobTitle ; int grade ; … } public class Manager { String name ; Date hireDate ; Date dateofBirth ; String jobTitle ; int grade ; String department ; Employee [ ] subordinates; … }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_57_1_dc05f982"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_57_1_dc05f982",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_58_1_20c07b35",
+    "title": "CodeExample_4_java_58_1_20c07b35",
+    "code": "类的继承 Java中用extends关键字定义子类 class 子类名 extends 父类名 { … } public class Manager extends Employee{ String department ; Employee [ ] subordinates; } public class Employee { String name ; Date hireDate ; Date dateofBirth ; String jobTitle ; int grade ; … }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_58_1_20c07b35"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_58_1_20c07b35",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 58,
+        "evidence_location": "第58页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_61_1_0d1e9aa3",
+    "title": "CodeExample_4_java_61_1_0d1e9aa3",
+    "code": "public class TestInheritance{ public static void main(String[] args){ Rectangle rect=new Rectangle(); rect.newDraw(); } } class Shape{ public void draw(){ System.out.println(\"Draw shape\"); } } class Rectangle extends Shape{ public void draw(){ System.out.println(\"Draw Rectangle\"); } public void newDraw(){ draw(); super.draw(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_61_1_0d1e9aa3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_61_1_0d1e9aa3",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 61,
+        "evidence_location": "第61页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_63_1_b49ede44",
+    "title": "CodeExample_4_java_63_1_b49ede44",
+    "code": "类的继承 对父类成员的访问——super关键字 用法： 表示“当前对象的父类对象的引用”，用来引用父类中的成员变量或方法 在子类构造方法中，通过“super([参数列表]);”调用父类的构造方法。该语句必须出现在子类构造方法的第一行。",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_63_1_b49ede44"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_63_1_b49ede44",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 63,
+        "evidence_location": "第63页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_65_1_32f693fc",
+    "title": "CodeExample_4_java_65_1_32f693fc",
+    "code": "public class ConstructSubObj{ public static void main(String[] args){ Undergraduate ug=new Undergraduate(12345678); } } class Person{ Person() { System.out.println(\"Person\"); } } class Student extends Person{ Student(int id) { System.out.println(\"Student \"+id); } } class Undergraduate extends Student{ Undergraduate(int id) { super(id); //必须使用，因为student没有默认构造方法 System.out.println(\"Undergraduate\"); } } //又例：Manager2.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_65_1_32f693fc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_65_1_32f693fc",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 65,
+        "evidence_location": "第65页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_66_1_e88435aa",
+    "title": "CodeExample_4_java_66_1_e88435aa",
+    "code": "class Meal { Meal() { System.out.println(\"Meal()\"); } } class Bread { Bread() { System.out.println(\"Bread()\"); } } class Cheese { Cheese() { System.out.println(\"Cheese()\"); } } class Lettuce { Lettuce() { System.out.println(\"Lettuce()\"); } } class Lunch extends Meal { Lunch() { System.out.println(\"Lunch()\"); } } class PortableLunch extends Lunch { PortableLunch() { System.out.println(\"PortableLunch()\"); } } public class Sandwich extends PortableLunch { private Bread b = new Bread(); private Cheese c = new Cheese(); private Lettuce l = new Lettuce(); public Sandwich() { System.out.println(\"Sandwich()\"); } public static void main(String[] args) { new Sandwich(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_66_1_e88435aa"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_66_1_e88435aa",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 66,
+        "evidence_location": "第66页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_69_1_14b3ed18",
+    "title": "CodeExample_4_java_69_1_14b3ed18",
+    "code": "重载 在同一个类中一个方法名被用来定义多个方法 class Screen { public void print( int i){ … } public void print( float f){ … } public void print( String str ){ … } } 重载必须遵循的原则 方法的参数表（包括参数的类型或个数）必须不同 方法的返回类型、修饰符可以相同也可以不同",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_69_1_14b3ed18"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_69_1_14b3ed18",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 69,
+        "evidence_location": "第69页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_70_1_faa1fc78",
+    "title": "CodeExample_4_java_70_1_faa1fc78",
+    "code": "public class TestOverloading{ public static void main(String[] args){ System.out.println(false); //println(boolean b) System.out.println('C'); //println(char c) System.out.println(123); //println(int i) System.out.println(123L); //println(long l) System.out.println(12.3f); //println(float f) System.out.println(12.3); //println(double d) System.out.println(); //println(): 输出换行符 char[] cc={'a','b','c'}; System.out.println(cc); //println(char[] lc) System.out.println(\"abc\"); //println(String s) System.out.println(new java.util.Date()); //println(Object o) } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_70_1_faa1fc78"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_70_1_faa1fc78",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 70,
+        "evidence_location": "第70页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_72_1_3677b3c2",
+    "title": "CodeExample_4_java_72_1_3677b3c2",
+    "code": "public class ConstructorOverloading{ public static void main(String[] args){ Student stu=new Student(); System.out.println(stu.getName()+\", \"+stu.getID()); } } class Student{ private String name; private String id; public Student(String nm, String id){ this.name=nm; this.id=id; } public Student(String nm){ this(nm,\"00000000\"); } public Student(){ this(\"Unknown\"); } public String getName(){ return name; } public String getID(){ return id; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_72_1_3677b3c2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_72_1_3677b3c2",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 72,
+        "evidence_location": "第72页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_76_1_dec14ec1",
+    "title": "CodeExample_4_java_76_1_dec14ec1",
+    "code": "public class NotOverriding extends Base{ private int i=2; public static void main(String[] args){ NotOverriding no=new NotOverriding(); no.increase(); System.out.println(no.i); System.out.println(no.getI()); } } class Base{ private int i=100; public void increase(){ this.i++; } public int getI(){ return this.i; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_76_1_dec14ec1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_76_1_dec14ec1",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 76,
+        "evidence_location": "第76页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_77_1_6833abcf",
+    "title": "CodeExample_4_java_77_1_6833abcf",
+    "code": "写出以下程序的输出结果 public class PrivOverride { private void f() { System.out.println(\"private f()\"); } public static void main(String[] args) { PrivOverride po = new Derived(); po.f(); } } class Derived extends PrivOverride { public int a; public void f() { System.out.println(\"public f()\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_77_1_6833abcf"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_77_1_6833abcf",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 77,
+        "evidence_location": "第77页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_79_1_13a17843",
+    "title": "CodeExample_4_java_79_1_13a17843",
+    "code": "向上转型 子类对象既可以作为该子类的类型对待，也可以作为其父类的类型对待 将子类对象的引用转换成父类对象的引用，称为向上转型（Upcasting） 如：Employee e=new Manager(); 通过该变量（如e）只能访问父类（Emplyee）的方法，子类（Manager）特有的部分被隐藏",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_79_1_13a17843"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_79_1_13a17843",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 79,
+        "evidence_location": "第79页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_7_1_b585d193",
+    "title": "CodeExample_4_java_7_1_b585d193",
+    "code": "类声明 [public][abstract|final] class 类名 [extends 父类名] [implements 接口名列表] {…} public：用来声明任意类均可访问该类 缺省（非public）：只有与该类在同一包中的类可访问该类 一个Java源文件中至多只能有一个public类，该类的类名应与该源文件的文件名相同 abstract：声明该类为抽象类 final：声明该类不能被继承",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_7_1_b585d193"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_7_1_b585d193",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_80_1_fb3fe49b",
+    "title": "CodeExample_4_java_80_1_fb3fe49b",
+    "code": "向上转型 向上转型使得数组可以包含不同类型的对象 Employee [ ] staff = new Employee[3]; staff[0] = new Manager(); staff[1] = new Secretary(); staff[2] = new Employee();",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_80_1_fb3fe49b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_80_1_fb3fe49b",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 80,
+        "evidence_location": "第80页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_81_1_9e57a7a0",
+    "title": "CodeExample_4_java_81_1_9e57a7a0",
+    "code": "运行时多态 通过父类变量发出的方法调用，可能执行该方法在父类中的实现，也可能执行该方法在某子类中的实现，这只能在运行时根据该变量指向的具体对象类型决定 Employee e; … //内部多种实现：继承、重写、向上转型 e.getDetails(); //对外一个接口 …",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_81_1_9e57a7a0"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_81_1_9e57a7a0",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 81,
+        "evidence_location": "第81页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_85_1_e02aee0d",
+    "title": "CodeExample_4_java_85_1_e02aee0d",
+    "code": "class Glyph { void draw() { System.out.println(\"Glyph.draw()\"); } Glyph() { System.out.println(\"Glyph() before draw()\"); draw(); System.out.println(\"Glyph() after draw()\"); } } class RoundGlyph extends Glyph { private int radius = 1; RoundGlyph(int r) { radius = r; System.out.println(\"RG.RoundGlyph(), radius = \" + radius); } void draw() { System.out.println(\"RG.draw(), radius = \" + radius); } } public class PolyConstruct { public static void main(String[] args) { new RoundGlyph(5); } } 方法重写在父类对象构造之前还是之后？",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_85_1_e02aee0d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_85_1_e02aee0d",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 85,
+        "evidence_location": "第85页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_87_1_045fe1b6",
+    "title": "CodeExample_4_java_87_1_045fe1b6",
+    "code": "向下转型与运行时类型识别 父类弱、子类强，父类变量不能直接按子类引用，必须强制转换才能作为子类的引用使用 向下转型（downcasting） ：将父类类型的引用变量强制（显式）地转换为子类类型 如何保证向下转型的正确性？ 先测试以确定子类类型，再执行转换： if (supVar instanceof SomeSubClass) (someSubClass) supVar; 对强制转换结果进行运行时类型识别，若结果类型与子类类型不符，则抛出ClassCastException",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_87_1_045fe1b6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_87_1_045fe1b6",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 87,
+        "evidence_location": "第87页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_88_1_19531fef",
+    "title": "CodeExample_4_java_88_1_19531fef",
+    "code": "class Useful { public void f() { } public void g() { } } class MoreUseful extends Useful { public void f() { } public void g() { } public void u() { } public void v() { } public void w() { } } public class RTTI { public static void main(String[] args) { Useful[] x = { new Useful(), new MoreUseful() }; x[0].f(); x[1].g(); // Compile time: method not found in Useful: // ！",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_88_1_19531fef"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_88_1_19531fef",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 88,
+        "evidence_location": "第88页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_88_2_1f34d4c6",
+    "title": "CodeExample_4_java_88_2_1f34d4c6",
+    "code": "x[1].u(); ((MoreUseful) x[1]).u(); // Downcast/RTTI ((MoreUseful) x[0]).u(); // 抛出异常 } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_88_2_1f34d4c6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_88_2_1f34d4c6",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 88,
+        "evidence_location": "第88页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_4_java_8_1_8072a0c7",
+    "title": "CodeExample_4_java_8_1_8072a0c7",
+    "code": "类声明 [public][abstract|final] class 类名 [extends 父类名] [implements 接口名列表] {…} extends：表示该类从父类继承得到 父类名可以是用户自定义的类，也可以是Java预定义的类 implements：该类实现了接口名列表中的所有接口",
+    "language": "Java",
+    "source_chunk_ids": [
+      "4_java_8_1_8072a0c7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "4_java_8_1_8072a0c7",
+        "source_file": "4_Java面向对象特性.ppt",
+        "page": 8,
+        "evidence_location": "第8页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_100_1_b61082f7",
+    "title": "CodeExample_5_java_100_1_b61082f7",
+    "code": "public class AutoBoxingTest { public static void main(String args[]) { Integer x, y; int c; x = 22;// autoboxing y = 15;// autoboxing if ((c = x.compareTo(y)) == 0) System.out.println(\"x is equal to y\"); else if (c < 0) System.out.println(\"x is less than y\"); else System.out.println(\"x is greater than y\"); System.out.println(\"x + y = \" + (x + y));// autounboxing } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_100_1_b61082f7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_100_1_b61082f7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 100,
+        "evidence_location": "第100页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_11_1_3326541a",
+    "title": "CodeExample_5_java_11_1_3326541a",
+    "code": "class GeneralFunction { public static int add(int x, int y) { return x + y; } } public class UseGeneral { public static void main(String[] args) { int c = GeneralFunction.add(9, 10); System.out.println(\"9 + 10 = \" + c); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_11_1_3326541a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_11_1_3326541a",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 11,
+        "evidence_location": "第11页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_13_1_4a79f9bc",
+    "title": "CodeExample_5_java_13_1_4a79f9bc",
+    "code": "public class TestStaticMethod{ public static void main(String[] args){ StaticMethod obj=new StaticMethod(); StaticMethod.sPrintXAndY(obj); } } class StaticMethod{ int x=0; static int y=1; public void iPrintAndIncreaseY(){ sPrintY(); y++; } public static void sPrintY(){ //System.out.println(this.x); //不能访问实例成员变量 //iPrintAndIncreaseY(); //不能访问实例方法 System.out.println(StaticMethod.y); //可以访问静态变量 } public static void sPrintXAndY(StaticMethod o){ System.out.println(o.x); //可以通过o引用访问实例成员变量 o.iPrintAndIncreaseY(); //可以通过o引用调用实例方法 sPrintY(); //可以直接调用静态方法 } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_13_1_4a79f9bc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_13_1_4a79f9bc",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 13,
+        "evidence_location": "第13页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_16_1_498682c7",
+    "title": "CodeExample_5_java_16_1_498682c7",
+    "code": "静态方法的重写 class ClassA{ public void mtdOne(int i) {} public void mtdTwo(int i){} public static void mtdThree(int i){} public static void mtdFour(int i){} } class ClassB extends ClassA{ public static void mtdOne(int i){} //错误! 将ClassA中的mtdOne()变成静态的 public void mtdTwo(int i) {} public void mtdThree(int i){} //错误! 将ClassA中的mtdThree()变为非静态 public static void mtdFour(int i){} //正确! 两个静态方法mtdFour()独立 }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_16_1_498682c7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_16_1_498682c7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_18_1_ca4d3f11",
+    "title": "CodeExample_5_java_18_1_ca4d3f11",
+    "code": "/* static方法的行为不具有多态性 */ class StaticSuper { public static String staticGet() { return \"Base staticGet()\"; } public String dynamicGet() { return \"Base dynamicGet()\"; } } class StaticSub extends StaticSuper { public static String staticGet() { return \"Derived staticGet()\"; } public String dynamicGet() { return \"Derived dynamicGet()\"; } } public class StaticPoly { public static void main(String[] args) { StaticSuper sup = new StaticSub(); //向上转型 System.out.println(sup.staticGet()); System.out.println(sup.dynamicGet()); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_18_1_ca4d3f11"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_18_1_ca4d3f11",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 18,
+        "evidence_location": "第18页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_19_1_3af161ce",
+    "title": "CodeExample_5_java_19_1_3af161ce",
+    "code": "静态初始化程序块 类定义中不属于任何方法体且以static关键字修饰的语句块 static {…} 在加载该类时执行且只执行一次 如果类中定义了多个静态语句块，则这些语句块按照在类中出现的次序运行",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_19_1_3af161ce"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_19_1_3af161ce",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 19,
+        "evidence_location": "第19页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_20_1_18464ea4",
+    "title": "CodeExample_5_java_20_1_18464ea4",
+    "code": "class StaticInitDemo { static int i; static { i = 5; System.out.println(\"Static code: i=\" + i++); } } public class TestStaticInit { public static void main(String args[]) { System.out.println(\"Main code: i=\" + StaticInitDemo.i); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_20_1_18464ea4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_20_1_18464ea4",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 20,
+        "evidence_location": "第20页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_21_1_2ad1b3d7",
+    "title": "CodeExample_5_java_21_1_2ad1b3d7",
+    "code": "写出以下程序的输出 class T1 { static int s1 = 1; static { System.out.println(\"static block of T1: \" + T2.s2); } T1() { System.out.println(\"T1(): \" + s1); } } class T2 extends T1 { static int s2 = 2; static { System.out.println(\"static block of T2: \" + T2.s2); } T2() { System.out.println(\"T2(): \" + s2); } } public class InheritStaticInit { public static void main(String[] args) { new T2(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_21_1_2ad1b3d7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_21_1_2ad1b3d7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_24_1_8a4ed226",
+    "title": "CodeExample_5_java_24_1_8a4ed226",
+    "code": "在类声明中使用final关键字 被定义成final的类不能再派生子类 例： final class Employee {…} class Manager extends Employee { …}",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_24_1_8a4ed226"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_24_1_8a4ed226",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 24,
+        "evidence_location": "第24页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_27_1_8e427964",
+    "title": "CodeExample_5_java_27_1_8e427964",
+    "code": "class Gizmo { public void spin() { } } public class FinalArg { void with(final Gizmo g) { // g=new Gizmo(); //错误,g是final的 } void without(Gizmo g) { g = new Gizmo(); g.spin(); } int g(final int i) { return i + 1; } public static void main(String[] args) { FinalArg bf = new FinalArg(); bf.without(null); bf.with(null); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_27_1_8e427964"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_27_1_8e427964",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 27,
+        "evidence_location": "第27页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_29_1_27ac80a7",
+    "title": "CodeExample_5_java_29_1_27ac80a7",
+    "code": "class Value { int i; public Value(int i) { this.i = i; } } public class FinalData { private static Random rand = new Random(47); private final int valueOne = 9; // 基本类型编译时常量 private final int i4 = rand.nextInt(20);// 运行时不可变,但非编译时常量 private Value v1 = new Value(11); private final Value v2 = new Value(22); //引用类型常量 private final int[] a = { 1, 2, 3, 4, 5, 6 }; //数组类型常量 public static void main(String[] args) { FinalData fd1 = new FinalData(); //fd1.valueOne++; fd1.i4++; //valueOne, i4不能更改 fd1.v1 = new Value(9); // v1不是final的, 可引用到新的对象 // fd1.v2=new Value(0); //v2是final的,不能引用到新的对象 fd1.v2.i++; // v2引用不能更改,但对象本身可更改 // fd1.a=new int[3]; //数组a为final,不能引用到新的数组 for (int i = 0; i < fd1.a.length; i++) { fd1.a[i]++; // 数组a是final的,但数组元素不是final的 } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_29_1_27ac80a7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_29_1_27ac80a7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 29,
+        "evidence_location": "第29页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_31_1_2b280e1e",
+    "title": "CodeExample_5_java_31_1_2b280e1e",
+    "code": "class Poppet { private int i; Poppet(int ii) { i = ii; } } public class BlankFinal { private final int i = 0; // 被初始化的final private final int j; // 空白final private final Poppet p; // 空白final引用 public BlankFinal() { j = 1; // 初始化空白final p = new Poppet(1); // 初始化空白final引用 } public BlankFinal(int x) { j = x; // 初始化空白final p = new Poppet(x); // 初始化空白final引用 } public static void main(String[] args) { new BlankFinal(); new BlankFinal(47); } } // 又例：Customer.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_31_1_2b280e1e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_31_1_2b280e1e",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_36_1_aa8a9db3",
+    "title": "CodeExample_5_java_36_1_aa8a9db3",
+    "code": "抽象类 抽象类的作用：为一类对象建立抽象的模型 abstract class Employee{ abstract void raiseSalary(int i) ; } class Manager extends Employee{ void raiseSalary(int i ){ …} } … Employee e=new Manager(); //创建Employee子类Manager的对象 Employee e=new Employee(); //错误！Employee为抽象类",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_36_1_aa8a9db3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_36_1_aa8a9db3",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_38_1_7f1d03d7",
+    "title": "CodeExample_5_java_38_1_7f1d03d7",
+    "code": "接口的定义 接口定义=接口声明+接口体 interface Runner{ public static final int id = 1; public void start(); public void run(); public void stop(); }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_38_1_7f1d03d7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_38_1_7f1d03d7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 38,
+        "evidence_location": "第38页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_39_1_02a91ceb",
+    "title": "CodeExample_5_java_39_1_02a91ceb",
+    "code": "接口声明 [public] interface 接口名 [extends 父接口列表] { 接口体 } public / default：任意类均可使用 / 与该接口在同一个包中的类可使用 一个接口可以有多个父接口，子接口继承父接口的所有常量和方法",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_39_1_02a91ceb"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_39_1_02a91ceb",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 39,
+        "evidence_location": "第39页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_40_1_7a6f9557",
+    "title": "CodeExample_5_java_40_1_7a6f9557",
+    "code": "接口体 接口体=常量定义+方法定义 常量默认具有public, final, static属性 类型 常量名=常量值; 方法默认具有public, abstract属性 返回类型 方法名 ([参数列表]);",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_40_1_7a6f9557"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_40_1_7a6f9557",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_42_1_87a658f9",
+    "title": "CodeExample_5_java_42_1_87a658f9",
+    "code": "接口体 常量不能为空白final的 父接口中的常量可被子接口中的同名常量隐藏，父接口中的方法可被子接口中的方法重写 接口中成员不能使用的修饰符：transient, volatile, synchronized, private, protected",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_42_1_87a658f9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_42_1_87a658f9",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_43_1_56e1227b",
+    "title": "CodeExample_5_java_43_1_56e1227b",
+    "code": "接口的使用——用类实现接口 类声明中的implements关键字 类可以使用接口定义的常量 类必须实现接口定义的所有方法 一个类可以实现多个接口，例： interface I1{ … } interface I2{ … } class Sup { … } class C extends Sup implements I1,I2 { … }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_43_1_56e1227b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_43_1_56e1227b",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 43,
+        "evidence_location": "第43页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_44_1_d179d868",
+    "title": "CodeExample_5_java_44_1_d179d868",
+    "code": "接口的使用——作为数据类型，支持多态 实现该接口的类可看作该接口的“子类”，接口类型的变量可指向该“子类”的实例 Interface Human{ void showNameInNativeLanguage(); } class Chinese implements Human{ … } class Japanese implements Human{ … } ... Human e = new Chinese( ); Human e = new Japanese( ); e.showNameInNativeLanguage(); …",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_44_1_d179d868"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_44_1_d179d868",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 44,
+        "evidence_location": "第44页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_47_1_010d9a79",
+    "title": "CodeExample_5_java_47_1_010d9a79",
+    "code": "Interface示例 interface Flyer Vehicle interface Sailer dock ( ) cruise ( ) Airplane takeoff ( ) land ( ) fly ( ) RiverBarge dock ( ) cruise ( ) takeoff ( ) land ( ) fly ( ) SeaPlane dock ( ) cruise ( ) Helicopter",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_47_1_010d9a79"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_47_1_010d9a79",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 47,
+        "evidence_location": "第47页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_48_1_8f265bf8",
+    "title": "CodeExample_5_java_48_1_8f265bf8",
+    "code": "Interface示例 interface Flyer Vehicle interface Sailer dock ( ) cruise ( ) Airplane takeoff ( ) land ( ) fly ( ) RiverBarge dock ( ) cruise ( ) takeoff ( ) land ( ) fly ( ) SeaPlane dock ( ) cruise ( ) Helicopter",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_48_1_8f265bf8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_48_1_8f265bf8",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 48,
+        "evidence_location": "第48页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_49_1_dd0b8dab",
+    "title": "CodeExample_5_java_49_1_dd0b8dab",
+    "code": "Interface示例 interface Flyer Vehicle interface Sailer dock ( ) cruise ( ) Airplane takeoff ( ) land ( ) fly ( ) RiverBarge dock ( ) cruise ( ) takeoff ( ) land ( ) fly ( ) SeaPlane dock ( ) cruise ( ) Helicopter",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_49_1_dd0b8dab"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_49_1_dd0b8dab",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_4_1_fcbdd03b",
+    "title": "CodeExample_5_java_4_1_fcbdd03b",
+    "code": "静态变量(类变量) 静态变量：在类的成员变量声明中带有static关键字的变量 class Employee{ private int id; public static int serialNum = 1; Employee(){ id=serialNum ++; } public static void main(String[] args){ Employee e1=new Employee(); Employee e2=new Employee(); Employee e3=new Employee(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_4_1_fcbdd03b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_4_1_fcbdd03b",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_50_1_ebcef835",
+    "title": "CodeExample_5_java_50_1_ebcef835",
+    "code": "Interface示例 interface Flyer Vehicle interface Sailer dock ( ) cruise ( ) Airplane takeoff ( ) land ( ) fly ( ) RiverBarge dock ( ) cruise ( ) takeoff ( ) land ( ) fly ( ) SeaPlane dock ( ) cruise ( ) Helicopter",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_50_1_ebcef835"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_50_1_ebcef835",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 50,
+        "evidence_location": "第50页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_52_1_916ba9a2",
+    "title": "CodeExample_5_java_52_1_916ba9a2",
+    "code": "通过继承扩展接口 直接向接口中扩展方法可能带来问题：所有实现原来接口的类将因为接口的改变而不能正常工作 不能向interface定义中随意增加方法，需要通过继承扩展接口 public interface StockWatcher { final String sunTicker = \"SUNW\"; final String oracleTicker = \"ORCL\"; void valueChanged(String tickerSymbol, double newValue); void currentValue(String tickerSymbol, double newValue); } public interface StockTracker extends StockWatcher { void currentValue(String tickerSymbol, double newValue); }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_52_1_916ba9a2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_52_1_916ba9a2",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 52,
+        "evidence_location": "第52页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_53_1_f9b221f5",
+    "title": "CodeExample_5_java_53_1_f9b221f5",
+    "code": "习题5.5. 下列接口的定义中，哪些是正确的？ (1) interface Printable{ void print() {}; } (2) abstract interface Printable{ void print(); } (3) abstract interface Printable extends Interface1, Interface2{ void print() {}; } (4) interface Printable{ void print(); }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_53_1_f9b221f5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_53_1_f9b221f5",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 53,
+        "evidence_location": "第53页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_58_1_7b345f11",
+    "title": "CodeExample_5_java_58_1_7b345f11",
+    "code": "Collection接口中所定义的方法： int size(); boolean isEmpty(); void clear(); boolean contain(Object element); boolean add(Object element); boolean remove(Object element); Iterator iterator(); boolean containAll(Collection c); boolean addAll(Collection c); boolean removeAll(Collection c); boolean retainAll(Collection c); Object[] toArray();",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_58_1_7b345f11"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_58_1_7b345f11",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 58,
+        "evidence_location": "第58页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_5_1_d4885a0c",
+    "title": "CodeExample_5_java_5_1_d4885a0c",
+    "code": "静态变量(类变量) 该类的所有的对象实例之间共享的静态变量 class Employee{ private int id; public static int serialNum = 1; Employee(){ id=serialNum ++; } public static void main(String[] args){ Employee e1=new Employee(); Employee e2=new Employee(); Employee e3=new Employee(); } } id: 1 sN sN: 1 id: 2 sN id: 3 sN e1 e2 e3 sN: 2 sN: 3 sN: 4",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_5_1_d4885a0c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_5_1_d4885a0c",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_64_2_db2fd128",
+    "title": "CodeExample_5_java_64_2_db2fd128",
+    "code": "extends E> c) | 对于一个容器中的所有元素，如果它不存在于当前Set中，则将其加入当前Set。只要添加了任意元素就返回true，否则返回false void clear() | 移除当前Set中的所有元素 boolean contains(Object o) | 如果指定元素在当前Set中，则返回true；否则返回false boolean containsAll(Collection<?> c) | 对于一个容器c，如果当前Set包含该容器中的所有元素，则返回true；否则返回false boolean isEmpty() | 如果当前Set不包含任何元素，则返回true；否则返回false boolean remove(Object o) | 如果指定元素在当前Set中，则移除该元素 boolean removeAll(Collection<?> c) | 从当前Set中将指定容器中包含的所有元素都移除。只要有移除动作发生就返回true；否则返回false boolean retainAll(Collection<?> c) | 只保留当前Set中同时也包含于指定容器中的元素。集合发生了改变就返回true；否则返回false int size() | 返回当前Set中元素的数量 Object[] toArray() | 返回一个数组，该数组由当前Set中所有元素组成 <T> T[] toArray(T[] a) | 返回一个数组，该数组由当前Set中所有元素组成，返回数组的运行时类型由参数指定",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_64_2_db2fd128"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_64_2_db2fd128",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 64,
+        "evidence_location": "第64页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_65_1_a77c2da5",
+    "title": "CodeExample_5_java_65_1_a77c2da5",
+    "code": "public class FindDups { public static void main(String args[]) { // 创建一个HashSet对象，缺省的初始容量是16 Set<String> s = new HashSet<String>(); // 将命令行中的每个字符串加入到集合s中， //其中重复的字符串将不能加入，并被打印输出 for (int i = 0; i < args.length; i++) { if (!s.add(args[i])) System.out.println(\"Duplicate detected: \" + args[i]); } // 输出集合s的元素个数以及集合中的所有元素： System.out.println(s.size() + \" distinct words detected: \" + s); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_65_1_a77c2da5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_65_1_a77c2da5",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 65,
+        "evidence_location": "第65页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_69_1_e30d6c7d",
+    "title": "CodeExample_5_java_69_1_e30d6c7d",
+    "code": "List接口方法 void add(int index, E element) | 向当前List的指定位置插入特定元素 boolean addAll(int index, Collection<?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_69_1_e30d6c7d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_69_1_e30d6c7d",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 69,
+        "evidence_location": "第69页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_69_2_f6f89ba1",
+    "title": "CodeExample_5_java_69_2_f6f89ba1",
+    "code": "extends E> c) | 向当前List的指定位置插入一个容器中的所有元素 E get(int index) | 返回当前List中指定位置的元素 int indexOf(Object o) | 返回指定元素在当前List中第一次出现时的索引值，如果指定元素在当前List中不存在，则返回-1 int lastIndexOf(Object o) | 返回指定元素在当前List中最后一次出现时的索引值，如果指定元素在当前List中不存在，则返回-1 E remove(int index) | 移除当前List中指定位置的元素，后续对象依次前提 E set(int index, E element) | 用指定的元素替换当前List中指定位置的元素 List<E> subList(int fromIndex, int toIndex) | 返回一个作为当前List一部分的子List的视图，子List的索引范围是[fromIndex, toIndex)。子视图不是一个新的List，对子List的更改和删除将能反映到原List",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_69_2_f6f89ba1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_69_2_f6f89ba1",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 69,
+        "evidence_location": "第69页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_70_1_04a98b18",
+    "title": "CodeExample_5_java_70_1_04a98b18",
+    "code": "ArrayList的用法 构造方法 public ArrayList()：创建一个空ArrayList，初始长度为10 public ArrayList(int initialCapacity)：创建一个空ArrayList，初始长度为initialCapacity public ArrayList(Collection<E> c)：由指定集合的元素创建ArrayList，顺序由集合的迭代器决定",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_70_1_04a98b18"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_70_1_04a98b18",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 70,
+        "evidence_location": "第70页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_71_1_c25f0f9d",
+    "title": "CodeExample_5_java_71_1_c25f0f9d",
+    "code": "public class UseArrayList { public static void main(String[] args) { List<String> scores = new ArrayList<String>(); scores.add(\"86\"); // 添加元素 scores.add(\"98\"); // 添加元素 scores.add(1, \"99\"); // 插入元素 for (int i = 0; i < scores.size(); i++) { System.out.print(scores.get(i) + \" \");// 输出结果 } scores.set(1, \"77\"); // 修改第二个元素 scores.remove(0); // 删除第一个元素 System.out.println(\"\\n修改并删除之后\"); for (int i = 0; i < scores.size(); i++) { System.out.print(scores.get(i) + \" \"); } System.out.println(“ \\n按字符串输出\\n\" + scores.toString()); } } //又例：Deal.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_71_1_c25f0f9d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_71_1_c25f0f9d",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 71,
+        "evidence_location": "第71页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_75_1_90541d75",
+    "title": "CodeExample_5_java_75_1_90541d75",
+    "code": "public class QueueDemo { public static void printQ(Queue queue) { while (queue.peek() != null) System.out.print(queue.remove() + \" \"); System.out.println(); } public static void main(String[] args) { Queue<Integer> queue = new LinkedList<Integer>(); Random rand = new Random(47); for (int i = 0; i < 10; i++) queue.offer(rand.nextInt(i + 10)); printQ(queue); Queue<Character> qc = new LinkedList<Character>(); for (char c : \"Brontosaurus\".toCharArray()) qc.offer(c); printQ(qc); } } //又例：Counter.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_75_1_90541d75"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_75_1_90541d75",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 75,
+        "evidence_location": "第75页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_79_1_7b9043a5",
+    "title": "CodeExample_5_java_79_1_7b9043a5",
+    "code": "Map接口方法 V put(K key, V value) | 将指定的值value关联到当前Map中的指定的键key void putAll(Map<? extends K,?",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_79_1_7b9043a5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_79_1_7b9043a5",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 79,
+        "evidence_location": "第79页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_79_2_8aacc429",
+    "title": "CodeExample_5_java_79_2_8aacc429",
+    "code": "extends V> m) | 将参数Map中的所有键值对都添加到当前Map中 V get(Object key) | 返回当前Map中指定的键所映射到的值，如果没有与该键相对应的映射，就返回null V remove(Object key) | 移除当前Map中指定的键所对应的键值对 void clear() | 从当前Map中移除所有键值对 boolean containsKey(Object key) | 如果当前Map中存在从指定的键所发出的映射，则返回true；否则返回false boolean containsValue(Object value) | 如果当前Map中存在一个或多个键，能够映射到指定的值，那么返回true；否则返回false boolean isEmpty() | 如果当前Map中不含任何键值对，则返回true；否则返回false Set<Map.Entry<K,V>> entrySet() | 返回一个由当前Map中所有键值对所组成的Set Set<K> keySet() | 返回一个Set，其中包含了当前Map中的所有键 Collection<V> values() | 返回一个Collection，其中包含了当前Map中的所有值 int size() | 返回当前Map中的键值对的数量",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_79_2_8aacc429"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_79_2_8aacc429",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 79,
+        "evidence_location": "第79页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_7_1_9ecf5add",
+    "title": "CodeExample_5_java_7_1_9ecf5add",
+    "code": "class Bowl { Bowl(int i) { print(\"Bowl(\" + i + \")\"); } void f1(int i) { print(\"f1(\" + i + \")\"); } } class Table { static Bowl bowl1 = new Bowl(1); Table() { print(\"Table()\"); bowl2.f1(1); } void f2(int i) { print(\"f2(\" + i + \")\"); } static Bowl bowl2 = new Bowl(2); } class Cupboard { Bowl bowl3 = new Bowl(3); static Bowl bowl4 = new Bowl(4); Cupboard() { print(\"Cupboard()\"); bowl4.f1(2); } void f3(int i) { print(\"f3(\" + i + \")\"); } static Bowl bowl5 = new Bowl(5); } public class StaticInitialization { public static void main(String[] args) { print(\"new Cupboard() in main\"); new Cupboard(); print(\"new Cupboard() in main\"); new Cupboard(); table.f2(1); cupboard.f3(1); } static Table table = new Table(); static Cupboard cupboard = new Cupboard(); }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_7_1_9ecf5add"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_7_1_9ecf5add",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_80_1_78d627e3",
+    "title": "CodeExample_5_java_80_1_78d627e3",
+    "code": "public class Freq { public static void main(String args[]) { String[] words = { \"if\", \"it\", \"is\", \"to\", \"be\", \"it\", \"is\", \"up\", \"to\", \"me\", \"to\", \"delegate\" }; Integer freq; Map<String, Integer> m = new TreeMap<String, Integer>(); for (String a : words) {//以(单词,词频)为键值对, 构造频率表 freq = m.get(a); // 获取指定单词的词频。",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_80_1_78d627e3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_80_1_78d627e3",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 80,
+        "evidence_location": "第80页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_80_2_79b1bad9",
+    "title": "CodeExample_5_java_80_2_79b1bad9",
+    "code": "if (freq == null) { // 词频递增 freq = new Integer(1); } else { freq = new Integer(freq + 1);// .intValue() } m.put(a, freq); // 在Map中更改词频 } System.out.println(m.size() + \" distinct words detected:\"); System.out.println(m); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_80_2_79b1bad9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_80_2_79b1bad9",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 80,
+        "evidence_location": "第80页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_81_1_0b1480af",
+    "title": "CodeExample_5_java_81_1_0b1480af",
+    "code": "HashMap的用法 构造方法 public HashMap()：构造空HashMap，默认初始容量为16，默认load因子为0.75 public HashMap(int initialCapacity)：构造空HashMap，指定初始容量为initialCapacity，默认load因子为0.75 public HashMap(int initialCapacity, float loadFactor)：构造空HashMap，指定初始容量为initialCapacity，指定load因子为loadFactor",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_81_1_0b1480af"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_81_1_0b1480af",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 81,
+        "evidence_location": "第81页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_82_1_643e93bb",
+    "title": "CodeExample_5_java_82_1_643e93bb",
+    "code": "public class UseHashMap { public static void main(String args[]) { HashMap<String, String> hScore = new HashMap<String, String>(); hScore.put(\"张一\", \"86\"); hScore.put(\"李二\", \"98\"); hScore.put(\"海飞\", \"99\"); System.out.println(“按字符串输出：\" + hScore.toString()); hScore.put(\"李二\", \"77\"); hScore.remove(\"张一\"); System.out.println(\"修改并删除之后\"); System.out.println(“按字符串输出：\" + hScore.toString()); } } //又例：Statistics.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_82_1_643e93bb"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_82_1_643e93bb",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 82,
+        "evidence_location": "第82页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_84_1_70374bd7",
+    "title": "CodeExample_5_java_84_1_70374bd7",
+    "code": "public class TestIterator{ public static void main(String[] args){ String sentence=\"I believe I can fly, I believe I can touch the sky.\"; String[] strs=sentence.split(\" \"); List<String> list=new ArrayList<String>( Arrays.asList(strs) ); Iterator<String> it=list.iterator(); while(it.hasNext()) System.out.print(it.next()+\"_\"); System.out.println(); it=list.iterator(); while(it.hasNext()){ if(it.next().equals(\"I\")) it.remove(); } it=list.iterator(); while(it.hasNext()) System.out.print(it.next()+\" \"); System.out.println(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_84_1_70374bd7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_84_1_70374bd7",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 84,
+        "evidence_location": "第84页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_89_1_a2a54986",
+    "title": "CodeExample_5_java_89_1_a2a54986",
+    "code": "枚举类型 枚举类型的定义： [public] enum 枚举类型名 [implements 接口名表] { 枚举常量定义 [枚举体定义] }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_89_1_a2a54986"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_89_1_a2a54986",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 89,
+        "evidence_location": "第89页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_8_1_6d009cc4",
+    "title": "CodeExample_5_java_8_1_6d009cc4",
+    "code": "静态变量的访问 非private的静态变量，可在类外用类名访问 class Employee{ private int id; public static int serialNum = 1; Employee(){ id=serialNum ++; } } class OtherClass{ public static void main(String[] args){ System.out.println(Employee.serialNum); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_8_1_6d009cc4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_8_1_6d009cc4",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 8,
+        "evidence_location": "第8页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_90_1_3e572e2e",
+    "title": "CodeExample_5_java_90_1_3e572e2e",
+    "code": "枚举类型 枚举类型的定义： [public] enum 枚举类型名 [implements 接口名表] { 枚举常量定义 [枚举体定义] } 枚举声明： public/default：可被包外类访问 / 只能在同一包中访问 所有枚举类型都隐含继承java.lang.Enum类，故不能再继承其他任何类",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_90_1_3e572e2e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_90_1_3e572e2e",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 90,
+        "evidence_location": "第90页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_91_1_75674c24",
+    "title": "CodeExample_5_java_91_1_75674c24",
+    "code": "枚举类型 枚举类型的定义： [public] enum 枚举类型名 [implements 接口名表] { 枚举常量定义 [枚举体定义] } 枚举常量定义：常量1[,常量2[, … 常量n]] [;] 如果没有枚举体部分，则“;”可省略 枚举常量实际上是枚举类型的static和final的实例，加载枚举类型时，调用枚举类型的构造方法创建这些实例 如果在枚举体中定义了构造方法，则在定义枚举常量时可采用“常量(参数1,参数2, …)”的形式",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_91_1_75674c24"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_91_1_75674c24",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 91,
+        "evidence_location": "第91页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_92_1_befbda80",
+    "title": "CodeExample_5_java_92_1_befbda80",
+    "code": "枚举类型 枚举类型的定义： [public] enum 枚举类型名 [implements 接口名表] { 枚举常量定义 [枚举体定义] } 枚举体定义： 可以包含变量、构造方法和成员方法 构造方法只能为private，保证用户不会创建新的枚举常量",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_92_1_befbda80"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_92_1_befbda80",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 92,
+        "evidence_location": "第92页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_94_1_5a4c0ed2",
+    "title": "CodeExample_5_java_94_1_5a4c0ed2",
+    "code": "enum Week { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY } public class EnumValuesTest { public static void main(String args[]) { for (Week w : Week.values()) { System.out.print(w.name() + \". \"); } System.out.println(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_94_1_5a4c0ed2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_94_1_5a4c0ed2",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 94,
+        "evidence_location": "第94页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_95_1_7c6ec2ba",
+    "title": "CodeExample_5_java_95_1_7c6ec2ba",
+    "code": "enum Coin { PENNY(1), NICKEL(5), DIME(10), QUARTER(25); private final int value; Coin(int value) { this.value = value; } public int value() { return value; } } enum CoinColor { COPPER, NICKEL, SILVER } public class CoinTest { public static void main(String[] args) { for (Coin c : Coin.values()) { System.out.print(c + \": \" + c.value() + \", \"); switch (c) { case PENNY: System.out.println(CoinColor.COPPER); break; case NICKEL: System.out.println(CoinColor.NICKEL); break; case DIME: case QUARTER: System.out.println(CoinColor.SILVER); break; } } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_95_1_7c6ec2ba"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_95_1_7c6ec2ba",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 95,
+        "evidence_location": "第95页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_5_java_9_1_645a6678",
+    "title": "CodeExample_5_java_9_1_645a6678",
+    "code": "静态变量的访问 非private的静态变量，可在类外用类名访问 class Employee{ private int id; public static int serialNum = 1; Employee(){ id=serialNum ++; } } class OtherClass{ public static void main(String[] args){ Employee e=new Employee(); System.out.println(e.serialNum); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "5_java_9_1_645a6678"
+    ],
+    "sources": [
+      {
+        "chunk_id": "5_java_9_1_645a6678",
+        "source_file": "5_Java高级语言特征.ppt",
+        "page": 9,
+        "evidence_location": "第9页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_10_1_bc8f0977",
+    "title": "CodeExample_6_10_1_bc8f0977",
+    "code": "Java的异常类层次 对象未实例化时，即试图通过该对象的引用访问其成员变量或方法，如 Date d=null; System.out.println(d.toString());",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_10_1_bc8f0977"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_10_1_bc8f0977",
+        "source_file": "6_异常处理.ppt",
+        "page": 10,
+        "evidence_location": "第10页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_15_1_b077a7dc",
+    "title": "CodeExample_6_15_1_b077a7dc",
+    "code": "捕获并处理异常 通过try-catch-finally语句来实现，基本格式： try{ /** 监控区域 */ //一条或多条可能抛出异常的Java语句 }catch(ExceptionType1 e1){ /** 异常处理程序 */ //捕获到ExceptionType1类型的异常时执行的代码 }catch (ExceptionType2 e2){ /** 异常处理程序 */ //捕获到ExceptionType2类型的异常时执行的代码 } … finally{ //执行最终清理的语句 }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_15_1_b077a7dc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_15_1_b077a7dc",
+        "source_file": "6_异常处理.ppt",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_16_1_846e8e2f",
+    "title": "CodeExample_6_16_1_846e8e2f",
+    "code": "捕获并处理异常 try 把可能出现异常的语句都放在try语句块中 try语句块之后必须紧跟至少一个catch语句块 catch (ThrowableType objRef) {…} ThrowableType：当前catch语句块能够处理的异常类型，必须是Throwable类的子类 objRef：异常处理程序中使用的指向被捕获异常对象的引用",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_16_1_846e8e2f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_16_1_846e8e2f",
+        "source_file": "6_异常处理.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_19_1_81451d4a",
+    "title": "CodeExample_6_19_1_81451d4a",
+    "code": "//ListOfNumbers.java //创建一个保存10个Integer对象的向量， //并通过writeList方法将该向量保存到OutFile.txt中 import java.io.*; import java.util.*; public class ListOfNumbers { private ArrayList<Integer> list; private static final int size = 10; public ListOfNumbers() { list = new ArrayList<Integer>(size); for (int i = 0; i < size; i++) list.add(new Integer(i)); } public void writeList(){ PrintWriter out=new PrintWriter(new FileWriter(\"OutFile.txt\")); for (int i=0;i<size;i++) out.println(\"Value at: \"+i+\" = \"+list.get(i)); out.close(); } public static void main(String args[]) { ListOfNumbers list = new ListOfNumbers(); list.writeList(); } } 调用了java.io.FileWriter的构造方法创建文件输出流，该方法声明如下： public FileWriter(String fileName) throws IOException; 而writeList()方法中没有对FileWriter()方法抛出的必检异常IOException进行处理，故程序在编译时产生错误",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_19_1_81451d4a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_19_1_81451d4a",
+        "source_file": "6_异常处理.ppt",
+        "page": 19,
+        "evidence_location": "第19页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_20_1_935501aa",
+    "title": "CodeExample_6_20_1_935501aa",
+    "code": "//更改writeList()方法 public void writeList() { PrintWriter out = null; try { System.out.println(\"Entering try statement\"); out = new PrintWriter(new FileWriter(\"OutFile.txt\")); for (int i = 0; i < size; i++) out.println(\"Value at: \" + i + \" = \" + list.get(i)); } catch (IndexOutOfBoundsException e) { System.err.println(\"Caught IndexOutOfBoundsException: \" + e.getMessage()); } catch (IOException e) { System.err.println(\"Caught IOException: \" + e.getMessage()); } finally {/*执行程序的最后清理操作，关闭程序打开的文件流*/ if (out != null) { System.out.println(\"Closing PrintWriter\"); out.close(); } else { System.out.println(\"PrintWriter not open\"); } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_20_1_935501aa"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_20_1_935501aa",
+        "source_file": "6_异常处理.ppt",
+        "page": 20,
+        "evidence_location": "第20页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_21_1_d816be7a",
+    "title": "CodeExample_6_21_1_d816be7a",
+    "code": "以下程序的输出是什么？ public static void main(String args[]){ int i = 0 ; String greetings[]={“Hello World!”,”Hello!”,”HELLO!”}; while (i<4){ try { System.out.println(greetings[i]); }catch(ArrayIndexOutOfBoundsException e){ System.out.println(“Re-setting Index Value”); i=-1; }finally{ System.out.println(“This is always printed”); } i++; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_21_1_d816be7a"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_21_1_d816be7a",
+        "source_file": "6_异常处理.ppt",
+        "page": 21,
+        "evidence_location": "第21页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_23_1_ba55ecd0",
+    "title": "CodeExample_6_23_1_ba55ecd0",
+    "code": "//处理多种异常： public void writeList() { PrintWriter out = null; try { System.out.println(\"Entering try statement\"); out=new PrintWriter(new FileWriter(\"OutFile.txt\")); for (int i=0;i<size;i++) out.println(\"Value at: \"+i+\" = \"+list.get(i)); } catch (IOException e) { System.err.println(\"Caught IOException: \" + e.getMessage()); } catch (Exception e){ System.err.println(\"Caught Exception: \"+e.getMessage()); } finally { if (out!=null) { System.out.println(\"Closing PrintWriter\"); out.close(); } else { System.out.println(\"PrintWriter not open\"); } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_23_1_ba55ecd0"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_23_1_ba55ecd0",
+        "source_file": "6_异常处理.ppt",
+        "page": 23,
+        "evidence_location": "第23页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_25_1_7bd49d02",
+    "title": "CodeExample_6_25_1_7bd49d02",
+    "code": "抛出异常 可能产生异常的方法不处理该异常，而是将该异常抛出到调用该方法的程序 例：public void troublesome() throws IOException { … } 声明异常(throws子句) retType mtdName ( [paralist] ) throws [exceptionList]; 抛出异常(throw语句) throw someThrowableObj; 执行throw语句后，转向调用者程序，在调用者程序中查找是否有catch子句匹配someThrowableObj 若找到则由该catch子句处理，若未找到，则转向上一层调用者程序 若一个异常在转向到main()后还未被处理，则程序将非正常终止",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_25_1_7bd49d02"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_25_1_7bd49d02",
+        "source_file": "6_异常处理.ppt",
+        "page": 25,
+        "evidence_location": "第25页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_27_1_72589787",
+    "title": "CodeExample_6_27_1_72589787",
+    "code": "class ListOfNumbersDeclared { private ArrayList<Integer> list; private static final int size = 10; public ListOfNumbersDeclared() {//构造方法 list = new ArrayList<Integer>(size); for (int i = 0; i < size; i++) list.add(new Integer(i)); } public void writeList() throws IOException, IndexOutOfBoundsException {//声明抛出异常 PrintWriter out = new PrintWriter(new FileWriter(\"OutFile1.txt\")); for (int i = 0; i < size; i++) out.println(\"Value at: \" + i + \" = \" + list.get(i)); out.close(); } } public class TestListOfNumbersDeclared { public static void main(String args[]) { try { ListOfNumbersDeclared list = new ListOfNumbersDeclared(); list.writeList(); } catch (Exception e) { } System.out.println(\"A list of numbers created and stored in OutFile1.txt\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_27_1_72589787"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_27_1_72589787",
+        "source_file": "6_异常处理.ppt",
+        "page": 27,
+        "evidence_location": "第27页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_28_1_9054215c",
+    "title": "CodeExample_6_28_1_9054215c",
+    "code": "程序中增加异常处理的优点是什么? 设s2语句会引起异常，对于左右两个程序，分别说明 s3是否会执行？ 如果异常被捕获，哪些语句会被执行？ 如果异常未被捕获，哪些语句会被执行？ try{ s1; s2; s3; } catch(ExceptionType1 e){} catch(ExceptionType2 e){} s5; try{ s1; s2; s3; } catch(ExceptionType1 e){} catch(ExceptionType2 e){} finally{s4} s5;",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_28_1_9054215c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_28_1_9054215c",
+        "source_file": "6_异常处理.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_32_1_bd59749c",
+    "title": "CodeExample_6_32_1_bd59749c",
+    "code": "自定义异常类的定义 //描述通信中客户端和服务器连接超时的异常 public class ServerTimeOutException extends Exception{ private String reason; private int port ; public ServerTimeOutException(String reason, int port){ this.reason = reason; this.port = port; } public String getReason(){ return reason; } public int getPort(){ return port; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_32_1_bd59749c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_32_1_bd59749c",
+        "source_file": "6_异常处理.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_33_1_9ab97aec",
+    "title": "CodeExample_6_33_1_9ab97aec",
+    "code": "自定义异常类的使用 // 抛出自定义异常 public void connectMe(String serverName) throws ServerTimeOutException{ int success; int portToConnect = 80; success = open(serverName, portToConnect); if(success== -1){ throw new ServerTimeOutException(“Could not connect”,80); } }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_33_1_9ab97aec"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_33_1_9ab97aec",
+        "source_file": "6_异常处理.ppt",
+        "page": 33,
+        "evidence_location": "第33页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_34_1_18f982d2",
+    "title": "CodeExample_6_34_1_18f982d2",
+    "code": "自定义异常类的使用 // 捕获自定义异常并处理 public void findServer(){… try{ connectMe(defaultServer); } catch (ServerTimeOutException e){ System.out.println(“Server timed out, try another”); try{ //try-catch语句块是可以嵌套的 connectMe(alternateServer); } catch (ServerTimeOutException e1) { System.out.println(“No server avaliable”); } } } // 例：TestMyException.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_34_1_18f982d2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_34_1_18f982d2",
+        "source_file": "6_异常处理.ppt",
+        "page": 34,
+        "evidence_location": "第34页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_38_1_c5a1fc8c",
+    "title": "CodeExample_6_38_1_c5a1fc8c",
+    "code": "断言的定义 第一种形式 assert expr; expr为布尔表达式 运行该断言语句时，求出expr的值 若值为false，则说明程序处于不正确状态，系统抛出一个没有任何详细信息的AssertionError类型的错误对象，并退出 若值为true，则继续执行",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_38_1_c5a1fc8c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_38_1_c5a1fc8c",
+        "source_file": "6_异常处理.ppt",
+        "page": 38,
+        "evidence_location": "第38页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_39_1_ecf9e894",
+    "title": "CodeExample_6_39_1_ecf9e894",
+    "code": "断言的定义 第二种形式 assert expr1 : expr2; expr1为布尔表达式，expr2为一般表达式 运行该断言语句时，求出expr1的值 若值为false，则系统计算出expr2的值，并以这个值为参数调用AssertionError类的构造方法，创建一个包含详细信息的AssertionError对象，抛出并退出 若值为true，则expr2不被计算，程序继续执行",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_39_1_ecf9e894"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_39_1_ecf9e894",
+        "source_file": "6_异常处理.ppt",
+        "page": 39,
+        "evidence_location": "第39页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_41_1_65b89c62",
+    "title": "CodeExample_6_41_1_65b89c62",
+    "code": "public class AssertionDemo { public static void main(String[] args) { int month = 13; switch (month) { case 1: System.out.println(\"January\"); break; case 2: System.out.println(\"February\"); break; case 3: System.out.println(\"March\"); break; case 4: System.out.println(\"April\"); break; case 5: System.out.println(\"May\"); break; case 6: System.out.println(\"June\"); break; case 7: System.out.println(\"July\"); break; case 8: System.out.println(\"August\"); break; case 9: System.out.println(\"September\"); break; case 10: System.out.println(\"October\"); break; case 11: System.out.println(\"November\"); break; case 12: System.out.println(\"December\"); break; default: assert false:\"Hey, that's not a valid month!\"; break; } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_41_1_65b89c62"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_41_1_65b89c62",
+        "source_file": "6_异常处理.ppt",
+        "page": 41,
+        "evidence_location": "第41页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_42_1_7336a495",
+    "title": "CodeExample_6_42_1_7336a495",
+    "code": "断言的使用（二） 检查私有方法输入参数的有效性 若私有方法对参数有特定的要求，可在方法开始处使用断言进行检查 如：若要求输入的参数param1不能为null，则在方法开始处加入断言语句： assert param1 != null: “param is null in test()”;",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_42_1_7336a495"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_42_1_7336a495",
+        "source_file": "6_异常处理.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_43_1_1498da8d",
+    "title": "CodeExample_6_43_1_1498da8d",
+    "code": "断言的使用（三） 检查方法的返回结果是否有效 对一些计算型方法，可通过断言语句，在方法返回前检查返回值是否满足必要的性质 如：对于计算绝对值的方法，可在方法中加入下列断言： assert value>=0:“value should be bigger than 0:”+value;",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_43_1_1498da8d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_43_1_1498da8d",
+        "source_file": "6_异常处理.ppt",
+        "page": 43,
+        "evidence_location": "第43页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_44_1_0edc07ad",
+    "title": "CodeExample_6_44_1_0edc07ad",
+    "code": "断言的使用（四） 检查程序不变量 程序不变量是程序某个特定点或某些特定点都保持为真的一种特性 不变量反映程序的特性，通过分析程序关键点上的不变量，可以监测到程序运行中的异常 例如： while (x>0) do { assert x>0; … }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "6_44_1_0edc07ad"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_44_1_0edc07ad",
+        "source_file": "6_异常处理.ppt",
+        "page": 44,
+        "evidence_location": "第44页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_5_1_07e2a7af",
+    "title": "CodeExample_6_5_1_07e2a7af",
+    "code": "//声明一个字符串数组，通过while循环输出数组中的各字符串 1 public class HelloWorld{ 2 public static void main(String args[ ]){ 3 int i=0; 4 String greetings[ ]={ “Hello World!”, “Hello!”, 5 “HELLO WORLD!”}; 6 while ( i<4){ 7 System.out.println(greetings[i]); 8 i++; } System.out.println(\"end!\"); 11 } 12 } Hello World! Hello! HELLO WORLD!",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_5_1_07e2a7af"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_5_1_07e2a7af",
+        "source_file": "6_异常处理.ppt",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_6_9_1_e6106eb2",
+    "title": "CodeExample_6_9_1_e6106eb2",
+    "code": "Java的异常类层次 整数的除0操作导致的异常，如： int i=10/0;",
+    "language": "Java",
+    "source_chunk_ids": [
+      "6_9_1_e6106eb2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "6_9_1_e6106eb2",
+        "source_file": "6_异常处理.ppt",
+        "page": 9,
+        "evidence_location": "第9页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_15_1_a4e37465",
+    "title": "CodeExample_7_15_1_a4e37465",
+    "code": "InputStream接口方法 接口方法 | 功能与用法 int read() | 读入一个字节作为方法的返回值，若返回-1，则表示文件结束 int read(byte[] b [, int offset, int length]) | 将读入的数据放在一个字节数组中，并返回所读的字节数，两个整型变量用以指定数据在数组中的存放位置 void close() | 当输入流中的数据读完时，关闭流 int available() | 返回输入流中未读的字节数 long skip(long n) | 跳过n个字节 boolean markSupported() | 测试打开的流是否支持标记 void mark(int readlimt) | 标记流中的当前位置，并建立readlimt大小缓冲区，readlimt指定了将来通过reset()方法能够重复读取的字节数上限 void reset() | 返回到mark()方法对流所做的标记处",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_15_1_a4e37465"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_15_1_a4e37465",
+        "source_file": "7_输入输出.ppt",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_18_1_03993ee9",
+    "title": "CodeExample_7_18_1_03993ee9",
+    "code": "OutputStream接口方法 接口方法 | 功能与用法 void write(int) | 向输出流写一个字节 void write(byte[] b [, int offset, int length]) | 向输出流写一个字节数组（由offset和length指示的数据块） void close() | 当完成输出流的写操作后关闭流 void flush() | 强制将缓存的输出数据写出",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_18_1_03993ee9"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_18_1_03993ee9",
+        "source_file": "7_输入输出.ppt",
+        "page": 18,
+        "evidence_location": "第18页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_20_1_900922a3",
+    "title": "CodeExample_7_20_1_900922a3",
+    "code": "Reader接口方法 接口方法 | 功能与用法 int read() | 读入一个字符作为方法的返回值，若返回-1，则表示文件结束 int read(char[] cbuf [, int offset, int length]) | 将读入的数据放在一个字符数组中，并返回所读的字符数，两个整型变量用以指定数据在数组中的存放位置 void close() | 当输入流中的数据读完时，关闭流 long skip(long n) | 跳过n个字符 boolean markSupported() | 测试打开的流是否支持标记 void mark(int readlimt) | 标记流中的当前位置，并建立readlimt大小缓冲区，readlimt指定了将来通过reset()方法能够重复读取的字符数上限 void reset() | 返回到mark()方法对流所做的标记处 boolean ready() | 测试当前流是否准备好进行读",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_20_1_900922a3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_20_1_900922a3",
+        "source_file": "7_输入输出.ppt",
+        "page": 20,
+        "evidence_location": "第20页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_22_1_d486e8ea",
+    "title": "CodeExample_7_22_1_d486e8ea",
+    "code": "Writer接口方法 接口方法 | 功能与用法 void write(int c) | 向输出流写一个字符 void write(char[] cbuf [, int offset, int length]) | 向输出流写一个字符数组（由offset和length指示的数据块） int write(String str [, int offset, int length]) | 向输出流写一个字符串（由offset和length指示的子串） void close() | 当完成输出流的写操作后关闭流 void flush() | 强制将缓存的输出数据写出",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_22_1_d486e8ea"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_22_1_d486e8ea",
+        "source_file": "7_输入输出.ppt",
+        "page": 22,
+        "evidence_location": "第22页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_29_1_948d65ed",
+    "title": "CodeExample_7_29_1_948d65ed",
+    "code": "文件流 文件流包括： FileReader/FileWriter类 FileInputStream/FileOutputStream类 创建文件流：以文件名或File类型的对象作为参数，e.g. public FileInputStream(String name) public FileInputStream(File file)",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_29_1_948d65ed"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_29_1_948d65ed",
+        "source_file": "7_输入输出.ppt",
+        "page": 29,
+        "evidence_location": "第29页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_30_1_42b54f00",
+    "title": "CodeExample_7_30_1_42b54f00",
+    "code": "public class FileCopy{ public static void main(String[] args) throws IOException{ FileInputStream in=new FileInputStream(\"FileCopy.java\"); FileOutputStream out=new FileOutputStream(\"FileCopy.txt\"); int c; while( (c=in.read())!=-1) out.write(c); in.close(); out.close(); } } //又例：CopyBytes.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_30_1_42b54f00"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_30_1_42b54f00",
+        "source_file": "7_输入输出.ppt",
+        "page": 30,
+        "evidence_location": "第30页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_32_1_ad526806",
+    "title": "CodeExample_7_32_1_ad526806",
+    "code": "缓存流 缓存流是过滤流，以InputStream/OutputStream为前端流，并可指定缓冲区大小，如： public BufferedInputStream(InputStream in) public BufferedInputStream(InputStream in, int size) BufferedReader增加readLine() BufferedWriter增加newLine()",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_32_1_ad526806"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_32_1_ad526806",
+        "source_file": "7_输入输出.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_33_1_62435686",
+    "title": "CodeExample_7_33_1_62435686",
+    "code": "public class BufferedIO{ public static void main(String[] args) throws IOException{ BufferedReader in=new BufferedReader( new FileReader(\"BufferedIO.java\")); PrintWriter out=new PrintWriter( new BufferedWriter( new FileWriter(\"BufferedIO.txt\"))); String s; int linecnt=1; StringBuilder sb=new StringBuilder(); while((s=in.readLine())!=null){ sb.append(linecnt+\":\"+s+\"\\n\"); out.println(linecnt+\":\"+s); linecnt++; } in.close(); out.close(); System.out.print(sb.toString()); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_33_1_62435686"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_33_1_62435686",
+        "source_file": "7_输入输出.ppt",
+        "page": 33,
+        "evidence_location": "第33页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_34_1_c2422727",
+    "title": "CodeExample_7_34_1_c2422727",
+    "code": "数据流 数据流包括： DataInputStream/DataOutputStream类 读写基本数据类型的接口方法： DataInputStream方法 | DataOutputStream 方法 byte readByte() | void writeByte(byte) （无对应方法） | void writeBytes(String) boolean readBoolean() | void writeBoolean(boolean) char readChar() | void writeChar(char) （无对应方法） | void writeChars(String) short readShort() | void writeShort(short) int readInt() | void writeInt (int) long readLong() | void writeLong(long) float readFloat() | void writeFloat( float) double readDouble() | void writeDouble(double) String readUTF() | void writeUTF(String)",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_34_1_c2422727"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_34_1_c2422727",
+        "source_file": "7_输入输出.ppt",
+        "page": 34,
+        "evidence_location": "第34页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_36_1_1bb7d8c1",
+    "title": "CodeExample_7_36_1_1bb7d8c1",
+    "code": "public class DataIO{ public static void main(String[] args) throws IOException{ DataOutputStream out=new DataOutputStream( new BufferedOutputStream(new FileOutputStream(\"data.txt\"))); out.writeBoolean(false); out.writeChar('c'); out.writeByte(1); out.writeShort(2); out.writeInt(3); out.writeLong(4L); out.writeFloat(5.0f); out.writeDouble(6.0); out.writeUTF(\"hello world!\"); out.close(); DataInputStream in=new DataInputStream( new BufferedInputStream( new FileInputStream(\"data.txt\"))); System.out.println(in.readBoolean()+\";\"+in.readChar()+\";\"); System.out.println(in.readByte()+\";\"+in.readShort()+\";\"); System.out.println(+in.readInt()+\";\"+in.readLong()); System.out.println(in.readFloat()+\";\"+in.readDouble()+\";\"); System.out.println(in.readUTF()); in.close(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_36_1_1bb7d8c1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_36_1_1bb7d8c1",
+        "source_file": "7_输入输出.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_38_1_2e0dc1b5",
+    "title": "CodeExample_7_38_1_2e0dc1b5",
+    "code": "标准I/O System.in 完整定义：public static final InputStream in 在程序运行时一直打开并准备好提供输入数据 System.out 完整定义：public static final PrintStream out 在程序运行时一直打开并准备好接收输出的数据 System.err 完整定义：public static final PrintStream err 在程序运行时一直打开并准备好接收输出的数据 显示错误消息或其他能够马上引起用户注意的信息",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_38_1_2e0dc1b5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_38_1_2e0dc1b5",
+        "source_file": "7_输入输出.ppt",
+        "page": 38,
+        "evidence_location": "第38页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_39_1_a4b0df18",
+    "title": "CodeExample_7_39_1_a4b0df18",
+    "code": "标准I/O 程序从键盘读入数据： 使用System.in的read()方法，如： int ch=System.in.read(); System.in.read()从键盘缓冲区读入一个字节的数据，返回的是整型值（低位字节为输入数据，高位字节全为零） System.in.read()的执行使得整个程序被挂起，直到用户从键盘输入数据才继续运行 从键盘逐行读入：嵌套BufferedReader和InputStreamReader PrintStream定义了在命令窗口显示不同类型数据的方法print()和println()",
+    "language": "Python",
+    "source_chunk_ids": [
+      "7_39_1_a4b0df18"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_39_1_a4b0df18",
+        "source_file": "7_输入输出.ppt",
+        "page": 39,
+        "evidence_location": "第39页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_40_1_944f38ee",
+    "title": "CodeExample_7_40_1_944f38ee",
+    "code": "public class StandardIO { public static void main(String[] args) { String s; BufferedReader in = new BufferedReader( new InputStreamReader(System.in)); System.out.println(\"Please input: \"); try { s = in.readLine(); while (!s.equals(\"exit\")) { System.out.println(\" read: \" + s); s = in.readLine(); } System.out.println(\"End of Inputting\"); in.close(); } catch (IOException e) { e.printStackTrace(); } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_40_1_944f38ee"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_40_1_944f38ee",
+        "source_file": "7_输入输出.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_41_1_593c3674",
+    "title": "CodeExample_7_41_1_593c3674",
+    "code": "java.util.Scanner类：从控制台读取输入 Scanner sc=new Scanner(System.in); Scanner将控制台输入按照分隔符模式进行分割，分隔符模式默认为匹配空格 扫描结果通过各种next*()方法转化为不同类型的值 next() 获取一个字符串 nextByte() 获取一个byte类型的整数 nextShort() 获取一个short类型的整数 nextInt() 获取一个int类型的整数 nextLong() 获取一个long类型的整数 nextFloat() 获取一个float类型的数 nextDouble() 获取一个double类型的数 nextLine() 获取一行文本（即以回车键为结束标志）",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_41_1_593c3674"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_41_1_593c3674",
+        "source_file": "7_输入输出.ppt",
+        "page": 41,
+        "evidence_location": "第41页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_42_1_3b5898b8",
+    "title": "CodeExample_7_42_1_3b5898b8",
+    "code": "java.util.Scanner类：从控制台读取输入 读取和计算个数不定的多个整数之和，以0结束： Scanner sc=new Scanner(System.in); int sum=0, data; while((data=sc.nextInt())!=0) sum+=data; System.out.println(sum);",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_42_1_3b5898b8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_42_1_3b5898b8",
+        "source_file": "7_输入输出.ppt",
+        "page": 42,
+        "evidence_location": "第42页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_47_1_0a9a7044",
+    "title": "CodeExample_7_47_1_0a9a7044",
+    "code": "RandomAccessFile类(对象创建) 构造方法： public RandomAccessFile(String name, String mode) throws FileNotFoundException public RandomAccessFile(File file, String mode) throws FileNotFoundException mode规定了对象可以用何种方式打开和访问指定的文件： r：只读 rw：读写 rwd：读写，且内容更新同步写入底层存储设备 rws：与rwd基本相同，还可以更新文件的元数据",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_47_1_0a9a7044"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_47_1_0a9a7044",
+        "source_file": "7_输入输出.ppt",
+        "page": 47,
+        "evidence_location": "第47页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_48_1_981867cd",
+    "title": "CodeExample_7_48_1_981867cd",
+    "code": "RandomAccessFile类(对象操作) 文件指针操作 long getFilePointer() //返回当前文件指针 void seek(long pos) //文件指针定位到指定位置 long length() //返回文件长度 int skipBytes(int n) //从当前位置开始跳过n字节 读操作(实现了DataInput接口) readBoolean(), readChar(), readInt(), readLong(), readFloat(), readDouble(), readLine(), readUTF()等 写操作(实现了DataOutput接口) writeBoolean(), writeChar(), writeUTF(), writeInt(), writeLong(), writeFloat(), writeDouble()等",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_48_1_981867cd"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_48_1_981867cd",
+        "source_file": "7_输入输出.ppt",
+        "page": 48,
+        "evidence_location": "第48页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_49_1_42b2970c",
+    "title": "CodeExample_7_49_1_42b2970c",
+    "code": "public class RandomAccessTest { public static void main(String[] args) throws IOException { long filePoint = 0; String s; RandomAccessFile file = new RandomAccessFile( \"RandomAccessTest.java\", \"r\"); long fileLength = file.length(); // 获取文件长度 while (filePoint < fileLength) { s = file.readLine(); // 读一行字符，并移动文件指针 System.out.println(s); // 输出显示读入的一行字符 file.skipBytes(5); filePoint = file.getFilePointer(); // 获取当前文件指针 } file.close(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_49_1_42b2970c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_49_1_42b2970c",
+        "source_file": "7_输入输出.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_52_1_bcdd90c2",
+    "title": "CodeExample_7_52_1_bcdd90c2",
+    "code": "串行化方法 用ObjectOutputStream/ObjectInputStream实现对象的串行化 通过ObjectOutputStream的writeObject方法将一个对象写入到流中 public final void writeObject(Object obj) throws IOException 通过ObjectInputStream的readObject方法将一个对象从对象流中读出 public final Object readObject() throws IOException, ClassNotFoundException ObjectOutputStream实现了java.io.DataOutput接口 ObjectInputStream实现了java.io.DataInput接口",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_52_1_bcdd90c2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_52_1_bcdd90c2",
+        "source_file": "7_输入输出.ppt",
+        "page": 52,
+        "evidence_location": "第52页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_53_1_883ee567",
+    "title": "CodeExample_7_53_1_883ee567",
+    "code": "/*输出对象*/ public class SerializeDate { SerializeDate( ){ Date d = new Date( ); try { ObjectOutputStream s= new ObjectOutputStream( new FileOutputStream(“date.ser”)); s.writeObject(d); s.close( ); }catch( IOException e){ e.printStackTrace( ); } } public static void main(String args[]){ SerializeDate b = new SerializeDate(); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_53_1_883ee567"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_53_1_883ee567",
+        "source_file": "7_输入输出.ppt",
+        "page": 53,
+        "evidence_location": "第53页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_54_1_93614bb7",
+    "title": "CodeExample_7_54_1_93614bb7",
+    "code": "/*输入对象*/ public class UnSerializeDate { Date d = null; UnSerializeDate() { try { ObjectInputStream s = new ObjectInputStream( new FileInputStream(\"date.ser\")); Object o=s.readObject(); if(o instanceof Date) d = (Date) o; s.close(); } catch (Exception e) { e.printStackTrace(); } } public static void main(String[] args) { UnSerializeDate us = new UnSerializeDate(); System.out.println(us.d.toString()); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_54_1_93614bb7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_54_1_93614bb7",
+        "source_file": "7_输入输出.ppt",
+        "page": 54,
+        "evidence_location": "第54页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_55_1_ebecb067",
+    "title": "CodeExample_7_55_1_ebecb067",
+    "code": "可串行化类的构造 一个类只有实现了Serializable接口，其对象才是可串行化的 在指定对象不可串行化时，writeObject将抛出NotSerializableException类型的异常 如何构造可串行化对象的类 Serializable接口的定义： package java.io; public interface Serializable{}; 只需在类声明中implements Serializable，如： public class MySerializableClass implements Serializable { … }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_55_1_ebecb067"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_55_1_ebecb067",
+        "source_file": "7_输入输出.ppt",
+        "page": 55,
+        "evidence_location": "第55页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_5_1_e8840f88",
+    "title": "CodeExample_7_5_1_e8840f88",
+    "code": "File类 创建File对象 public File(String pathname) File myFile=new File(“myfile.txt”); public File(String parent, String child) File myFile=new File(“d:\\works”, “source\\myfile.txt”); public File(File parent, String child) File myFileParent=new File(“d:\\works”); File myFile=new File(myFileParent, “source\\myfile.txt”); 注意： 为保证程序的可移植性，应尽量使用相对路径 parent：父路径字符串或对象，绝对或相对路径 child：相对于parent的目录或文件名字符串",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "7_5_1_e8840f88"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_5_1_e8840f88",
+        "source_file": "7_输入输出.ppt",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_7_7_1_054eb662",
+    "title": "CodeExample_7_7_1_054eb662",
+    "code": "public class RenameFile { private static void fileData(File f) { System.out.println(\"Absolute path: \" + f.getAbsolutePath() + \"\\n Can read: \" + f.canRead() + \"\\n Can write: \" + f.canWrite() + \"\\n getName: \" + f.getName() + \"\\n getParent: \" + f.getParent() + \"\\n getPath: “ + f.getPath() + \"\\n length: \" + f.length() + \"\\n lastModified: \" + new Date(f.lastModified())); if (f.isFile()) System.out.println(\"It's a file\"); else System.out.println(\"It's a directory\"); } public static void main(String[] args) { File old = new File(args[0]); File rname = new File(args[1]); System.out.println(\"The original file's information: \"); fileData(old); old.renameTo(rname); System.out.println(\"\\n The file information after rename: \"); fileData(rname); if (!old.exists()) System.out.println(\"\\n The original file never exists\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "7_7_1_054eb662"
+    ],
+    "sources": [
+      {
+        "chunk_id": "7_7_1_054eb662",
+        "source_file": "7_输入输出.ppt",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_10_1_8e5692e4",
+    "title": "CodeExample_9_10_1_8e5692e4",
+    "code": "Thread类的构造方法 public Thread(ThreadGroup group, Runnable target, String name); public Thread(); public Thread(Runnable target); public Thread(ThreadGroup group, Runnable target); public Thread(String name); public Thread(ThreadGroup group, String name); public Thread(Runnable target, String name); group：指明该线程所处的线程组（不建议使用） name：线程名称 target：提供线程体的对象（由Runnable接口变量引用的实现了Runnable接口的类的对象）",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_10_1_8e5692e4"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_10_1_8e5692e4",
+        "source_file": "9_线程.ppt",
+        "page": 10,
+        "evidence_location": "第10页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_12_1_e5cf9ebe",
+    "title": "CodeExample_9_12_1_e5cf9ebe",
+    "code": "public class CountDown implements Runnable{ private static int idcnt=1; private final int threadid=idcnt++; int counter=3; public void run(){ while(counter>=0){ try{ Thread.sleep(1000); } catch (Exception e){ e.printStackTrace(); } System.out.println(\"#\"+threadid+ (counter>0?\"->\"+counter:\"->run!\")); counter--; } } public static void main(String[] args){ Thread t1=new Thread(new CountDown()); Thread t2=new Thread(new CountDown()); t1.start(); t2.start(); System.out.println(\"waiting for run...\"); } } //又例：ThreadTest.java 线程从Runnable实例 的run()方法开始执行 线程是Thread类 的一个实例",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_12_1_e5cf9ebe"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_12_1_e5cf9ebe",
+        "source_file": "9_线程.ppt",
+        "page": 12,
+        "evidence_location": "第12页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_14_1_9264d420",
+    "title": "CodeExample_9_14_1_9264d420",
+    "code": "public class CountDown2 extends Thread{ private static int idcnt=1; private final int threadid=idcnt++; int counter=3; public void run(){ while(counter>=0){ try{ Thread.sleep(1000); } catch (Exception e){ e.printStackTrace(); } System.out.println(\"#\"+threadid+ (counter>0?\"->\"+counter:\"->run!\")); counter--; } } public static void main(String[] args){ CountDown2 t1=new CountDown2(); Thread t2=new CountDown2(); t1.start(); t2.start(); System.out.println(\"waiting for run...\"); } } //又例：ThreadTest2.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_14_1_9264d420"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_14_1_9264d420",
+        "source_file": "9_线程.ppt",
+        "page": 14,
+        "evidence_location": "第14页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_16_1_3d9b9c86",
+    "title": "CodeExample_9_16_1_3d9b9c86",
+    "code": "public class CountDown3{ static int idcnt=1; public static void main(String[] args){ new SubThread().start(); new Thread(new Run()).start(); } } class SubThread extends Thread{ private final int threadid=CountDown3.idcnt++; public void run(){ try{ Thread.sleep(1000); System.out.println(\"#\"+threadid); } catch (Exception e){ e.printStackTrace(); } } } class Parent{ public void doSth(){ System.out.println(\"do something ...\"); } } class Run extends Parent implements Runnable{ private final int threadid=CountDown3.idcnt++; public void run(){ try{ Thread.sleep(1000); System.out.print(\"#\"+threadid+\": \"); doSth(); } catch (Exception e){ e.printStackTrace(); } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_16_1_3d9b9c86"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_16_1_3d9b9c86",
+        "source_file": "9_线程.ppt",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_17_1_98b407cd",
+    "title": "CodeExample_9_17_1_98b407cd",
+    "code": "线程的运行 新创建的线程不会自动运行，必须调用线程的start()方法，如： t.start(); 该方法的调用把线程的虚拟CPU置为可运行（Runnable）状态 Runnable状态意味着该线程可以参加调度，被JVM调度运行，但并不意味着线程会立即运行",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_17_1_98b407cd"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_17_1_98b407cd",
+        "source_file": "9_线程.ppt",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_26_1_bc1b7053",
+    "title": "CodeExample_9_26_1_bc1b7053",
+    "code": "线程的基本控制：join() /*在当前线程中执行t.join()方法使当前线程等待，直到线程 t 结束为止，线程恢复到runnable状态*/ public void doTask(){ TimerThread t = new TimerThread(100) ; t.start(); … // Do stuff in parallel with the other thread for a while … // Wait here for the TimerThread (t) to finish try{ t.join(); } catch( InterruptedException e) { //tt came back early } … // continue in this thread … }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_26_1_bc1b7053"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_26_1_bc1b7053",
+        "source_file": "9_线程.ppt",
+        "page": 26,
+        "evidence_location": "第26页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_28_1_cb288ccc",
+    "title": "CodeExample_9_28_1_cb288ccc",
+    "code": "class ToJoin extends Thread{ public ToJoin(String nm){ super(nm); } public void run(){ try{ Thread.sleep(2000); } catch (InterruptedException e){ } System.out.println(Thread.currentThread().getName()+\" awake!\"); } } class Joiner implements Runnable{ private ToJoin tojoin; public Joiner(ToJoin t){ this.tojoin=t; } public void run(){ try{ this.tojoin.join(); } catch (InterruptedException e){ } System.out.println(this.tojoin.getName()+\" join finished\"); } } public class TestJoin{ public static void main(String[] args){ ToJoin t1=new ToJoin(\"t1\"); t1.start(); new Thread(new Joiner(t1)).start(); } } //又例：ThreadJoinTest.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_28_1_cb288ccc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_28_1_cb288ccc",
+        "source_file": "9_线程.ppt",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_32_1_7be30419",
+    "title": "CodeExample_9_32_1_7be30419",
+    "code": "public class TestStop { public static void main(String[] args){ Tick t=new Tick(); new Thread(t).start(); try{ Thread.sleep(3000); } catch (Exception e){} System.out.println(\"quiting Task ...\"); t.stopRunning(); } } class Tick implements Runnable { private boolean timeToQuit = false; public void stopRunning() { timeToQuit = true; } public void run( ){ while(!timeToQuit){ try { Thread.sleep(1000); System.out.println(\"tick ...\"); } catch (Exception e) {} } System.out.println(\"Tick finished.\"); } } //又例：ThreadTerminate.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_32_1_7be30419"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_32_1_7be30419",
+        "source_file": "9_线程.ppt",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_35_1_726c85a1",
+    "title": "CodeExample_9_35_1_726c85a1",
+    "code": "线程并发中的问题 //一个堆栈类 public class MyStack{ private int idx = 0 ; private char[ ] data = new char[6] ; public void push( char c ){ data[idx] = c ; idx ++ ; // 栈顶指针指向下一个空单元 } public char pop( ){ idx-- ; return data[idx] ; } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_35_1_726c85a1"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_35_1_726c85a1",
+        "source_file": "9_线程.ppt",
+        "page": 35,
+        "evidence_location": "第35页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_36_1_3731c6d2",
+    "title": "CodeExample_9_36_1_3731c6d2",
+    "code": "线程并发中的问题 线程 a(压栈) 线程b(出栈) 堆栈 s 状态 时刻t1 时刻t2 时刻t3 //调用s.push(‘r’); data[idx]=‘r’ ; //恢复运行 idx++ ; /*线程a 被抢占 idx++; 未执行*/ . . . 线程a 压入的数据”r”丢失。t4时刻pop()会怎样？",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_36_1_3731c6d2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_36_1_3731c6d2",
+        "source_file": "9_线程.ppt",
+        "page": 36,
+        "evidence_location": "第36页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_38_1_8cd49448",
+    "title": "CodeExample_9_38_1_8cd49448",
+    "code": "示例：MyStack类的改进 //栈的push,pop操作都采用这种线程同步机制 public class MyStack{ … public void push( char c ){ synchronized(this){ data[idx] = c ; idx ++ ; } } public char pop( ){ synchronized(this){ idx-- ; return data[idx] ; } } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_38_1_8cd49448"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_38_1_8cd49448",
+        "source_file": "9_线程.ppt",
+        "page": 38,
+        "evidence_location": "第38页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_39_1_f7f9aecc",
+    "title": "CodeExample_9_39_1_f7f9aecc",
+    "code": "线程 a(压栈) 线程b(出栈) 堆栈 s 状态 时刻t1 时刻t2 时刻t3 /* 调 用s.push(‘r’), 获得s的对象锁后运行 */ data[idx]=‘r’ ; /* 调用s.pop(), 未获得s的对象锁, b到s的lock pool中 等待s的对象锁 */ // 恢复运行 idx++ ; /* 完成，并交回s的 对象锁 */ //线程a 被抢占 . . . 时刻t4 /* 运行pop() 得结果r */ . . . 多线程对共享数据进行操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_39_1_f7f9aecc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_39_1_f7f9aecc",
+        "source_file": "9_线程.ppt",
+        "page": 39,
+        "evidence_location": "第39页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_40_1_5336c1f8",
+    "title": "CodeExample_9_40_1_5336c1f8",
+    "code": "几点说明 如果一个方法的整体都在synchronized块中，则可将synchronized关键字放于方法声明中，也就是说： public synchronized void mtd() {/*方法体*/ } 等价于 public void mtd(){ synchronized(this){ /*方法体*/ }} 考虑，以上两种方式哪种效率更高？",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_40_1_5336c1f8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_40_1_5336c1f8",
+        "source_file": "9_线程.ppt",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_41_1_0d57ef26",
+    "title": "CodeExample_9_41_1_0d57ef26",
+    "code": "几点说明 对象锁具有可重入性：允许已拥有某对象锁的线程再次请求并获得该对象锁 public class Reentrant { public synchronized void a() { b(); System.out.println(\"here I am, in a()\"); } public synchronized void b() { System.out.println(\"here I am, in b()\"); } }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_41_1_0d57ef26"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_41_1_0d57ef26",
+        "source_file": "9_线程.ppt",
+        "page": 41,
+        "evidence_location": "第41页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_47_1_e30183b3",
+    "title": "CodeExample_9_47_1_e30183b3",
+    "code": "示例--Producer/Consumer /* Producer线程：每隔300ms产生一个字母 压入theStack栈中 ，共200个 */ public void run( ){ char c ; for(int I=0; I<200; I++){ c=(char)(math.random()*26+’A’); theStack.push( c); try{ Thread.sleep(300) ; }catch(InterruptedException e){ } } }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_47_1_e30183b3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_47_1_e30183b3",
+        "source_file": "9_线程.ppt",
+        "page": 47,
+        "evidence_location": "第47页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_48_1_d6b9f8f3",
+    "title": "CodeExample_9_48_1_d6b9f8f3",
+    "code": "示例--Producer/Consumer /*Consumer线程：每隔300ms从theStack栈中 取出一个字符，共200个*/ public void run( ){ char c ; for(int I=0; I<200; I++){ c = theStack.pop( ); try{ Thread.sleep(300) ; }catch(InterruptedException e){ } } }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_48_1_d6b9f8f3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_48_1_d6b9f8f3",
+        "source_file": "9_线程.ppt",
+        "page": 48,
+        "evidence_location": "第48页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_49_1_d949ac77",
+    "title": "CodeExample_9_49_1_d949ac77",
+    "code": "示例--Producer/Consumer /*堆栈类SyncStack：为保证共享数据一致性，push()与pop()定义为synchronized*/ public class SyncStack{ private Vector buffer = new Vector(400,200) ; public synchronized char pop( ){ …}; public synchronized void push(char c){ …} }",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_49_1_d949ac77"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_49_1_d949ac77",
+        "source_file": "9_线程.ppt",
+        "page": 49,
+        "evidence_location": "第49页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_50_1_e5fd5099",
+    "title": "CodeExample_9_50_1_e5fd5099",
+    "code": "示例--Producer/Consumer /* 堆栈类SyncStack：为实现Producer与Consumer之间的同步，加入wait()与notify()*/ //pop( )中加入wait()： public synchronized char pop( ){ char c ; while(buffer.size( ) ==0){ try{ this.wait( ); }catch(InterruptedException e){ } } c=( (Character)buffer.remove(buffer.size( )-1)).charValue(); return c ; }",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_50_1_e5fd5099"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_50_1_e5fd5099",
+        "source_file": "9_线程.ppt",
+        "page": 50,
+        "evidence_location": "第50页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_51_1_6424e727",
+    "title": "CodeExample_9_51_1_6424e727",
+    "code": "示例--Producer/Consumer /* 堆栈类SyncStack：为实现Producer与Consumer之间的同步，加入wait()与notify()*/ //push( )中加入notify: public synchronized void push(char c){ this.notify(); Character charObj = new Character( c ); buffer.addElement( char Obj); } 例：Producer.java/Consumer.java/SyncStack.java/SyncTest.java",
+    "language": "Java",
+    "source_chunk_ids": [
+      "9_51_1_6424e727"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_51_1_6424e727",
+        "source_file": "9_线程.ppt",
+        "page": 51,
+        "evidence_location": "第51页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_54_1_9a2ae2da",
+    "title": "CodeExample_9_54_1_9a2ae2da",
+    "code": "线程状态 new：线程被创建，尚未start() Runnable：线程可以被调度器选中执行 Running：线程正在占用CPU执行 Dead：run()执行结束，不会再被调度 Blocked：线程此后还能运行，但某种条件阻止其运行 当前线程调用sleep()进入睡眠状态 当前线程调用t.join()等待线程t执行结束 当前线程试图执行临界区代码片段但未获得对象锁 当前线程调用共享对象的wait()方法",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_54_1_9a2ae2da"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_54_1_9a2ae2da",
+        "source_file": "9_线程.ppt",
+        "page": 54,
+        "evidence_location": "第54页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_9_57_1_a8316fd7",
+    "title": "CodeExample_9_57_1_a8316fd7",
+    "code": "管道流的创建 将一个线程的输出流与另一线程的输入流连接 PipedInputStream pin= new PipedInputStream( ); PipedOutputStream pout = new PipedOutputStream(pin); PipedInputStream pin= new PipedInputStream( ); PipedOutputStream pout = new PipedOutputStream( ); pin.connect(pout); //或pout.connect(pin);",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "9_57_1_a8316fd7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "9_57_1_a8316fd7",
+        "source_file": "9_线程.ppt",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__10_1_596b8d02",
+    "title": "CodeExample__10_1_596b8d02",
+    "code": "实践中一般使用一种更简便的名为函数装饰器的语法，将@staticmethod和@classmethod写在定义方法的def语句的前面，可以达到同样创建静态方法和类方法的效果 类方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 @staticmethod def print_instance_count(): # 静态方法 print('Instance created: %d' % Spam.instance_count) @classmethod def print_instance_count2(cls): # 类方法 print('Instance created: %d' % cls.instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_10_1_596b8d02"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_10_1_596b8d02",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 10,
+        "evidence_location": "第10页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__12_1_47d0ba27",
+    "title": "CodeExample__12_1_47d0ba27",
+    "code": "在Python中使用继承由已有类创建新类，只需在定义新类时按照形如class SubClass(SuperClass)的形式将所继承的超类名写在括号中 新创建的子类通过继承获得可以超类所有的属性和方法，也可以增加超类没有的属性和方法，还可以重新定义超类已有的属性和方法，从而获得与超类不同的功能 通过继承构建新类 class Automobile: def __init__(self, wheels): self.wheels = wheels def drive(self): pass class PassengerCar(Automobile): def __init__(self, wheels, seats): Automobile.__init__(self, wheels) self.seats = seats class Truck(Automobile): def __init__(self, wheels, load): Automobile.__init__(self, wheels) self.load = load",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_12_1_47d0ba27"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_12_1_47d0ba27",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 12,
+        "evidence_location": "第12页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__13_1_546eee1b",
+    "title": "CodeExample__13_1_546eee1b",
+    "code": "Python支持多重继承，可以在子类定义的括号中为其指定多个超类 多重继承 class AmphiCar(Automobile, Boat): '''多重继承'‘’ def __init__(self, wheels, propeller, breather): Automobile.__init__(self, wheels) Boat.__init__(self, propeller) self.breather = breather",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_13_1_546eee1b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_13_1_546eee1b",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 13,
+        "evidence_location": "第13页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__13_1_8072b9c3",
+    "title": "CodeExample__13_1_8072b9c3",
+    "code": "在except子句中，可以在异常名称后面指定一个变量名 该变量名和一个异常实例绑定，实例的参数存储在args属性中 为了方便起见，异常类定义了自己的 __str__()方法，因此可以直接显示参数而无须引用args 示例如下： try … except 语句 >>> try: ... 1 / 0 ... except ZeroDivisionError as err: ... print(type(err)) ... print(err.args) ... print(err) ... <class 'ZeroDivisionError'> ('division by zero',) division by zero",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_13_1_8072b9c3"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_13_1_8072b9c3",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 13,
+        "evidence_location": "第13页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__14_1_5e07119c",
+    "title": "CodeExample__14_1_5e07119c",
+    "code": "一个try语句可以附带多个except子句，发生的异常与各个except子句中的异常类名进行匹配，在第一次匹配成功后转而执行相应except代码块中的内容 一个except子句也可以将多个异常类名组织成元组。只要匹配成功一次，就不会再尝试匹配之后的except子句 示例如下： try … except 语句 >>> try: ... 1 / 0 ... except NameError as err: ... print('Caught an error: {0}'.format(err)) ... except (TypeError, RuntimeError, ZeroDivisionError) as err: ... print('Caught an error: {0}'.format(err)) ... except ZeroDivisionError: ...",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_14_1_5e07119c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_14_1_5e07119c",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 14,
+        "evidence_location": "第14页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__15_1_69c1cd9e",
+    "title": "CodeExample__15_1_69c1cd9e",
+    "code": "下面对surname()方法使用装饰器@property之后，就可以将其作为实例属性进行访问 注意，访问surname时不能加括号，因为它不再是类的实例方法，而是实例属性。示例如下 @property装饰器 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay @property def surname(self): return self.name.split()[0]",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_15_1_69c1cd9e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_15_1_69c1cd9e",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__15_1_cf936daf",
+    "title": "CodeExample__15_1_cf936daf",
+    "code": "用在except子句中的异常基类可以匹配它的子类 例如，下面的代码通过继承Python内置的Exception类自定义了一个异常类B，然后依次定义了B的两个子类C和D 使用关键字raise后跟异常类实例对象的方式强制地产生异常，except子句捕获异常后输出异常的类型 上例会依次输出B、B、B。这是由于异常基类B被放在了第一个except子句中，从而“拦截”了所有的异常子类。交换语句except B和except D的位置，从而将异常基类B置于最后，就会输出B、C、D try … except 语句 class B(Exception): pass class C(B): pass class D(C): pass for cls in (B, C, D): try: raise cls raise cls() except B: print('B') except C: print('C') except D: print('D')",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_15_1_cf936daf"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_15_1_cf936daf",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__15_1_d7a5aab2",
+    "title": "CodeExample__15_1_d7a5aab2",
+    "code": "本节将构建两个类来记录和处理有关公司人员的信息 Employee类用于表示和处理有关公司雇员的信息 Manager类继承自Employee类，用于表示和处理有关经理的信息(经理也是公司的雇员) 首先定义Employee类，它有三个实例属性，分别用于记录雇员的姓名、职务和薪酬 定义类 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_15_1_d7a5aab2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_15_1_d7a5aab2",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 15,
+        "evidence_location": "第15页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__16_1_02dfcadf",
+    "title": "CodeExample__16_1_02dfcadf",
+    "code": "假设现在要编写一个函数，接收一个自然数的列表，返回其中所有的素数。写出如下函数： 返回一个列表中的素数 import math def is_prime(num): if num > 1: if num == 2: return True if num % 2 == 0: return False for i in range(3, int(math.sqrt(num) + 1), 2): if num % i == 0: return False return True return False def get_primes(nums): primes = [] for num in nums: if is_prime(num): primes.append(num) return primes",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_16_1_02dfcadf"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_16_1_02dfcadf",
+        "source_file": "第六章_迭代.pptx",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__16_1_e5e5c858",
+    "title": "CodeExample__16_1_e5e5c858",
+    "code": "前面对Employee类的实例进行的测试是一些常规操作，在交互环境中一次性地输入这些测试语句不利于代码的维护和复用 其改进办法是使用封装(encapsulation)的思想，把操作逻辑包装到类中，对外隐藏实现细节 封装 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent))",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_16_1_e5e5c858"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_16_1_e5e5c858",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 16,
+        "evidence_location": "第16页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__17_1_0f51b96f",
+    "title": "CodeExample__17_1_0f51b96f",
+    "code": "下例创建了一个表示温度的Temperature类，其内部用摄氏度记录温度的值，同时提供以摄氏度和华氏度为单位的温度输出 property()的用法 class Temperature: def __init__(self): self._celsius = 0 def get_celsius(self): return self._celsius def set_celsius(self, celsius): if celsius < -273: raise ValueError('Nothing can be colder than absolute zero’) self._celsius = celsius def del_celsius(self): self._celsius = 0 def get_fahrenheit(self): return (self._celsius * 1.8) + 32 celsius = property(get_celsius, set_celsius, del_celsius) fahrenheit = property(get_fahrenheit)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_17_1_0f51b96f"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_17_1_0f51b96f",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__17_1_8c5dab6d",
+    "title": "CodeExample__17_1_8c5dab6d",
+    "code": "Employee实例对象的默认显示方式是输出其在内存中的地址 为了显示诸如属性值这样的有用信息，可以定义一个名为__str__()的方法，它接收一个self参数，返回一个字符串 运算符重载 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent)) def __str__(self): return '[Employee: %s, %s]' % (self.name, self.pay)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_17_1_8c5dab6d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_17_1_8c5dab6d",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__17_1_c26318b2",
+    "title": "CodeExample__17_1_c26318b2",
+    "code": "现在需求发生了一些变化，要求根据用户指定的一个起始值输出大于该起始值的所有素数，这实际上是要输出无限个素数 上例中的get_primes()函数，如果每次调用该函数都返回下一个素数，就不需要在函数内部使用列表收集所有已经找到的素数，也就不会有内存不够的问题。顺着该思路，可以写出如下函数： 返回一个列表中的素数 def get_primes(start): while True: if is_prime(start): return start start += 1",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_17_1_c26318b2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_17_1_c26318b2",
+        "source_file": "第六章_迭代.pptx",
+        "page": 17,
+        "evidence_location": "第17页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__18_1_3fe07bff",
+    "title": "CodeExample__18_1_3fe07bff",
+    "code": "类似于__str__()以双下画线命名的方法有特殊的含义：它们由Python预先设置，当出现在用户定义的类中时，可以拦截特定的内置操作(如打印输出、初始化等)以及运算符操作(如+、－、==等) 习惯上将出现在用户定义的类中的这些特殊方法称为运算符重载(operator overloading)，下表列出了一些这样的特殊方法 运算符重载 方法 | 功能说明 __init__() | 构造函数，生成对象时调用 __del__() | 析构函数，释放对象时调用 __add__() | + __sub__() | - __mul__() | * __div__()__、truediv__() | / __floordiv__() | 整除",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_18_1_3fe07bff"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_18_1_3fe07bff",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 18,
+        "evidence_location": "第18页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__19_1_cc20fbb5",
+    "title": "CodeExample__19_1_cc20fbb5",
+    "code": "同样，使用@property装饰器实现上例中对属性的读取；至于修改和删除，则需要用属性名作为方法名，并加上形如@attribute.setter和@attribute.deleter这样的装饰 property()的用法 class Temperature: def __init__(self): self._celsius = 0 @property def celsius(self): return self._celsius @celsius.setter def celsius(self, celsius): if celsius < -273: raise ValueError('Nothing can be colder than absolute zero’) self._celsius = celsius @celsius.deleter def celsius(self): self._celsius = 0 @property def fahrenheit(self): return (self._celsius * 1.8) + 32",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_19_1_cc20fbb5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_19_1_cc20fbb5",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 19,
+        "evidence_location": "第19页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__19_1_d9b7e790",
+    "title": "CodeExample__19_1_d9b7e790",
+    "code": "Python还提供了两种在使用from … import *语句进行全部导入时隐藏模块内名称的方法，形如_x的名称不会被from … import *语句导入，如在模块文件spam.py中做如下定义： 在交互环境中使用from spam import *进行全导入，可以看到以下画线开头的名称不可访问，如下所示： from…import *语句 _x = 1 y = 2 def _f(): print('hi')",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_19_1_d9b7e790"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_19_1_d9b7e790",
+        "source_file": "第十章_模块.pptx",
+        "page": 19,
+        "evidence_location": "第19页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__20_1_68bc083d",
+    "title": "CodeExample__20_1_68bc083d",
+    "code": "对于前面表格中的大部分方法，Python并不提供默认实现 这实际上是有意为之，因为类似于“+”这样的运算并不是对所有对象都有意义 如果要使Employee对象可以用于“+”运算，就必须像下例这样在Employee类中通过定义__add__()方法来重载“+”运算符 运算符重载 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent)) def __add__(self, other): return Employee('%s & %s' % (self.name, other.name)) def __str__(self): return '[Employee: %s, %s]' % (self.name, self.pay)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_20_1_68bc083d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_20_1_68bc083d",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 20,
+        "evidence_location": "第20页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__22_1_353f012d",
+    "title": "CodeExample__22_1_353f012d",
+    "code": "定制对象在交互环境中的显示方式，需要重载__repr__()方法 运算符重载 class Employee: def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent)) def __str__(self): return '[Employee: %s, %s, %s]' % (self.name, self.job, self.pay) def __repr__(self): return 'Employee(%r, %r, %r)' % (self.name, self.job, self.pay)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_22_1_353f012d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_22_1_353f012d",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 22,
+        "evidence_location": "第22页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__22_1_9243bb38",
+    "title": "CodeExample__22_1_9243bb38",
+    "code": "如果finally子句中包含一个return语句，则返回值将来自finally子句的return语句的返回值，而非来自try子句的return语句的返回值。示例如下： try … except … finally 语句 >>> def bool_return(): ... try: ... return True ... finally: ... return False ... >>> bool_return() False",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_22_1_9243bb38"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_22_1_9243bb38",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 22,
+        "evidence_location": "第22页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__23_1_d160c9b8",
+    "title": "CodeExample__23_1_d160c9b8",
+    "code": "前面已经定义了表示公司雇员的Employee类，现在还要定义一个Manager类，用于代表经理 经理也是公司雇员，自然拥有雇员的所有属性。但当涨薪酬时经理会“不公平地”比普通雇员多获得10%的额外奖金 使用继承来表达普通雇员和经理之间的关系示例如下 上面的方法虽然可以达成目标，但更好的办法是在子类中直接调用超类的方法，以便于维护 继承 class Manager(Employee): def give_raise(self, percent, bonus=0.1): self.pay = int(self.pay + (1 + percent + bonus)) class Manager(Employee): def give_raise(self, percent, bonus=0.1): Employee.give_raise(self, percent + bonus)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_23_1_d160c9b8"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_23_1_d160c9b8",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 23,
+        "evidence_location": "第23页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__24_1_2f21f38c",
+    "title": "CodeExample__24_1_2f21f38c",
+    "code": "严格意义上的重载指的是定义多个名称相同，而参数类型或参数数量不同的函数，在调用时通过传入不同类型或数量的参数加以区分，下例展示了C++中重载的使用 C++重载 #include <stdio.h> using namespace std; int func1(int n) { return n + 1; } double func1(double n) { return n + 1; } int func2(int n) { return n + 1; } int func2(int n, int m) { return n + m + 1; } int main() { cout << func1(1) << func1(3.14) << endl; cout << func2(1) << func2(1, 2) << endl; return 0; }",
+    "language": "C++",
+    "source_chunk_ids": [
+      "_24_1_2f21f38c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_24_1_2f21f38c",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 24,
+        "evidence_location": "第24页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__25_1_2823a365",
+    "title": "CodeExample__25_1_2823a365",
+    "code": "仅使用关键字raise而不在其后附加异常名，就是重新引发当前的异常 如果在捕获一个异常之后还希望该异常能继续传递下去，可以使用单独的raise语句 raise语句 import sys try: f = open('filename.txt') s = f.readline() i = int(s.strip()) except OSError as err: print('OS error: {0}'.format(err)) except ValueError: print('Cannot convert data to an integer') except Exception: print(\"Unexpected error:\", sys.exc_info()[0]) raise except Exception: print('Unexpected error:', sys.exc_info()[0]) raise",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_25_1_2823a365"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_25_1_2823a365",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 25,
+        "evidence_location": "第25页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__25_1_d87c4c9d",
+    "title": "CodeExample__25_1_d87c4c9d",
+    "code": "在Python中，函数的参数都是通过引用传递的，故无法也无须为参数指定类型 Python中仅需编写一个函数即可处理多种类型的对象，当对象不支持相应的操作时，就会在运行时引发异常 在Python中后定义的函数会替代先定义的函数 Python并不支持像C++那样的重载，要在Python中实现类似的功能也很简单，只需使用函数默认参数或可变参数即可 重载 def func1(n, m=None): if m is None： return n + 1 else: return n + m + 1 def func2(*n): from functools import reduce return reduce(lambda x, y: x + y, n) + 1",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_25_1_d87c4c9d"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_25_1_d87c4c9d",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 25,
+        "evidence_location": "第25页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__27_1_355aeadc",
+    "title": "CodeExample__27_1_355aeadc",
+    "code": "使用内置函数super()在子类中调用超类的方法，从而无须明确地指定超类的名称，在此通过一个示例阐述其用法 super()函数 class Rectangle: def __init__(self, length, width): self.length = length self.width = width def area(self): return self.length * self.width class Square(Rectangle): def __init__(self, length): super().__init__(length, length) class Cube(Square): def area(self): return super().area() * 6 def volume(self): return super().area() * self.length",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_27_1_355aeadc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_27_1_355aeadc",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 27,
+        "evidence_location": "第27页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__27_1_428ec54c",
+    "title": "CodeExample__27_1_428ec54c",
+    "code": "要使用包导入，还需遵循一个规则：由点号分割的每个目录中都必须有一个名为__init__.py的文件，否则包导入失败 上述包导入语句import dir1.dir2.module对应的目录结构，如下所示： __init__.py文件可以是空的，也可以包含Python程序代码，所包含的代码会在首次导入包时被自动执行 要求模块包路径上的每一层目录都含有一个__init__.py文件可以防止有相同名称的目录先于模块包出现在搜索路径中 包导入 dir0/ dir1/ __init__.py dir2/ __init__.py module.py",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_27_1_428ec54c"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_27_1_428ec54c",
+        "source_file": "第十章_模块.pptx",
+        "page": 27,
+        "evidence_location": "第27页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__28_1_42546e57",
+    "title": "CodeExample__28_1_42546e57",
+    "code": "Python在首次导入某个包时会自动执行路径目录下__init__.py中的代码 仍以import dir1.dir2.module为例，假设路径上两个__init__.py文件内容分别如下： 被导入的模块文件module.py内容如下： 包导入示例 # dir0/dir1/__init__.py print('dir1 init') x = 1 # dir0/dir1/dir2/__init__.py print('dir2 init') y = 2 # dir0/dir1/dir2/module.py print('module.py') z = 3",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_28_1_42546e57"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_28_1_42546e57",
+        "source_file": "第十章_模块.pptx",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__28_1_b25d2950",
+    "title": "CodeExample__28_1_b25d2950",
+    "code": "通过前面的工作可知，当由Manager类创建实例对象时，必须指定参数job='mgr'，这显得有些多余 理想情况下，在创建Manager实例对象时可以自动填入参数job='mgr’ 为达到目的，可以在Employee类中对继承自超类的构造函数进行定制 注意：下面代码中使用了内置函数super()来引用超类，而不是显式地指定其名称，这样做是为了使代码更易维护 定制构造函数 class Manager(Employee): def __init__(self, name, pay=0): super().__init__(name, 'mgr', pay) def give_raise(self, percent, bonus=0.1): super().give_raise(percent + bonus)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_28_1_b25d2950"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_28_1_b25d2950",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__28_1_c430a458",
+    "title": "CodeExample__28_1_c430a458",
+    "code": "用户自定义的异常类虽然可以执行任何操作，但一般都刻意保持简单，只提供一些属性用于记录与异常相关的信息 在为一个应用程序定义专用的异常类时，通常的做法是先创建基类，再由该基类派生出不同的错误条件下的异常子类 自定义异常 class CustomError(Exception): \"\"\"Base class for other user-defined exceptions\"\"\" pass class ValueTooSmallError(CustomError): \"\"\"Raised when the input value is too small\"\"\" pass class ValueTooLargeError(CustomError): \"\"\"Raised when the input value is too large\"\"\" pass",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_28_1_c430a458"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_28_1_c430a458",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 28,
+        "evidence_location": "第28页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__29_1_b63574e2",
+    "title": "CodeExample__29_1_b63574e2",
+    "code": "在dir0目录下启动Python交互环境，导入模块，输出的内容印证了两个__init__.py文件的代码被依次执行，如左下图所示： 如果使用from … import *语句导入一个目录下的所有模块，沿用上例，假设目录dir0/dir1/dir2/下有spam.py、ham.py和eggs.py三个模块文件，目录结构如右下图所示： 包导入示例 dir0/ dir1/ __init__.py dir2/ __init__.py spam.py eggs.py ham.py",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_29_1_b63574e2"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_29_1_b63574e2",
+        "source_file": "第十章_模块.pptx",
+        "page": 29,
+        "evidence_location": "第29页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__29_2_c53b7251",
+    "title": "CodeExample__29_2_c53b7251",
+    "code": "(<class '__main__.CustomError'>, CustomError(), <traceback object at 0x0000022FCFB83E40>) (<class '__main__.ValueTooSmallError'>, ValueTooSmallError(), <traceback object at 0x0000022FCFB83E40>) (<class '__main__.ValueTooLargeError'>, ValueTooLargeError(), <traceback object at 0x0000022FCFB83E40>)",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_29_2_c53b7251"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_29_2_c53b7251",
+        "source_file": "第九章_异常处理.pptx",
+        "page": 29,
+        "evidence_location": "第29页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__2_1_d5388d1e",
+    "title": "CodeExample__2_1_d5388d1e",
+    "code": "复合数据类型由程序设计语言提供的基本数据类型以一定方式组合而成，Python中常用的复合数据结构有列表（list）、元组（tuple）、字典（dict）、集合（set）、字符串（str）等 序列（list） 元组（tuple） 字典（dict） 集合（set） 复合数据类型 squares = [1, 4, 9, 16, 25] t = ((12345, 54321, 'hello!'), (1, 2, 3, 4), (3.14,)) d = {'Name': 'Wang', 'Age': 7, 'Class': 'First'} s = {1, 2, 3}",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_2_1_d5388d1e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_2_1_d5388d1e",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 2,
+        "evidence_location": "第2页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__30_1_cf44a7b5",
+    "title": "CodeExample__30_1_cf44a7b5",
+    "code": "前面的示例在调用内置函数super()时没有为其传入参数，但super()也可以接收两个参数：第一个是类，第二个是该类的实例对象 例如，Square类可以通过如下方式调用其超类Rectangle的构造函数 在使用super(Square, self)时，对“继承树”的搜索会从第一个参数指定的类(此处为Square)之后开始 Square类的MRO为Square→Rectangle→object，从第一个参数指定的Square之后开始搜索，随即找到的就是Rectangle super()函数的参数 class Square(Rectangle): def __init__(self, length): super(Square, self).__init__(length, length)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_30_1_cf44a7b5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_30_1_cf44a7b5",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 30,
+        "evidence_location": "第30页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__31_1_0daaaa41",
+    "title": "CodeExample__31_1_0daaaa41",
+    "code": "要使用from … import *语句导入一个目录下的所有模块，就要在该目录对应的__init__.py文件中定义一个名为__all__的列表，在其中列出要导入的模块名 例如，下例中规定只导入spam模块和ham模块： 重新启动交互环境，执行from dir1.dir2 import *语句，果然成功导入了指定的spam和ham模块，如下所示： __all__列表 # dir0/dir1/dir2/__init__.py __all__ = ['spam', 'ham']",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_31_1_0daaaa41"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_31_1_0daaaa41",
+        "source_file": "第十章_模块.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__31_1_6248deed",
+    "title": "CodeExample__31_1_6248deed",
+    "code": "下面定义一个通用显示工具类，其使用了内置函数getattr(object, name)来获取对象object的name的属性值，如果该字符串是对象object的属性之一，则返回该属性的值 例如，getattr(x, 'spam')等同于x.spam。如果指定属性不存在，则会引发AttributeError异常 内省 class AttrDisplay: def gather_attrs(self): attrs = [] for key in sorted(self.__dict__): attrs.append('%s=%s' % (key, getattr(self, key))) return ', '.join(attrs) def __str__(self): return '[%s: %s]' % (self.__class__.__name__, self.gather_attrs())",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_31_1_6248deed"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_31_1_6248deed",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__31_1_e7e1f778",
+    "title": "CodeExample__31_1_e7e1f778",
+    "code": "通过向super()的第一个参数传入“继承树”上位置更高的超类，可以实现“隔代指定” 下例的Cube类调用的是超类的超类Rectangle的area()方法其MRO为Cube→Square→Rectangle→object，使用super(Square, self)令其从第一个参数指定的Square之后开始搜索，这样就跳过了Cube的直接超类Square，从而达到了其超类的超类Rectangle super()函数的参数 class Cube(Square): def area(self): return super(Square, self).area() * 6 def volume(self): return super(Square, self).area() * self.length",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_31_1_e7e1f778"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_31_1_e7e1f778",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__32_1_9c90a7ec",
+    "title": "CodeExample__32_1_9c90a7ec",
+    "code": "经过前面的工作，以下是最终版本的Employee和Manager类，及在交互环境中的测试结果 总结 class Employee(AttrDisplay): def __init__(self, name, job=None, pay=0): self.name = name self.job = job self.pay = pay def surname(self): return self.name.split()[0] def give_raise(self, percent): self.pay = int(self.pay * (1 + percent)) class Manager(Employee): def __init__(self, name, pay=0): super().__init__(name, 'mgr', pay) def give_raise(self, percent, bonus=0.1): super().give_raise(percent + bonus)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_32_1_9c90a7ec"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_32_1_9c90a7ec",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 32,
+        "evidence_location": "第32页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__40_1_3da1e621",
+    "title": "CodeExample__40_1_3da1e621",
+    "code": "定义字典时，每个项目(item)的键(key)和值(value)都要用冒号分隔，形如key: value(好的书写习惯是冒号之前无空格，冒号之后加一个空格)；项目之间用逗号分隔，所有的项目放在一对大括号“{}”中，字典中的键不允许重复 如要创建空字典，可以使用不包含任何内容的一对空大括号“{}”或调用内置函数dict()，例如： 字典的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_40_1_3da1e621"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_40_1_3da1e621",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 40,
+        "evidence_location": "第40页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_447286e7",
+    "title": "CodeExample__4_1_447286e7",
+    "code": "类(class)是对具有共同属性和行为的对象的抽象，是对一类事物共性的描述 Python中定义类需使用关键字class，后跟类名和冒号 类名中单词的首字母习惯上要大写，即使用所谓的CamelCase 冒号后是换行和缩进，之后的代码用于实现类的具体功能 在类的内部定义的变量和函数分别称为属性(attribute)和方法(method)，其中方法的函数头部必须有一个名为self的形参 如何定义类 class MyClass: i = 1 def set_value(self, j): self.j = j def show_msg(self): return 'spam'",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_447286e7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_447286e7",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_b05ac42e",
+    "title": "CodeExample__4_1_b05ac42e",
+    "code": "如下所示，函数的定义包括函数头和函数体两部分 函数头以关键字def开始，后跟一个空格和函数名，接着是一对括号，括号内可列出函数的参数，多个参数用逗号间隔，括号之后是一个冒号 函数体由多条语句构成，与函数头维持一个层级的缩进 函数头和函数体之间可以加入三重引号界定的字符串作为注释，即文档字符串(docstring)，用于简述函数的功能 如何定义函数 def func(arg1, arg2, arg3): \"\"\"Docstring comments\"\"\" statements",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_b05ac42e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_b05ac42e",
+        "source_file": "第五章_函数.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__4_1_c3c5495b",
+    "title": "CodeExample__4_1_c3c5495b",
+    "code": "有时候，程序需要处理与类相关的信息，如记录由类创建的实例对象的个数，这些信息需要存储于类对象自身之中 前面所述的类属性恰好满足上面的要求，进一步地，处理这些信息的方法最好也只与类对象相关，而与实例对象无关 实例方法达不到上面要求是因为其有一个位于第一位的固定参数，该参数“期待”一个实例对象，该实例对象就是方法调用时的主体，也就是说，实例方法的调用离不开实例对象 类属性和实例方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(self): # 实例方法 print('Instance created: %d' % Spam.instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_4_1_c3c5495b"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_4_1_c3c5495b",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 4,
+        "evidence_location": "第4页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__57_1_9a2806d5",
+    "title": "CodeExample__57_1_9a2806d5",
+    "code": "字典推导式(dictionary comprehension)的构造方式与列表推导式类似，不同之处在于字典推导式的前部需要以key：value的形式指定字典的键值对，并且整个表达式需要写在一对大括号“{}”中，执行字典推导式返回一个字典对象，例如： 字典推导式",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_57_1_9a2806d5"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_57_1_9a2806d5",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__59_1_94e84d55",
+    "title": "CodeExample__59_1_94e84d55",
+    "code": "集合(set)是无序可变对象，使用一对大括号“{}”界定 集合中的元素是唯一的，不可重复，且只能是不可变对象，如数字、字符串、元组等 列表、字典以及集合本身都是可变的，不能作为集合元素，例如： 集合的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_59_1_94e84d55"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_59_1_94e84d55",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 59,
+        "evidence_location": "第59页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__5_1_1adfdbbf",
+    "title": "CodeExample__5_1_1adfdbbf",
+    "code": "有了类之后，可以通过调用类来创建任意多个实例对象，简称实例(instance) 类是抽象的概念，是创建实例时依据的模板；每个实例都有由类规定的相同的方法，但各自的属性值(数据)可以不同 定义类时常会添加一个名为__init__()的方法，它会在由类创建实例对象时被Python自动调用，用于初始化类的成员变量 实例(instance) class MyClass: i = 1 def __init__(self, j=2): self.j = j def set_value(self, j): self.j = j def show_msg(self): print('MyClass(j=%d)' % self.j)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_5_1_1adfdbbf"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_5_1_1adfdbbf",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__60_1_1d2b2e14",
+    "title": "CodeExample__60_1_1d2b2e14",
+    "code": "内置函数set()接受列表、元组等可迭代对象作为参数并使用其元素构建集合，如果原来的对象中存在重复元素，则只会保留一个 创建空集合只能使用不含参数的内置函数set()，而不能使用一对空大括号“{}”，因为后者创建的是一个空字典，例如： 集合的基本操作",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "_60_1_1d2b2e14"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_60_1_1d2b2e14",
+        "source_file": "第二章_复合数据类型.pptx",
+        "page": 60,
+        "evidence_location": "第60页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__6_1_506863a6",
+    "title": "CodeExample__6_1_506863a6",
+    "code": "为了解决上述问题，需要借助静态方法这种不依赖于实例对象的方法 静态方法(static method)是在类中定义的没有self形参的函数，旨在操作类属性而非实例属性 定义静态方法，还需要将所得的函数对象作为参数传递给一个名为staticmethod()的内置函数，其返回一个静态方法 静态方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(): # 注意函数没有形参self print('Instance created: %d' % Spam.instance_count) # 创建静态方法 print_instance_count = staticmethod(print_instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_6_1_506863a6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_6_1_506863a6",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 6,
+        "evidence_location": "第6页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_18fd6f04",
+    "title": "CodeExample__7_1_18fd6f04",
+    "code": "下例中i = 1这样的定义在方法之外的属性称为类属性(class attribute) 类似于self.j，在方法之中定义，且含有self和点号运算符的属性称为实例属性(instance attribute) 类属性一般通过类对象访问，也可以通过由类创建的实例对象访问；而实例属性只能通过实例对象访问 类属性和实例属性 class MyClass: i = 1 def __init__(self, j): self.j = j",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_18fd6f04"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_18fd6f04",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_201a9ca6",
+    "title": "CodeExample__7_1_201a9ca6",
+    "code": "模块文件b.py和c.py由可执行的Python语句构成，这与任何一个Python源程序文件无异，但作为模块，它们一般不被直接运行，而是定义了供其它程序导入后调用的对象 如下图所示，在文件b.py中定义了如下一个函数spam() 如下图所示，顶层文件a.py使用如下的方式先导入模块文件b.py，再调用其定义的函数spam() 顶层文件a.py使用import语句导入模块b，实际上是在内存中创建了一个被导入的模块对象，并将模块名b赋给该对象 顶层文件a.py就可以通过变量名b指代的模块对象访问原模块文件b.py中定义的函数spam() 模块文件的调用关系 def spam(text): # 文件 b.py print(text) import b # 文件 a.py b.spam('hi')",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_201a9ca6"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_201a9ca6",
+        "source_file": "第十章_模块.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__7_1_abf94859",
+    "title": "CodeExample__7_1_abf94859",
+    "code": "Python中一切都是对象，函数也不例外 前文提及的函数定义就是一段可执行代码，只有当Python执行了函数定义的代码之后，才会在内存中创建一个函数对象，并将其赋给一个变量(函数名) 因为将函数对象的创建延后到了程序运行时，所以Python可以根据运行时的条件动态地定义函数 条件动态定义函数 if test: def func(): # 以一种形式定义函数 ... else: def func(): # 或者将函数定义成另一种形式 ... ... func() # 调用函数",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_7_1_abf94859"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_7_1_abf94859",
+        "source_file": "第五章_函数.pptx",
+        "page": 7,
+        "evidence_location": "第7页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__8_1_c1f0e103",
+    "title": "CodeExample__8_1_c1f0e103",
+    "code": "类属性为类对象所有，由类生成的多个实例对象之间共享，因此常用于保存一些共有的属性 实例属性为类的实例所有，对于两个不同的实例对象，实例属性通常是不同的，而类属性是一致的 下例创建一个“Python机器人”，它们都遵循“机器人三定律”。该定律对所有机器人都适用，故将其设置为类属性，而机器人的名字、型号等就是实例属性 “机器人”示例 class Robot: three_laws = ( \"\"\"A robot may not injure a human being or, through inaction, allow a human being to come to harm.\"\"\", \"\"\"A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.\"\"\", \"\"\"A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.\"\"\" ) def __init__(self, name, model): self.name = name self.model = model",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_8_1_c1f0e103"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_8_1_c1f0e103",
+        "source_file": "第七章_面向对象程序设计.pptx",
+        "page": 8,
+        "evidence_location": "第8页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample__9_1_6a78b8a7",
+    "title": "CodeExample__9_1_6a78b8a7",
+    "code": "类方法(class method)有一个位于参数列表首位的名为cls的形参，其用于接收作为调用主体的类对象，定义后需要使用内置函数classmethod()来生成 类方法可由类对象或实例对象调用，类方法自动地将类对象作为第一个参数接收 类方法 class Spam: instance_count = 0 # 类属性 def __init__(self): Spam.instance_count += 1 def print_instance_count(cls): # 约定俗成地使用cls作为类方法的第一个参数 print('Instance created: %d' % cls.instance_count) # 创建类方法 print_instance_count = classmethod(print_instance_count)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "_9_1_6a78b8a7"
+    ],
+    "sources": [
+      {
+        "chunk_id": "_9_1_6a78b8a7",
+        "source_file": "第八章_类相关语法简介.pptx",
+        "page": 9,
+        "evidence_location": "第9页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_31_1_10dd1047",
+    "title": "CodeExample_python_31_1_10dd1047",
+    "code": "跨行书写：括号内元素可以跨行书写，这时第二行开头需较第一行多增加一级缩进，或与左括号后一字符垂直对齐： 还可以通过在最后一行加反斜杠的方式进行跨行。例如： Python编码规范 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) foo = long_function_name(var_one, var_two, var_three, var_four) if (this_is_one_thing and that_is_another_thing): do_something() with open('/path/to/some/file/you/want/to/read') as file_1, \\ open('/path/to/some/file/being/written', 'w') as file_2: file_2.write(file_1.read())",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_31_1_10dd1047"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_31_1_10dd1047",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 31,
+        "evidence_location": "第31页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_37_1_62d83a6e",
+    "title": "CodeExample_python_37_1_62d83a6e",
+    "code": "下例演示了一个用于计算斐波那契数列的Python脚本。斐波那契数列由0和1开始，之后的每一项都等于前两项之和。 注意上例中的条件判断语句“if __name__ == '__main__'”，其中的变量__name__由Python自动维护。当源程序文件被直接运行时，__name__的值为字符串 '__main__'；当作为包被导入时，__name__的值为源程序文件名(没有扩展名.py) Python脚本示例 #! /usr/bin/env python def fib(n): \"\"\"Print a Fibonacci series up to n.\"\"\" a, b = 0, 1 while a < n: print(a) a, b = b, a+b if __ name __ == '__main__': n = int(input('Please enter a number:')) fib(n)",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_37_1_62d83a6e"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_37_1_62d83a6e",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 37,
+        "evidence_location": "第37页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_python_5_1_036623bc",
+    "title": "CodeExample_python_5_1_036623bc",
+    "code": "吉多·范·罗苏姆，1956年生于荷兰，计算机程序员，为Python程序设计语言的最初设计者及主要架构师 In December 1989, I was looking for a \"hobby\" programming project that would keep me occupied during the week around Christmas. My office would be closed, but I had a home computer, and not much else on my hands. I decided to write an interpreter for the new scripting language I had been thinking about lately: a descendant of ABC that would appeal to Unix/C hackers.",
+    "language": "Python",
+    "source_chunk_ids": [
+      "python_5_1_036623bc"
+    ],
+    "sources": [
+      {
+        "chunk_id": "python_5_1_036623bc",
+        "source_file": "第一章_Python基础知识.pptx",
+        "page": 5,
+        "evidence_location": "第5页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_unicode_56_1_147adb72",
+    "title": "CodeExample_unicode_56_1_147adb72",
+    "code": "字符串对象的常用方法 str.replace(old, new[, count])方法返回字符串str的副本，其中出现的所有子字符串old都将被替换为new 如果提供了可选参数count，则只替换前count次 str.startswith(prefix[, start[, end]])方法和str.endswith(suffix[, start[, end]])方法分别用于检查字符串str是否是以参数指定子字符串开始或结束，若是返回True，否则返回False 可选参数start和end用于指定查找范围 第一个参数还可以是一个字符串元组，用于指定供匹配的多个前缀或后缀",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "unicode_56_1_147adb72"
+    ],
+    "sources": [
+      {
+        "chunk_id": "unicode_56_1_147adb72",
+        "source_file": "第四章_Unicode与字符串.pptx",
+        "page": 56,
+        "evidence_location": "第56页"
+      }
+    ]
+  },
+  {
+    "id": "CodeExample_CodeExample_unicode_57_1_bdf78222",
+    "title": "CodeExample_unicode_57_1_bdf78222",
+    "code": "字符串对象的常用方法 str.format(*args, **kwargs)方法用来格式化字符串，调用此方法的字符串可以包含普通字符及用大括号“{}”表示的替换域 替换域可以包含一个位置参数的数字索引，或一个关键字参数的名称 还可以配合类型标识符使用",
+    "language": "通用编程",
+    "source_chunk_ids": [
+      "unicode_57_1_bdf78222"
+    ],
+    "sources": [
+      {
+        "chunk_id": "unicode_57_1_bdf78222",
+        "source_file": "第四章_Unicode与字符串.pptx",
+        "page": 57,
+        "evidence_location": "第57页"
+      }
+    ]
+  }
+]
