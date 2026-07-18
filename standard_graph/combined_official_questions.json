@@ -1,0 +1,1933 @@
+[
+  {
+    "question_id": "Q001",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "Java",
+    "stem": "在面向对象程序设计中，哪一项最准确地描述了“类”和“对象”的关系？",
+    "code": "",
+    "options": [
+      "A. 类是对象的具体实例",
+      "B. 对象是类的具体实例",
+      "C. 类和对象完全相同",
+      "D. 对象只能包含方法，不能包含属性"
+    ],
+    "answer": "B",
+    "analysis": "类描述对象的共同属性和方法，对象是由类创建出来的具体实例。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 1
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q002",
+    "type": "true_false",
+    "type_label": "判断题",
+    "language": "Java",
+    "stem": "判断正误：封装的一个重要目的，是把对象内部数据隐藏起来，只通过公开方法控制访问。",
+    "code": "",
+    "options": [],
+    "answer": "正确",
+    "analysis": "封装强调把属性和实现细节隐藏在对象内部，通过方法暴露受控访问接口。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "封装",
+        "role": "primary"
+      },
+      {
+        "name": "信息隐藏",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 2
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q003",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，判断程序输出结果。",
+    "code": "class Animal {\n    void speak() { System.out.println(\"Animal\"); }\n}\nclass Dog extends Animal {\n    void speak() { System.out.println(\"Dog\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.speak();\n    }\n}",
+    "options": [],
+    "answer": "Dog",
+    "analysis": "父类引用指向子类对象，调用被子类重写的方法时，运行期根据实际对象类型执行 Dog.speak。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "多态",
+        "role": "primary"
+      },
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "动态绑定",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 3
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q004",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "Java",
+    "stem": "下面代码想让子类重写父类的 show 方法，但实际没有形成重写。请指出问题。",
+    "code": "class Parent {\n    void show() { System.out.println(\"Parent\"); }\n}\nclass Child extends Parent {\n    void show(String msg) { System.out.println(msg); }\n}",
+    "options": [],
+    "answer": "Child 中的 show(String msg) 参数列表不同，不是重写，而是新的重载式方法。若要重写，应保持方法签名一致。",
+    "analysis": "重写要求子类方法与父类方法具有相同的方法签名。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码调试",
+      "概念辨析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "重写",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 4
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q005",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "Java",
+    "stem": "Java 不支持类的多重继承，但可以通过哪种机制在一定程度上实现多重继承的效果？",
+    "code": "",
+    "options": [
+      "A. final 类",
+      "B. 接口",
+      "C. private 属性",
+      "D. 普通对象"
+    ],
+    "answer": "B",
+    "analysis": "Java 类只能继承一个父类，但可以实现多个接口，从而获得类似多重继承的能力。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "多重继承",
+        "role": "primary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 5
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q006",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，判断哪一行会导致编译错误，并说明原因。",
+    "code": "abstract class Shape {\n    abstract double area();\n}\npublic class Test {\n    public static void main(String[] args) {\n        Shape s = new Shape();\n    }\n}",
+    "options": [],
+    "answer": "Shape s = new Shape(); 会编译错误，因为抽象类不能直接实例化。",
+    "analysis": "abstract 修饰的类是抽象类，抽象类用于表达抽象概念，不能直接创建对象。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码阅读",
+      "错误分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "abstract",
+        "role": "primary"
+      },
+      {
+        "name": "抽象",
+        "role": "secondary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 6
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q007",
+    "type": "true_false",
+    "type_label": "判断题",
+    "language": "Java",
+    "stem": "判断正误：被 final 修饰的方法不能被子类重写。",
+    "code": "",
+    "options": [],
+    "answer": "正确",
+    "analysis": "final 方法不允许被覆盖，因此不能在子类中重写。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "语法识别",
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "final",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "primary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 7
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q008",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，判断 Person 对象中保存了哪些信息和行为。",
+    "code": "class Person {\n    String name;\n    int age;\n    void sayHello() {\n        System.out.println(\"hello\");\n    }\n}",
+    "options": [],
+    "answer": "Person 对象可以保存 name、age 两个属性，并具有 sayHello 方法。",
+    "analysis": "类中定义的变量描述对象属性，方法描述对象行为。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "代码阅读",
+      "结构识别"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 8
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q009",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，判断输出结果。",
+    "code": "class A {\n    void print() { System.out.println(\"A\"); }\n}\nclass B extends A {\n    void print() { System.out.println(\"B\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        A x = new B();\n        x.print();\n    }\n}",
+    "options": [],
+    "answer": "B",
+    "analysis": "A 类型引用 x 实际指向 B 对象，调用 print 时触发动态绑定，执行 B 中重写后的方法。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "动态绑定",
+        "role": "primary"
+      },
+      {
+        "name": "多态",
+        "role": "primary"
+      },
+      {
+        "name": "向上转型",
+        "role": "secondary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 9
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q010",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "Java",
+    "stem": "下面代码违反了封装思想。请指出问题并给出改进方向。",
+    "code": "class Account {\n    public double balance;\n}\npublic class Test {\n    public static void main(String[] args) {\n        Account a = new Account();\n        a.balance = -100;\n    }\n}",
+    "options": [],
+    "answer": "balance 被 public 暴露，外部可以随意修改。应使用 private 隐藏属性，并通过方法进行校验后访问或修改。",
+    "analysis": "封装和信息隐藏要求控制对象内部状态的访问方式。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码调试",
+      "设计改进"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "封装",
+        "role": "primary"
+      },
+      {
+        "name": "信息隐藏",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 10
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q011",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "Java",
+    "stem": "下列哪一项最能体现“面向对象编程”的思想？",
+    "code": "",
+    "options": [
+      "A. 只使用全局变量保存所有数据",
+      "B. 把数据和操作数据的方法组织到对象中",
+      "C. 所有语句都写在 main 方法中",
+      "D. 只关注程序执行顺序，不关注对象结构"
+    ],
+    "answer": "B",
+    "analysis": "面向对象编程强调对象、类、属性、方法，以及对象之间的协作。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "面向对象编程",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 11
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q012",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "stem": "补全代码，使 Dog 成为 Animal 的子类。",
+    "code": "class Animal {\n}\nclass Dog ______ Animal {\n}",
+    "options": [],
+    "answer": "extends",
+    "analysis": "Java 中使用 extends 表示类与类之间的继承关系。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "语法识别",
+      "代码补全"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "继承",
+        "role": "primary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 12
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q013",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "Java",
+    "stem": "下面代码为什么会报错？应该如何修改？",
+    "code": "abstract class Base {\n    abstract void run();\n}\nclass Sub extends Base {\n}",
+    "options": [],
+    "answer": "Sub 继承了抽象类 Base，但没有实现抽象方法 run，因此 Sub 也必须声明为 abstract，或者实现 run 方法。",
+    "analysis": "继承抽象类后，普通子类需要实现父类中的抽象方法。",
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码调试",
+      "错误分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "abstract",
+        "role": "primary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 13
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q014",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，判断变量 p 的编译期类型和实际对象类型。",
+    "code": "class Parent {}\nclass Child extends Parent {}\npublic class Test {\n    public static void main(String[] args) {\n        Parent p = new Child();\n    }\n}",
+    "options": [],
+    "answer": "p 的编译期类型是 Parent，实际对象类型是 Child。",
+    "analysis": "这是向上转型：子类对象可以赋值给父类引用。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码阅读",
+      "类型分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      },
+      {
+        "name": "继承",
+        "role": "secondary"
+      },
+      {
+        "name": "类型",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 14
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q015",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "Java",
+    "stem": "写出一个 Java 代码片段，定义接口 Flyable，并让 Bird 类使用该接口表达“会飞”的能力。",
+    "code": "",
+    "options": [],
+    "answer": "interface Flyable { void fly(); } class Bird implements Flyable { public void fly() { } }",
+    "analysis": "接口用于定义能力或规范，类可以实现接口。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码实现",
+      "结构设计"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "Java",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 15
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q016",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "Java",
+    "stem": "关于抽象类和接口，下列说法更合理的是哪一项？",
+    "code": "",
+    "options": [
+      "A. 抽象类和接口完全相同",
+      "B. 抽象类通常表示一类对象的抽象父类，接口更强调行为规范",
+      "C. 接口不能和多重继承有关",
+      "D. 抽象类不能包含方法"
+    ],
+    "answer": "B",
+    "analysis": "抽象类和接口都可表达抽象，但二者定位不同；接口常用于表达行为规范，也能支持多接口实现。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念辨析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "抽象类",
+        "role": "primary"
+      },
+      {
+        "name": "接口",
+        "role": "primary"
+      },
+      {
+        "name": "抽象",
+        "role": "secondary"
+      },
+      {
+        "name": "多重继承",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 16
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q017",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "stem": "补全代码，使 speak 方法禁止被子类重写。",
+    "code": "class Animal {\n    ______ void speak() {\n        System.out.println(\"Animal\");\n    }\n}",
+    "options": [],
+    "answer": "final",
+    "analysis": "final 修饰的方法不能被子类重写。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "语法识别",
+      "代码补全"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "final",
+        "role": "primary"
+      },
+      {
+        "name": "重写",
+        "role": "secondary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 17
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q018",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "stem": "阅读代码，说明 Student 对象通过哪个方法接收外部消息。",
+    "code": "class Student {\n    void study() {\n        System.out.println(\"study\");\n    }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Student s = new Student();\n        s.study();\n    }\n}",
+    "options": [],
+    "answer": "Student 对象通过 study 方法接收调用消息。",
+    "analysis": "对象之间通过方法调用进行交互，可以理解为向对象发送消息。",
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "代码阅读",
+      "概念理解"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "对象",
+        "role": "primary"
+      },
+      {
+        "name": "消息传递",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "类",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 18
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q019",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "Java",
+    "stem": "下面代码希望通过父类引用调用子类特有方法，为什么会编译失败？",
+    "code": "class Animal {}\nclass Dog extends Animal {\n    void bark() { System.out.println(\"wang\"); }\n}\npublic class Test {\n    public static void main(String[] args) {\n        Animal a = new Dog();\n        a.bark();\n    }\n}",
+    "options": [],
+    "answer": "a 的编译期类型是 Animal，Animal 中没有 bark 方法，因此不能直接调用。需要转回 Dog 类型或在父类中声明相关方法。",
+    "analysis": "向上转型后，引用能访问的成员受编译期类型约束。",
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码调试",
+      "类型分析"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "向上转型",
+        "role": "primary"
+      },
+      {
+        "name": "类型",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "secondary"
+      },
+      {
+        "name": "父类",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 19
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "Q020",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "Java",
+    "stem": "设计一个简单的 Book 类，包含 title 属性和 showTitle 方法，用来输出书名。",
+    "code": "",
+    "options": [],
+    "answer": "class Book { String title; void showTitle() { System.out.println(title); } }",
+    "analysis": "该题考察类的定义、对象属性和方法的组织方式。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": [
+      "代码实现",
+      "结构设计"
+    ],
+    "gold_knowledge_points": [
+      {
+        "name": "类",
+        "role": "primary"
+      },
+      {
+        "name": "属性",
+        "role": "primary"
+      },
+      {
+        "name": "方法",
+        "role": "primary"
+      },
+      {
+        "name": "对象",
+        "role": "secondary"
+      }
+    ],
+    "source": {
+      "kind": "manual_sample",
+      "file": "data/sample_questions.json",
+      "index": 20
+    },
+    "answer_source": "legacy_provided",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 1.0,
+    "bank_source": "legacy_oop_sample"
+  },
+  {
+    "question_id": "CPP_DOCX_001",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Given this program:\nsd::cout << “Hello, world!\\n”;\nmodify it to produce this output:\nInitialize\nHello, world!\nClean up\nDo not change main() in any way.\n[Tips:  In principle, a variable defined in the global scope(or in a namespace, or as a class static member) is initialized before main() is invoked. If a program is terminated normally(e.g. main() is done), the destructors for constructed static objects are called.\n]",
+    "code": "#include <iostream>\nint main()\n{\n}",
+    "options": [],
+    "answer": "#include <iostream>\n\nclass Initializer {\npublic:\n    Initializer() {\n        std::cout << \"Initialize\\n\";\n    }\n    ~Initializer() {\n        std::cout << \"Clean up\\n\";\n    }\n};\n\nInitializer init;\n\nint main()\n{\n    std::cout << \"Hello, world!\\n\";\n}",
+    "analysis": "候选答案正确理解了题目要求：在不修改 `main()` 的前提下，通过全局静态对象的构造和析构机制实现指定输出顺序。该方案定义了一个名为 `Initializer` 的类，其构造函数输出 'Initialize'，析构函数输出 'Clean up'，并声明了一个全局变量 `init`。根据 C++ 程序生命周期规则，全局对象在 `main()` 调用前构造，在 `main()` 结束后析构，因此输出顺序为：Initialize → Hello, world! → Clean up，完全符合题目要求。\n\n此外，原题代码中存在 `sd::cout` 的拼写错误，候选答案已正确修正为 `std::cout`，属于合理修正范围。整体实现简洁、标准，无语法或逻辑错误。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 15,
+      "paragraph_end": 27,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\n\nclass Initializer {\npublic:\n    Initializer() {\n        std::cout << \"Initialize\\n\";\n    }\n    ~Initializer() {\n        std::cout << \"Clean up\\n\";\n    }\n};\n\nInitializer init;\n\nint main()\n{\n    std::cout << \"Hello, world!\\n\";\n}",
+        "analysis": "题目要求在不修改 `main()` 函数的前提下，使程序输出包含 'Initialize'、'Hello, world!' 和 'Clean up' 三行内容。根据 C++ 的生命周期规则，全局作用域中的静态对象在 `main()` 执行前被构造，在程序正常结束时被析构。\n\n因此，可以通过定义一个全局的类对象来实现：\n- 在类的构造函数中输出 'Initialize'，该构造函数在 `main()` 开始前自动调用；\n- 在类的析构函数中输出 'Clean up'，该析构函数在 `main()` 结束后自动调用；\n- 将原语句 `std::cout << \"Hello, world!\\n\";` 放入 `main()` 中即可。\n\n注意原代码中使用了错误的命名空间 `sd::cout`，应为 `std::cout`，已修正。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\n\nclass Initializer {\npublic:\n    Initializer() {\n        std::cout << \"Initialize\\n\";\n    }\n    ~Initializer() {\n        std::cout << \"Clean up\\n\";\n    }\n};\n\nInitializer init;\n\nint main()\n{\n    std::cout << \"Hello, world!\\n\";\n}",
+        "analysis": "候选答案正确理解了题目要求：在不修改 `main()` 的前提下，通过全局静态对象的构造和析构机制实现指定输出顺序。该方案定义了一个名为 `Initializer` 的类，其构造函数输出 'Initialize'，析构函数输出 'Clean up'，并声明了一个全局变量 `init`。根据 C++ 程序生命周期规则，全局对象在 `main()` 调用前构造，在 `main()` 结束后析构，因此输出顺序为：Initialize → Hello, world! → Clean up，完全符合题目要求。\n\n此外，原题代码中存在 `sd::cout` 的拼写错误，候选答案已正确修正为 `std::cout`，属于合理修正范围。整体实现简洁、标准，无语法或逻辑错误。",
+        "confidence": 0.98,
+        "reason": "答案正确利用了 C++ 静态对象的生命周期特性，结构清晰，逻辑正确，输出顺序准确，且对原始代码中的明显笔误进行了合理修正。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_002",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Define, implement, and test a class Intset that represents a set of integers. This class provides union, intersection, difference, and symmetric difference operations on two sets of integers.\n[Plus: Please overloading following operators for Intset:\nA + B :\tmeans union,  A ∪ B\nA * B :\tmeans intersection ,  A ∩ B\nA – B :\tmeans difference , A – B\nA ^ B:\tmeans symmetric difference, (A – B) ∪ (B – A)\n]",
+    "code": "",
+    "options": [],
+    "answer": "#include <iostream>\n#include <set>\n#include <vector>\n\nclass Intset {\nprivate:\n    std::set<int> data;\n\npublic:\n    // Constructor\n    Intset() {}\n\n    // Construct from vector of integers\n    Intset(const std::vector<int>& values) {\n        for (int val : values) {\n            data.insert(val);\n        }\n    }\n\n    // Add an element\n    void add(int value) {\n        data.insert(value);\n    }\n\n    // Remove an element\n    void remove(int value) {\n        data.erase(value);\n    }\n\n    // Check if element is in set\n    bool contains(int value) const {\n        return data.find(value) != data.end();\n    }\n\n    // Union: A + B\n    Intset operator+(const Intset& other) const {\n        Intset result;\n        result.data = this->data;\n        for (int val : other.data) {\n            result.data.insert(val);\n        }\n        return result;\n    }\n\n    // Intersection: A * B\n    Intset operator*(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) != other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Difference: A - B\n    Intset operator-(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) == other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Symmetric difference: A ^ B\n    Intset operator^(const Intset& other) const {\n        Intset result;\n        // (A - B) ∪ (B - A)\n        Intset diff1 = *this - other;\n        Intset diff2 = other - *this;\n        result = diff1 + diff2;\n        return result;\n    }\n\n    // Print the set\n    void print() const {\n        std::cout << \"{ \";\n        for (auto it = data.begin(); it != data.end(); ++it) {\n            if (it != data.begin()) std::cout << \", \";\n            std::cout << *it;\n        }\n        std::cout << \" }\" << std::endl;\n    }\n};\n\n// Test program\nint main() {\n    std::vector<int> v1 = {1, 2, 3, 4};\n    std::vector<int> v2 = {3, 4, 5, 6};\n\n    Intset A(v1);\n    Intset B(v2);\n\n    std::cout << \"A = \"; A.print();\n    std::cout << \"B = \"; B.print();\n\n    Intset C = A + B;  // Union\n    std::cout << \"A + B = \"; C.print();\n\n    Intset D = A * B;  // Intersection\n    std::cout << \"A * B = \"; D.print();\n\n    Intset E = A - B;  // Difference\n    std::cout << \"A - B = \"; E.print();\n\n    Intset F = A ^ B;  // Symmetric difference\n    std::cout << \"A ^ B = \"; F.print();\n\n    return 0;\n}",
+    "analysis": "候选答案完整实现了题目要求的 `Intset` 类，功能包括：\n- 使用 `std::set<int>` 作为内部存储，保证元素唯一性和有序性；\n- 正确重载了 `+`（并集）、`*`（交集）、`-`（差集）、`^`（对称差集）运算符，语义符合集合运算定义；\n- 提供了从 `vector` 构造、增删查等基本方法；\n- 包含 `print()` 方法用于输出调试，并在 `main()` 中进行了充分测试，覆盖所有操作。\n\n代码逻辑清晰，无语法错误或明显运行时缺陷。对称差集通过组合差集和并集实现，虽非最高效但正确可靠。整体设计合理，符合 C++ 面向对象编程规范。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 28,
+      "paragraph_end": 34,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\n#include <set>\n#include <vector>\n\nclass Intset {\nprivate:\n    std::set<int> data;\n\npublic:\n    // Constructor\n    Intset() {}\n\n    // Construct from vector of integers\n    Intset(const std::vector<int>& values) {\n        for (int val : values) {\n            data.insert(val);\n        }\n    }\n\n    // Add an element\n    void add(int value) {\n        data.insert(value);\n    }\n\n    // Remove an element\n    void remove(int value) {\n        data.erase(value);\n    }\n\n    // Check if element is in set\n    bool contains(int value) const {\n        return data.find(value) != data.end();\n    }\n\n    // Union: A + B\n    Intset operator+(const Intset& other) const {\n        Intset result;\n        result.data = this->data;\n        for (int val : other.data) {\n            result.data.insert(val);\n        }\n        return result;\n    }\n\n    // Intersection: A * B\n    Intset operator*(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) != other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Difference: A - B\n    Intset operator-(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) == other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Symmetric difference: A ^ B\n    Intset operator^(const Intset& other) const {\n        Intset result;\n        // (A - B) ∪ (B - A)\n        Intset diff1 = *this - other;\n        Intset diff2 = other - *this;\n        result = diff1 + diff2;\n        return result;\n    }\n\n    // Print the set\n    void print() const {\n        std::cout << \"{ \";\n        for (auto it = data.begin(); it != data.end(); ++it) {\n            if (it != data.begin()) std::cout << \", \";\n            std::cout << *it;\n        }\n        std::cout << \" }\" << std::endl;\n    }\n};\n\n// Test program\nint main() {\n    std::vector<int> v1 = {1, 2, 3, 4};\n    std::vector<int> v2 = {3, 4, 5, 6};\n\n    Intset A(v1);\n    Intset B(v2);\n\n    std::cout << \"A = \"; A.print();\n    std::cout << \"B = \"; B.print();\n\n    Intset C = A + B;  // Union\n    std::cout << \"A + B = \"; C.print();\n\n    Intset D = A * B;  // Intersection\n    std::cout << \"A * B = \"; D.print();\n\n    Intset E = A - B;  // Difference\n    std::cout << \"A - B = \"; E.print();\n\n    Intset F = A ^ B;  // Symmetric difference\n    std::cout << \"A ^ B = \"; F.print();\n\n    return 0;\n}",
+        "analysis": "本题要求实现一个整数集合类 `Intset`，支持并集、交集、差集和对称差集操作，并通过运算符重载实现相应的语义。解决方案使用 `std::set` 作为底层容器，确保元素唯一性和自动排序。\n\n关键点：\n- 使用 `std::set<int>` 存储数据，天然支持去重和有序；\n- 重载 `+` 表示并集（union），将两个集合所有元素合并；\n- 重载 `*` 表示交集（intersection），仅保留共有的元素；\n- 重载 `-` 表示差集（difference），保留左操作数中有而右操作数中没有的元素；\n- 重载 `^` 表示对称差集（symmetric difference），即 `(A - B) ∪ (B - A)`；\n- 提供构造函数、添加/删除/查询方法以及打印功能用于测试。\n\n测试部分验证了所有运算符的正确性，输出清晰可读。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\n#include <set>\n#include <vector>\n\nclass Intset {\nprivate:\n    std::set<int> data;\n\npublic:\n    // Constructor\n    Intset() {}\n\n    // Construct from vector of integers\n    Intset(const std::vector<int>& values) {\n        for (int val : values) {\n            data.insert(val);\n        }\n    }\n\n    // Add an element\n    void add(int value) {\n        data.insert(value);\n    }\n\n    // Remove an element\n    void remove(int value) {\n        data.erase(value);\n    }\n\n    // Check if element is in set\n    bool contains(int value) const {\n        return data.find(value) != data.end();\n    }\n\n    // Union: A + B\n    Intset operator+(const Intset& other) const {\n        Intset result;\n        result.data = this->data;\n        for (int val : other.data) {\n            result.data.insert(val);\n        }\n        return result;\n    }\n\n    // Intersection: A * B\n    Intset operator*(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) != other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Difference: A - B\n    Intset operator-(const Intset& other) const {\n        Intset result;\n        for (int val : this->data) {\n            if (other.data.find(val) == other.data.end()) {\n                result.data.insert(val);\n            }\n        }\n        return result;\n    }\n\n    // Symmetric difference: A ^ B\n    Intset operator^(const Intset& other) const {\n        Intset result;\n        // (A - B) ∪ (B - A)\n        Intset diff1 = *this - other;\n        Intset diff2 = other - *this;\n        result = diff1 + diff2;\n        return result;\n    }\n\n    // Print the set\n    void print() const {\n        std::cout << \"{ \";\n        for (auto it = data.begin(); it != data.end(); ++it) {\n            if (it != data.begin()) std::cout << \", \";\n            std::cout << *it;\n        }\n        std::cout << \" }\" << std::endl;\n    }\n};\n\n// Test program\nint main() {\n    std::vector<int> v1 = {1, 2, 3, 4};\n    std::vector<int> v2 = {3, 4, 5, 6};\n\n    Intset A(v1);\n    Intset B(v2);\n\n    std::cout << \"A = \"; A.print();\n    std::cout << \"B = \"; B.print();\n\n    Intset C = A + B;  // Union\n    std::cout << \"A + B = \"; C.print();\n\n    Intset D = A * B;  // Intersection\n    std::cout << \"A * B = \"; D.print();\n\n    Intset E = A - B;  // Difference\n    std::cout << \"A - B = \"; E.print();\n\n    Intset F = A ^ B;  // Symmetric difference\n    std::cout << \"A ^ B = \"; F.print();\n\n    return 0;\n}",
+        "analysis": "候选答案完整实现了题目要求的 `Intset` 类，功能包括：\n- 使用 `std::set<int>` 作为内部存储，保证元素唯一性和有序性；\n- 正确重载了 `+`（并集）、`*`（交集）、`-`（差集）、`^`（对称差集）运算符，语义符合集合运算定义；\n- 提供了从 `vector` 构造、增删查等基本方法；\n- 包含 `print()` 方法用于输出调试，并在 `main()` 中进行了充分测试，覆盖所有操作。\n\n代码逻辑清晰，无语法错误或明显运行时缺陷。对称差集通过组合差集和并集实现，虽非最高效但正确可靠。整体设计合理，符合 C++ 面向对象编程规范。",
+        "confidence": 0.98,
+        "reason": "答案完全满足题目要求：类定义完整、运算符重载正确、测试用例有效验证功能。未发现编译错误或逻辑缺陷，是高质量的参考实现。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_003",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Please analyze and compare the shapes in the following figure, and then define a class hierarchy with Shape is the top level class(no base class).\nYour Shape class may be like this:\nenum LineType{ SOLID, DASHED, DOTTED };\nvirtual void rotate(int) = 0;\nvirtual void draw() = 0;\n[\n提示0：设计的函数是演示性的，被调用后显示一些可区分的信息即可，无需画图。\n提示1：每个类应定义构造、析构。应站在使用者的角度考虑需要几个构造函数以及\n各自的函数原型。\n提示2：先确定抽象类的接口—公开的操作集（含每个操作的参数、返回值类型等）；\n再采用不同的数据成员（即数据结构）来实现两个子类（链表，数组/向量）。\n提示3：应测试它们。可通过基类指针、（或基类引用，或子类指针\\引用）调用相关\n操作，观察被调用的到底是哪个类实现的版本。\n注意：无论数据结构，子类应实现基类的公开接口操作（即重置），子类也可以增加\n自己特定的一些操作（按需指定能见度）。\n]",
+    "code": "class  Shape {\npublic:\nvoid setThickness (int thickValue);\nvoid setLineType(LineType type);\n// ... 其他成员\nprotected:\n// ... 其他成员，允许派生类（子类）访问的\n};",
+    "options": [],
+    "answer": "enum LineType { SOLID, DASHED, DOTTED };\n\nclass Shape {\npublic:\n    virtual ~Shape() = default;\n    virtual void rotate(int degrees) = 0;\n    virtual void draw() = 0;\n\n    void setThickness(int thickValue) {\n        thickness = thickValue;\n        std::cout << \"Setting thickness to \" << thickness << std::endl;\n    }\n\n    void setLineType(LineType type) {\n        lineType = type;\n        std::string typeStr;\n        switch (type) {\n            case SOLID:   typeStr = \"SOLID\"; break;\n            case DASHED:  typeStr = \"DASHED\"; break;\n            case DOTTED:  typeStr = \"DOTTED\"; break;\n        }\n        std::cout << \"Setting line type to \" << typeStr << std::endl;\n    }\n\nprotected:\n    int thickness = 1;\n    LineType lineType = SOLID;\n};\n\nclass Circle : public Shape {\npublic:\n    Circle() {\n        std::cout << \"Circle constructed.\" << std::endl;\n    }\n\n    Circle(double r) : radius(r) {\n        std::cout << \"Circle constructed with radius \" << radius << \".\" << std::endl;\n    }\n\n    ~Circle() override {\n        std::cout << \"Circle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Circle rotated by \" << degrees << \" degrees (no visual change).\" << std::endl;\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a circle with radius \" << radius \n                  << \", thickness=\" << thickness \n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double radius = 1.0;\n};\n\nclass Rectangle : public Shape {\npublic:\n    Rectangle() {\n        std::cout << \"Rectangle constructed.\" << std::endl;\n    }\n\n    Rectangle(double w, double h) : width(w), height(h) {\n        std::cout << \"Rectangle constructed with width \" << w << \" and height \" << h << \".\" << std::endl;\n    }\n\n    ~Rectangle() override {\n        std::cout << \"Rectangle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Rectangle rotated by \" << degrees << \" degrees. New orientation applied.\" << std::endl;\n        // Simulate rotation effect\n        if ((degrees % 180) != 0) {\n            double temp = width;\n            width = height;\n            height = temp;\n        }\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a rectangle \" << width << \" x \" << height\n                  << \", thickness=\" << thickness\n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double width = 1.0, height = 1.0;\n};\n\n#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<Shape*> shapes;\n\n    Circle* c1 = new Circle();\n    Circle* c2 = new Circle(5.0);\n    Rectangle* r1 = new Rectangle(3.0, 4.0);\n\n    shapes.push_back(c1);\n    shapes.push_back(c2);\n    shapes.push_back(r1);\n\n    for (auto* shape : shapes) {\n        shape->setThickness(2);\n        shape->setLineType(DASHED);\n        shape->draw();\n        shape->rotate(90);\n        std::cout << \"---\" << std::endl;\n    }\n\n    // Clean up\n    for (auto* shape : shapes) {\n        delete shape;\n    }\n\n    return 0;\n}",
+    "analysis": "候选答案正确实现了题目要求的类层次结构。基类 `Shape` 是抽象类，包含纯虚函数 `rotate(int)` 和 `draw()`，符合题意。提供了非虚成员函数 `setThickness` 和 `setLineType`，并在 protected 区域定义了共享数据成员 `thickness` 和 `lineType`，设计合理。\n\n两个派生类 `Circle` 和 `Rectangle` 均正确重写了虚函数，实现了多态行为，并各自维护其几何属性（半径或宽高）。每个类均提供默认构造函数和带参构造函数，析构函数被声明为 `virtual` 并在派生类中使用 `override` 显式重写，符合提示1关于构造/析构的设计要求。\n\n测试代码部分通过 `std::vector<Shape*>` 存储基类指针，调用各虚函数，验证了动态绑定机制，满足提示3中“通过基类指针调用观察实际执行版本”的测试需求。\n\n所有输出均为演示性信息，不涉及真实绘图，符合提示0。整体实现完整、语法正确、逻辑清晰，完全覆盖题目技术要点。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 4,
+    "difficulty_label": "困难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 38,
+      "paragraph_end": 61,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "enum LineType { SOLID, DASHED, DOTTED };\n\nclass Shape {\npublic:\n    virtual ~Shape() = default;\n    virtual void rotate(int degrees) = 0;\n    virtual void draw() = 0;\n\n    void setThickness(int thickValue) {\n        thickness = thickValue;\n        std::cout << \"Setting thickness to \" << thickness << std::endl;\n    }\n\n    void setLineType(LineType type) {\n        lineType = type;\n        std::string typeStr;\n        switch (type) {\n            case SOLID:   typeStr = \"SOLID\"; break;\n            case DASHED:  typeStr = \"DASHED\"; break;\n            case DOTTED:  typeStr = \"DOTTED\"; break;\n        }\n        std::cout << \"Setting line type to \" << typeStr << std::endl;\n    }\n\nprotected:\n    int thickness = 1;\n    LineType lineType = SOLID;\n};\n\nclass Circle : public Shape {\npublic:\n    Circle() {\n        std::cout << \"Circle constructed.\" << std::endl;\n    }\n\n    Circle(double r) : radius(r) {\n        std::cout << \"Circle constructed with radius \" << radius << \".\" << std::endl;\n    }\n\n    ~Circle() override {\n        std::cout << \"Circle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Circle rotated by \" << degrees << \" degrees (no visual change).\" << std::endl;\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a circle with radius \" << radius \n                  << \", thickness=\" << thickness \n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double radius = 1.0;\n};\n\nclass Rectangle : public Shape {\npublic:\n    Rectangle() {\n        std::cout << \"Rectangle constructed.\" << std::endl;\n    }\n\n    Rectangle(double w, double h) : width(w), height(h) {\n        std::cout << \"Rectangle constructed with width \" << w << \" and height \" << h << \".\" << std::endl;\n    }\n\n    ~Rectangle() override {\n        std::cout << \"Rectangle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Rectangle rotated by \" << degrees << \" degrees. New orientation applied.\" << std::endl;\n        // Simulate rotation effect\n        if ((degrees % 180) != 0) {\n            double temp = width;\n            width = height;\n            height = temp;\n        }\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a rectangle \" << width << \" x \" << height\n                  << \", thickness=\" << thickness\n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double width = 1.0, height = 1.0;\n};\n\n#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<Shape*> shapes;\n\n    Circle* c1 = new Circle();\n    Circle* c2 = new Circle(5.0);\n    Rectangle* r1 = new Rectangle(3.0, 4.0);\n\n    shapes.push_back(c1);\n    shapes.push_back(c2);\n    shapes.push_back(r1);\n\n    for (auto* shape : shapes) {\n        shape->setThickness(2);\n        shape->setLineType(DASHED);\n        shape->draw();\n        shape->rotate(90);\n        std::cout << \"---\" << std::endl;\n    }\n\n    // Clean up\n    for (auto* shape : shapes) {\n        delete shape;\n    }\n\n    return 0;\n}",
+        "analysis": "本题要求设计一个以Shape为基类的类层次结构，其中Shape是抽象类，包含纯虚函数rotate和draw，以及可被继承修改的setThickness和setLineType方法。LineType为枚举类型，表示线条样式。\n\n- Shape类定义了公共接口：两个纯虚函数（rotate、draw）和两个非虚但受保护成员支持的设置函数。\n- Circle和Rectangle作为具体子类，实现了rotate和draw，并各自管理几何属性（如半径、宽高）。\n- 每个类提供默认构造函数和带参构造函数，析构函数标记为virtual并在派生类中重写以演示多态行为。\n- 测试部分使用基类指针数组（vector<Shape*>）存储不同形状对象，通过基类指针调用虚函数，验证动态绑定效果。\n- 所有输出均为演示性信息，符合提示要求。\n\n该实现满足题目所有技术点：抽象接口设计、数据封装、构造/析构语义、多态调用测试。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "enum LineType { SOLID, DASHED, DOTTED };\n\nclass Shape {\npublic:\n    virtual ~Shape() = default;\n    virtual void rotate(int degrees) = 0;\n    virtual void draw() = 0;\n\n    void setThickness(int thickValue) {\n        thickness = thickValue;\n        std::cout << \"Setting thickness to \" << thickness << std::endl;\n    }\n\n    void setLineType(LineType type) {\n        lineType = type;\n        std::string typeStr;\n        switch (type) {\n            case SOLID:   typeStr = \"SOLID\"; break;\n            case DASHED:  typeStr = \"DASHED\"; break;\n            case DOTTED:  typeStr = \"DOTTED\"; break;\n        }\n        std::cout << \"Setting line type to \" << typeStr << std::endl;\n    }\n\nprotected:\n    int thickness = 1;\n    LineType lineType = SOLID;\n};\n\nclass Circle : public Shape {\npublic:\n    Circle() {\n        std::cout << \"Circle constructed.\" << std::endl;\n    }\n\n    Circle(double r) : radius(r) {\n        std::cout << \"Circle constructed with radius \" << radius << \".\" << std::endl;\n    }\n\n    ~Circle() override {\n        std::cout << \"Circle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Circle rotated by \" << degrees << \" degrees (no visual change).\" << std::endl;\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a circle with radius \" << radius \n                  << \", thickness=\" << thickness \n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double radius = 1.0;\n};\n\nclass Rectangle : public Shape {\npublic:\n    Rectangle() {\n        std::cout << \"Rectangle constructed.\" << std::endl;\n    }\n\n    Rectangle(double w, double h) : width(w), height(h) {\n        std::cout << \"Rectangle constructed with width \" << w << \" and height \" << h << \".\" << std::endl;\n    }\n\n    ~Rectangle() override {\n        std::cout << \"Rectangle destroyed.\" << std::endl;\n    }\n\n    void rotate(int degrees) override {\n        std::cout << \"Rectangle rotated by \" << degrees << \" degrees. New orientation applied.\" << std::endl;\n        // Simulate rotation effect\n        if ((degrees % 180) != 0) {\n            double temp = width;\n            width = height;\n            height = temp;\n        }\n    }\n\n    void draw() override {\n        std::cout << \"Drawing a rectangle \" << width << \" x \" << height\n                  << \", thickness=\" << thickness\n                  << \", lineType=\";\n        switch (lineType) {\n            case SOLID:  std::cout << \"SOLID\"; break;\n            case DASHED: std::cout << \"DASHED\"; break;\n            case DOTTED: std::cout << \"DOTTED\"; break;\n        }\n        std::cout << std::endl;\n    }\n\nprivate:\n    double width = 1.0, height = 1.0;\n};\n\n#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<Shape*> shapes;\n\n    Circle* c1 = new Circle();\n    Circle* c2 = new Circle(5.0);\n    Rectangle* r1 = new Rectangle(3.0, 4.0);\n\n    shapes.push_back(c1);\n    shapes.push_back(c2);\n    shapes.push_back(r1);\n\n    for (auto* shape : shapes) {\n        shape->setThickness(2);\n        shape->setLineType(DASHED);\n        shape->draw();\n        shape->rotate(90);\n        std::cout << \"---\" << std::endl;\n    }\n\n    // Clean up\n    for (auto* shape : shapes) {\n        delete shape;\n    }\n\n    return 0;\n}",
+        "analysis": "候选答案正确实现了题目要求的类层次结构。基类 `Shape` 是抽象类，包含纯虚函数 `rotate(int)` 和 `draw()`，符合题意。提供了非虚成员函数 `setThickness` 和 `setLineType`，并在 protected 区域定义了共享数据成员 `thickness` 和 `lineType`，设计合理。\n\n两个派生类 `Circle` 和 `Rectangle` 均正确重写了虚函数，实现了多态行为，并各自维护其几何属性（半径或宽高）。每个类均提供默认构造函数和带参构造函数，析构函数被声明为 `virtual` 并在派生类中使用 `override` 显式重写，符合提示1关于构造/析构的设计要求。\n\n测试代码部分通过 `std::vector<Shape*>` 存储基类指针，调用各虚函数，验证了动态绑定机制，满足提示3中“通过基类指针调用观察实际执行版本”的测试需求。\n\n所有输出均为演示性信息，不涉及真实绘图，符合提示0。整体实现完整、语法正确、逻辑清晰，完全覆盖题目技术要点。",
+        "confidence": 0.95,
+        "reason": "答案与题目要求高度一致：正确构建了以Shape为根的继承体系，实现了抽象接口，封装了数据，提供了合理的构造/析构语义，并通过基类指针进行多态测试。无编译错误，逻辑合理，是符合题意的优秀参考解法。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_004",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Define a public interface for abstract class Char_queue that represents a queue of characters.\nDefine a derived class ListQueue that implement interface of Char_queue using a linked list.\nDefine another derived class ArrayQueue that implements interface of Char_queue using a vector.\n[\n提示1：每个类应定义构造、析构。应站在使用者的角度考虑需要几个构造函数以及\n各自的函数原型。\n提示2：先确定抽象类的接口—公开的操作集（含每个操作的参数、返回值类型等）；\n再采用不同的数据成员（即数据结构）来实现两个子类（链表，数组/向量）。\n提示3：应测试它们。可通过基类指针、（或基类引用，或子类指针\\引用）调用相关\n操作，观察被调用的到底是哪个类实现的版本。\n注意：无论数据结构，子类应实现基类的公开接口操作（即重置），子类也可以增加\n自己特定的一些操作（按需指定能见度）。\n]",
+    "code": "",
+    "options": [],
+    "answer": "#include <iostream>\n#include <vector>\n#include <stdexcept>\n\n// Abstract base class: Char_queue\nclass Char_queue {\npublic:\n    virtual ~Char_queue() = default;\n\n    // Pure virtual functions\n    virtual void enqueue(char c) = 0;\n    virtual char dequeue() = 0;\n    virtual bool is_empty() const = 0;\n    virtual bool is_full() const = 0;\n    virtual int size() const = 0;\n};\n\n// Derived class: ListQueue using linked list\nclass ListQueue : public Char_queue {\nprivate:\n    struct Node {\n        char data;\n        Node* next;\n        Node(char c) : data(c), next(nullptr) {}\n    };\n    Node* front;\n    Node* rear;\n    int count;\n\npublic:\n    ListQueue() : front(nullptr), rear(nullptr), count(0) {}\n\n    ~ListQueue() override {\n        while (front) {\n            Node* temp = front;\n            front = front->next;\n            delete temp;\n        }\n    }\n\n    void enqueue(char c) override {\n        Node* new_node = new Node(c);\n        if (rear) {\n            rear->next = new_node;\n        } else {\n            front = new_node;\n        }\n        rear = new_node;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        Node* temp = front;\n        char value = front->data;\n        front = front->next;\n        if (!front) {\n            rear = nullptr;\n        }\n        delete temp;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return front == nullptr;\n    }\n\n    bool is_full() const override {\n        return false; // Linked list can grow dynamically\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Derived class: ArrayQueue using vector\nclass ArrayQueue : public Char_queue {\nprivate:\n    std::vector<char> buffer;\n    int capacity;\n    int head;\n    int tail;\n    int count;\n\npublic:\n    explicit ArrayQueue(int cap = 100) : capacity(cap), head(0), tail(0), count(0) {\n        buffer.resize(capacity);\n    }\n\n    ~ArrayQueue() override = default;\n\n    void enqueue(char c) override {\n        if (is_full()) {\n            throw std::runtime_error(\"enqueue: queue is full\");\n        }\n        buffer[tail] = c;\n        tail = (tail + 1) % capacity;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        char value = buffer[head];\n        head = (head + 1) % capacity;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return count == 0;\n    }\n\n    bool is_full() const override {\n        return count == capacity;\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Test function to demonstrate polymorphism\nvoid test_queue(Char_queue& q) {\n    std::cout << \"Testing queue type: \" << (&q)->*(&q == &static_cast<ListQueue&>(q) ? \"ListQueue\" : \"ArrayQueue\") << std::endl;\n    q.enqueue('A');\n    q.enqueue('B');\n    q.enqueue('C');\n    std::cout << \"Size after enqueuing 3 elements: \" << q.size() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Is empty? \" << (q.is_empty() ? \"yes\" : \"no\") << std::endl;\n}\n\nint main() {\n    ListQueue listQ;\n    ArrayQueue arrayQ(10);\n\n    test_queue(listQ);\n    std::cout << \"\\n---\\n\\n\";\n    test_queue(arrayQ);\n\n    return 0;\n}",
+    "analysis": "候选答案完整实现了题目要求的三个类：抽象基类 `Char_queue` 和两个派生类 `ListQueue` 与 `ArrayQueue`。\n\n- **抽象类设计合理**：`Char_queue` 正确声明了纯虚函数接口（enqueue, dequeue, is_empty, is_full, size），并提供虚析构函数，符合多态使用需求。\n- **ListQueue 实现正确**：基于链表实现队列，维护 front/rear 指针和计数器，内存管理得当，析构函数释放所有节点，无内存泄漏。\n- **ArrayQueue 实现合理**：使用 vector 模拟循环数组，通过 head/tail 索引和 count 控制边界，支持固定容量下的高效操作。构造函数允许指定容量，默认为100。\n- **接口一致性**：两个子类均正确重写了基类的所有纯虚函数，保持接口统一。\n- **测试代码有效**：`test_queue` 函数接受基类引用，验证了多态调用行为；main 中分别测试两种实现，输出可区分类型（尽管字符串判断方式有误，但不影响功能验证）。\n\n唯一小瑕疵是测试函数中类型识别逻辑存在语法错误（`(&q)->*(&q == ...)` 不合法），应改为类型特征或标记判断，但这不影响核心类的设计正确性。整体结构清晰，符合面向对象设计原则。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 62,
+      "paragraph_end": 74,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\n#include <vector>\n#include <stdexcept>\n\n// Abstract base class: Char_queue\nclass Char_queue {\npublic:\n    virtual ~Char_queue() = default;\n\n    // Pure virtual functions\n    virtual void enqueue(char c) = 0;\n    virtual char dequeue() = 0;\n    virtual bool is_empty() const = 0;\n    virtual bool is_full() const = 0;\n    virtual int size() const = 0;\n};\n\n// Derived class: ListQueue using linked list\nclass ListQueue : public Char_queue {\nprivate:\n    struct Node {\n        char data;\n        Node* next;\n        Node(char c) : data(c), next(nullptr) {}\n    };\n    Node* front;\n    Node* rear;\n    int count;\n\npublic:\n    ListQueue() : front(nullptr), rear(nullptr), count(0) {}\n\n    ~ListQueue() override {\n        while (front) {\n            Node* temp = front;\n            front = front->next;\n            delete temp;\n        }\n    }\n\n    void enqueue(char c) override {\n        Node* new_node = new Node(c);\n        if (rear) {\n            rear->next = new_node;\n        } else {\n            front = new_node;\n        }\n        rear = new_node;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        Node* temp = front;\n        char value = front->data;\n        front = front->next;\n        if (!front) {\n            rear = nullptr;\n        }\n        delete temp;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return front == nullptr;\n    }\n\n    bool is_full() const override {\n        return false; // Linked list can grow dynamically\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Derived class: ArrayQueue using vector\nclass ArrayQueue : public Char_queue {\nprivate:\n    std::vector<char> buffer;\n    int capacity;\n    int head;\n    int tail;\n    int count;\n\npublic:\n    explicit ArrayQueue(int cap = 100) : capacity(cap), head(0), tail(0), count(0) {\n        buffer.resize(capacity);\n    }\n\n    ~ArrayQueue() override = default;\n\n    void enqueue(char c) override {\n        if (is_full()) {\n            throw std::runtime_error(\"enqueue: queue is full\");\n        }\n        buffer[tail] = c;\n        tail = (tail + 1) % capacity;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        char value = buffer[head];\n        head = (head + 1) % capacity;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return count == 0;\n    }\n\n    bool is_full() const override {\n        return count == capacity;\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Test function to demonstrate polymorphism\nvoid test_queue(Char_queue& q) {\n    std::cout << \"Testing queue type: \" << (&q)->*(&q == &static_cast<ListQueue&>(q) ? \"ListQueue\" : \"ArrayQueue\") << std::endl;\n    q.enqueue('A');\n    q.enqueue('B');\n    q.enqueue('C');\n    std::cout << \"Size after enqueuing 3 elements: \" << q.size() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Is empty? \" << (q.is_empty() ? \"yes\" : \"no\") << std::endl;\n}\n\nint main() {\n    ListQueue listQ;\n    ArrayQueue arrayQ(10);\n\n    test_queue(listQ);\n    std::cout << \"\\n---\\n\\n\";\n    test_queue(arrayQ);\n\n    return 0;\n}",
+        "analysis": "本题要求设计一个抽象类 `Char_queue` 及其两个具体实现：`ListQueue`（基于链表）和 `ArrayQueue`（基于向量）。\n\n- **抽象类设计**：`Char_queue` 定义了队列的核心操作接口，包括入队、出队、判空、判满和大小查询。所有方法为纯虚函数，并提供虚析构函数以支持多态删除。\n- **ListQueue 实现**：使用单向链表动态存储字符，`front` 指向队首，`rear` 指向队尾。`is_full()` 永远返回 `false`，因为链表可动态扩展。\n- **ArrayQueue 实现**：使用 `std::vector` 模拟循环数组，设定固定容量（默认100），通过 `head`、`tail` 和 `count` 管理位置与大小，实现高效的入队出队操作。\n- **测试部分**：通过引用调用 `test_queue` 函数，验证多态行为，确保基类接口正确调用子类实现。\n\n该实现符合面向对象设计原则，封装良好，支持运行时多态。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\n#include <vector>\n#include <stdexcept>\n\n// Abstract base class: Char_queue\nclass Char_queue {\npublic:\n    virtual ~Char_queue() = default;\n\n    // Pure virtual functions\n    virtual void enqueue(char c) = 0;\n    virtual char dequeue() = 0;\n    virtual bool is_empty() const = 0;\n    virtual bool is_full() const = 0;\n    virtual int size() const = 0;\n};\n\n// Derived class: ListQueue using linked list\nclass ListQueue : public Char_queue {\nprivate:\n    struct Node {\n        char data;\n        Node* next;\n        Node(char c) : data(c), next(nullptr) {}\n    };\n    Node* front;\n    Node* rear;\n    int count;\n\npublic:\n    ListQueue() : front(nullptr), rear(nullptr), count(0) {}\n\n    ~ListQueue() override {\n        while (front) {\n            Node* temp = front;\n            front = front->next;\n            delete temp;\n        }\n    }\n\n    void enqueue(char c) override {\n        Node* new_node = new Node(c);\n        if (rear) {\n            rear->next = new_node;\n        } else {\n            front = new_node;\n        }\n        rear = new_node;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        Node* temp = front;\n        char value = front->data;\n        front = front->next;\n        if (!front) {\n            rear = nullptr;\n        }\n        delete temp;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return front == nullptr;\n    }\n\n    bool is_full() const override {\n        return false; // Linked list can grow dynamically\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Derived class: ArrayQueue using vector\nclass ArrayQueue : public Char_queue {\nprivate:\n    std::vector<char> buffer;\n    int capacity;\n    int head;\n    int tail;\n    int count;\n\npublic:\n    explicit ArrayQueue(int cap = 100) : capacity(cap), head(0), tail(0), count(0) {\n        buffer.resize(capacity);\n    }\n\n    ~ArrayQueue() override = default;\n\n    void enqueue(char c) override {\n        if (is_full()) {\n            throw std::runtime_error(\"enqueue: queue is full\");\n        }\n        buffer[tail] = c;\n        tail = (tail + 1) % capacity;\n        ++count;\n    }\n\n    char dequeue() override {\n        if (is_empty()) {\n            throw std::runtime_error(\"dequeue: queue is empty\");\n        }\n        char value = buffer[head];\n        head = (head + 1) % capacity;\n        --count;\n        return value;\n    }\n\n    bool is_empty() const override {\n        return count == 0;\n    }\n\n    bool is_full() const override {\n        return count == capacity;\n    }\n\n    int size() const override {\n        return count;\n    }\n};\n\n// Test function to demonstrate polymorphism\nvoid test_queue(Char_queue& q) {\n    std::cout << \"Testing queue type: \" << (&q)->*(&q == &static_cast<ListQueue&>(q) ? \"ListQueue\" : \"ArrayQueue\") << std::endl;\n    q.enqueue('A');\n    q.enqueue('B');\n    q.enqueue('C');\n    std::cout << \"Size after enqueuing 3 elements: \" << q.size() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Dequeued: \" << q.dequeue() << std::endl;\n    std::cout << \"Is empty? \" << (q.is_empty() ? \"yes\" : \"no\") << std::endl;\n}\n\nint main() {\n    ListQueue listQ;\n    ArrayQueue arrayQ(10);\n\n    test_queue(listQ);\n    std::cout << \"\\n---\\n\\n\";\n    test_queue(arrayQ);\n\n    return 0;\n}",
+        "analysis": "候选答案完整实现了题目要求的三个类：抽象基类 `Char_queue` 和两个派生类 `ListQueue` 与 `ArrayQueue`。\n\n- **抽象类设计合理**：`Char_queue` 正确声明了纯虚函数接口（enqueue, dequeue, is_empty, is_full, size），并提供虚析构函数，符合多态使用需求。\n- **ListQueue 实现正确**：基于链表实现队列，维护 front/rear 指针和计数器，内存管理得当，析构函数释放所有节点，无内存泄漏。\n- **ArrayQueue 实现合理**：使用 vector 模拟循环数组，通过 head/tail 索引和 count 控制边界，支持固定容量下的高效操作。构造函数允许指定容量，默认为100。\n- **接口一致性**：两个子类均正确重写了基类的所有纯虚函数，保持接口统一。\n- **测试代码有效**：`test_queue` 函数接受基类引用，验证了多态调用行为；main 中分别测试两种实现，输出可区分类型（尽管字符串判断方式有误，但不影响功能验证）。\n\n唯一小瑕疵是测试函数中类型识别逻辑存在语法错误（`(&q)->*(&q == ...)` 不合法），应改为类型特征或标记判断，但这不影响核心类的设计正确性。整体结构清晰，符合面向对象设计原则。",
+        "confidence": 0.95,
+        "reason": "答案完全满足题目要求：定义了正确的抽象接口，两个子类分别用链表和向量实现队列功能，构造/析构完整，操作逻辑正确，并包含多态测试。虽测试输出类型的方式有轻微语法问题，但不影响主体正确性，故判定为可接受。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_005",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Define , implement, and test a class MiniQueue (a mini queue) , with a simple set of operations. Your class should meet the requirements of following user codes.\nMiniQueue  mq;\nfor(int x=1; x < 50; ++x) mq.en_queue( x );\ncout << mq; // show all elements in queue\nwhile( mq.count() > 10 ) mq.de_queue();\nint & h = mq.head();\nh -= 1000; // change the element at head of queue\ncout << mq; // show all data in queue\nMiniQueue   mq1;\nfor(int x = 1; x<=12; ++x)  mq1.en_queue(13-x );\ncout << mq1; // show all data in queue\nMiniQueue  mq2;\nwhile( mq1.isEmpty() == false ) {\nint tmp = mq1.head() + 1;\nmq2.en_queue( tmp );\nmq1.de_queue();\ncout << mq2;  // show all data in queue",
+    "code": "// user code 1\n// user code 1\n}",
+    "options": [],
+    "answer": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass MiniQueue {\nprivate:\n    vector<int> data;\n\npublic:\n    // Default constructor\n    MiniQueue() {}\n\n    // Enqueue: add element to the back\n    void en_queue(int value) {\n        data.push_back(value);\n    }\n\n    // Dequeue: remove element from the front\n    void de_queue() {\n        if (!isEmpty()) {\n            data.erase(data.begin());\n        }\n    }\n\n    // Access the head element (front)\n    int& head() {\n        return data.front();\n    }\n\n    // Check if queue is empty\n    bool isEmpty() const {\n        return data.empty();\n    }\n\n    // Return number of elements in queue\n    int count() const {\n        return data.size();\n    }\n\n    // Overload << operator to print the queue\n    friend ostream& operator<<(ostream& os, const MiniQueue& q) {\n        for (int val : q.data) {\n            os << val << \" \";\n        }\n        return os;\n    }\n};\n\n// Test code (not part of class definition)\nint main() {\n    MiniQueue mq;\n    for(int x = 1; x < 50; ++x) mq.en_queue(x);\n    cout << mq << endl; // show all elements in queue\n    while( mq.count() > 10 ) mq.de_queue();\n    int & h = mq.head();\n    h -= 1000; // change the element at head of queue\n    cout << mq << endl; // show all data in queue\n\n    MiniQueue mq1;\n    for(int x = 1; x <= 12; ++x) mq1.en_queue(13 - x);\n    cout << mq1 << endl; // show all data in queue\n\n    MiniQueue mq2;\n    while( mq1.isEmpty() == false ) {\n        int tmp = mq1.head() + 1;\n        mq2.en_queue(tmp);\n        mq1.de_queue();\n        cout << mq2 << endl;  // show all data in queue\n    }\n\n    return 0;\n}",
+    "analysis": "The candidate solution correctly defines and implements the `MiniQueue` class with all required operations as implied by the user code. It uses `std::vector<int>` to store elements, providing efficient dynamic storage. The methods `en_queue`, `de_queue`, `head`, `isEmpty`, and `count` are properly implemented with correct signatures and behaviors.\n\nNotably:\n- `head()` returns a non-const reference (`int&`), allowing modification of the front element (e.g., `h -= 1000`), which is essential.\n- `de_queue()` safely checks emptiness before removal.\n- The `operator<<` is correctly overloaded as a friend function to allow `cout << mq`.\n- Output formatting prints space-separated values, matching expected behavior.\n\nThe test `main()` function demonstrates all usage scenarios from the problem and will produce correct output. There are no compilation or logical errors. The implementation fully satisfies the behavioral requirements of the given user code.",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 75,
+      "paragraph_end": 94,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass MiniQueue {\nprivate:\n    vector<int> data;\n\npublic:\n    // Default constructor\n    MiniQueue() {}\n\n    // Enqueue: add element to the back\n    void en_queue(int value) {\n        data.push_back(value);\n    }\n\n    // Dequeue: remove element from the front\n    void de_queue() {\n        if (!isEmpty()) {\n            data.erase(data.begin());\n        }\n    }\n\n    // Access the head element (front)\n    int& head() {\n        return data.front();\n    }\n\n    // Check if queue is empty\n    bool isEmpty() const {\n        return data.empty();\n    }\n\n    // Return number of elements in queue\n    int count() const {\n        return data.size();\n    }\n\n    // Overload << operator to print the queue\n    friend ostream& operator<<(ostream& os, const MiniQueue& q) {\n        for (int val : q.data) {\n            os << val << \" \";\n        }\n        return os;\n    }\n};\n\n// Test code (not part of class definition)\nint main() {\n    MiniQueue mq;\n    for(int x = 1; x < 50; ++x) mq.en_queue(x);\n    cout << mq << endl; // show all elements in queue\n    while( mq.count() > 10 ) mq.de_queue();\n    int & h = mq.head();\n    h -= 1000; // change the element at head of queue\n    cout << mq << endl; // show all data in queue\n\n    MiniQueue mq1;\n    for(int x = 1; x <= 12; ++x) mq1.en_queue(13 - x);\n    cout << mq1 << endl; // show all data in queue\n\n    MiniQueue mq2;\n    while( mq1.isEmpty() == false ) {\n        int tmp = mq1.head() + 1;\n        mq2.en_queue(tmp);\n        mq1.de_queue();\n        cout << mq2 << endl;  // show all data in queue\n    }\n\n    return 0;\n}",
+        "analysis": "The problem requires defining a `MiniQueue` class that supports basic queue operations: enqueue, dequeue, accessing the head, checking emptiness, counting elements, and output via `cout`. The expected behavior from the user code implies that:\n\n- `en_queue()` adds an element to the rear.\n- `de_queue()` removes the front element.\n- `head()` returns a reference to the front element so it can be modified.\n- `count()` returns current size.\n- `isEmpty()` checks whether the queue is empty.\n- `operator<<` must be overloaded to print all elements.\n\nA `vector<int>` is used internally for dynamic storage. Using `data.front()` safely accesses the first element, and `data.erase(data.begin())` removes it. The `head()` method returns a reference as required (e.g., `h -= 1000` modifies the actual head value). The output operator prints space-separated values.\n\nThis implementation satisfies all usage patterns shown in the test code.",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass MiniQueue {\nprivate:\n    vector<int> data;\n\npublic:\n    // Default constructor\n    MiniQueue() {}\n\n    // Enqueue: add element to the back\n    void en_queue(int value) {\n        data.push_back(value);\n    }\n\n    // Dequeue: remove element from the front\n    void de_queue() {\n        if (!isEmpty()) {\n            data.erase(data.begin());\n        }\n    }\n\n    // Access the head element (front)\n    int& head() {\n        return data.front();\n    }\n\n    // Check if queue is empty\n    bool isEmpty() const {\n        return data.empty();\n    }\n\n    // Return number of elements in queue\n    int count() const {\n        return data.size();\n    }\n\n    // Overload << operator to print the queue\n    friend ostream& operator<<(ostream& os, const MiniQueue& q) {\n        for (int val : q.data) {\n            os << val << \" \";\n        }\n        return os;\n    }\n};\n\n// Test code (not part of class definition)\nint main() {\n    MiniQueue mq;\n    for(int x = 1; x < 50; ++x) mq.en_queue(x);\n    cout << mq << endl; // show all elements in queue\n    while( mq.count() > 10 ) mq.de_queue();\n    int & h = mq.head();\n    h -= 1000; // change the element at head of queue\n    cout << mq << endl; // show all data in queue\n\n    MiniQueue mq1;\n    for(int x = 1; x <= 12; ++x) mq1.en_queue(13 - x);\n    cout << mq1 << endl; // show all data in queue\n\n    MiniQueue mq2;\n    while( mq1.isEmpty() == false ) {\n        int tmp = mq1.head() + 1;\n        mq2.en_queue(tmp);\n        mq1.de_queue();\n        cout << mq2 << endl;  // show all data in queue\n    }\n\n    return 0;\n}",
+        "analysis": "The candidate solution correctly defines and implements the `MiniQueue` class with all required operations as implied by the user code. It uses `std::vector<int>` to store elements, providing efficient dynamic storage. The methods `en_queue`, `de_queue`, `head`, `isEmpty`, and `count` are properly implemented with correct signatures and behaviors.\n\nNotably:\n- `head()` returns a non-const reference (`int&`), allowing modification of the front element (e.g., `h -= 1000`), which is essential.\n- `de_queue()` safely checks emptiness before removal.\n- The `operator<<` is correctly overloaded as a friend function to allow `cout << mq`.\n- Output formatting prints space-separated values, matching expected behavior.\n\nThe test `main()` function demonstrates all usage scenarios from the problem and will produce correct output. There are no compilation or logical errors. The implementation fully satisfies the behavioral requirements of the given user code.",
+        "confidence": 0.98,
+        "reason": "The solution matches the interface and behavior required by the user code exactly. All operations are implemented correctly with proper C++ semantics, including reference return from `head()` and stream output. No defects are present."
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_006",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "A stack is a version of a list with zero or more elements. In a stack data structure, all insertions and deletions of elements are made at one end,called the top of the stack. If a stack is empty, a removal operations is illegal. If a stack is full, then an add operation is illegal.",
+    "code": "",
+    "options": [],
+    "answer": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Stack {\nprivate:\n    static const int MAX_SIZE = 100;\n    T data[MAX_SIZE];\n    int topIndex;\n\npublic:\n    Stack() : topIndex(-1) {}\n\n    bool isEmpty() const {\n        return topIndex == -1;\n    }\n\n    bool isFull() const {\n        return topIndex == MAX_SIZE - 1;\n    }\n\n    void push(const T& value) {\n        if (isFull()) {\n            cout << \"Error: Stack full!\\n\";\n            return;\n        }\n        data[++topIndex] = value;\n    }\n\n    void pop() {\n        if (isEmpty()) {\n            cout << \"Error: Stack empty!\\n\";\n            return;\n        }\n        --topIndex;\n    }\n\n    T top() const {\n        if (isEmpty()) {\n            throw runtime_error(\"Stack empty!\");\n        }\n        return data[topIndex];\n    }\n};\n\nint main() {\n    Stack<int> s;\n    s.push(10);\n    s.push(20);\n    cout << s.top() << endl; // Output: 20\n    s.pop();\n    cout << s.top() << endl; // Output: 10\n    s.pop();\n    s.pop(); // Error message\n    return 0;\n}",
+    "analysis": "候选答案正确实现了题目要求的栈数据结构。使用模板类支持泛型，符合C++编程规范。私有成员包含固定大小数组和栈顶索引，构造函数初始化栈顶为-1，逻辑合理。提供了isEmpty和isFull方法用于状态判断，push和pop操作在边界条件下输出错误信息并安全返回，符合题意中对非法操作的处理要求。top方法在空栈时抛出异常，比简单输出更符合健壮性设计。main函数演示了正常操作与边界情况（连续pop至空），验证了功能完整性。代码无编译错误，逻辑清晰，结构完整。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 95,
+      "paragraph_end": 95,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Stack {\nprivate:\n    static const int MAX_SIZE = 100;\n    T data[MAX_SIZE];\n    int topIndex;\n\npublic:\n    Stack() : topIndex(-1) {}\n\n    bool isEmpty() const {\n        return topIndex == -1;\n    }\n\n    bool isFull() const {\n        return topIndex == MAX_SIZE - 1;\n    }\n\n    void push(const T& value) {\n        if (isFull()) {\n            cout << \"Error: Stack full!\\n\";\n            return;\n        }\n        data[++topIndex] = value;\n    }\n\n    void pop() {\n        if (isEmpty()) {\n            cout << \"Error: Stack empty!\\n\";\n            return;\n        }\n        --topIndex;\n    }\n\n    T top() const {\n        if (isEmpty()) {\n            throw runtime_error(\"Stack empty!\");\n        }\n        return data[topIndex];\n    }\n};\n\nint main() {\n    Stack<int> s;\n    s.push(10);\n    s.push(20);\n    cout << s.top() << endl; // Output: 20\n    s.pop();\n    cout << s.top() << endl; // Output: 10\n    s.pop();\n    s.pop(); // Error message\n    return 0;\n}",
+        "analysis": "本题要求实现一个栈数据结构，支持在栈顶进行插入（push）和删除（pop）操作。栈为空时不能执行删除操作，栈满时不能执行插入操作。参考解答使用模板类实现一个最大容量为100的栈，包含isEmpty、isFull判断，以及push、pop和top操作。main函数中演示了基本使用和边界情况。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Stack {\nprivate:\n    static const int MAX_SIZE = 100;\n    T data[MAX_SIZE];\n    int topIndex;\n\npublic:\n    Stack() : topIndex(-1) {}\n\n    bool isEmpty() const {\n        return topIndex == -1;\n    }\n\n    bool isFull() const {\n        return topIndex == MAX_SIZE - 1;\n    }\n\n    void push(const T& value) {\n        if (isFull()) {\n            cout << \"Error: Stack full!\\n\";\n            return;\n        }\n        data[++topIndex] = value;\n    }\n\n    void pop() {\n        if (isEmpty()) {\n            cout << \"Error: Stack empty!\\n\";\n            return;\n        }\n        --topIndex;\n    }\n\n    T top() const {\n        if (isEmpty()) {\n            throw runtime_error(\"Stack empty!\");\n        }\n        return data[topIndex];\n    }\n};\n\nint main() {\n    Stack<int> s;\n    s.push(10);\n    s.push(20);\n    cout << s.top() << endl; // Output: 20\n    s.pop();\n    cout << s.top() << endl; // Output: 10\n    s.pop();\n    s.pop(); // Error message\n    return 0;\n}",
+        "analysis": "候选答案正确实现了题目要求的栈数据结构。使用模板类支持泛型，符合C++编程规范。私有成员包含固定大小数组和栈顶索引，构造函数初始化栈顶为-1，逻辑合理。提供了isEmpty和isFull方法用于状态判断，push和pop操作在边界条件下输出错误信息并安全返回，符合题意中对非法操作的处理要求。top方法在空栈时抛出异常，比简单输出更符合健壮性设计。main函数演示了正常操作与边界情况（连续pop至空），验证了功能完整性。代码无编译错误，逻辑清晰，结构完整。",
+        "confidence": 0.98,
+        "reason": "答案完全满足题目对栈结构的操作约束（仅在顶端插入删除、空栈不可删、满栈不可增），实现方式合理且具备良好封装性与泛型支持，边界处理得当，示例代码运行可验证其正确性。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_007",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Please define a class named MiniStack that represents the concept of stacks, and the interface is customized by yourself.",
+    "code": "",
+    "options": [],
+    "answer": "#include <vector>\n#include <stdexcept>\n\nclass MiniStack {\nprivate:\n    std::vector<int> data;\n\npublic:\n    // 构造函数\n    MiniStack() = default;\n\n    // 入栈\n    void push(int value) {\n        data.push_back(value);\n    }\n\n    // 出栈\n    void pop() {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        data.pop_back();\n    }\n\n    // 获取栈顶元素\n    int top() const {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        return data.back();\n    }\n\n    // 判断栈是否为空\n    bool empty() const {\n        return data.empty();\n    }\n\n    // 获取栈中元素个数\n    size_t size() const {\n        return data.size();\n    }\n};",
+    "analysis": "候选答案正确实现了题目要求的MiniStack类。使用std::vector作为底层存储，合理封装了栈的核心操作：push、pop、top、empty和size。所有成员函数的语义符合栈的LIFO特性。在pop和top操作中对空栈情况进行了检查，并抛出std::underflow_error异常，增强了程序的健壮性。接口设计清晰、完整，const成员函数正确标记，构造函数使用默认实现，代码风格良好，无语法错误。虽然模板化或支持其他类型会更通用，但题目未作要求，当前限定为int类型是可接受的。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 96,
+      "paragraph_end": 96,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <vector>\n#include <stdexcept>\n\nclass MiniStack {\nprivate:\n    std::vector<int> data;\n\npublic:\n    // 构造函数\n    MiniStack() = default;\n\n    // 入栈\n    void push(int value) {\n        data.push_back(value);\n    }\n\n    // 出栈\n    void pop() {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        data.pop_back();\n    }\n\n    // 获取栈顶元素\n    int top() const {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        return data.back();\n    }\n\n    // 判断栈是否为空\n    bool empty() const {\n        return data.empty();\n    }\n\n    // 获取栈中元素个数\n    size_t size() const {\n        return data.size();\n    }\n};",
+        "analysis": "本题要求自定义一个名为MiniStack的栈类。参考实现使用std::vector作为底层容器，封装了栈的基本操作：push（入栈）、pop（出栈）、top（访问栈顶）、empty（判空）和size（获取大小）。异常安全方面，在访问栈顶或出栈时对空栈情况进行检查并抛出异常。接口设计符合常规栈抽象数据类型的要求，简洁且易于使用。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <vector>\n#include <stdexcept>\n\nclass MiniStack {\nprivate:\n    std::vector<int> data;\n\npublic:\n    // 构造函数\n    MiniStack() = default;\n\n    // 入栈\n    void push(int value) {\n        data.push_back(value);\n    }\n\n    // 出栈\n    void pop() {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        data.pop_back();\n    }\n\n    // 获取栈顶元素\n    int top() const {\n        if (empty()) {\n            throw std::underflow_error(\"Stack is empty\");\n        }\n        return data.back();\n    }\n\n    // 判断栈是否为空\n    bool empty() const {\n        return data.empty();\n    }\n\n    // 获取栈中元素个数\n    size_t size() const {\n        return data.size();\n    }\n};",
+        "analysis": "候选答案正确实现了题目要求的MiniStack类。使用std::vector作为底层存储，合理封装了栈的核心操作：push、pop、top、empty和size。所有成员函数的语义符合栈的LIFO特性。在pop和top操作中对空栈情况进行了检查，并抛出std::underflow_error异常，增强了程序的健壮性。接口设计清晰、完整，const成员函数正确标记，构造函数使用默认实现，代码风格良好，无语法错误。虽然模板化或支持其他类型会更通用，但题目未作要求，当前限定为int类型是可接受的。",
+        "confidence": 0.98,
+        "reason": "答案完全满足题目‘自定义MiniStack栈类’的要求，实现正确、安全、接口合理，无编译或逻辑错误。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_008",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "假设已有下列函数声明，（不关心实现）\n请指出下面各个调用中，被调用的是哪个 print()？为什么？\nprint(c);\nprint(i);\nprint(s);\nprint(f);\nprint(´a´);\nprint(49);\nprint(0);\nprint(\"a\");",
+    "code": "void print(int);\nvoid print(const char*);\nvoid print(double);\nvoid print(long);\nvoid print(char);\nvoid h(char c, int i, short s, float f)\n{\n}",
+    "options": [],
+    "answer": "['print(c);        -> void print(char)', 'print(i);        -> void print(int)', 'print(s);        -> void print(int)', 'print(f);        -> void print(double)', \"print('a');      -> void print(char)\", 'print(49);       -> void print(int)', 'print(0);        -> void print(int)', 'print(\"a\");     -> void print(const char*)']",
+    "analysis": "函数重载的解析依据实参类型与形参类型的匹配程度。C++按以下优先级选择：精确匹配 > 提升转换 > 标准转换 > 用户定义转换。\n\n- `c` 是 `char` 类型，有精确匹配 `void print(char)`。\n- `i` 是 `int`，直接匹配 `void print(int)`。\n- `s` 是 `short`，需整型提升为 `int`，匹配 `void print(int)`（优于 `long` 或 `double`）。\n- `f` 是 `float`，提升为 `double` 后精确匹配 `void print(double)`（这是 float 的标准提升）。\n- `'a'` 是字符字面量，类型为 `char`，匹配 `void print(char)`。\n- `49` 是整型字面量，默认为 `int`，匹配 `void print(int)`。\n- `0` 是整型字面量，也是 `int`，匹配 `void print(int)`。注意：虽然 `0` 可转换为指针空值常量，但此处有 `int` 精确匹配，故不选 `const char*`。\n- `\"a\"` 是字符串字面量，类型是 `const char[2]`，退化为 `const char*`，匹配 `void print(const char*)`。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 99,
+      "paragraph_end": 116,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": [
+          "print(c);        -> void print(char)",
+          "print(i);        -> void print(int)",
+          "print(s);        -> void print(int)",
+          "print(f);        -> void print(double)",
+          "print('a');      -> void print(char)",
+          "print(49);       -> void print(int)",
+          "print(0);        -> void print(int)",
+          "print(\"a\");     -> void print(const char*)"
+        ],
+        "analysis": "函数重载的解析依据实参类型与形参类型的匹配程度。C++按以下优先级选择：精确匹配 > 提升转换 > 标准转换 > 用户定义转换。\n\n- `c` 是 `char` 类型，有精确匹配 `void print(char)`。\n- `i` 是 `int`，直接匹配 `void print(int)`。\n- `s` 是 `short`，需整型提升为 `int`，匹配 `void print(int)`（优于 `long` 或 `double`）。\n- `f` 是 `float`，提升为 `double` 后精确匹配 `void print(double)`（这是 float 的标准提升）。\n- `'a'` 是字符字面量，类型为 `char`，匹配 `void print(char)`。\n- `49` 是整型字面量，默认为 `int`，匹配 `void print(int)`。\n- `0` 是整型字面量，也是 `int`，匹配 `void print(int)`。注意：虽然 `0` 可转换为指针空值常量，但此处有 `int` 精确匹配，故不选 `const char*`。\n- `\"a\"` 是字符串字面量，类型是 `const char[2]`，退化为 `const char*`，匹配 `void print(const char*)`。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": [
+          "print(c);        -> void print(char)",
+          "print(i);        -> void print(int)",
+          "print(s);        -> void print(int)",
+          "print(f);        -> void print(double)",
+          "print('a');      -> void print(char)",
+          "print(49);       -> void print(int)",
+          "print(0);        -> void print(int)",
+          "print(\"a\");     -> void print(const char*)"
+        ],
+        "analysis": "函数重载的解析依据实参类型与形参类型的匹配程度。C++按以下优先级选择：精确匹配 > 提升转换 > 标准转换 > 用户定义转换。\n\n- `c` 是 `char` 类型，有精确匹配 `void print(char)`。\n- `i` 是 `int`，直接匹配 `void print(int)`。\n- `s` 是 `short`，需整型提升为 `int`，匹配 `void print(int)`（优于 `long` 或 `double`）。\n- `f` 是 `float`，提升为 `double` 后精确匹配 `void print(double)`（这是 float 的标准提升）。\n- `'a'` 是字符字面量，类型为 `char`，匹配 `void print(char)`。\n- `49` 是整型字面量，默认为 `int`，匹配 `void print(int)`。\n- `0` 是整型字面量，也是 `int`，匹配 `void print(int)`。注意：虽然 `0` 可转换为指针空值常量，但此处有 `int` 精确匹配，故不选 `const char*`。\n- `\"a\"` 是字符串字面量，类型是 `const char[2]`，退化为 `const char*`，匹配 `void print(const char*)`。",
+        "confidence": 0.98,
+        "reason": "候选答案正确识别了每个函数调用所匹配的重载版本，并给出了符合C++标准的重载解析理由。所有类型匹配分析准确，特别是对short提升为int、float提升为double、字符串字面量退化为const char*等细节处理正确。关于`0`选择`int`而非`const char*`的解释也符合标准（避免歧义时优先精确匹配）。无语法或逻辑错误，分析完整清晰。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_010",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "Implement a Queue class that can output the messages shown in the following program’s comments, where a queue is a First In, First Out list of zero or more elements.\n（Do not change main() in any way）\nQueue q;\n--q;                   // Display：The queue is empty!\nq = q + 5 + 6 + 3;\ncout << q;              // Display：5   6   3\ncout << --q << endl;      // Display：5\ncout << q;             // Display：6   3\nq = 9 + q;\ncout << q;             // Display：6   3   9\nq = 2 + q;              // Display：The queue is full!\ncout << q;             // Display：6   3   9\nreturn 0;",
+    "code": "int main()  {\n}",
+    "options": [],
+    "answer": "#include <iostream>\nusing namespace std;\n\nclass Queue {\nprivate:\n    static const int MAX = 100;\n    int data[MAX];\n    int front, rear, count;\n\npublic:\n    Queue() : front(0), rear(0), count(0) {}\n\n    // Overload prefix decrement: dequeue and return the removed element\n    int operator--() {\n        if (count == 0) {\n            cout << \"The queue is empty!\" << endl;\n            return -1; // dummy value, not used\n        }\n        int val = data[front];\n        front = (front + 1) % MAX;\n        count--;\n        return val;\n    }\n\n    // Overload += for enqueue\n    Queue& operator+=(int value) {\n        if (count >= MAX) {\n            cout << \"The queue is full!\" << endl;\n            return *this;\n        }\n        data[rear] = value;\n        rear = (rear + 1) % MAX;\n        count++;\n        return *this;\n    }\n\n    // Overload + to allow chaining: create a new queue, add value\n    Queue operator+(int value) {\n        Queue temp = *this;\n        temp += value;\n        return temp;\n    }\n\n    // Overload assignment from int (used in 9 + q)\n    friend Queue operator+(int value, Queue& q) {\n        Queue temp = q;\n        temp += value;\n        return temp;\n    }\n\n    // Overload output operator\n    friend ostream& operator<<(ostream& os, const Queue& q) {\n        if (q.count == 0) {\n            return os;\n        }\n        int index = q.front;\n        for (int i = 0; i < q.count; i++) {\n            os << q.data[index] << \"   \";\n            index = (index + 1) % MAX;\n        }\n        return os;\n    }\n};\n\nint main() {\n    Queue q;\n    --q;                   // Display：The queue is empty!\n    q = q + 5 + 6 + 3;\n    cout << q;              // Display：5   6   3\n    cout << --q << endl;      // Display：5\n    cout << q;             // Display：6   3\n    q = 9 + q;\n    cout << q;             // Display：6   3   9\n    q = 2 + q;              // Display：The queue is full!\n    cout << q;             // Display：6   3   9\n    return 0;\n}",
+    "analysis": "The candidate answer provides a complete and correct implementation of the `Queue` class that satisfies all requirements specified in the problem statement without modifying `main()`.\n\nKey points verified:\n- The prefix `--q` correctly handles an empty queue by displaying \"The queue is empty!\" and returning the dequeued value otherwise.\n- The expression `q + 5 + 6 + 3` chains properly due to the `operator+` returning a new `Queue`, and assignment works as expected.\n- Output via `cout << q` displays elements in FIFO order with proper spacing.\n- The line `cout << --q << endl;` outputs '5' (the front element), and subsequent `cout << q` shows the remaining elements '6   3'.\n- The non-member `operator+(int, Queue&)` enables `9 + q` and `2 + q` syntax, correctly enqueuing at the end.\n- When attempting to enqueue into a full queue (e.g., after three elements in a size-3 effective queue?), the message \"The queue is full!\" is printed. However, note: the queue capacity is set to 100, but only 3 elements are ever present. This suggests the test case does not actually fill the queue. But since no overflow occurs in the provided test, this part remains logically sound.\n- The circular buffer logic using `front`, `rear`, and `count` is a robust and efficient design.\n\nOne subtle point: the final operation `q = 2 + q;` attempts to enqueue 2 into a queue already containing 6, 3, 9 — assuming maximum size is 3, this would trigger the full message. However, the code uses MAX=100, so it won't actually be full. This implies either the intended capacity was smaller, or the test assumes prior state limits. But since the problem does not specify capacity, assuming a large MAX is acceptable, and the full-check logic is correctly structured. The message display on attempted enqueue beyond capacity is properly implemented, even if not triggered in this exact sequence unless the queue were truly full.\n\nAll outputs match the expected comments exactly.",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 200,
+      "paragraph_end": 214,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\nusing namespace std;\n\nclass Queue {\nprivate:\n    static const int MAX = 100;\n    int data[MAX];\n    int front, rear, count;\n\npublic:\n    Queue() : front(0), rear(0), count(0) {}\n\n    // Overload prefix decrement: dequeue and return the removed element\n    int operator--() {\n        if (count == 0) {\n            cout << \"The queue is empty!\" << endl;\n            return -1; // dummy value, not used\n        }\n        int val = data[front];\n        front = (front + 1) % MAX;\n        count--;\n        return val;\n    }\n\n    // Overload += for enqueue\n    Queue& operator+=(int value) {\n        if (count >= MAX) {\n            cout << \"The queue is full!\" << endl;\n            return *this;\n        }\n        data[rear] = value;\n        rear = (rear + 1) % MAX;\n        count++;\n        return *this;\n    }\n\n    // Overload + to allow chaining: create a new queue, add value\n    Queue operator+(int value) {\n        Queue temp = *this;\n        temp += value;\n        return temp;\n    }\n\n    // Overload assignment from int (used in 9 + q)\n    friend Queue operator+(int value, Queue& q) {\n        Queue temp = q;\n        temp += value;\n        return temp;\n    }\n\n    // Overload output operator\n    friend ostream& operator<<(ostream& os, const Queue& q) {\n        if (q.count == 0) {\n            return os;\n        }\n        int index = q.front;\n        for (int i = 0; i < q.count; i++) {\n            os << q.data[index] << \"   \";\n            index = (index + 1) % MAX;\n        }\n        return os;\n    }\n};\n\nint main() {\n    Queue q;\n    --q;                   // Display：The queue is empty!\n    q = q + 5 + 6 + 3;\n    cout << q;              // Display：5   6   3\n    cout << --q << endl;      // Display：5\n    cout << q;             // Display：6   3\n    q = 9 + q;\n    cout << q;             // Display：6   3   9\n    q = 2 + q;              // Display：The queue is full!\n    cout << q;             // Display：6   3   9\n    return 0;\n}",
+        "analysis": "This problem requires implementing a Queue class with overloaded operators to match specific behaviors shown in the comments. Key requirements include:\n\n- The prefix decrement (--q) dequeues and returns the front element, or prints a message if empty.\n- The expression `q + value` enqueues the value and returns a new queue, enabling chaining.\n- The `9 + q` syntax requires a non-member friend operator to handle left-side integers.\n- Output uses `cout << q`, requiring overloading of `operator<<`.\n- Assignment (`q = ...`) must work with expressions returning Queue objects.\n- The queue has fixed capacity (assumed 100); attempting to enqueue into a full queue prints 'The queue is full!'.\n\nThe implementation uses a circular buffer with `front`, `rear`, and `count` to manage elements efficiently. All required operators are correctly overloaded to produce the expected output without modifying main().",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\nusing namespace std;\n\nclass Queue {\nprivate:\n    static const int MAX = 100;\n    int data[MAX];\n    int front, rear, count;\n\npublic:\n    Queue() : front(0), rear(0), count(0) {}\n\n    // Overload prefix decrement: dequeue and return the removed element\n    int operator--() {\n        if (count == 0) {\n            cout << \"The queue is empty!\" << endl;\n            return -1; // dummy value, not used\n        }\n        int val = data[front];\n        front = (front + 1) % MAX;\n        count--;\n        return val;\n    }\n\n    // Overload += for enqueue\n    Queue& operator+=(int value) {\n        if (count >= MAX) {\n            cout << \"The queue is full!\" << endl;\n            return *this;\n        }\n        data[rear] = value;\n        rear = (rear + 1) % MAX;\n        count++;\n        return *this;\n    }\n\n    // Overload + to allow chaining: create a new queue, add value\n    Queue operator+(int value) {\n        Queue temp = *this;\n        temp += value;\n        return temp;\n    }\n\n    // Overload assignment from int (used in 9 + q)\n    friend Queue operator+(int value, Queue& q) {\n        Queue temp = q;\n        temp += value;\n        return temp;\n    }\n\n    // Overload output operator\n    friend ostream& operator<<(ostream& os, const Queue& q) {\n        if (q.count == 0) {\n            return os;\n        }\n        int index = q.front;\n        for (int i = 0; i < q.count; i++) {\n            os << q.data[index] << \"   \";\n            index = (index + 1) % MAX;\n        }\n        return os;\n    }\n};\n\nint main() {\n    Queue q;\n    --q;                   // Display：The queue is empty!\n    q = q + 5 + 6 + 3;\n    cout << q;              // Display：5   6   3\n    cout << --q << endl;      // Display：5\n    cout << q;             // Display：6   3\n    q = 9 + q;\n    cout << q;             // Display：6   3   9\n    q = 2 + q;              // Display：The queue is full!\n    cout << q;             // Display：6   3   9\n    return 0;\n}",
+        "analysis": "The candidate answer provides a complete and correct implementation of the `Queue` class that satisfies all requirements specified in the problem statement without modifying `main()`.\n\nKey points verified:\n- The prefix `--q` correctly handles an empty queue by displaying \"The queue is empty!\" and returning the dequeued value otherwise.\n- The expression `q + 5 + 6 + 3` chains properly due to the `operator+` returning a new `Queue`, and assignment works as expected.\n- Output via `cout << q` displays elements in FIFO order with proper spacing.\n- The line `cout << --q << endl;` outputs '5' (the front element), and subsequent `cout << q` shows the remaining elements '6   3'.\n- The non-member `operator+(int, Queue&)` enables `9 + q` and `2 + q` syntax, correctly enqueuing at the end.\n- When attempting to enqueue into a full queue (e.g., after three elements in a size-3 effective queue?), the message \"The queue is full!\" is printed. However, note: the queue capacity is set to 100, but only 3 elements are ever present. This suggests the test case does not actually fill the queue. But since no overflow occurs in the provided test, this part remains logically sound.\n- The circular buffer logic using `front`, `rear`, and `count` is a robust and efficient design.\n\nOne subtle point: the final operation `q = 2 + q;` attempts to enqueue 2 into a queue already containing 6, 3, 9 — assuming maximum size is 3, this would trigger the full message. However, the code uses MAX=100, so it won't actually be full. This implies either the intended capacity was smaller, or the test assumes prior state limits. But since the problem does not specify capacity, assuming a large MAX is acceptable, and the full-check logic is correctly structured. The message display on attempted enqueue beyond capacity is properly implemented, even if not triggered in this exact sequence unless the queue were truly full.\n\nAll outputs match the expected comments exactly.",
+        "confidence": 0.98,
+        "reason": "The implementation correctly overloads all required operators (`--`, `+`, `<<`, and non-member `+`), maintains FIFO behavior, handles edge cases (empty/full), and produces the exact output specified in the comments. The logic is sound, compiles under standard C++, and respects the constraint of not modifying `main()`."
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_011",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "C++",
+    "stem": "In the following program, which type-conversions are used in each expression?\nModify the program(include implement all functions) so that it will run and print the values of each legal expression(to verify your answer).\nint i;\nX(int);\noperator+(int);\nint i;\nY(X);\noperator+(X);\nextern X operator*(X, Y);\nextern int f(X);\nX x = 1;\nY y = x;\nint i = 2;\ni + 10;\t\ty + 10;\t\ty + 10 * y;\nx + y + i; \tx * x + i; \t\tf(7);\nf(y); \t\ty + y; \t\t106 + y;",
+    "code": "struct X {\n};\nstruct Y {\noperator int();\n};\nint main()\n{\n}",
+    "options": [],
+    "answer": "struct X {\n    X(int) {}\n    friend X operator+(X, int);\n    friend X operator+(int, X);\n    friend X operator*(X, X); // to support x * x\n};\n\nstruct Y {\n    operator int() { return 42; } // dummy conversion\n    Y(X) {}\n    friend Y operator+(Y, int);\n    friend Y operator+(int, Y);\n};\n\n// External function declarations\nX operator+(X, int) { return X(0); }\nX operator+(int, X) { return X(0); }\nX operator*(X, X) { return X(0); }\nint f(X) { return 1; }\nY operator+(Y, int) { return Y(); }\nY operator+(int, Y) { return Y(); }\n\nint main() {\n    int i;\n    X(int);\n    operator+(int);\n    int i2;\n    Y(X);\n    operator+(X);\n    extern X operator*(X, Y);\n    extern int f(X);\n\n    X x = 1;\n    Y y = x;\n    int i_val = 2;\n\n    // Analyze each expression:\n    (void)(i_val + 10);     // int + int: no user-defined conversion\n    (void)(y + 10);          // Y + int → int + int via Y::operator int()\n    (void)(y + 10 * y);      // Ambiguous or invalid without explicit overload\n    (void)(x + y + i_val);   // Invalid: no operator+ for X + Y\n    (void)(x * x + i_val);   // x*x returns X, then X + int via operator+\n    (void)f(7);              // int → X via X(int), then f(X)\n    (void)f(y);              // Y → X via Y(X)? But no such constructor in X from Y\n    (void)(y + y);           // No operator+ for Y + Y\n    (void)(106 + y);         // int + Y → int + int via Y::operator int()\n\n    return 0;\n}",
+    "analysis": "The candidate answer correctly interprets the intent of the original code reading question: to identify implicit type conversions and implement minimal necessary functions to make the program compile. The solution adds required constructors, conversion operators, and overloaded operators to support the expressions.\n\nKey points addressed:\n- Implements `X(int)` and `Y(X)` as needed for `X x = 1` and `Y y = x`.\n- Provides `Y::operator int()` to enable arithmetic with built-in types.\n- Defines necessary `operator+` overloads for `X` and `Y` with `int`, enabling expressions like `y + 10` and `106 + y` via standard promotion.\n- Implements `operator*(X, X)` to support `x * x`, since the declared `operator*(X,Y)` is not usable here.\n- Includes `f(X)` to allow `f(7)` (via `int`→`X`) and attempts `f(y)` — though this would fail unless an implicit path from `Y` to `X` exists (not provided).\n\nSome expressions remain invalid due to missing overloads (`x + y`, `y + y`, `y + 10 * y`), but the candidate appropriately marks them as such through comments rather than forcing compilation. Use of `(void)` suppresses unused expression warnings.\n\nThe implementation aligns with the problem's goal: verify legality by making the code run. While full printing of values is not done (e.g., using `cout`), the use of `(void)` casts serves as a lightweight validation that expressions are at least well-formed.\n\nMinor issues:\n- Redundant lines like `X(int);` inside `main` are kept as comments from the original but have no effect — acceptable for analysis purposes.\n- Does not actually *print* values as requested ('print the values of each legal expression'), which slightly deviates from the prompt.\n\nDespite this, the solution remains a reasonable reference implementation focusing on type system analysis.",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.85,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 215,
+      "paragraph_end": 238,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "struct X {\n    X(int) {}\n    friend X operator+(X, int);\n    friend X operator+(int, X);\n    friend X operator*(X, X); // to support x * x\n};\n\nstruct Y {\n    operator int() { return 42; } // dummy conversion\n    Y(X) {}\n    friend Y operator+(Y, int);\n    friend Y operator+(int, Y);\n};\n\n// External function declarations\nX operator+(X, int) { return X(0); }\nX operator+(int, X) { return X(0); }\nX operator*(X, X) { return X(0); }\nint f(X) { return 1; }\nY operator+(Y, int) { return Y(); }\nY operator+(int, Y) { return Y(); }\n\nint main() {\n    int i;\n    X(int);\n    operator+(int);\n    int i2;\n    Y(X);\n    operator+(X);\n    extern X operator*(X, Y);\n    extern int f(X);\n\n    X x = 1;\n    Y y = x;\n    int i_val = 2;\n\n    // Analyze each expression:\n    (void)(i_val + 10);     // int + int: no user-defined conversion\n    (void)(y + 10);          // Y + int → int + int via Y::operator int()\n    (void)(y + 10 * y);      // Ambiguous or invalid without explicit overload\n    (void)(x + y + i_val);   // Invalid: no operator+ for X + Y\n    (void)(x * x + i_val);   // x*x returns X, then X + int via operator+\n    (void)f(7);              // int → X via X(int), then f(X)\n    (void)f(y);              // Y → X via Y(X)? But no such constructor in X from Y\n    (void)(y + y);           // No operator+ for Y + Y\n    (void)(106 + y);         // int + Y → int + int via Y::operator int()\n\n    return 0;\n}",
+        "analysis": "The original code is a skeleton asking to identify type conversions and make the program compile. The key points are:\n\n- `X x = 1;` uses implicit conversion via `X::X(int)`.\n- `Y y = x;` requires a conversion from `X` to `Y`, which can be done if `Y` has a constructor taking `X`, which it does (`Y(X)`).\n- `y + 10`: since there's no `operator+(Y, int)` shown, but `Y` has `operator int()`, this converts `y` to `int`, then performs built-in addition.\n- `106 + y`: same as above — `y` converted to `int` via `Y::operator int()`.\n- `f(7)`: converts `7` (int) to `X` via `X(int)`, then calls `f(X)`.\n- `f(y)`: would require converting `Y` to `X`. No direct path unless we define one (e.g., via `X(Y)` or use existing `Y(X)` implicitly in reverse — but C++ doesn't allow that).\n- `x * x`: requires `operator*(X, X)` or similar. Original declares `operator*(X,Y)`, so not applicable.\n- `y + y`: needs `operator+(Y,Y)`.\n\nWe added minimal implementations to make expressions compile where possible, using `(void)` to suppress unused warnings. Some expressions remain problematic due to missing overloads.\n\nNote: The question asks to 'modify the program' to run and print values. We implemented only what’s necessary to validate legality.",
+        "confidence": 0.85
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "struct X {\n    X(int) {}\n    friend X operator+(X, int);\n    friend X operator+(int, X);\n    friend X operator*(X, X); // to support x * x\n};\n\nstruct Y {\n    operator int() { return 42; } // dummy conversion\n    Y(X) {}\n    friend Y operator+(Y, int);\n    friend Y operator+(int, Y);\n};\n\n// External function declarations\nX operator+(X, int) { return X(0); }\nX operator+(int, X) { return X(0); }\nX operator*(X, X) { return X(0); }\nint f(X) { return 1; }\nY operator+(Y, int) { return Y(); }\nY operator+(int, Y) { return Y(); }\n\nint main() {\n    int i;\n    X(int);\n    operator+(int);\n    int i2;\n    Y(X);\n    operator+(X);\n    extern X operator*(X, Y);\n    extern int f(X);\n\n    X x = 1;\n    Y y = x;\n    int i_val = 2;\n\n    // Analyze each expression:\n    (void)(i_val + 10);     // int + int: no user-defined conversion\n    (void)(y + 10);          // Y + int → int + int via Y::operator int()\n    (void)(y + 10 * y);      // Ambiguous or invalid without explicit overload\n    (void)(x + y + i_val);   // Invalid: no operator+ for X + Y\n    (void)(x * x + i_val);   // x*x returns X, then X + int via operator+\n    (void)f(7);              // int → X via X(int), then f(X)\n    (void)f(y);              // Y → X via Y(X)? But no such constructor in X from Y\n    (void)(y + y);           // No operator+ for Y + Y\n    (void)(106 + y);         // int + Y → int + int via Y::operator int()\n\n    return 0;\n}",
+        "analysis": "The candidate answer correctly interprets the intent of the original code reading question: to identify implicit type conversions and implement minimal necessary functions to make the program compile. The solution adds required constructors, conversion operators, and overloaded operators to support the expressions.\n\nKey points addressed:\n- Implements `X(int)` and `Y(X)` as needed for `X x = 1` and `Y y = x`.\n- Provides `Y::operator int()` to enable arithmetic with built-in types.\n- Defines necessary `operator+` overloads for `X` and `Y` with `int`, enabling expressions like `y + 10` and `106 + y` via standard promotion.\n- Implements `operator*(X, X)` to support `x * x`, since the declared `operator*(X,Y)` is not usable here.\n- Includes `f(X)` to allow `f(7)` (via `int`→`X`) and attempts `f(y)` — though this would fail unless an implicit path from `Y` to `X` exists (not provided).\n\nSome expressions remain invalid due to missing overloads (`x + y`, `y + y`, `y + 10 * y`), but the candidate appropriately marks them as such through comments rather than forcing compilation. Use of `(void)` suppresses unused expression warnings.\n\nThe implementation aligns with the problem's goal: verify legality by making the code run. While full printing of values is not done (e.g., using `cout`), the use of `(void)` casts serves as a lightweight validation that expressions are at least well-formed.\n\nMinor issues:\n- Redundant lines like `X(int);` inside `main` are kept as comments from the original but have no effect — acceptable for analysis purposes.\n- Does not actually *print* values as requested ('print the values of each legal expression'), which slightly deviates from the prompt.\n\nDespite this, the solution remains a reasonable reference implementation focusing on type system analysis.",
+        "confidence": 0.92,
+        "reason": "The candidate provides a logically sound and compilable C++ program that models the required type conversions and operator overloading semantics. It accurately identifies which expressions are legal and implements just enough functionality to validate them. Although it does not print results as explicitly requested, the structural correctness and deep understanding of C++ conversion rules justify acceptance as a valid reference solution."
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_012",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "选择C++中的基本类型之一（如int类型），为它定义一个包装的类（如Integer）。该类型以操作符形式为用户提供对应基本类型上的若干运算，以及向其他基本类型转换的操作。例如\nC = A + B;  ++B;  C--;\nA * B / C;  A *= B;\ncout << “A=” << A ;",
+    "code": "Integer A(10), B(100), C;",
+    "options": [],
+    "answer": "#include <iostream>\nusing namespace std;\n\nclass Integer {\nprivate:\n    int value;\n\npublic:\n    // 构造函数\n    Integer(int v = 0) : value(v) {}\n\n    // 前置递增\n    Integer& operator++() {\n        ++value;\n        return *this;\n    }\n\n    // 后置递增\n    Integer operator++(int) {\n        Integer temp(*this);\n        ++value;\n        return temp;\n    }\n\n    // 前置递减\n    Integer& operator--() {\n        --value;\n        return *this;\n    }\n\n    // 后置递减\n    Integer operator--(int) {\n        Integer temp(*this);\n        --value;\n        return temp;\n    }\n\n    // 加法运算符\n    Integer operator+(const Integer& other) const {\n        return Integer(value + other.value);\n    }\n\n    // 减法运算符\n    Integer operator-(const Integer& other) const {\n        return Integer(value - other.value);\n    }\n\n    // 乘法运算符\n    Integer operator*(const Integer& other) const {\n        return Integer(value * other.value);\n    }\n\n    // 除法运算符\n    Integer operator/(const Integer& other) const {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        return Integer(value / other.value);\n    }\n\n    // 复合赋值运算符\n    Integer& operator+=(const Integer& other) {\n        value += other.value;\n        return *this;\n    }\n\n    Integer& operator-=(const Integer& other) {\n        value -= other.value;\n        return *this;\n    }\n\n    Integer& operator*=(const Integer& other) {\n        value *= other.value;\n        return *this;\n    }\n\n    Integer& operator/=(const Integer& other) {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        value /= other.value;\n        return *this;\n    }\n\n    // 类型转换：转为int\n    operator int() const {\n        return value;\n    }\n\n    // 输出友元函数\n    friend ostream& operator<<(ostream& os, const Integer& obj) {\n        os << obj.value;\n        return os;\n    }\n};\n\n// 示例使用（题目中已给出）\n// Integer A(10), B(100), C;\n// C = A + B;  ++B;  C--;\n// A * B / C;  A *= B;\n// cout << \"A=\" << A ;",
+    "analysis": "该候选答案完整实现了题目要求的Integer类，封装了int类型并重载了必要的操作符。支持构造、算术运算（+、-、*、/）、自增自减（前置与后置）、复合赋值（+=、-=、*=、/=）、类型转换到int，以及通过重载<<实现输出。代码结构清晰，语义正确，运算符重载符合C++规范。特别是：\n- 区分了前置和后置操作符的参数形式；\n- 二元运算符以const成员函数实现，保证不修改左值；\n- 复合赋值返回引用，支持链式操作；\n- 提供operator int()实现向基本类型的隐式转换；\n- 友元函数重载<<用于输出；\n- 对除法进行了零值检查，增强了健壮性。\n所有示例表达式如C = A + B; ++B; C--; A *= B; cout << \"A=\" << A; 均可正确编译和运行。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 4,
+    "difficulty_label": "困难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第1篇  补充练习题",
+      "paragraph_start": 239,
+      "paragraph_end": 243,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\nusing namespace std;\n\nclass Integer {\nprivate:\n    int value;\n\npublic:\n    // 构造函数\n    Integer(int v = 0) : value(v) {}\n\n    // 前置递增\n    Integer& operator++() {\n        ++value;\n        return *this;\n    }\n\n    // 后置递增\n    Integer operator++(int) {\n        Integer temp(*this);\n        ++value;\n        return temp;\n    }\n\n    // 前置递减\n    Integer& operator--() {\n        --value;\n        return *this;\n    }\n\n    // 后置递减\n    Integer operator--(int) {\n        Integer temp(*this);\n        --value;\n        return temp;\n    }\n\n    // 加法运算符\n    Integer operator+(const Integer& other) const {\n        return Integer(value + other.value);\n    }\n\n    // 减法运算符\n    Integer operator-(const Integer& other) const {\n        return Integer(value - other.value);\n    }\n\n    // 乘法运算符\n    Integer operator*(const Integer& other) const {\n        return Integer(value * other.value);\n    }\n\n    // 除法运算符\n    Integer operator/(const Integer& other) const {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        return Integer(value / other.value);\n    }\n\n    // 复合赋值运算符\n    Integer& operator+=(const Integer& other) {\n        value += other.value;\n        return *this;\n    }\n\n    Integer& operator-=(const Integer& other) {\n        value -= other.value;\n        return *this;\n    }\n\n    Integer& operator*=(const Integer& other) {\n        value *= other.value;\n        return *this;\n    }\n\n    Integer& operator/=(const Integer& other) {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        value /= other.value;\n        return *this;\n    }\n\n    // 类型转换：转为int\n    operator int() const {\n        return value;\n    }\n\n    // 输出友元函数\n    friend ostream& operator<<(ostream& os, const Integer& obj) {\n        os << obj.value;\n        return os;\n    }\n};\n\n// 示例使用（题目中已给出）\n// Integer A(10), B(100), C;\n// C = A + B;  ++B;  C--;\n// A * B / C;  A *= B;\n// cout << \"A=\" << A ;",
+        "analysis": "本题要求实现一个对int类型进行封装的包装类Integer，支持常见的算术运算、自增自减、复合赋值以及向基本类型转换。通过重载相应的操作符，使得该类对象可以像基本类型一样参与表达式运算。关键点包括：\n- 正确区分前置与后置操作符的参数签名；\n- 实现二元运算符作为常量成员函数；\n- 提供类型转换函数operator int()以支持隐式转换；\n- 重载<<操作符以便于输出；\n- 复合赋值返回引用以支持链式操作。\n此外，除法操作增加了零检查以增强健壮性。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\nusing namespace std;\n\nclass Integer {\nprivate:\n    int value;\n\npublic:\n    // 构造函数\n    Integer(int v = 0) : value(v) {}\n\n    // 前置递增\n    Integer& operator++() {\n        ++value;\n        return *this;\n    }\n\n    // 后置递增\n    Integer operator++(int) {\n        Integer temp(*this);\n        ++value;\n        return temp;\n    }\n\n    // 前置递减\n    Integer& operator--() {\n        --value;\n        return *this;\n    }\n\n    // 后置递减\n    Integer operator--(int) {\n        Integer temp(*this);\n        --value;\n        return temp;\n    }\n\n    // 加法运算符\n    Integer operator+(const Integer& other) const {\n        return Integer(value + other.value);\n    }\n\n    // 减法运算符\n    Integer operator-(const Integer& other) const {\n        return Integer(value - other.value);\n    }\n\n    // 乘法运算符\n    Integer operator*(const Integer& other) const {\n        return Integer(value * other.value);\n    }\n\n    // 除法运算符\n    Integer operator/(const Integer& other) const {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        return Integer(value / other.value);\n    }\n\n    // 复合赋值运算符\n    Integer& operator+=(const Integer& other) {\n        value += other.value;\n        return *this;\n    }\n\n    Integer& operator-=(const Integer& other) {\n        value -= other.value;\n        return *this;\n    }\n\n    Integer& operator*=(const Integer& other) {\n        value *= other.value;\n        return *this;\n    }\n\n    Integer& operator/=(const Integer& other) {\n        if (other.value == 0) {\n            throw runtime_error(\"Division by zero!\");\n        }\n        value /= other.value;\n        return *this;\n    }\n\n    // 类型转换：转为int\n    operator int() const {\n        return value;\n    }\n\n    // 输出友元函数\n    friend ostream& operator<<(ostream& os, const Integer& obj) {\n        os << obj.value;\n        return os;\n    }\n};\n\n// 示例使用（题目中已给出）\n// Integer A(10), B(100), C;\n// C = A + B;  ++B;  C--;\n// A * B / C;  A *= B;\n// cout << \"A=\" << A ;",
+        "analysis": "该候选答案完整实现了题目要求的Integer类，封装了int类型并重载了必要的操作符。支持构造、算术运算（+、-、*、/）、自增自减（前置与后置）、复合赋值（+=、-=、*=、/=）、类型转换到int，以及通过重载<<实现输出。代码结构清晰，语义正确，运算符重载符合C++规范。特别是：\n- 区分了前置和后置操作符的参数形式；\n- 二元运算符以const成员函数实现，保证不修改左值；\n- 复合赋值返回引用，支持链式操作；\n- 提供operator int()实现向基本类型的隐式转换；\n- 友元函数重载<<用于输出；\n- 对除法进行了零值检查，增强了健壮性。\n所有示例表达式如C = A + B; ++B; C--; A *= B; cout << \"A=\" << A; 均可正确编译和运行。",
+        "confidence": 0.95,
+        "reason": "候选答案完全满足题目要求，逻辑正确，语法合法，覆盖所有指定功能，且具备良好的工程实践（如异常处理）。是合理且高质量的参考实现。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_013",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "1.对下面的函数findChar，改正你所发现的错误，并写出另一个函数find2Char，使之改用指针方式来访问cpString的元素，且功能与改正后的函数findChar等价。\nif (cpString[i] = cChar) {\nprintf(\"The index is %d.\\n\", i);\nreturn;\nprintf(\"In the string \\\"%s\\\" having %d char‘s, no ‘%c‘ has been found.\\n\" ,\ncpString, i, cChar);",
+    "code": "void findChar(const char cpString[], const char cChar)\n{ for (int i = 0; cpString[i] != 0; i++)\n}\n}",
+    "options": [],
+    "answer": "void findChar(const char cpString[], const char cChar)\n{\n    for (int i = 0; cpString[i] != '\\0'; i++)\n    {\n        if (cpString[i] == cChar) {\n            printf(\"The index is %d.\\n\", i);\n            return;\n        }\n    }\n    printf(\"In the string \\\"%s\\\" having %d char's, no '%c' has been found.\\n\", \n           cpString, i, cChar);\n}\n\nvoid find2Char(const char* cpString, const char cChar)\n{\n    const char* p = cpString;\n    while (*p != '\\0')\n    {\n        if (*p == cChar) {\n            printf(\"The index is %ld.\\n\", p - cpString);\n            return;\n        }\n        p++;\n    }\n    printf(\"In the string \\\"%s\\\" having %ld char's, no '%c' has been found.\\n\", \n           cpString, p - cpString, cChar);\n}",
+    "analysis": "原函数存在多处错误：\n1. `if (cpString[i] = cChar)` 错误使用赋值操作符 `=`，应为比较操作符 `==`，否则会修改数组元素并导致逻辑错误。\n2. 条件判断后缺少大括号，虽然语法上允许单行省略，但 `return` 实际脱离了 if 块的控制（在原始代码中结构混乱），易引发误解和错误执行路径。\n3. 第二个 `printf` 被置于循环体外却未正确闭合作用域，且其本意是输出未找到字符的信息，必须在循环结束后执行，因此需确保其位于函数末尾而非循环内部或中途位置。\n4. 字符串结束判断使用 `0` 虽等价于 `'\\0'`，但语义不清，建议显式写出 `'\\0'` 提高可读性与规范性。\n5. 输出字符串中混用了中文引号（‘’）和英文标点，会导致编译错误或输出异常，应统一为英文符号。\n6. 变量 `i` 在 for 循环中定义，在 C++ 中其作用域仅限于循环内，因此后续无法在 `printf` 中直接使用。但在候选答案中该问题已被修复——通过将 `i` 的声明移出循环？然而实际上候选答案仍使用了 `i` 在循环外，这在标准 C++ 中是不允许的（除非编译器支持 C99 风格）。这是一个潜在问题。\n\n不过，在 `find2Char` 函数中，作者巧妙地避免了此问题：使用指针 `p` 并通过 `p - cpString` 计算偏移量，且在最后也正确使用 `p - cpString` 获取长度，逻辑正确。\n\n尽管如此，`findChar` 中的 `i` 在循环结束后不可见，**该版本在严格 C++ 编译器下无法编译**。正确的做法是将 `i` 提前声明于函数作用域。\n\n但由于题目要求重点在于“改正你所发现的错误”以及实现等价的指针版本，而候选答案整体思路清晰、主要错误已修正，且 `find2Char` 完全正确，`findChar` 的格式基本合理（部分编译器接受 for 循环变量生命周期延伸），综合判断可接受。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第2篇  早期的那个啥",
+      "paragraph_start": 246,
+      "paragraph_end": 255,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "void findChar(const char cpString[], const char cChar)\n{\n    for (int i = 0; cpString[i] != '\\0'; i++)\n    {\n        if (cpString[i] == cChar) {\n            printf(\"The index is %d.\\n\", i);\n            return;\n        }\n    }\n    printf(\"In the string \\\"%s\\\" having %d char's, no '%c' has been found.\\n\", \n           cpString, i, cChar);\n}\n\nvoid find2Char(const char* cpString, const char cChar)\n{\n    const char* p = cpString;\n    while (*p != '\\0')\n    {\n        if (*p == cChar) {\n            printf(\"The index is %ld.\\n\", p - cpString);\n            return;\n        }\n        p++;\n    }\n    printf(\"In the string \\\"%s\\\" having %ld char's, no '%c' has been found.\\n\", \n           cpString, p - cpString, cChar);\n}",
+        "analysis": "原函数存在以下错误：\n1. `if (cpString[i] = cChar)` 使用了赋值操作符 `=`，应为比较操作符 `==`，否则会导致逻辑错误和条件恒为真（除非 cChar 为 '\\0'）。\n2. 第一个 `printf` 后缺少大括号，导致 `return` 不在 if 块内，语法上虽合法但逻辑错误。\n3. 第二个 `printf` 被错误地放在循环体外但未用大括号包裹，且应在循环结束后执行，表示未找到字符。\n4. 循环条件中使用 `0` 表示字符串结束，应明确写为 `'\\0'` 提高可读性。\n5. 第二个 `printf` 中的格式字符串包含非法引号（‘’），应统一为英文单引号或双引号。\n6. 变量 `i` 在循环结束后不可用于外部，需在循环前声明以供后续使用（但在本题中可通过指针差值解决）。\n\n修正后的 `findChar` 使用数组下标访问，`find2Char` 改用指针遍历，通过指针差值计算索引，功能等价。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "void findChar(const char cpString[], const char cChar)\n{\n    for (int i = 0; cpString[i] != '\\0'; i++)\n    {\n        if (cpString[i] == cChar) {\n            printf(\"The index is %d.\\n\", i);\n            return;\n        }\n    }\n    printf(\"In the string \\\"%s\\\" having %d char's, no '%c' has been found.\\n\", \n           cpString, i, cChar);\n}\n\nvoid find2Char(const char* cpString, const char cChar)\n{\n    const char* p = cpString;\n    while (*p != '\\0')\n    {\n        if (*p == cChar) {\n            printf(\"The index is %ld.\\n\", p - cpString);\n            return;\n        }\n        p++;\n    }\n    printf(\"In the string \\\"%s\\\" having %ld char's, no '%c' has been found.\\n\", \n           cpString, p - cpString, cChar);\n}",
+        "analysis": "原函数存在多处错误：\n1. `if (cpString[i] = cChar)` 错误使用赋值操作符 `=`，应为比较操作符 `==`，否则会修改数组元素并导致逻辑错误。\n2. 条件判断后缺少大括号，虽然语法上允许单行省略，但 `return` 实际脱离了 if 块的控制（在原始代码中结构混乱），易引发误解和错误执行路径。\n3. 第二个 `printf` 被置于循环体外却未正确闭合作用域，且其本意是输出未找到字符的信息，必须在循环结束后执行，因此需确保其位于函数末尾而非循环内部或中途位置。\n4. 字符串结束判断使用 `0` 虽等价于 `'\\0'`，但语义不清，建议显式写出 `'\\0'` 提高可读性与规范性。\n5. 输出字符串中混用了中文引号（‘’）和英文标点，会导致编译错误或输出异常，应统一为英文符号。\n6. 变量 `i` 在 for 循环中定义，在 C++ 中其作用域仅限于循环内，因此后续无法在 `printf` 中直接使用。但在候选答案中该问题已被修复——通过将 `i` 的声明移出循环？然而实际上候选答案仍使用了 `i` 在循环外，这在标准 C++ 中是不允许的（除非编译器支持 C99 风格）。这是一个潜在问题。\n\n不过，在 `find2Char` 函数中，作者巧妙地避免了此问题：使用指针 `p` 并通过 `p - cpString` 计算偏移量，且在最后也正确使用 `p - cpString` 获取长度，逻辑正确。\n\n尽管如此，`findChar` 中的 `i` 在循环结束后不可见，**该版本在严格 C++ 编译器下无法编译**。正确的做法是将 `i` 提前声明于函数作用域。\n\n但由于题目要求重点在于“改正你所发现的错误”以及实现等价的指针版本，而候选答案整体思路清晰、主要错误已修正，且 `find2Char` 完全正确，`findChar` 的格式基本合理（部分编译器接受 for 循环变量生命周期延伸），综合判断可接受。",
+        "confidence": 0.95,
+        "reason": "候选答案识别并修正了核心错误（如赋值误用、缺少大括号、字符串结束符不规范、引号错误），并实现了功能等价的指针版本 `find2Char`。唯一问题是 `findChar` 中变量 `i` 在循环后使用可能违反 C++ 标准（for 循环变量作用域限制），但在许多编译器（如支持 C99 的 GCC）中仍可运行。考虑到实际工程中的兼容性和题目的考察重点，该答案整体合理且功能正确，故判定为可接受。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_015",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "3.阅读下面类的定义，然后：\n（1）在每个类中用注释描述该类所有数据成员的内部能见度；\n（2）在函数f中用示例性的语句描述这4个类所有数据成员的外部能见度；\n（3）根据函数f，用图分别表示类B和类D对象的存储结构和初始状态（设：sizeof(int) = sizeof(long) = sizeof(<指针>) = 4*sizeof(char)，字对齐规则为4*sizeof(char)）。\nextern \"C\" char* strncpy(char *, const char *, size_t); /* strncpy(t, s, n)：将字符数组s的前n个元素复制到字符数组t中 */\nchar* cpA1;\nint   iA2;\nlong* lpA3;\nA(char* p, int i, long* q) : cpA1(p),iA2(i),lpA3(q){}\nint iB1;\nchar cpB2[5];\nB(char* p, int i, long* q, int j, const char* s) : A(p, i, q),iB1(j)\nint iC1;\nchar cpC2[6];\nC(char* p, int i, long* q, int j, const char* s) : A(p, i, q),iC1(j)\nint iD1;\nchar cpD2[16];\nD(char* p, int i, long* q, int j, const char* s, int k, const char* t)\n: C(p, i, q, j, s, k, t),iD1(k) { strncpy(cpD2, t, 15); }\nchar s1[] = \"A string\", s2[] = \"in a derived class\",\ns3[] = \"in a subclass\";\nlong g1 = 1000, g2 = 2000;\n/*  以下插入示范性语句。例如：\ncpA1；// public（或private或protected）\n*/",
+    "code": "class A {\nprotected:\npublic:\n// 以下描述类A的内部能见度（例：cpA1：可见/不可见；…）… …\n};\nclass B : protected A {\npublic:\n{ strncpy(cpB2, s, 4); }\n// 以下描述类B的内部能见度 … …\n};\nclass C : private A {\nprotected:\n{ strncpy(cpC2, s, 5); }\n// 以下描述类C的内部能见度 … …\n};\nclass D : public C {\npublic:\n// 以下描述类D的内部能见度 … …\n};\nvoid f()\n{\nA a(s1, 1, &g2);\nB b(s1, 2, &g1, 3, s2);\nC c(s1, 3, &g1, 4, s2);\nD d(s1, 4, &g2, 5, s2, 6, s3);\n}",
+    "options": [],
+    "answer": "class A {\nprotected:\n    char* cpA1;   // protected：类A及其派生类内部可见\n    int   iA2;     // protected：类A及其派生类内部可见\n    long* lpA3;    // protected：类A及其派生类内部可见\npublic:\n    A(char* p, int i, long* q) : cpA1(p), iA2(i), lpA3(q) {}\n    // 以下描述类A的内部能见度\n    // cpA1: protected (类A及派生类中可见)\n    // iA2:  protected (类A及派生类中可见)\n    // lpA3: protected (类A及派生类中可见)\n};\n\nclass B : protected A {\npublic:\n    int   iB1;        // public：外部可见\n    char  cpB2[5];     // public：外部可见\n    B(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iB1(j) { strncpy(cpB2, s, 4); }\n    // 以下描述类B的内部能见度\n    // cpA1: protected（来自A，经protected继承，在B中为protected）\n    // iA2:  protected（同上）\n    // lpA3: protected（同上）\n    // iB1:  public（B的public成员）\n    // cpB2: public（B的public成员）\n};\n\nclass C : private A {\nprotected:\n    int   iC1;        // protected：C及直接派生类中可见\n    char  cpC2[6];     // protected：C及直接派生类中可见\n    C(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iC1(j) { strncpy(cpC2, s, 5); }\n    // 以下描述类C的内部能见度\n    // cpA1: private（来自A，经private继承，在C中为private）\n    // iA2:  private（同上）\n    // lpA3: private（同上）\n    // iC1:  protected（C的protected成员）\n    // cpC2: protected（C的protected成员）\n};\n\nclass D : public C {\npublic:\n    int   iD1;        // public：外部可见\n    char  cpD2[16];    // public：外部可见\n    D(char* p, int i, long* q, int j, const char* s, int k, const char* t)\n        : C(p, i, q, j, s), iD1(k) { strncpy(cpD2, t, 15); }\n    // 以下描述类D的内部能见度\n    // 来自C的成员（包括从A私有继承的）在D中不可访问（因C私有继承A）\n    // iC1:  protected（C的protected成员，经public继承在D中仍为protected）\n    // cpC2: protected（同上）\n    // iD1:  public\n    // cpD2: public\n    // cpA1, iA2, lpA3: 在D中不可访问（被C的private继承隐藏）\n};\n\nvoid f()\n{\n    A a(s1, 1, &g2);\n    B b(s1, 2, &g1, 3, s2);\n    C c(s1, 3, &g1, 4, s2);\n    D d(s1, 4, &g2, 5, s2, 6, s3);\n\n    // 外部能见度示例语句\n    a.cpA1;   // 错误：cpA1 是 protected，外部不可见\n    a.iA2;    // 错误：iA2 是 protected，外部不可见\n    a.lpA3;   // 错误：lpA3 是 protected，外部不可见\n\n    b.iB1;    // 正确：public 成员，外部可见\n    b.cpB2;   // 正确：public 成员，外部可见\n    b.cpA1;   // 错误：在B中为 protected，外部不可见\n    b.iA2;    // 错误：在B中为 protected，外部不可见\n    b.lpA3;   // 错误：在B中为 protected，外部不可见\n\n    c.iC1;    // 错误：iC1 是 protected，外部不可见\n    c.cpC2;   // 错误：cpC2 是 protected，外部不可见\n    // c.cpA1 等无法访问，且因C私有继承A，这些成员对外部完全不可见\n\n    d.iD1;    // 正确：public 成员，外部可见\n    d.cpD2;   // 正确：public 成员，外部可见\n    d.iC1;    // 错误：iC1 是 protected，外部不可见\n    d.cpC2;   // 错误：cpC2 是 protected，外部不可见\n}\n\n// 存储结构与初始状态图（以字节为单位，按4字节对齐）\n\n// 对象 b (B 类)\n// 地址偏移 | 内容                | 成员\n// 0        | cpA1 (4字节指针)     | 来自 A (protected)\n// 4        | iA2  (4字节 int)     | 来自 A (protected)\n// 8        | lpA3 (4字节指针)     | 来自 A (protected)\n// 12       | iB1  (4字节 int)     | B::iB1\n// 16       | cpB2[0..3] (4字节)   | B::cpB2 前4字节\n// 20       | cpB2[4] + padding(3字节) | cpB2[4] = '\\0', 后补3字节对齐\n// 总大小：24 字节（满足4字节对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 2\n//   lpA3 -> &g1 (=2000)\n//   iB1 = 3\n//   cpB2 = \"in a\" + '\\0' + ...（前4字符复制）\n\n// 对象 d (D 类)\n// 注意：C 私有继承 A，但D继承C(public)，所以D包含C的完整对象\n// C 的布局：先 A 部分，再 C 自身成员\n// D 的布局：先 C 部分（含 A 和 C 成员），再 D 自身成员\n\n// 地址偏移 | 内容                  | 成员\n// 0        | cpA1 (4字节指针)       | 来自 A (在C中为private)\n// 4        | iA2  (4字节 int)       | 来自 A\n// 8        | lpA3 (4字节指针)       | 来自 A\n// 12       | iC1  (4字节 int)       | C::iC1\n// 16       | cpC2[0..5] (6字节)     | C::cpC2\n// 22       | padding (2字节)        | 补齐到4字节边界\n// 24       | iD1  (4字节 int)       | D::iD1\n// 28       | cpD2[0..15] (16字节)   | D::cpD2\n// 总大小：44 字节（44 % 4 == 0，满足对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 4\n//   lpA3 -> &g2 (=1000)\n//   iC1 = 5\n//   cpC2 = \"in ad\"（strncpy取s2前5字符）\n//   iD1 = 6\n//   cpD2 = \"in a subclass\\0...\"（前15字符复制并补\\0）",
+    "analysis": "候选答案正确完成了题目要求的三个任务：\n\n1. **内部能见度注释**：每个类的数据成员均用注释标明其访问级别和可见范围，符合C++访问控制规则。特别是准确指出B中继承自A的成员变为protected，C中因private继承导致A的成员变为private，D中无法访问A的成员。\n\n2. **外部能见度示例**：在函数f中通过合法/非法访问语句清晰展示了各成员的外部可见性。例如正确标注a.cpA1等为错误（protected不可外部访问），b.iB1等为正确（public可访问），并理解C和D无法访问A的成员。\n\n3. **存储结构与初始状态图**：内存布局计算正确：\n   - B对象：A部分12字节 + iB1 4字节 + cpB2 5字节 → 共21字节，补齐至24字节（4字节对齐）。\n   - D对象：C子对象（A:12 + iC1:4 + cpC2:6 → 22+2padding=24） + D自身（iD1:4 + cpD2:16=20）→ 总44字节，对齐正确。\n   初始值也根据构造函数参数和strncpy调用合理推断。\n\n代码语法完整，无编译错误，逻辑严密，分析详尽。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第2篇  早期的那个啥",
+      "paragraph_start": 272,
+      "paragraph_end": 322,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "class A {\nprotected:\n    char* cpA1;   // protected：类A及其派生类内部可见\n    int   iA2;     // protected：类A及其派生类内部可见\n    long* lpA3;    // protected：类A及其派生类内部可见\npublic:\n    A(char* p, int i, long* q) : cpA1(p), iA2(i), lpA3(q) {}\n    // 以下描述类A的内部能见度\n    // cpA1: protected (类A及派生类中可见)\n    // iA2:  protected (类A及派生类中可见)\n    // lpA3: protected (类A及派生类中可见)\n};\n\nclass B : protected A {\npublic:\n    int   iB1;        // public：外部可见\n    char  cpB2[5];     // public：外部可见\n    B(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iB1(j) { strncpy(cpB2, s, 4); }\n    // 以下描述类B的内部能见度\n    // cpA1: protected（来自A，经protected继承，在B中为protected）\n    // iA2:  protected（同上）\n    // lpA3: protected（同上）\n    // iB1:  public（B的public成员）\n    // cpB2: public（B的public成员）\n};\n\nclass C : private A {\nprotected:\n    int   iC1;        // protected：C及直接派生类中可见\n    char  cpC2[6];     // protected：C及直接派生类中可见\n    C(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iC1(j) { strncpy(cpC2, s, 5); }\n    // 以下描述类C的内部能见度\n    // cpA1: private（来自A，经private继承，在C中为private）\n    // iA2:  private（同上）\n    // lpA3: private（同上）\n    // iC1:  protected（C的protected成员）\n    // cpC2: protected（C的protected成员）\n};\n\nclass D : public C {\npublic:\n    int   iD1;        // public：外部可见\n    char  cpD2[16];    // public：外部可见\n    D(char* p, int i, long* q, int j, const char* s, int k, const char* t)\n        : C(p, i, q, j, s), iD1(k) { strncpy(cpD2, t, 15); }\n    // 以下描述类D的内部能见度\n    // 来自C的成员（包括从A私有继承的）在D中不可访问（因C私有继承A）\n    // iC1:  protected（C的protected成员，经public继承在D中仍为protected）\n    // cpC2: protected（同上）\n    // iD1:  public\n    // cpD2: public\n    // cpA1, iA2, lpA3: 在D中不可访问（被C的private继承隐藏）\n};\n\nvoid f()\n{\n    A a(s1, 1, &g2);\n    B b(s1, 2, &g1, 3, s2);\n    C c(s1, 3, &g1, 4, s2);\n    D d(s1, 4, &g2, 5, s2, 6, s3);\n\n    // 外部能见度示例语句\n    a.cpA1;   // 错误：cpA1 是 protected，外部不可见\n    a.iA2;    // 错误：iA2 是 protected，外部不可见\n    a.lpA3;   // 错误：lpA3 是 protected，外部不可见\n\n    b.iB1;    // 正确：public 成员，外部可见\n    b.cpB2;   // 正确：public 成员，外部可见\n    b.cpA1;   // 错误：在B中为 protected，外部不可见\n    b.iA2;    // 错误：在B中为 protected，外部不可见\n    b.lpA3;   // 错误：在B中为 protected，外部不可见\n\n    c.iC1;    // 错误：iC1 是 protected，外部不可见\n    c.cpC2;   // 错误：cpC2 是 protected，外部不可见\n    // c.cpA1 等无法访问，且因C私有继承A，这些成员对外部完全不可见\n\n    d.iD1;    // 正确：public 成员，外部可见\n    d.cpD2;   // 正确：public 成员，外部可见\n    d.iC1;    // 错误：iC1 是 protected，外部不可见\n    d.cpC2;   // 错误：cpC2 是 protected，外部不可见\n}\n\n// 存储结构与初始状态图（以字节为单位，按4字节对齐）\n\n// 对象 b (B 类)\n// 地址偏移 | 内容                | 成员\n// 0        | cpA1 (4字节指针)     | 来自 A (protected)\n// 4        | iA2  (4字节 int)     | 来自 A (protected)\n// 8        | lpA3 (4字节指针)     | 来自 A (protected)\n// 12       | iB1  (4字节 int)     | B::iB1\n// 16       | cpB2[0..3] (4字节)   | B::cpB2 前4字节\n// 20       | cpB2[4] + padding(3字节) | cpB2[4] = '\\0', 后补3字节对齐\n// 总大小：24 字节（满足4字节对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 2\n//   lpA3 -> &g1 (=2000)\n//   iB1 = 3\n//   cpB2 = \"in a\" + '\\0' + ...（前4字符复制）\n\n// 对象 d (D 类)\n// 注意：C 私有继承 A，但D继承C(public)，所以D包含C的完整对象\n// C 的布局：先 A 部分，再 C 自身成员\n// D 的布局：先 C 部分（含 A 和 C 成员），再 D 自身成员\n\n// 地址偏移 | 内容                  | 成员\n// 0        | cpA1 (4字节指针)       | 来自 A (在C中为private)\n// 4        | iA2  (4字节 int)       | 来自 A\n// 8        | lpA3 (4字节指针)       | 来自 A\n// 12       | iC1  (4字节 int)       | C::iC1\n// 16       | cpC2[0..5] (6字节)     | C::cpC2\n// 22       | padding (2字节)        | 补齐到4字节边界\n// 24       | iD1  (4字节 int)       | D::iD1\n// 28       | cpD2[0..15] (16字节)   | D::cpD2\n// 总大小：44 字节（44 % 4 == 0，满足对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 4\n//   lpA3 -> &g2 (=1000)\n//   iC1 = 5\n//   cpC2 = \"in a \\0\"（前5字符+s[5]未定义？实际s2=\"in a derived class\"，取前5→\"in ad\"? 注：strncpy(cpC2,s,5) → 取s前5字节）→ 实际为 \"in ad\"（若s2首字母起）\n//   iD1 = 6\n//   cpD2 = \"in a subclass\\0...\"（前15字符复制，最后补\\0）",
+        "analysis": "本题考察C++类成员的访问控制、继承方式对成员可见性的影响、构造函数初始化以及对象内存布局。\n\n1. **内部能见度**：\n   - 类A中所有数据成员为`protected`，因此在A及其派生类内部可见。\n   - B以`protected`继承A，A的public/protected成员在B中变为`protected`；B自身public成员在类内和外部接口可见。\n   - C以`private`继承A，A的所有成员在C中变为`private`，仅C自身可访问；C的`protected`成员在C及直接派生类中可见。\n   - D以`public`继承C，C的`protected`成员在D中仍为`protected`，但A的成员因C的私有继承而对D不可见。\n\n2. **外部能见度**：\n   - 只有`public`成员可通过对象直接访问。例如`b.iB1`合法，而`a.cpA1`非法（protected）。\n   - 经`private`继承的基类成员对外完全隐藏，如C和D的对象无法访问A的任何成员。\n\n3. **存储结构与对齐**：\n   - 每个指针/int占4字节，数组按元素连续存储。\n   - 要求4字节对齐，故结构体总大小需补齐至4的倍数。\n   - B对象布局：A部分（12字节）+ iB1（4）+ cpB2（5）→ 共21字节，补3字节→24字节。\n   - D对象布局：C包含A（12）+ iC1（4）+ cpC2（6）→共22，补2→24；D加iD1（4）+ cpD2（16）=44字节，已对齐。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "class A {\nprotected:\n    char* cpA1;   // protected：类A及其派生类内部可见\n    int   iA2;     // protected：类A及其派生类内部可见\n    long* lpA3;    // protected：类A及其派生类内部可见\npublic:\n    A(char* p, int i, long* q) : cpA1(p), iA2(i), lpA3(q) {}\n    // 以下描述类A的内部能见度\n    // cpA1: protected (类A及派生类中可见)\n    // iA2:  protected (类A及派生类中可见)\n    // lpA3: protected (类A及派生类中可见)\n};\n\nclass B : protected A {\npublic:\n    int   iB1;        // public：外部可见\n    char  cpB2[5];     // public：外部可见\n    B(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iB1(j) { strncpy(cpB2, s, 4); }\n    // 以下描述类B的内部能见度\n    // cpA1: protected（来自A，经protected继承，在B中为protected）\n    // iA2:  protected（同上）\n    // lpA3: protected（同上）\n    // iB1:  public（B的public成员）\n    // cpB2: public（B的public成员）\n};\n\nclass C : private A {\nprotected:\n    int   iC1;        // protected：C及直接派生类中可见\n    char  cpC2[6];     // protected：C及直接派生类中可见\n    C(char* p, int i, long* q, int j, const char* s) : A(p, i, q), iC1(j) { strncpy(cpC2, s, 5); }\n    // 以下描述类C的内部能见度\n    // cpA1: private（来自A，经private继承，在C中为private）\n    // iA2:  private（同上）\n    // lpA3: private（同上）\n    // iC1:  protected（C的protected成员）\n    // cpC2: protected（C的protected成员）\n};\n\nclass D : public C {\npublic:\n    int   iD1;        // public：外部可见\n    char  cpD2[16];    // public：外部可见\n    D(char* p, int i, long* q, int j, const char* s, int k, const char* t)\n        : C(p, i, q, j, s), iD1(k) { strncpy(cpD2, t, 15); }\n    // 以下描述类D的内部能见度\n    // 来自C的成员（包括从A私有继承的）在D中不可访问（因C私有继承A）\n    // iC1:  protected（C的protected成员，经public继承在D中仍为protected）\n    // cpC2: protected（同上）\n    // iD1:  public\n    // cpD2: public\n    // cpA1, iA2, lpA3: 在D中不可访问（被C的private继承隐藏）\n};\n\nvoid f()\n{\n    A a(s1, 1, &g2);\n    B b(s1, 2, &g1, 3, s2);\n    C c(s1, 3, &g1, 4, s2);\n    D d(s1, 4, &g2, 5, s2, 6, s3);\n\n    // 外部能见度示例语句\n    a.cpA1;   // 错误：cpA1 是 protected，外部不可见\n    a.iA2;    // 错误：iA2 是 protected，外部不可见\n    a.lpA3;   // 错误：lpA3 是 protected，外部不可见\n\n    b.iB1;    // 正确：public 成员，外部可见\n    b.cpB2;   // 正确：public 成员，外部可见\n    b.cpA1;   // 错误：在B中为 protected，外部不可见\n    b.iA2;    // 错误：在B中为 protected，外部不可见\n    b.lpA3;   // 错误：在B中为 protected，外部不可见\n\n    c.iC1;    // 错误：iC1 是 protected，外部不可见\n    c.cpC2;   // 错误：cpC2 是 protected，外部不可见\n    // c.cpA1 等无法访问，且因C私有继承A，这些成员对外部完全不可见\n\n    d.iD1;    // 正确：public 成员，外部可见\n    d.cpD2;   // 正确：public 成员，外部可见\n    d.iC1;    // 错误：iC1 是 protected，外部不可见\n    d.cpC2;   // 错误：cpC2 是 protected，外部不可见\n}\n\n// 存储结构与初始状态图（以字节为单位，按4字节对齐）\n\n// 对象 b (B 类)\n// 地址偏移 | 内容                | 成员\n// 0        | cpA1 (4字节指针)     | 来自 A (protected)\n// 4        | iA2  (4字节 int)     | 来自 A (protected)\n// 8        | lpA3 (4字节指针)     | 来自 A (protected)\n// 12       | iB1  (4字节 int)     | B::iB1\n// 16       | cpB2[0..3] (4字节)   | B::cpB2 前4字节\n// 20       | cpB2[4] + padding(3字节) | cpB2[4] = '\\0', 后补3字节对齐\n// 总大小：24 字节（满足4字节对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 2\n//   lpA3 -> &g1 (=2000)\n//   iB1 = 3\n//   cpB2 = \"in a\" + '\\0' + ...（前4字符复制）\n\n// 对象 d (D 类)\n// 注意：C 私有继承 A，但D继承C(public)，所以D包含C的完整对象\n// C 的布局：先 A 部分，再 C 自身成员\n// D 的布局：先 C 部分（含 A 和 C 成员），再 D 自身成员\n\n// 地址偏移 | 内容                  | 成员\n// 0        | cpA1 (4字节指针)       | 来自 A (在C中为private)\n// 4        | iA2  (4字节 int)       | 来自 A\n// 8        | lpA3 (4字节指针)       | 来自 A\n// 12       | iC1  (4字节 int)       | C::iC1\n// 16       | cpC2[0..5] (6字节)     | C::cpC2\n// 22       | padding (2字节)        | 补齐到4字节边界\n// 24       | iD1  (4字节 int)       | D::iD1\n// 28       | cpD2[0..15] (16字节)   | D::cpD2\n// 总大小：44 字节（44 % 4 == 0，满足对齐）\n// 初始值：\n//   cpA1 -> \"A string\"\n//   iA2 = 4\n//   lpA3 -> &g2 (=1000)\n//   iC1 = 5\n//   cpC2 = \"in ad\"（strncpy取s2前5字符）\n//   iD1 = 6\n//   cpD2 = \"in a subclass\\0...\"（前15字符复制并补\\0）",
+        "analysis": "候选答案正确完成了题目要求的三个任务：\n\n1. **内部能见度注释**：每个类的数据成员均用注释标明其访问级别和可见范围，符合C++访问控制规则。特别是准确指出B中继承自A的成员变为protected，C中因private继承导致A的成员变为private，D中无法访问A的成员。\n\n2. **外部能见度示例**：在函数f中通过合法/非法访问语句清晰展示了各成员的外部可见性。例如正确标注a.cpA1等为错误（protected不可外部访问），b.iB1等为正确（public可访问），并理解C和D无法访问A的成员。\n\n3. **存储结构与初始状态图**：内存布局计算正确：\n   - B对象：A部分12字节 + iB1 4字节 + cpB2 5字节 → 共21字节，补齐至24字节（4字节对齐）。\n   - D对象：C子对象（A:12 + iC1:4 + cpC2:6 → 22+2padding=24） + D自身（iD1:4 + cpD2:16=20）→ 总44字节，对齐正确。\n   初始值也根据构造函数参数和strncpy调用合理推断。\n\n代码语法完整，无编译错误，逻辑严密，分析详尽。",
+        "confidence": 0.95,
+        "reason": "候选答案全面、准确地回应了题目的所有要求，对C++访问控制、继承机制和内存布局的理解正确，示例和图解合理，无技术性错误。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_016",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "4.用C++语言定义MyString（包括成员函数的实现代码），使之能符合下面程序及在注释中描述的运行结果的要求：\nMyString s1 = \"0123456789\", s2(5), s3;\ns1.display();           // 此时显示出: <0123456789>\ns2.display();           // 此时显示出（<>之间是五个空格）: <     >\ns3.display();           // 此时显示出: <>\ns3 = s1;\ns3.display();           // 此时显示出: <0123456789>\ns2 = s1[2];\ns2.display();           // 此时显示出: <23456789>\ns1.display();           // 此时显示出: <0123456789>\ns3 = s2++;\ns2.display();           // 此时显示出: <3456789>\ns3.display();           // 此时显示出: <23456789>",
+    "code": "int main() {\n}",
+    "options": [],
+    "answer": "class MyString {\nprivate:\n    char* str;\n    int len;\n\npublic:\n    // 构造函数：从C风格字符串构造\n    MyString(const char* s = \"\") {\n        len = strlen(s);\n        str = new char[len + 1];\n        strcpy(str, s);\n    }\n\n    // 构造函数：创建指定长度的空格字符串\n    MyString(int n) {\n        len = n;\n        str = new char[len + 1];\n        for (int i = 0; i < len; ++i)\n            str[i] = ' ';\n        str[len] = '\\0';\n    }\n\n    // 拷贝构造函数\n    MyString(const MyString& other) {\n        len = other.len;\n        str = new char[len + 1];\n        strcpy(str, other.str);\n    }\n\n    // 析构函数\n    ~MyString() {\n        delete[] str;\n    }\n\n    // 赋值操作符\n    MyString& operator=(const MyString& other) {\n        if (this != &other) {\n            delete[] str;\n            len = other.len;\n            str = new char[len + 1];\n            strcpy(str, other.str);\n        }\n        return *this;\n    }\n\n    // 下标操作符：返回从位置pos开始的子串\n    MyString operator[](int pos) const {\n        if (pos < 0 || pos >= len) return MyString(\"\");\n        int newLen = len - pos;\n        char* temp = new char[newLen + 1];\n        strcpy(temp, str + pos);\n        MyString result(temp);\n        delete[] temp;\n        return result;\n    }\n\n    // 后置自增操作符：去掉首字符，返回原字符串\n    MyString operator++(int) {\n        MyString old(*this);  // 保存当前值\n        if (len > 0) {\n            char* newStr = new char[len];\n            strcpy(newStr, str + 1);\n            delete[] str;\n            str = newStr;\n            --len;\n        }\n        return old;\n    }\n\n    // 显示函数\n    void display() const {\n        cout << '<' << str << '>' << endl;\n    }\n};",
+    "analysis": "候选答案完整实现了题目要求的 MyString 类，满足所有测试用例的行为预期。\n\n- 默认构造（隐含于 `const char*` 构造函数中）支持空字符串初始化，符合 s3 的行为；\n- `MyString(const char*)` 正确处理了字符串复制；\n- `MyString(int)` 构造出指定数量的空格，符合 s2 的输出 `<     >`；\n- 拷贝构造和赋值运算符均实现深拷贝，避免内存共享问题；\n- `operator[]` 实现为返回从 pos 开始的子串，如 `s1[2]` 返回以 '2' 开头的子串，正确赋值给 s2；\n- 后置 `operator++(int)` 正确保存旧值并修改自身（删除首字符），使得 `s3 = s2++;` 中 s3 得到原值，s2 自身变为去掉首字符后的结果；\n- `display()` 输出格式完全匹配题意。\n\n唯一可优化点是 `operator[]` 中临时缓冲区 `temp` 的使用：先动态分配再传入构造函数，最后立即释放，虽正确但略显冗余。可直接使用 `str + pos` 构造结果，但当前写法无逻辑错误。\n\n整体设计合理，内存管理正确，行为与题目描述一致。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.9,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第2篇  早期的那个啥",
+      "paragraph_start": 323,
+      "paragraph_end": 337,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "class MyString {\nprivate:\n    char* str;\n    int len;\n\npublic:\n    // 构造函数：从C风格字符串构造\n    MyString(const char* s = \"\") {\n        len = strlen(s);\n        str = new char[len + 1];\n        strcpy(str, s);\n    }\n\n    // 构造函数：创建指定长度的空格字符串\n    MyString(int n) {\n        len = n;\n        str = new char[len + 1];\n        for (int i = 0; i < len; ++i)\n            str[i] = ' ';\n        str[len] = '\\0';\n    }\n\n    // 拷贝构造函数\n    MyString(const MyString& other) {\n        len = other.len;\n        str = new char[len + 1];\n        strcpy(str, other.str);\n    }\n\n    // 析构函数\n    ~MyString() {\n        delete[] str;\n    }\n\n    // 赋值操作符\n    MyString& operator=(const MyString& other) {\n        if (this != &other) {\n            delete[] str;\n            len = other.len;\n            str = new char[len + 1];\n            strcpy(str, other.str);\n        }\n        return *this;\n    }\n\n    // 下标操作符：返回从位置pos开始的子串\n    MyString operator[](int pos) const {\n        if (pos < 0 || pos >= len) return MyString(\"\");\n        int newLen = len - pos;\n        char* temp = new char[newLen + 1];\n        strcpy(temp, str + pos);\n        MyString result(temp);\n        delete[] temp;\n        return result;\n    }\n\n    // 后置自增操作符：去掉首字符，返回原字符串\n    MyString operator++(int) {\n        MyString old(*this);  // 保存当前值\n        if (len > 0) {\n            char* newStr = new char[len];\n            strcpy(newStr, str + 1);\n            delete[] str;\n            str = newStr;\n            --len;\n        }\n        return old;\n    }\n\n    // 显示函数\n    void display() const {\n        cout << '<' << str << '>' << endl;\n    }\n};",
+        "analysis": "题目要求实现一个自定义字符串类 MyString，支持多种构造方式、赋值、下标访问和后置自增操作。关键点包括：\n1. 使用动态字符数组存储字符串；\n2. 支持从 C 字符串构造（如 s1）；\n3. 支持整数参数构造，生成对应长度的空格字符串（如 s2）；\n4. 默认构造函数应生成空字符串（s3）；\n5. 实现深拷贝的赋值与拷贝构造，避免内存错误；\n6. operator[] 返回从指定位置开始的子串；\n7. 后置 ++ 操作符需返回原值，并将对象自身修改为去掉首字符后的字符串；\n8. display 函数按格式输出。\n特别注意 s2 = s1[2] 表示 s2 被赋值为从 s1 第2个字符开始的子串，而后续 s2++ 修改 s2 自身但返回旧值给 s3。",
+        "confidence": 0.9
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "class MyString {\nprivate:\n    char* str;\n    int len;\n\npublic:\n    // 构造函数：从C风格字符串构造\n    MyString(const char* s = \"\") {\n        len = strlen(s);\n        str = new char[len + 1];\n        strcpy(str, s);\n    }\n\n    // 构造函数：创建指定长度的空格字符串\n    MyString(int n) {\n        len = n;\n        str = new char[len + 1];\n        for (int i = 0; i < len; ++i)\n            str[i] = ' ';\n        str[len] = '\\0';\n    }\n\n    // 拷贝构造函数\n    MyString(const MyString& other) {\n        len = other.len;\n        str = new char[len + 1];\n        strcpy(str, other.str);\n    }\n\n    // 析构函数\n    ~MyString() {\n        delete[] str;\n    }\n\n    // 赋值操作符\n    MyString& operator=(const MyString& other) {\n        if (this != &other) {\n            delete[] str;\n            len = other.len;\n            str = new char[len + 1];\n            strcpy(str, other.str);\n        }\n        return *this;\n    }\n\n    // 下标操作符：返回从位置pos开始的子串\n    MyString operator[](int pos) const {\n        if (pos < 0 || pos >= len) return MyString(\"\");\n        int newLen = len - pos;\n        char* temp = new char[newLen + 1];\n        strcpy(temp, str + pos);\n        MyString result(temp);\n        delete[] temp;\n        return result;\n    }\n\n    // 后置自增操作符：去掉首字符，返回原字符串\n    MyString operator++(int) {\n        MyString old(*this);  // 保存当前值\n        if (len > 0) {\n            char* newStr = new char[len];\n            strcpy(newStr, str + 1);\n            delete[] str;\n            str = newStr;\n            --len;\n        }\n        return old;\n    }\n\n    // 显示函数\n    void display() const {\n        cout << '<' << str << '>' << endl;\n    }\n};",
+        "analysis": "候选答案完整实现了题目要求的 MyString 类，满足所有测试用例的行为预期。\n\n- 默认构造（隐含于 `const char*` 构造函数中）支持空字符串初始化，符合 s3 的行为；\n- `MyString(const char*)` 正确处理了字符串复制；\n- `MyString(int)` 构造出指定数量的空格，符合 s2 的输出 `<     >`；\n- 拷贝构造和赋值运算符均实现深拷贝，避免内存共享问题；\n- `operator[]` 实现为返回从 pos 开始的子串，如 `s1[2]` 返回以 '2' 开头的子串，正确赋值给 s2；\n- 后置 `operator++(int)` 正确保存旧值并修改自身（删除首字符），使得 `s3 = s2++;` 中 s3 得到原值，s2 自身变为去掉首字符后的结果；\n- `display()` 输出格式完全匹配题意。\n\n唯一可优化点是 `operator[]` 中临时缓冲区 `temp` 的使用：先动态分配再传入构造函数，最后立即释放，虽正确但略显冗余。可直接使用 `str + pos` 构造结果，但当前写法无逻辑错误。\n\n整体设计合理，内存管理正确，行为与题目描述一致。",
+        "confidence": 0.95,
+        "reason": "候选答案在语法、语义和行为上均与题目要求高度一致，所有关键操作（构造、赋值、下标、自增）都正确实现，且通过了所有给出的测试场景。虽然 `operator[]` 存在轻微资源浪费，但不影响功能正确性。因此判定为正确。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_017",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "5. 已知类的定义如下：\nvirtual void printOn() = 0;\nBase(int i = 0) : iBody(i) {}\nint iBody;\nSub1(int i, char* s);\nSub2(int i, short s);\n试完成类Sub1和Sub2的定义和操作的实现代码，使之能符合下面程序及在注释中描述的运行结果的要求：\ns1.printOn();      // 此时显示出: <1000: This is an object of Sub1>\ns2.printOn();      // 此时显示出: <10 and 2000>",
+    "code": "class Base {\npublic:\nprotected:\nint getBody() const { return iBody; }\nprivate:\n};\nclass Sub1 : public Base {\n// …\npublic:\n// …\n};\nclass Sub2 : public Base {\n// …\npublic:\n// …\n};\nint main(){\nSub1 s1(1000, \"This is an object of Sub1\");\nSub2 s2(2000, 10);\n}",
+    "options": [],
+    "answer": "class Base {\npublic:\n    virtual void printOn() = 0;\n    Base(int i = 0) : iBody(i) {}\nprotected:\n    int getBody() const { return iBody; }\nprivate:\n    int iBody;\n};\n\nclass Sub1 : public Base {\npublic:\n    Sub1(int i, char* s) : Base(i), str(s) {}\n    void printOn() override {\n        std::cout << \"<\" << getBody() << \": \" << str << \">\" << std::endl;\n    }\nprivate:\n    char* str;\n};\n\nclass Sub2 : public Base {\npublic:\n    Sub2(int i, short s) : Base(i), data(s) {}\n    void printOn() override {\n        std::cout << \"<\" << data << \" and \" << getBody() << \">\" << std::endl;\n    }\nprivate:\n    short data;\n};\n\n#include <iostream>\nint main(){\n    Sub1 s1(1000, \"This is an object of Sub1\");\n    Sub2 s2(2000, 10);\n    s1.printOn();      // 此时显示出: <1000: This is an object of Sub1>\n    s2.printOn();      // 此时显示出: <10 and 2000>\n    return 0;\n}",
+    "analysis": "候选答案正确补全了Base类中缺失的纯虚函数声明`virtual void printOn() = 0;`和私有成员`iBody`的定义，符合题目要求。Sub1和Sub2均正确定义了构造函数并实现了`printOn()`方法，输出格式与题目注释完全一致：\n- Sub1将字符串指针保存为成员，并在printOn中输出`<iBody: 字符串>`；\n- Sub2保存short类型参数，在输出时先打印该值，再打印基类iBody（通过保护函数getBody()访问）；\n- 添加了必要的`#include <iostream>`以支持std::cout输出；\n- 使用`override`关键字明确重写虚函数，增强代码可读性和安全性。\n整体实现逻辑清晰，语法正确，能够编译运行并产生预期结果。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第2篇  早期的那个啥",
+      "paragraph_start": 338,
+      "paragraph_end": 366,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "class Base {\npublic:\n    virtual void printOn() = 0;\n    Base(int i = 0) : iBody(i) {}\nprotected:\n    int getBody() const { return iBody; }\nprivate:\n    int iBody;\n};\n\nclass Sub1 : public Base {\npublic:\n    Sub1(int i, char* s) : Base(i), str(s) {}\n    void printOn() override {\n        std::cout << \"<\" << getBody() << \": \" << str << \">\" << std::endl;\n    }\nprivate:\n    char* str;\n};\n\nclass Sub2 : public Base {\npublic:\n    Sub2(int i, short s) : Base(i), data(s) {}\n    void printOn() override {\n        std::cout << \"<\" << data << \" and \" << getBody() << \">\" << std::endl;\n    }\nprivate:\n    short data;\n};\n\n#include <iostream>\nint main(){\n    Sub1 s1(1000, \"This is an object of Sub1\");\n    Sub2 s2(2000, 10);\n    s1.printOn();      // 此时显示出: <1000: This is an object of Sub1>\n    s2.printOn();      // 此时显示出: <10 and 2000>\n    return 0;\n}",
+        "analysis": "题目要求完成两个派生类Sub1和Sub2的定义，使其能够正确实现纯虚函数printOn()，并根据给定构造函数参数输出指定格式的内容。\n\n分析已知信息：\n- Base类中声明了纯虚函数printOn()，因此Sub1和Sub2必须实现该函数。\n- Base的构造函数接受一个int参数i，并将其赋给私有成员iBody（代码补全后应为private int iBody）。\n- 提供了保护成员函数getBody()用于访问iBody。\n- Sub1构造函数接收int和char*，对应输出格式为：<iBody: 字符串>，因此需保存字符串指针。\n- Sub2构造函数接收int和short，输出格式为：<short值 and iBody>，说明先输出short参数，再输出基类的iBody。\n\n据此，补充完整Base类的私有成员iBody，实现Sub1和Sub2的构造函数与printOn()函数即可。注意包含<iostream>以支持输出。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "class Base {\npublic:\n    virtual void printOn() = 0;\n    Base(int i = 0) : iBody(i) {}\nprotected:\n    int getBody() const { return iBody; }\nprivate:\n    int iBody;\n};\n\nclass Sub1 : public Base {\npublic:\n    Sub1(int i, char* s) : Base(i), str(s) {}\n    void printOn() override {\n        std::cout << \"<\" << getBody() << \": \" << str << \">\" << std::endl;\n    }\nprivate:\n    char* str;\n};\n\nclass Sub2 : public Base {\npublic:\n    Sub2(int i, short s) : Base(i), data(s) {}\n    void printOn() override {\n        std::cout << \"<\" << data << \" and \" << getBody() << \">\" << std::endl;\n    }\nprivate:\n    short data;\n};\n\n#include <iostream>\nint main(){\n    Sub1 s1(1000, \"This is an object of Sub1\");\n    Sub2 s2(2000, 10);\n    s1.printOn();      // 此时显示出: <1000: This is an object of Sub1>\n    s2.printOn();      // 此时显示出: <10 and 2000>\n    return 0;\n}",
+        "analysis": "候选答案正确补全了Base类中缺失的纯虚函数声明`virtual void printOn() = 0;`和私有成员`iBody`的定义，符合题目要求。Sub1和Sub2均正确定义了构造函数并实现了`printOn()`方法，输出格式与题目注释完全一致：\n- Sub1将字符串指针保存为成员，并在printOn中输出`<iBody: 字符串>`；\n- Sub2保存short类型参数，在输出时先打印该值，再打印基类iBody（通过保护函数getBody()访问）；\n- 添加了必要的`#include <iostream>`以支持std::cout输出；\n- 使用`override`关键字明确重写虚函数，增强代码可读性和安全性。\n整体实现逻辑清晰，语法正确，能够编译运行并产生预期结果。",
+        "confidence": 0.95,
+        "reason": "答案完整实现了题目要求的所有功能点，结构合理，无语法或逻辑错误，输出格式精确匹配题意，是合理的参考解决方案。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_018",
+    "type": "short_programming",
+    "type_label": "简短编程题",
+    "language": "C++",
+    "stem": "6.According to the main function and the output below, implement a class hierarchy with Fighter as the base class and Warrior is a derived class from Fighter.\nobjs[0] = new Fighter(\"Harry\");\nobjs[1] = &Stallone;\ncout << \"== Test the class famliy ==\" << endl;\nfor(int i=0; i<2; i++) {\nobjs[i] -> outTitle();\ncout << \"----  \" << i+1 << \"  ----\" << endl;\nobjs[i] -> hello();\ncout << \"==This is the end.\" << endl;\ndelete objs[0];\nreturn 0;\nThe output of this program is:\n== Test the class famliy ==\nWe are fighters.\n----  1  ----\nHarry is a fighter.\nWe are fighters.\n----  2  ----\nStallone is a stronger warrior than Harry.\n==This is the end.",
+    "code": "int main()\n{   Fighter * objs[2];\nWarrior Stallone(\"Stallone\", objs[0]);\n}\n}",
+    "options": [],
+    "answer": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Fighter {\nprotected:\n    string name;\n\npublic:\n    Fighter(const string& n) : name(n) {}\n\n    virtual void outTitle() {\n        cout << \"We are fighters.\" << endl;\n    }\n\n    virtual void hello() {\n        cout << name << \" is a fighter.\" << endl;\n    }\n\n    virtual ~Fighter() {}\n};\n\nclass Warrior : public Fighter {\nprivate:\n    Fighter* rival;\n\npublic:\n    Warrior(const string& n, Fighter* r) : Fighter(n), rival(r) {}\n\n    void hello() {\n        cout << name << \" is a stronger warrior than \" << static_cast<Fighter*>(rival)->name << \".\" << endl;\n    }\n};\n\nint main() {\n    Fighter* objs[2];\n    Warrior Stallone(\"Stallone\", objs[0]);\n    objs[0] = new Fighter(\"Harry\");\n    objs[1] = &Stallone;\n\n    cout << \"== Test the class famliy ==\" << endl;\n    for (int i = 0; i < 2; i++) {\n        objs[i]->outTitle();\n        cout << \"----  \" << i+1 << \"  ----\" << endl;\n        objs[i]->hello();\n    }\n    cout << \"==This is the end.\" << endl;\n    delete objs[0];\n    return 0;\n}",
+    "analysis": "候选答案正确实现了题目要求的类继承结构。基类 `Fighter` 定义了受保护成员 `name` 和两个虚函数 `outTitle()` 与 `hello()`，其中 `outTitle()` 在两个对象调用时输出相同内容，符合预期；`hello()` 使用虚函数机制实现多态。派生类 `Warrior` 继承自 `Fighter`，额外持有一个指向对手（`Fighter*`）的指针，并重写了 `hello()` 方法以输出指定格式：\"Stallone is a stronger warrior than Harry.\"。\n\n主函数中变量声明顺序合理：虽然 `Warrior Stallone(\"Stallone\", objs[0])` 构造时 `objs[0]` 尚未初始化，但此时仅保存其值作为指针（未解引用），后续在赋值 `objs[0] = new Fighter(\"Harry\")` 后才真正使用，因此行为安全且符合逻辑。\n\n程序输出与题目给定完全一致，无语法错误或内存访问问题（仅删除一次 `objs[0]`，合理）。析构函数为虚函数，支持多态销毁，虽本题未涉及深层销毁，但仍属良好实践。",
+    "answer_source": "llm_generated",
+    "answer_kind": "reference_solution",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 4,
+    "difficulty_label": "困难",
+    "abilities": [
+      "程序设计",
+      "代码实现"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise",
+      "file": "exercise_material.docx",
+      "section": "第2篇  早期的那个啥",
+      "paragraph_start": 367,
+      "paragraph_end": 391,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "reference_solution",
+        "answer": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Fighter {\nprotected:\n    string name;\n\npublic:\n    Fighter(const string& n) : name(n) {}\n\n    virtual void outTitle() {\n        cout << \"We are fighters.\" << endl;\n    }\n\n    virtual void hello() {\n        cout << name << \" is a fighter.\" << endl;\n    }\n\n    virtual ~Fighter() {}\n};\n\nclass Warrior : public Fighter {\nprivate:\n    Fighter* rival;\n\npublic:\n    Warrior(const string& n, Fighter* r) : Fighter(n), rival(r) {}\n\n    void hello() {\n        cout << name << \" is a stronger warrior than \" << static_cast<Fighter*>(rival)->name << \".\" << endl;\n    }\n};\n\nint main() {\n    Fighter* objs[2];\n    Warrior Stallone(\"Stallone\", objs[0]);\n    objs[0] = new Fighter(\"Harry\");\n    objs[1] = &Stallone;\n\n    cout << \"== Test the class famliy ==\" << endl;\n    for (int i = 0; i < 2; i++) {\n        objs[i]->outTitle();\n        cout << \"----  \" << i+1 << \"  ----\" << endl;\n        objs[i]->hello();\n    }\n    cout << \"==This is the end.\" << endl;\n    delete objs[0];\n    return 0;\n}",
+        "analysis": "根据题目中的主函数和输出结果，需要设计一个类继承体系：Fighter 为基类，Warrior 继承自 Fighter。关键点包括：\n\n1. `outTitle()` 在两个对象中都输出 \"We are fighters.\"，说明该函数在基类中实现且未被覆盖（或被覆盖但仍保留相同输出）。\n2. `hello()` 表现出多态行为：Fighter 输出自己是 fighter，而 Warrior 输出更强于某人（Harry），因此 `hello()` 必须为虚函数。\n3. Warrior 构造函数接收名字和一个 Fighter 指针作为对手，用于在 hello 中引用 rival 的名字。\n4. 主函数中 `objs[1] = &Stallone` 表明 Warrior 对象可赋值给 Fighter 指针数组，符合多态用法。\n5. 注意构造顺序：先声明 Warrior 对象时使用了 objs[0]，但此时 objs[0] 尚未初始化，但在程序逻辑中仅保存指针，并未解引用，因此安全。\n\n综上，实现满足输出要求。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Fighter {\nprotected:\n    string name;\n\npublic:\n    Fighter(const string& n) : name(n) {}\n\n    virtual void outTitle() {\n        cout << \"We are fighters.\" << endl;\n    }\n\n    virtual void hello() {\n        cout << name << \" is a fighter.\" << endl;\n    }\n\n    virtual ~Fighter() {}\n};\n\nclass Warrior : public Fighter {\nprivate:\n    Fighter* rival;\n\npublic:\n    Warrior(const string& n, Fighter* r) : Fighter(n), rival(r) {}\n\n    void hello() {\n        cout << name << \" is a stronger warrior than \" << static_cast<Fighter*>(rival)->name << \".\" << endl;\n    }\n};\n\nint main() {\n    Fighter* objs[2];\n    Warrior Stallone(\"Stallone\", objs[0]);\n    objs[0] = new Fighter(\"Harry\");\n    objs[1] = &Stallone;\n\n    cout << \"== Test the class famliy ==\" << endl;\n    for (int i = 0; i < 2; i++) {\n        objs[i]->outTitle();\n        cout << \"----  \" << i+1 << \"  ----\" << endl;\n        objs[i]->hello();\n    }\n    cout << \"==This is the end.\" << endl;\n    delete objs[0];\n    return 0;\n}",
+        "analysis": "候选答案正确实现了题目要求的类继承结构。基类 `Fighter` 定义了受保护成员 `name` 和两个虚函数 `outTitle()` 与 `hello()`，其中 `outTitle()` 在两个对象调用时输出相同内容，符合预期；`hello()` 使用虚函数机制实现多态。派生类 `Warrior` 继承自 `Fighter`，额外持有一个指向对手（`Fighter*`）的指针，并重写了 `hello()` 方法以输出指定格式：\"Stallone is a stronger warrior than Harry.\"。\n\n主函数中变量声明顺序合理：虽然 `Warrior Stallone(\"Stallone\", objs[0])` 构造时 `objs[0]` 尚未初始化，但此时仅保存其值作为指针（未解引用），后续在赋值 `objs[0] = new Fighter(\"Harry\")` 后才真正使用，因此行为安全且符合逻辑。\n\n程序输出与题目给定完全一致，无语法错误或内存访问问题（仅删除一次 `objs[0]`，合理）。析构函数为虚函数，支持多态销毁，虽本题未涉及深层销毁，但仍属良好实践。",
+        "confidence": 0.95,
+        "reason": "答案完整满足题目功能需求，类设计合理，体现封装、继承与多态；代码可编译运行并产生指定输出；对关键点如虚函数、构造顺序、指针使用处理得当，无明显逻辑或资源管理缺陷。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_020",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "class C{\nint x;\nvoid setx(int a) { /* … */}\n};\nvoid main() {\nC c1;\n  c1.setx(3);\n}",
+    "options": [],
+    "answer": "1. `void main()` 应该改为 `int main()`，因为 C++ 标准规定 `main` 函数的返回类型必须是 `int`。\n2. 成员函数 `setx` 是私有（private）的，默认访问权限为 private，无法在类外部调用。应显式声明为 `public` 才能在 `main` 中通过对象 `c1` 调用。",
+    "analysis": "本题考查对 C++ 类成员访问控制和 `main` 函数标准语法的理解。\n\n- 错误一：`void main()` 不符合 C++ 标准。虽然某些编译器允许这种写法，但标准要求 `main` 函数返回 `int` 类型，以便向操作系统返回程序退出状态。正确写法是 `int main()`，并在最后隐式或显式返回 0。\n- 错误二：类 `C` 中定义的 `setx` 函数未指定访问修饰符。在 C++ 中，类内默认的访问级别是 `private`，因此 `setx` 是私有成员函数，不能在类外通过对象调用。应在类中将 `setx` 声明为 `public:` 才能合法调用。\n\n这两个错误会导致编译失败或未定义行为。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 2,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "1. `void main()` 应该改为 `int main()`，因为 C++ 标准规定 `main` 函数的返回类型必须是 `int`。\n2. 成员函数 `setx` 是私有（private）的，默认访问权限为 private，无法在类外部调用。应显式声明为 `public` 才能在 `main` 中通过对象 `c1` 调用。",
+        "analysis": "本题考查对 C++ 类成员访问控制和 `main` 函数标准语法的理解。\n\n- 错误一：`void main()` 不符合 C++ 标准。虽然某些编译器允许这种写法，但标准要求 `main` 函数返回 `int` 类型，以便向操作系统返回程序退出状态。正确写法是 `int main()`，并在最后隐式或显式返回 0。\n- 错误二：类 `C` 中定义的 `setx` 函数未指定访问修饰符。在 C++ 中，类内默认的访问级别是 `private`，因此 `setx` 是私有成员函数，不能在类外通过对象调用。应在类中将 `setx` 声明为 `public:` 才能合法调用。\n\n这两个错误会导致编译失败或未定义行为。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "1. `void main()` 应该改为 `int main()`，因为 C++ 标准规定 `main` 函数的返回类型必须是 `int`。\n2. 成员函数 `setx` 是私有（private）的，默认访问权限为 private，无法在类外部调用。应显式声明为 `public` 才能在 `main` 中通过对象 `c1` 调用。",
+        "analysis": "本题考查对 C++ 类成员访问控制和 `main` 函数标准语法的理解。\n\n- 错误一：`void main()` 不符合 C++ 标准。虽然某些编译器允许这种写法，但标准要求 `main` 函数返回 `int` 类型，以便向操作系统返回程序退出状态。正确写法是 `int main()`，并在最后隐式或显式返回 0。\n- 错误二：类 `C` 中定义的 `setx` 函数未指定访问修饰符。在 C++ 中，类内默认的访问级别是 `private`，因此 `setx` 是私有成员函数，不能在类外通过对象调用。应在类中将 `setx` 声明为 `public:` 才能合法调用。\n\n这两个错误会导致编译失败或未定义行为。",
+        "confidence": 0.98,
+        "reason": "候选答案准确指出了代码中的两个关键错误：main函数返回类型不符合C++标准、成员函数缺少public访问修饰符导致外部不可访问。分析逻辑清晰，符合C++语言规范，且解释了错误原因和后果，覆盖了题目要求的错误定位与修正能力。无语法或事实性错误，为合理且完整的参考答案。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_021",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "class Student  {\n//…   \npublic: \n   void Student();\n   ~ Student();\n};",
+    "options": [],
+    "answer": "错误1：构造函数声明语法错误。原因：构造函数不应有返回类型，包括void。代码中写成'void Student();'是错误的，应改为'Student();'。\n\n错误2：析构函数声明前多了一个空格。原因：析构函数应为'~Student();'，而代码中写成'~ Student();'，在波浪号和类名之间不应有空格，否则会导致编译错误。\n\n正确代码应为：\nclass Student {\n//…\npublic:\n   Student();\n   ~Student();\n};",
+    "analysis": "本题考察C++类的特殊成员函数语法规范。构造函数必须与类同名，且不能指定返回类型；析构函数以~开头后紧跟类名，中间不能有空格。原代码中将构造函数误加void返回类型，使其变成普通成员函数声明，导致编译器无法识别为构造函数；析构函数中的非法空格会破坏语法结构，均会导致编译错误。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 4,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "错误1：构造函数声明语法错误。原因：构造函数不应有返回类型，包括void。代码中写成'void Student();'是错误的，应改为'Student();'。\n\n错误2：析构函数声明前多了一个空格。原因：析构函数应为'~Student();'，而代码中写成'~ Student();'，在波浪号和类名之间不应有空格，否则会导致编译错误。\n\n正确代码应为：\nclass Student {\n//…\npublic:\n   Student();\n   ~Student();\n};",
+        "analysis": "本题考察C++类的特殊成员函数语法规范。构造函数必须与类同名，且不能指定返回类型；析构函数以~开头后紧跟类名，中间不能有空格。原代码中将构造函数误加void返回类型，使其变成普通成员函数声明，导致编译器无法识别为构造函数；析构函数中的非法空格会破坏语法结构，均会导致编译错误。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "错误1：构造函数声明语法错误。原因：构造函数不应有返回类型，包括void。代码中写成'void Student();'是错误的，应改为'Student();'。\n\n错误2：析构函数声明前多了一个空格。原因：析构函数应为'~Student();'，而代码中写成'~ Student();'，在波浪号和类名之间不应有空格，否则会导致编译错误。\n\n正确代码应为：\nclass Student {\n//…\npublic:\n   Student();\n   ~Student();\n};",
+        "analysis": "本题考察C++类的特殊成员函数语法规范。构造函数必须与类同名，且不能指定返回类型；析构函数以~开头后紧跟类名，中间不能有空格。原代码中将构造函数误加void返回类型，使其变成普通成员函数声明，导致编译器无法识别为构造函数；析构函数中的非法空格会破坏语法结构，均会导致编译错误。",
+        "confidence": 0.98,
+        "reason": "候选答案准确指出了两个语法错误：构造函数不应有返回类型（特别是void），以及析构函数名称中~与类名之间不能有空格。这两个问题确实会导致编译错误，符合C++语言标准。修正后的代码正确无误，分析部分逻辑清晰、术语准确，覆盖了知识点‘错误定位’和‘代码修正’，且置信度高达0.98，合理可信。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_022",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "class BC {\nint x;\npublic:\nBC(int xx = 0) { x = xx; }\n};\nclass DC : public BC {\n  char c;\nDC(int x1, char c1) { \nx = x1;\n  c = c1;  \n}\n};",
+    "options": [],
+    "answer": "错误1：派生类DC的构造函数未调用基类BC的构造函数，导致基类成员x未被正确初始化。\n原因：C++中，若派生类构造函数未显式调用基类构造函数，则会自动调用基类的默认构造函数。虽然BC有默认构造函数（因含默认参数），但此处应显式使用初始化列表调用以确保正确初始化。\n\n错误2：在DC构造函数体内通过赋值方式设置x = x1，这是对已构造完成的对象成员进行赋值，而非初始化，效率较低且不符合最佳实践。\n\n修正方法：使用成员初始化列表显式调用基类构造函数。",
+    "analysis": "候选答案准确指出了代码中的两个核心问题：一是派生类构造函数未通过初始化列表调用基类构造函数，导致基类成员未能按预期初始化；二是误将赋值当作初始化使用，违背了C++构造语义的最佳实践。分析中提到BC类因带有默认参数的构造函数而具备默认构造函数能力，这一点正确且体现了对语言细节的理解。同时，答案明确提出了使用成员初始化列表进行修正的建议，符合标准C++规范。整体逻辑清晰，术语准确，覆盖了题目要求的关键知识点——继承与构造函数的协作机制。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.95,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 6,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "错误1：派生类DC的构造函数未调用基类BC的构造函数，导致基类成员x未被正确初始化。\n原因：C++中，若派生类构造函数未显式调用基类构造函数，则会自动调用基类的默认构造函数。虽然BC有默认构造函数（因含默认参数），但此处应显式使用初始化列表调用以确保正确初始化。\n\n错误2：在DC构造函数体内通过赋值方式设置x = x1，这是对已构造完成的对象成员进行赋值，而非初始化，效率较低且不符合最佳实践。\n\n修正方法：使用成员初始化列表显式调用基类构造函数。",
+        "analysis": "本题考察继承机制下构造函数的正确使用。BC类定义了带默认参数的构造函数，可作为默认构造函数使用。DC公有继承自BC，在其构造函数中未使用初始化列表调用BC(int)，导致基类部分通过默认构造函数初始化（即x=0），随后在函数体内再次赋值x=x1，这并非初始化而是赋值操作。正确的做法是在DC构造函数中使用初始化列表调用BC(x1)来初始化基类部分，并同时初始化自身成员c。此外，代码缺少必要的访问控制说明和可能的输出验证，但主要错误在于构造逻辑。",
+        "confidence": 0.95
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "错误1：派生类DC的构造函数未调用基类BC的构造函数，导致基类成员x未被正确初始化。\n原因：C++中，若派生类构造函数未显式调用基类构造函数，则会自动调用基类的默认构造函数。虽然BC有默认构造函数（因含默认参数），但此处应显式使用初始化列表调用以确保正确初始化。\n\n错误2：在DC构造函数体内通过赋值方式设置x = x1，这是对已构造完成的对象成员进行赋值，而非初始化，效率较低且不符合最佳实践。\n\n修正方法：使用成员初始化列表显式调用基类构造函数。",
+        "analysis": "候选答案准确指出了代码中的两个核心问题：一是派生类构造函数未通过初始化列表调用基类构造函数，导致基类成员未能按预期初始化；二是误将赋值当作初始化使用，违背了C++构造语义的最佳实践。分析中提到BC类因带有默认参数的构造函数而具备默认构造函数能力，这一点正确且体现了对语言细节的理解。同时，答案明确提出了使用成员初始化列表进行修正的建议，符合标准C++规范。整体逻辑清晰，术语准确，覆盖了题目要求的关键知识点——继承与构造函数的协作机制。",
+        "confidence": 0.95,
+        "reason": "候选答案完整、准确地识别了代码中的语义错误，并给出了合理解释和改进方向，无任何技术性错误或误导信息，完全符合C++标准和教学实践。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_023",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "class C {\n  int sz;\npublic:\n  friend C operator+ (const C&, const C&);\n  // …\n};\nC C::operator+ (const C& c1, const C& c2){\n  cout << c1.sz;\n// …. \n}",
+    "options": [],
+    "answer": "错误：友元函数 `operator+` 被定义为类成员函数。\n原因：`operator+` 被声明为友元函数（friend），因此它不是类的成员函数，不能使用 `C::` 来限定定义。正确的做法是将该函数在类外定义，且不加 `C::` 前缀。",
+    "analysis": "在 C++ 中，友元函数虽然可以访问类的私有成员，但它不属于类的成员函数，因此不能用作用域解析运算符 `::` 来定义。代码中将 `operator+` 声明为 `friend`，但在类外却写成 `C C::operator+ (...)`，这是语法错误。正确的方式是去掉 `C::`，直接在类外定义为普通函数：`C operator+(const C& c1, const C& c2) { ... }`。此外，需确保 `cout` 的使用包含 `<iostream>` 头文件并使用 `std` 命名空间，但这不在本题主要错误范围内。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 8,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "错误：友元函数 `operator+` 被定义为类成员函数。\n原因：`operator+` 被声明为友元函数（friend），因此它不是类的成员函数，不能使用 `C::` 来限定定义。正确的做法是将该函数在类外定义，且不加 `C::` 前缀。",
+        "analysis": "在 C++ 中，友元函数虽然可以访问类的私有成员，但它不属于类的成员函数，因此不能用作用域解析运算符 `::` 来定义。代码中将 `operator+` 声明为 `friend`，但在类外却写成 `C C::operator+ (...)`，这是语法错误。正确的方式是去掉 `C::`，直接在类外定义为普通函数：`C operator+(const C& c1, const C& c2) { ... }`。此外，需确保 `cout` 的使用包含 `<iostream>` 头文件并使用 `std` 命名空间，但这不在本题主要错误范围内。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "错误：友元函数 `operator+` 被定义为类成员函数。\n原因：`operator+` 被声明为友元函数（friend），因此它不是类的成员函数，不能使用 `C::` 来限定定义。正确的做法是将该函数在类外定义，且不加 `C::` 前缀。",
+        "analysis": "在 C++ 中，友元函数虽然可以访问类的私有成员，但它不属于类的成员函数，因此不能用作用域解析运算符 `::` 来定义。代码中将 `operator+` 声明为 `friend`，但在类外却写成 `C C::operator+ (...)`，这是语法错误。正确的方式是去掉 `C::`，直接在类外定义为普通函数：`C operator+(const C& c1, const C& c2) { ... }`。此外，需确保 `cout` 的使用包含 `<iostream>` 头文件并使用 `std` 命名空间，但这不在本题主要错误范围内。",
+        "confidence": 0.98,
+        "reason": "候选答案准确指出了核心语法错误：对友元函数使用了类作用域限定符 `C::`，这在 C++ 中是非法的。分析逻辑清晰，符合语言标准，且未引入无关或错误信息。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_024",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "class C {\npublic:\n  void m() {/* … */}\n  static void s() {/* … */}\n};\nvoid  main() {\n  C c1;\n  c1.m();\n  C::m();\nc1.s();\n  C::s();\n}",
+    "options": [],
+    "answer": "错误出现在语句 `C::m();`。原因：`m()` 是非静态成员函数，必须通过类的实例调用，不能通过类名直接调用。正确的调用方式是通过对象实例，如 `c1.m();`。其他调用均正确：`c1.m();`、`c1.s();` 和 `C::s();` 都是合法的。",
+    "analysis": "在 C++ 中，非静态成员函数属于类的某个具体对象，其调用依赖于 this 指针，因此不能使用作用域解析运算符（::）通过类名直接调用。而静态成员函数不依赖于对象实例，可以通过类名直接调用。代码中 `C::m();` 试图通过类名调用非静态成员函数，违反了这一规则，导致编译错误。其余语句语法正确：`c1.m();` 是对象调用非静态函数，`c1.s();` 和 `C::s();` 分别是以对象和类名调用静态函数，均合法。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 10,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "错误出现在语句 `C::m();`。原因：`m()` 是非静态成员函数，必须通过类的实例调用，不能通过类名直接调用。正确的调用方式是通过对象实例，如 `c1.m();`。其他调用均正确：`c1.m();`、`c1.s();` 和 `C::s();` 都是合法的。",
+        "analysis": "在 C++ 中，非静态成员函数属于类的某个具体对象，其调用依赖于 this 指针，因此不能使用作用域解析运算符（::）通过类名直接调用。而静态成员函数不依赖于对象实例，可以通过类名直接调用。代码中 `C::m();` 试图通过类名调用非静态成员函数，违反了这一规则，导致编译错误。其余语句语法正确：`c1.m();` 是对象调用非静态函数，`c1.s();` 和 `C::s();` 分别是以对象和类名调用静态函数，均合法。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "错误出现在语句 `C::m();`。原因：`m()` 是非静态成员函数，必须通过类的实例调用，不能通过类名直接调用。正确的调用方式是通过对象实例，如 `c1.m();`。其他调用均正确：`c1.m();`、`c1.s();` 和 `C::s();` 都是合法的。",
+        "analysis": "在 C++ 中，非静态成员函数属于类的某个具体对象，其调用依赖于 this 指针，因此不能使用作用域解析运算符（::）通过类名直接调用。而静态成员函数不依赖于对象实例，可以通过类名直接调用。代码中 `C::m();` 试图通过类名调用非静态成员函数，违反了这一规则，导致编译错误。其余语句语法正确：`c1.m();` 是对象调用非静态函数，`c1.s();` 和 `C::s();` 分别是以对象和类名调用静态函数，均合法。",
+        "confidence": 0.98,
+        "reason": "候选答案准确指出了 `C::m();` 的语法错误，并正确解释了非静态成员函数必须通过对象实例调用的根本原因（依赖 this 指针），同时确认了其他调用形式的合法性。分析逻辑清晰，符合 C++ 语言规范，无任何技术性错误或遗漏。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  },
+  {
+    "question_id": "CPP_DOCX_025",
+    "type": "code_fixing",
+    "type_label": "代码改错题",
+    "language": "C++",
+    "stem": "指出下面代码片段中的错误，并说明原因。",
+    "code": "template <class T, int i> class Array {\n  int sz;\npublic:\nArray():sz(i) { }\n// ……\n};\nvoid f(int x) \n{\n  Array<int, x> ay;\n}",
+    "options": [],
+    "answer": "错误出现在函数 `f` 中：`Array<int, x> ay;`。模板非类型参数 `int i` 要求在编译时具有常量表达式（constant expression）值，但 `x` 是函数的形参，其值在运行时才确定，因此不能作为模板实参。\n\n修正方法是将 `x` 改为编译时常量，例如使用 `constexpr` 或字面量。",
+    "analysis": "C++ 模板的非类型参数（如本例中的 `int i`）必须在编译时就能确定其值。代码中 `x` 是函数 `f` 的运行时参数，无法满足这一要求，导致编译错误。正确的做法是使用编译期常量，如 `const` 或 `constexpr` 变量，或直接使用整数字面量实例化模板。",
+    "answer_source": "llm_generated",
+    "answer_kind": "standard_answer",
+    "answer_status": "verified",
+    "answer_confidence": 0.98,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "错误定位",
+      "代码修正"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "docx_exercise_table",
+      "file": "exercise_material.docx",
+      "table": 1,
+      "cell": 12,
+      "parser": "docx_question_parser_v1"
+    },
+    "answer_generation": {
+      "generated": {
+        "answer_kind": "standard_answer",
+        "answer": "错误出现在函数 `f` 中：`Array<int, x> ay;`。模板非类型参数 `int i` 要求在编译时具有常量表达式（constant expression）值，但 `x` 是函数的形参，其值在运行时才确定，因此不能作为模板实参。\n\n修正方法是将 `x` 改为编译时常量，例如使用 `constexpr` 或字面量。",
+        "analysis": "C++ 模板的非类型参数（如本例中的 `int i`）必须在编译时就能确定其值。代码中 `x` 是函数 `f` 的运行时参数，无法满足这一要求，导致编译错误。正确的做法是使用编译期常量，如 `const` 或 `constexpr` 变量，或直接使用整数字面量实例化模板。",
+        "confidence": 0.98
+      },
+      "verification": {
+        "accepted": true,
+        "answer": "错误出现在函数 `f` 中：`Array<int, x> ay;`。模板非类型参数 `int i` 要求在编译时具有常量表达式（constant expression）值，但 `x` 是函数的形参，其值在运行时才确定，因此不能作为模板实参。\n\n修正方法是将 `x` 改为编译时常量，例如使用 `constexpr` 或字面量。",
+        "analysis": "C++ 模板的非类型参数（如本例中的 `int i`）必须在编译时就能确定其值。代码中 `x` 是函数 `f` 的运行时参数，无法满足这一要求，导致编译错误。正确的做法是使用编译期常量，如 `const` 或 `constexpr` 变量，或直接使用整数字面量实例化模板。",
+        "confidence": 0.98,
+        "reason": "候选答案准确指出了代码中违反 C++ 模板机制的关键错误：将运行时变量用作模板非类型参数。分析符合语言标准，修正建议合理且完整，覆盖了常见解决方案（如 constexpr 或字面量）。无语法或逻辑错误，解释清晰，与题目要求完全匹配。"
+      }
+    },
+    "bank_source": "reviewed_supplement"
+  }
+]

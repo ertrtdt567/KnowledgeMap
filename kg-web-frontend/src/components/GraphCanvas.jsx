@@ -83,10 +83,12 @@ function shouldRenderCodeExample(node, graph, graphNodesById) {
     }
   });
 
+  // 仅保留承担两个以上知识节点桥接作用的示例，普通示例只在详情栏展示。
   return connectedNodeIds.size >= 2;
 }
 
 function toElements(graph) {
+  // 神经元末梢是装饰元素，不参与业务关系、搜索或自动布局计算。
   const decorativeNodes = [];
   const decorativeEdges = [];
   const graphNodesById = new Map(graph.nodes.map((node) => [node.id, node]));
@@ -561,6 +563,7 @@ const GraphCanvas = forwardRef(function GraphCanvas(
             Number.isFinite(node.data("graphX")) &&
             Number.isFinite(node.data("graphY"))
         ).length > 0;
+    // 关系名越长适当增加节点间距，但在密集大图中限制额外扩张。
     const longestRelationLabel = Math.max(
       0,
       ...graph.edges.map((edge) => Array.from(String(edge.label ?? "")).length)
@@ -746,6 +749,7 @@ const GraphCanvas = forwardRef(function GraphCanvas(
 
       onNodeSelect?.(node.data());
       const now = Date.now();
+      // Cytoscape 在不同设备上不一定产生 dbltap，因此同时保留 1500ms 双击判定。
       const isSecondTap = lastTap.id === node.id() && now - lastTap.at < 1500;
       lastTap = { id: node.id(), at: now };
       if (isSecondTap) {

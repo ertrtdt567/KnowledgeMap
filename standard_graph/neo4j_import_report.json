@@ -1,0 +1,36 @@
+{
+  "schema_version": "programming_kg_neo4j_import_v2",
+  "generated_at": "2026-07-18T02:45:57",
+  "input_graph": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+  "node_count": 2612,
+  "edge_count": 6059,
+  "generated_files": {
+    "import_graph": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\neo4j_import\\import_graph.cypher",
+    "demo_queries": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\neo4j_import\\demo_queries.cypher",
+    "report": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\neo4j_import\\neo4j_import_report.json"
+  },
+  "execute_enabled": false,
+  "execute_success": false,
+  "clear_before_import": false,
+  "neo4j": {
+    "uri": "bolt://localhost:7687",
+    "user": "neo4j",
+    "database": "default",
+    "password_source": "NEO4J_PASSWORD"
+  },
+  "imported_node_count": 0,
+  "imported_edge_count": 0,
+  "errors": [],
+  "node_label_strategy": "KnowledgeNode + concrete type label",
+  "relationship_type_strategy": "中文展示名；英文内部码保存在关系属性 type 中",
+  "demo_query_groups": [
+    "整体图谱预览",
+    "面向对象核心概念网络",
+    "语法与概念对应",
+    "学习路径查询",
+    "语言差异查询",
+    "知识点详情查询",
+    "节点/关系类型分布",
+    "证据来源查询"
+  ]
+}

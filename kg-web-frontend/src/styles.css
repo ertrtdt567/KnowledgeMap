@@ -116,6 +116,83 @@ input:focus-visible,
   backdrop-filter: blur(18px);
 }
 
+.api-health-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  max-width: min(520px, 42vw);
+  margin-left: auto;
+  padding: 7px 8px 7px 10px;
+  border: 1px solid;
+  border-radius: 7px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.api-health-alert.is-warning {
+  color: #ffe2a8;
+  border-color: rgba(241, 182, 86, 0.42);
+  background: rgba(91, 57, 18, 0.34);
+}
+
+.api-health-alert.is-success {
+  color: #baf5d0;
+  border-color: rgba(91, 214, 139, 0.42);
+  background: rgba(20, 80, 48, 0.36);
+}
+
+.api-health-alert.is-error {
+  color: #ffc1c6;
+  border-color: rgba(244, 96, 112, 0.46);
+  background: rgba(89, 22, 32, 0.38);
+}
+
+.api-health-alert > svg,
+.api-health-alert button {
+  flex: 0 0 auto;
+}
+
+.api-health-alert span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.api-health-alert button {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  place-items: center;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.78;
+}
+
+.api-health-alert button:hover:not(:disabled) {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.api-health-alert button:disabled {
+  cursor: wait;
+  opacity: 0.45;
+}
+
+.api-health-alert .is-spinning {
+  animation: api-health-spin 850ms linear infinite;
+}
+
+@keyframes api-health-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -1217,6 +1294,12 @@ input:focus-visible,
     align-items: stretch;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .api-health-alert {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
   }
 
   .brand {

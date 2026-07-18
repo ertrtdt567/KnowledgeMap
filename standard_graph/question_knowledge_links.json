@@ -1,0 +1,3687 @@
+[
+  {
+    "question_id": "Q001",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_面向对象编程",
+        "knowledge_name": "面向对象编程",
+        "knowledge_type": "ProgrammingParadigm",
+        "description": "一种以对象为核心的设计范式，强调数据字段和方法的封装与交互。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：面向对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Compile_time_type_checking",
+        "knowledge_name": "Compile-time type checking",
+        "knowledge_type": "OOPConcept",
+        "description": "Java编译器依据变量声明类型（而非实际对象类型）检查方法调用合法性",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Compile-time type checking"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Composition",
+        "knowledge_name": "Composition",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象中通过持有其他类实例来构建对象关系的方式",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Composition"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Python",
+        "knowledge_name": "Python",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因使用set.issubset、<等Python特有语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Python"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干直接询问‘类’和‘对象’的关系，且分析中明确指出‘类是创建对象的模板’",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干核心概念之一，选项B正确表述‘对象是类的具体实例’，分析强调‘对象是由类创建出来的具体实例’",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_面向对象编程",
+        "knowledge_name": "面向对象编程",
+        "knowledge_type": "ProgrammingParadigm",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干首句‘在面向对象程序设计中’明确限定范式范畴，为本题上位概念",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "题目元信息指定 language: 'Java'，虽未在题干代码中体现，但构成答题语境约束",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.6,
+        "evidence": "候选列表中作为‘类’和‘对象’的共性上位类型，图谱邻居扩展显示其与二者强关联",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q002",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：封装",
+          "命中编程特征：封装"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "description": "定义行为契约的引用类型，仅包含抽象方法（Java 8+ 可含 default/static 方法）和常量",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：接口",
+          "命中编程特征：接口"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_信息隐藏",
+        "knowledge_name": "信息隐藏",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：封装"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：方法 -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：方法 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_ProgrammingParadigm_ObjectOriented",
+        "knowledge_name": "ProgrammingParadigm_ObjectOriented",
+        "knowledge_type": "ProgrammingParadigm",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：封装 -> ProgrammingParadigm_ObjectOriented"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Python",
+        "knowledge_name": "Python",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因使用set.issubset、<等Python特有语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：方法 -> Python"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_RandomAccessFile",
+        "knowledge_name": "RandomAccessFile",
+        "knowledge_type": "OOPConcept",
+        "description": "Java中表示可随机访问文件的抽象概念，体现封装与I/O抽象",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：方法 -> RandomAccessFile"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干直接陈述‘封装的一个重要目的’，且分析明确指向封装的核心定义：隐藏内部数据、通过公开方法控制访问",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_信息隐藏",
+        "knowledge_name": "信息隐藏",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "分析中‘隐藏内部实现细节’与‘信息隐藏’语义完全一致，是封装的理论基础和同义表述",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干强调‘只通过公开方法控制访问’，方法是实现封装访问控制的关键机制",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "封装属于面向对象编程核心概念，该知识点作为上位概念覆盖本题所属知识范畴",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_ProgrammingParadigm_ObjectOriented",
+        "knowledge_name": "ProgrammingParadigm_ObjectOriented",
+        "knowledge_type": "ProgrammingParadigm",
+        "role": "secondary",
+        "confidence": 0.65,
+        "evidence": "封装是面向对象范式的基本支柱之一，题干语境明确处于OOP范式下",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q003",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类型",
+          "命中编程特征：实际对象类型",
+          "命中编程特征：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "description": "子类对象引用被转换为父类类型引用的过程，是多态的基础机制之一",
+        "score": 6.0,
+        "evidence": [
+          "命中编程特征：父类引用",
+          "命中编程特征：new dog",
+          "命中编程特征：实际对象类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 6.0,
+        "evidence": [
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "description": "子类中定义与父类同名、同参数、同返回类型方法以覆盖父类行为的语法机制",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：重写",
+          "命中编程特征：重写"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_动态绑定",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "OOPConcept",
+        "description": "运行时多态的实现机理，指在程序运行时根据对象具体类型确定调用的方法体",
+        "score": 4.0,
+        "evidence": [
+          "命中编程特征：运行期",
+          "命中编程特征：实际对象类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "子类Dog中定义了与父类Animal同名、同参数、同返回类型的speak方法，覆盖父类行为，是输出结果为'Dog'的直接原因",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_动态绑定",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.92,
+        "evidence": "分析明确指出'运行期根据实际对象类型执行 Dog.speak'，这是动态绑定的核心特征",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.88,
+        "evidence": "代码中'Animal a = new Dog()'体现父类引用指向子类对象，是实现多态的前提机制",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "Dog extends Animal声明了类间继承关系，为重写和向上转型提供语法基础",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "分析中强调'实际对象类型'决定方法调用，体现类型在运行时语义中的关键作用",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q004",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 6.0,
+        "evidence": [
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "description": "子类中定义与父类同名、同参数、同返回类型方法以覆盖父类行为的语法机制",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：重写",
+          "命中编程特征：重写"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_列表",
+        "knowledge_name": "列表",
+        "knowledge_type": "OOPConcept",
+        "description": "复合数据类型，表示有序、可变的元素集合，在OOP中常作为对象（如list类实例）体现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：列表"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类方法",
+        "knowledge_name": "类方法",
+        "knowledge_type": "OOPConcept",
+        "description": "接收类作为第一个参数（cls）的方法，用于操作类状态",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：类方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重载",
+        "knowledge_name": "重载",
+        "knowledge_type": "OOPConcept",
+        "description": "编译时多态的一种形式，指同一作用域内多个同名但参数列表不同的方法共存",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_classmethod",
+        "knowledge_name": "@classmethod",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于定义类方法的装饰器",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类方法 -> @classmethod"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：重载 -> C++"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干明确指出‘子类重写父类的 show 方法，但实际没有形成重写’，且分析强调‘重写要求方法签名一致’",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重载",
+        "knowledge_name": "重载",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.9,
+        "evidence": "正确答案指出 Child 中的方法是‘新的重载式方法’，对应参数列表不同导致的重载而非重写",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "代码中使用 extends 建立 Parent 与 Child 的继承关系，是重写发生的前提语境",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "问题核心围绕 show 方法的定义与行为，涉及方法签名（名称、参数、返回类型）这一关键属性",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "题干和代码中明确出现‘子类’概念，且重写行为必须发生在子类中",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q005",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性",
+          "命中编程特征：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "description": "定义行为契约的引用类型，仅包含抽象方法（Java 8+ 可含 default/static 方法）和常量",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：接口",
+          "命中编程特征：接口",
+          "命中编程特征：多重继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：继承",
+          "命中编程特征：继承",
+          "命中编程特征：父类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_final",
+        "knowledge_name": "final",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java关键字，用于修饰类、方法或变量，此处指修饰类使其不可被继承",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：final",
+          "命中编程特征：final"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多重继承",
+        "knowledge_name": "多重继承",
+        "knowledge_type": "OOPConcept",
+        "description": "一个类从多个父类继承特性的机制；Java不支持，但通过接口模拟",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：多重继承",
+          "命中编程特征：多重继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：父类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_private",
+        "knowledge_name": "private",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中限制成员访问权限的关键字，被private修饰的成员不可被子类访问或覆盖",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_信息隐藏",
+        "knowledge_name": "信息隐藏",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：private"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确询问‘通过哪种机制实现多重继承的效果’，正确选项B为‘接口’，且分析指出‘可以实现多个接口，从而获得类似多重继承的能力’",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多重继承",
+        "knowledge_name": "多重继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题干核心语义关键词‘多重继承’，用于界定问题背景和目标，但Java本身不支持，属被模拟/规避的概念",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干提及‘Java不支持类的多重继承’，隐含对比基础是单继承机制，属于理解接口替代方案的前提概念",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "题干主语‘Java类’及‘继承一个父类’均以‘类’为载体，是OOP上下文的基础实体",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "question_id": "Q006",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_抽象",
+        "knowledge_name": "抽象",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中对现实世界实体进行简化建模的过程，决定哪些属性和行为纳入模型",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类",
+          "命中编程特征：抽象"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰类或方法的关键字，但不能修饰接口声明",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：abstract",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "description": "由abstract关键字声明、不能被实例化、可包含抽象方法和具体实现的类",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象类",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 4.0,
+        "evidence": [
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract_class",
+        "knowledge_name": "abstract class",
+        "knowledge_type": "SyntaxRule",
+        "description": "由关系端点补全的实体",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：abstract class"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_实例化",
+        "knowledge_name": "实例化",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：实例化"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：public"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "代码中定义 abstract class Shape，且错误行 'Shape s = new Shape();' 直接违反抽象类不能实例化的核心语义",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.92,
+        "evidence": "abstract 是导致 Shape 成为抽象类的语法标记，是编译错误的直接语法根源",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_实例化",
+        "knowledge_name": "实例化",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.89,
+        "evidence": "错误行为本质是尝试对抽象类进行实例化，'new Shape()' 显式触发该操作",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "'new Shape()' 试图创建对象，但抽象类无法生成运行时对象，涉及对象创建的前提条件",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.65,
+        "evidence": "Shape 是一个类（abstract class），错误发生在类的使用层面，属于类概念的边界约束",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q007",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "description": "子类中定义与父类同名、同参数、同返回类型方法以覆盖父类行为的语法机制",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：重写",
+          "命中编程特征：重写",
+          "命中编程特征：覆盖"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_final",
+        "knowledge_name": "final",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java关键字，用于修饰类、方法或变量，此处指修饰类使其不可被继承",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：final",
+          "命中编程特征：final"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：final -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_MRO",
+        "knowledge_name": "MRO",
+        "knowledge_type": "OOPConcept",
+        "description": "Method Resolution Order，Python中确定方法调用顺序的继承解析机制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> MRO"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_Override",
+        "knowledge_name": "Override",
+        "knowledge_type": "SyntaxRule",
+        "description": "表示方法重写的关键词或语义约定，在Java等语言中为显式标注（如@Override注解），在通用OOP中作为重写行为的术语。",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：重写 -> Override"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干核心判断点为‘被 final 修饰的方法不能被子类重写’，‘重写’是该命题直接描述的行为，且分析中明确使用‘覆盖’‘重写’等术语",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_final",
+        "knowledge_name": "final",
+        "knowledge_type": "SyntaxRule",
+        "role": "primary",
+        "confidence": 0.92,
+        "evidence": "题干中‘被 final 修饰的方法’是关键限定条件，final 是决定该命题真假的语法规则核心",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干主语为‘方法’，final 修饰对象及重写行为的载体，属必要上下文概念",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "题干明确提及‘子类重写’，是重写行为发生的主体，构成继承关系的关键角色",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "重写行为以继承关系为前提，题干隐含‘子类继承父类’这一前提，是重写的语义基础",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q008",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性",
+          "命中编程特征：变量"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_变量",
+        "knowledge_name": "变量",
+        "knowledge_type": "OOPConcept",
+        "description": "类中定义的状态单元，可被继承。",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：变量"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Python",
+        "knowledge_name": "Python",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因使用set.issubset、<等Python特有语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> Python"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_RandomAccessFile",
+        "knowledge_name": "RandomAccessFile",
+        "knowledge_type": "OOPConcept",
+        "description": "Java中表示可随机访问文件的抽象概念，体现封装与I/O抽象",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> RandomAccessFile"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰类或方法的关键字，但不能修饰接口声明",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> abstract"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "代码中定义的 name 和 age 是类的成员变量，用于存储对象状态，符合‘属性’定义：类或对象中定义的变量，用于存储状态",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "代码中定义的 sayHello() 是类的成员函数，具有 void 返回类型和行为语义，符合‘方法’定义：对象的行为部分，用于提供服务",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干明确提及 'Person 对象'，其定义以 class Person 开头，是封装属性与方法的模板，构成 OOP 基础结构",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "题干核心问题是‘Person 对象中保存了哪些信息和行为’，指向对象作为运行时实体承载属性与方法的语义",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_变量",
+        "knowledge_name": "变量",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "name 和 age 在 Java 类中声明为字段（field），属于变量范畴；但‘属性’更精准描述其在 OOP 中的角色，故变量为次级支撑知识点",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q009",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_动态绑定",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "OOPConcept",
+        "description": "运行时多态的实现机理，指在程序运行时根据对象具体类型确定调用的方法体",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：动态绑定",
+          "命中编程特征：动态绑定"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类型",
+          "命中编程特征：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "description": "子类中定义与父类同名、同参数、同返回类型方法以覆盖父类行为的语法机制",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：重写",
+          "命中编程特征：重写"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多态",
+        "knowledge_name": "多态",
+        "knowledge_type": "OOPConcept",
+        "description": "编译时多态（overloading）和运行时多态（重写、向上转型、动态绑定），体现‘对外一个接口，内部多种实现’",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：动态绑定"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：public"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_动态绑定",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "分析明确指出‘触发动态绑定，执行 B 中重写后的方法’，这是本题核心机制",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.9,
+        "evidence": "代码中 B 类定义了与 A 同名同签名的 print 方法，是动态绑定得以生效的前提",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多态",
+        "knowledge_name": "多态",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "动态绑定是运行时多态的实现方式，题干考察的正是‘同一引用调用不同实现’这一多态本质",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "代码中 new B() 创建对象，且 x 实际引用该对象，是动态绑定发生的运行时载体",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.6,
+        "evidence": "A 和 B 的类定义构成继承关系基础，为重写和多态提供语法结构支撑",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q010",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 11.0,
+        "evidence": [
+          "命中知识点名称/别名：封装",
+          "命中编程特征：封装",
+          "命中编程特征：信息隐藏",
+          "命中编程特征：private",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_信息隐藏",
+        "knowledge_name": "信息隐藏",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：信息隐藏",
+          "命中编程特征：封装",
+          "命中编程特征：信息隐藏",
+          "命中编程特征：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性",
+          "命中编程特征：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_private",
+        "knowledge_name": "private",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中限制成员访问权限的关键字，被private修饰的成员不可被子类访问或覆盖",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：class"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：public -> C++"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确指出‘违反了封装思想’，分析强调‘封装和信息隐藏要求控制对象内部状态的访问方式’，代码中public字段直接暴露状态，是封装原则最典型的反例",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_信息隐藏",
+        "knowledge_name": "信息隐藏",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "分析中并列提及‘封装和信息隐藏’，且‘private’关键字的使用正是实现信息隐藏的技术手段，与封装强相关但属于其支撑机制",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_private",
+        "knowledge_name": "private",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.92,
+        "evidence": "改进方向明确要求将balance改为private，是实现封装/信息隐藏的关键语法要素，代码中缺失该修饰符构成核心错误",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.88,
+        "evidence": "错误根源在于balance被声明为public，导致外部可随意赋值（如a.balance = -100），是违反封装的直接语法表现",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "balance是Account类的属性（成员变量），题目讨论的是对该属性的访问控制问题，属于封装作用的对象载体",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q011",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性",
+          "命中编程特征：变量"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_面向对象编程",
+        "knowledge_name": "面向对象编程",
+        "knowledge_type": "ProgrammingParadigm",
+        "description": "一种以对象为核心的设计范式，强调数据字段和方法的封装与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：面向对象编程",
+          "命中编程特征：面向对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_变量",
+        "knowledge_name": "变量",
+        "knowledge_type": "OOPConcept",
+        "description": "类中定义的状态单元，可被继承。",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：变量"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Compile_time_type_checking",
+        "knowledge_name": "Compile-time type checking",
+        "knowledge_type": "OOPConcept",
+        "description": "Java编译器依据变量声明类型（而非实际对象类型）检查方法调用合法性",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Compile-time type checking"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Composition",
+        "knowledge_name": "Composition",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象中通过持有其他类实例来构建对象关系的方式",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Composition"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：面向对象编程 -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "ProgrammingParadigm_面向对象编程",
+        "knowledge_name": "面向对象编程",
+        "knowledge_type": "ProgrammingParadigm",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干直接提问‘最能体现面向对象编程的思想’，且正确选项B描述的是OOP核心特征——封装（数据与方法组织到对象中）",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.9,
+        "evidence": "选项B中‘把数据和操作数据的方法组织到对象中’明确指向‘对象’这一OOP基本实体",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "类是创建对象的模板，是实现‘数据+方法组织到对象中’的前提结构，属于OOP基础概念",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "选项B中‘操作数据的方法’直接对应‘方法’知识点，是OOP中行为封装的体现",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "选项B中‘数据’即指对象的状态，对应‘属性’（或字段），是OOP中封装的数据部分",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q012",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：继承",
+          "命中编程特征：extends",
+          "命中编程特征：继承",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 4.0,
+        "evidence": [
+          "命中编程特征：extends",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_de0219f9",
+        "knowledge_name": "!=",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于比较对象引用是否不相等的关系运算符",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：Java -> !="
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_20638497",
+        "knowledge_name": "==",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于比较对象引用是否相等的关系运算符",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：Java -> =="
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_MRO",
+        "knowledge_name": "MRO",
+        "knowledge_type": "OOPConcept",
+        "description": "Method Resolution Order，Python中确定方法调用顺序的继承解析机制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> MRO"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingParadigm_ProgrammingParadigm_ObjectOriented",
+        "knowledge_name": "ProgrammingParadigm_ObjectOriented",
+        "knowledge_type": "ProgrammingParadigm",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> ProgrammingParadigm_ObjectOriented"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确要求‘使 Dog 成为 Animal 的子类’，核心考察面向对象中类间继承关系的建模；代码空缺处需填入 extends，直接对应继承机制",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "代码空缺处语法填空，正确答案即 'extends'，是 Java 中实现继承的唯一关键字",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.92,
+        "evidence": "题干中‘Dog 成为 Animal 的子类’直接使用该术语，属于继承关系中的角色定义",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "Animal 是被继承方，符合父类定义；分析中提及‘被继承的类’，与题干语义强关联",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "代码中出现 class Animal 和 class Dog，是继承关系的载体，但非本题考查焦点",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q013",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 11.0,
+        "evidence": [
+          "命中知识点名称/别名：继承",
+          "命中编程特征：extends",
+          "命中编程特征：继承",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象",
+        "knowledge_name": "抽象",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中对现实世界实体进行简化建模的过程，决定哪些属性和行为纳入模型",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类",
+          "命中编程特征：抽象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰类或方法的关键字，但不能修饰接口声明",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：abstract",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "description": "由abstract关键字声明、不能被实例化、可包含抽象方法和具体实现的类",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象类",
+          "命中编程特征：abstract",
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract_class",
+        "knowledge_name": "abstract class",
+        "knowledge_type": "SyntaxRule",
+        "description": "由关系端点补全的实体",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：abstract class"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象方法",
+        "knowledge_name": "抽象方法",
+        "knowledge_type": "OOPConcept",
+        "description": "只有声明而没有方法体的方法，是面向对象中抽象机制的体现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "代码中定义了 abstract class Base，且错误根源在于 Sub 继承抽象类但未实现其抽象方法，核心约束来自抽象类的语义规则",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象方法",
+        "knowledge_name": "抽象方法",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.92,
+        "evidence": "Base 中声明了 abstract void run()，这是导致 Sub 编译失败的直接原因；子类必须实现所有继承的抽象方法或自身声明为 abstract",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "代码含 'class Sub extends Base'，体现类间继承关系，是抽象方法约束生效的前提条件",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "Sub 是 Base 的子类，其非抽象性与未实现抽象方法构成矛盾，触发编译错误",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "代码中两次出现 'abstract' 关键字（修饰类和方法），是识别抽象机制的关键语法标记",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q014",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "description": "子类对象引用被转换为父类类型引用的过程，是多态的基础机制之一",
+        "score": 13.0,
+        "evidence": [
+          "命中知识点名称/别名：向上转型",
+          "命中编程特征：父类引用",
+          "命中编程特征：new child",
+          "命中编程特征：向上转型",
+          "命中编程特征：实际对象类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：类型",
+          "命中编程特征：实际对象类型",
+          "命中编程特征：编译期类型",
+          "命中编程特征：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 6.0,
+        "evidence": [
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 4.0,
+        "evidence": [
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_变量",
+        "knowledge_name": "变量",
+        "knowledge_type": "OOPConcept",
+        "description": "类中定义的状态单元，可被继承。",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：变量"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确要求判断编译期类型和实际对象类型，代码中 Parent p = new Child() 是典型的向上转型语法；分析中直接指出‘这是向上转型’；rule_evidence 全面覆盖‘父类引用’‘new child’‘实际对象类型’等核心特征",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干核心任务是区分‘编译期类型’和‘实际对象类型’，两个关键词均在 description 和 rule_evidence 中被显式命中；该知识点直接支撑问题求解目标",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "代码中存在 extends 关键字及父子类结构，是向上转型成立的前提；但题目未直接考查继承机制本身，而是其衍生现象",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.82,
+        "evidence": "变量 p 的编译期类型为 Parent，Parent 在代码中作为被 extends 的类，符合‘父类’定义；但该知识点是向上转型的组成部分，非独立考察焦点",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.78,
+        "evidence": "new Child() 创建运行时对象，题干中‘实际对象类型’强调运行时实体；rule_evidence 匹配 ‘new ’ 和 ‘对象’",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q015",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "description": "定义行为契约的引用类型，仅包含抽象方法（Java 8+ 可含 default/static 方法）和常量",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：接口",
+          "命中编程特征：interface",
+          "命中编程特征：implements",
+          "命中编程特征：接口"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 4.0,
+        "evidence": [
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_implements",
+        "knowledge_name": "implements",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明类或枚举实现接口的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：implements"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_de0219f9",
+        "knowledge_name": "!=",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于比较对象引用是否不相等的关系运算符",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：Java -> !="
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_20638497",
+        "knowledge_name": "==",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于比较对象引用是否相等的关系运算符",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：Java -> =="
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：public -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Constructor_Overloading",
+        "knowledge_name": "Constructor Overloading",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象中同一类中定义多个同名构造方法（参数不同）的机制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：public -> Constructor Overloading"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确要求定义接口 Flyable，并作为核心能力契约；代码中出现 interface 和抽象方法 fly()，符合接口定义的本质特征",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_implements",
+        "knowledge_name": "implements",
+        "knowledge_type": "SyntaxRule",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干要求 Bird 类‘使用该接口’，代码中必须使用 implements 关键字建立实现关系，是接口机制落地的关键语法",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干要求定义 Bird 类，代码中出现 class Bird，属于面向对象建模的基本单元，但非本题考查重心",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "参考答案中显式写出 public void fly()，体现访问修饰符的使用；虽接口方法默认 public，但实现类中常显式声明",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "role": "secondary",
+        "confidence": 0.99,
+        "evidence": "题干明确指定语言为 Java，所有语法（interface、implements、class 等）均基于 Java 语义",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q016",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_抽象",
+        "knowledge_name": "抽象",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中对现实世界实体进行简化建模的过程，决定哪些属性和行为纳入模型",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象",
+          "命中编程特征：抽象类",
+          "命中编程特征：抽象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "description": "定义行为契约的引用类型，仅包含抽象方法（Java 8+ 可含 default/static 方法）和常量",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：接口",
+          "命中编程特征：接口",
+          "命中编程特征：多重继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：继承",
+          "命中编程特征：继承",
+          "命中编程特征：父类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多重继承",
+        "knowledge_name": "多重继承",
+        "knowledge_type": "OOPConcept",
+        "description": "一个类从多个父类继承特性的机制；Java不支持，但通过接口模拟",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：多重继承",
+          "命中编程特征：多重继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "description": "由abstract关键字声明、不能被实例化、可包含抽象方法和具体实现的类",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：抽象类",
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：父类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类对象",
+        "knowledge_name": "类对象",
+        "knowledge_type": "OOPConcept",
+        "description": "代表类本身的对象，用于访问和修改类属性",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：类对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰类或方法的关键字，但不能修饰接口声明",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_抽象类",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干直接考查抽象类的定位与用途，选项B中‘抽象类通常表示一类对象的抽象父类’对应其核心语义",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_接口",
+        "knowledge_name": "接口",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干并列考查接口，选项B中‘接口更强调行为规范’精准匹配其契约性本质",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_抽象",
+        "knowledge_name": "抽象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "分析中指出‘抽象类和接口都可表达抽象’，是二者共有的上位概念",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "选项B隐含‘抽象父类’即继承关系，且分析提及‘多接口实现’涉及继承机制的延伸",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_多重继承",
+        "knowledge_name": "多重继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "选项C错误陈述‘接口不能和多重继承有关’，分析明确指出‘通过接口模拟多重继承’",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q017",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_final",
+        "knowledge_name": "final",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java关键字，用于修饰类、方法或变量，此处指修饰类使其不可被继承",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：final",
+          "命中编程特征：final"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "description": "子类中定义与父类同名、同参数、同返回类型方法以覆盖父类行为的语法机制",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：重写",
+          "命中编程特征：重写"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：final -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_MRO",
+        "knowledge_name": "MRO",
+        "knowledge_type": "OOPConcept",
+        "description": "Method Resolution Order，Python中确定方法调用顺序的继承解析机制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> MRO"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：继承 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_Override",
+        "knowledge_name": "Override",
+        "knowledge_type": "SyntaxRule",
+        "description": "表示方法重写的关键词或语义约定，在Java等语言中为显式标注（如@Override注解），在通用OOP中作为重写行为的术语。",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：重写 -> Override"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "SyntaxRule_final",
+        "knowledge_name": "final",
+        "knowledge_type": "SyntaxRule",
+        "role": "primary",
+        "confidence": 0.98,
+        "evidence": "题干明确要求‘使 speak 方法禁止被子类重写’，且正确答案为 final；代码空位位于方法修饰符位置；analysis 直接指出 ‘final 修饰的方法不能被子类重写’",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_重写",
+        "knowledge_name": "重写",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题干中‘禁止被子类重写’直接提及该概念，是理解 final 修饰方法语义的必要前提",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "代码中 void speak() 是方法声明，final 修饰对象为方法，属于方法这一语法实体",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "题干中‘被子类重写’明确涉及子类概念，是 final 方法限制作用的对象",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "重写行为依赖于继承关系，‘子类重写父类方法’以继承为前提",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象",
+          "命中编程特征：new "
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象编程中的核心概念，指将数据和操作数据的方法捆绑在一起，并隐藏内部实现细节。",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_消息传递",
+        "knowledge_name": "消息传递",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：消息"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 2.0,
+        "evidence": [
+          "命中编程特征：class"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：public -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_Constructor_Overloading",
+        "knowledge_name": "Constructor Overloading",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象中同一类中定义多个同名构造方法（参数不同）的机制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：public -> Constructor Overloading"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：static -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干明确问‘Student对象通过哪个方法接收外部消息’，代码中唯一可被调用的行为是study()方法；analysis指出‘对象之间通过方法调用进行交互，可以理解为向对象发送消息’，直接对应‘方法’作为消息接收载体",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_消息传递",
+        "knowledge_name": "消息传递",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.92,
+        "evidence": "题干中‘接收外部消息’及analysis中‘向对象发送消息’明确使用‘消息’术语，且candidates中‘消息传递’定义为‘面向对象核心概念’，与OOP语义模型强匹配",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干主语为‘Student对象’，代码中s = new Student()创建实例，分析需以对象为消息接收主体，但非问题焦点（焦点在‘如何接收’而非‘谁接收’）",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.7,
+        "evidence": "Student类定义了study方法，是方法的容器，支撑对象行为来源，但题目不考察类定义本身，仅作为方法归属上下文",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_封装",
+        "knowledge_name": "封装",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.6,
+        "evidence": "study方法作为对外提供的服务接口，隐含封装思想（隐藏内部实现、暴露行为），但题干未提及数据隐藏或访问控制，关联较弱",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "description": "子类对象引用被转换为父类类型引用的过程，是多态的基础机制之一",
+        "score": 11.0,
+        "evidence": [
+          "命中知识点名称/别名：向上转型",
+          "命中编程特征：父类引用",
+          "命中编程特征：new dog",
+          "命中编程特征：向上转型",
+          "命中编程特征：编译期类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void ",
+          "命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "description": "被继承的类，在Java中通过extends关键字指定",
+        "score": 9.0,
+        "evidence": [
+          "命中知识点名称/别名：父类",
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象核心概念",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类型",
+          "命中编程特征：编译期类型",
+          "命中编程特征：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "description": "子类是父类的特例，继承父类的状态和行为；Java只支持单继承，多继承须通过接口实现",
+        "score": 6.0,
+        "evidence": [
+          "命中编程特征：extends",
+          "命中编程特征：父类",
+          "命中编程特征：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_extends",
+        "knowledge_name": "extends",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于显式声明类继承关系的关键字",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：extends"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxRule",
+        "description": "编程语言语法规则",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：new"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中用于声明公共访问权限的修饰符，在接口方法和字段中默认或显式使用",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰静态成员（变量/方法）的关键字，决定其属于类而非实例",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "description": "继承自另一个类的类，在Java中通过extends关键字实现",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：子类"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_成员",
+        "knowledge_name": "成员",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中类的字段（field），用于存储状态",
+        "score": 3.0,
+        "evidence": [
+          "命中知识点名称/别名：成员"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_向上转型",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干明确指出‘希望通过父类引用调用子类特有方法’，代码中出现 Animal a = new Dog()，且分析强调‘向上转型后，引用能访问的成员受编译期类型约束’",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类型",
+        "knowledge_name": "类型",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.9,
+        "evidence": "错误根源在于编译期类型（Animal）与运行时类型（Dog）不一致，分析中直接提及‘编译期类型’，且 candidates 中该知识点 rule_evidence 明确包含‘编译期类型’",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_父类",
+        "knowledge_name": "父类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "代码中定义 Animal 为父类，Dog extends Animal，题干和分析均围绕父类引用能否访问子类特有成员展开",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "OOPConcept_子类",
+        "knowledge_name": "子类",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "Dog 是子类，其特有方法 bark() 无法被父类引用调用，是问题发生的必要条件",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_继承",
+        "knowledge_name": "继承",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "extends 关键字建立父子类关系，构成向上转型的前提，rule_evidence 覆盖 extends/父类/子类三要素",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "method": "qwen",
+    "llm_error": "",
+    "candidate_count": 12,
+    "candidates": [
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "description": "对象的行为部分，用于设置或改变状态或提供服务，在Java中对应函数/成员函数",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：方法",
+          "命中编程特征：方法",
+          "命中编程特征：void "
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "description": "面向对象程序设计中的核心概念，是创建对象的模板，定义成员变量和方法",
+        "score": 7.0,
+        "evidence": [
+          "命中知识点名称/别名：类",
+          "命中编程特征：class",
+          "命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_对象",
+        "knowledge_name": "对象",
+        "knowledge_type": "OOPConcept",
+        "description": "OOP中的基本运行时实体，由数据字段（field）和方法（method）组成，并参与交互。",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：对象",
+          "命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "description": "类或对象中定义的变量，用于存储状态；此处特指数组对象的length字段及数组元素（虽无显式名称，但具成员变量语义）",
+        "score": 5.0,
+        "evidence": [
+          "命中知识点名称/别名：属性",
+          "命中编程特征：属性"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_property装饰器",
+        "knowledge_name": "@property装饰器",
+        "knowledge_type": "SyntaxRule",
+        "description": "Python中用于将方法转换为只读属性的装饰器语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：属性 -> @property装饰器"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_C",
+        "knowledge_name": "C++",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "一种支持面向对象的编程语言，要求重写方法必须具有相同名称、参数和返回类型",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> C++"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因Exception和RuntimeException为Java标准库类",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> Java"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "description": "由关系端点补全的实体",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> OOPConcept"
+        ]
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Python",
+        "knowledge_name": "Python",
+        "knowledge_type": "ProgrammingLanguage",
+        "description": "上下文隐含的编程语言，因使用set.issubset、<等Python特有语法",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> Python"
+        ]
+      },
+      {
+        "knowledge_node_id": "OOPConcept_RandomAccessFile",
+        "knowledge_name": "RandomAccessFile",
+        "knowledge_type": "OOPConcept",
+        "description": "Java中表示可随机访问文件的抽象概念，体现封装与I/O抽象",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> RandomAccessFile"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中修饰类或方法的关键字，但不能修饰接口声明",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> abstract"
+        ]
+      },
+      {
+        "knowledge_node_id": "SyntaxRule_default",
+        "knowledge_name": "default",
+        "knowledge_type": "SyntaxRule",
+        "description": "Java中默认（包级）访问权限，无显式修饰符时的访问控制",
+        "score": 0.8,
+        "evidence": [
+          "图谱邻居扩展：类 -> default"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "OOPConcept_类",
+        "knowledge_name": "类",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干明确要求‘设计一个简单的 Book 类’，且答案以 'class Book' 开头，直接体现类的定义语法和结构",
+        "rank": 1
+      },
+      {
+        "knowledge_node_id": "OOPConcept_方法",
+        "knowledge_name": "方法",
+        "knowledge_type": "OOPConcept",
+        "role": "primary",
+        "confidence": 0.9,
+        "evidence": "题干要求实现 'showTitle 方法'，答案中包含 'void showTitle()' 声明及方法体，符合方法定义的核心特征",
+        "rank": 2
+      },
+      {
+        "knowledge_node_id": "OOPConcept_属性",
+        "knowledge_name": "属性",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题干要求包含 'title 属性'，答案中声明 'String title;'，对应类中用于存储状态的成员变量（即属性/字段）",
+        "rank": 3
+      },
+      {
+        "knowledge_node_id": "ProgrammingLanguage_Java",
+        "knowledge_name": "Java",
+        "knowledge_type": "ProgrammingLanguage",
+        "role": "secondary",
+        "confidence": 0.99,
+        "evidence": "题干明确指定 language: 'Java'，且代码使用 Java 语法（如 void、System.out.println）",
+        "rank": 4
+      },
+      {
+        "knowledge_node_id": "OOPConcept_OOPConcept",
+        "knowledge_name": "OOPConcept",
+        "knowledge_type": "OOPConcept",
+        "role": "secondary",
+        "confidence": 0.75,
+        "evidence": "分析指出‘考察类的定义、对象属性和方法的组织方式’，属于面向对象程序设计核心概念范畴，OOPConcept 是上位抽象概念",
+        "rank": 5
+      }
+    ]
+  }
+]

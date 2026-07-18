@@ -61,6 +61,20 @@ export function getApiMode() {
   return API_BASE ? "remote" : "mock";
 }
 
+export async function fetchApiHealth({ signal } = {}) {
+  if (!API_BASE) {
+    return {
+      ok: true,
+      mode: "mock",
+      exists: {},
+      counts: {},
+      integrity: {}
+    };
+  }
+
+  return requestJson("/api/health", { signal });
+}
+
 export async function fetchGraph(graphId = "root", { signal } = {}) {
   if (API_BASE) {
     return requestJson(`/api/graphs/${encodeURIComponent(graphId)}`, { signal });

@@ -1,0 +1,61 @@
+{
+  "release_version": "v2026.07.18",
+  "generated_at": "2026-07-17T18:45:52.797200+00:00",
+  "producer": "publish_formal_release.py",
+  "source_versions": {
+    "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_with_questions\\standard_graph.json",
+    "questions": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_questions.json",
+    "mappings": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_question_knowledge_links.json",
+    "catalog": "programming_curriculum_v0_14_delivery"
+  },
+  "artifacts": {
+    "graph": {
+      "file": "standard_graph_v2026.07.18.json",
+      "sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8",
+      "nodes": 2612,
+      "edges": 6059
+    },
+    "questions": {
+      "file": "questions_v2026.07.18.json",
+      "sha256": "87A8C086BF2AC70F6962965E0E364F0CD3A7938989F00CDCF08A09C016B9B761",
+      "questions": 45
+    },
+    "mappings": {
+      "file": "question_knowledge_links_v2026.07.18.json",
+      "sha256": "9BC9B7DBECDAB21FF88DA414F08C49BE0278D2DE244C106196EA07D8DAC4F734",
+      "mapping_records": 45,
+      "valid_mapping_links": 73
+    },
+    "consistency_report": {
+      "file": "release_consistency_report.json",
+      "sha256": "88E103965FF6171126F1034199E129E02B2DEBACA54E46DC1C85A8C32A11FB89"
+    },
+    "rdf_turtle": {
+      "file": "rdf/standard_graph.ttl",
+      "sha256": "7CEBDDE6FB98DC0C54EBEB25FB57872EAF989CAE0BFCB8DD7115AF2B5E67D2F6"
+    },
+    "rdf_xml": {
+      "file": "rdf/standard_graph.rdf",
+      "sha256": "6012131A5B3DF996C5077822C913A8A5478678614864F9F486DFC51B4DA3922B"
+    },
+    "neo4j_import": {
+      "file": "neo4j_import/import_graph.cypher",
+      "sha256": "4F64B3EAC77D52A26C1F03A1BB32E3FCF22508AC43C9E83C7B7163EE322C0CB2"
+    },
+    "cross_format_validation": {
+      "file": "cross_format_validation.json",
+      "sha256": "729100E5A7FE54A5E098EA6C1849234A91A67C8510A1A341BE6EFD8F0583F243"
+    }
+  },
+  "compatibility": {
+    "api_and_frontend_must_load_from_manifest": true,
+    "neo4j_import_must_use_graph_artifact": "standard_graph_v2026.07.18.json",
+    "legacy_snapshots_are_not_formal_release": true
+  },
+  "distribution": {
+    "formal_graph": "standard_graph_v2026.07.18.json",
+    "frontend_copy": "frontend\\standard_graph.json",
+    "neo4j_source": "neo4j_import/import_graph.cypher",
+    "same_graph_sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8"
+  }
+}

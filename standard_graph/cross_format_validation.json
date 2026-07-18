@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "release_version": "v2026.07.18",
+  "counts": {
+    "json": {
+      "nodes": 2612,
+      "relationships": 6059
+    },
+    "rdf": {
+      "nodes": 2612,
+      "relationships": 6059
+    },
+    "neo4j_import": {
+      "nodes": 2612,
+      "relationships": 6059
+    }
+  },
+  "rdf_parser_validation": {
+    "parser": "xml.etree.ElementTree",
+    "rdf_xml_well_formed": true,
+    "entity_resource_count": 2612,
+    "relationship_resource_count": 6059,
+    "expected_node_count": 2612,
+    "expected_edge_count": 6059,
+    "passed": true,
+    "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+    "ttl": "standard_graph.ttl",
+    "rdf": "standard_graph.rdf",
+    "namespace": "https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/"
+  },
+  "neo4j_import_source": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+  "frontend_graph": {
+    "file": "frontend\\standard_graph.json",
+    "sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8"
+  }
+}

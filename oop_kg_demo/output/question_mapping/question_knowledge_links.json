@@ -1,0 +1,24 @@
+[
+  {
+    "question_id": "Q001",
+    "method": "fixture",
+    "links": [
+      {
+        "knowledge_node_id": "oopconcept_class",
+        "knowledge_name": "类",
+        "role": "primary",
+        "confidence": 0.95,
+        "rank": 1,
+        "evidence": "题干直接考察类和对象的关系。"
+      },
+      {
+        "knowledge_node_id": "oopconcept_object",
+        "knowledge_name": "对象",
+        "role": "primary",
+        "confidence": 0.93,
+        "rank": 2,
+        "evidence": "题干直接考察类和对象的关系。"
+      }
+    ]
+  }
+]

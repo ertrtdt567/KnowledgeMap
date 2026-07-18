@@ -1,0 +1,13 @@
+{
+  "parser": "xml.etree.ElementTree",
+  "rdf_xml_well_formed": true,
+  "entity_resource_count": 2612,
+  "relationship_resource_count": 6059,
+  "expected_node_count": 2612,
+  "expected_edge_count": 6059,
+  "passed": true,
+  "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+  "ttl": "standard_graph.ttl",
+  "rdf": "standard_graph.rdf",
+  "namespace": "https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/"
+}

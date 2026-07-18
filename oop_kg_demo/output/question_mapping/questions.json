@@ -1,0 +1,23 @@
+[
+  {
+    "question_id": "Q001",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "Java",
+    "stem": "在面向对象程序设计中，哪一项最准确地描述了类和对象的关系？",
+    "code": "",
+    "options": [
+      "A. 类是对象的具体实例",
+      "B. 对象是类的具体实例"
+    ],
+    "answer": "B",
+    "analysis": "类描述对象的共同属性和方法，对象是由类创建出来的具体实例。",
+    "difficulty": 1,
+    "difficulty_label": "简单",
+    "abilities": ["概念理解"],
+    "gold_knowledge_points": [
+      {"name": "类", "role": "primary"},
+      {"name": "对象", "role": "primary"}
+    ]
+  }
+]

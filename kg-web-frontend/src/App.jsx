@@ -1,4 +1,5 @@
 import {
+  AlertTriangle,
   ArrowLeft,
   BookOpen,
   GitBranch,
@@ -10,6 +11,7 @@ import {
   PanelLeftOpen,
   PanelRightClose,
   PanelRightOpen,
+  RefreshCw,
   Search,
   Sparkles,
   Target,
@@ -19,6 +21,7 @@ import {
 } from "lucide-react";
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
+  fetchApiHealth,
   fetchCodeExamples,
   fetchGraph,
   fetchNodeDetail,
@@ -82,10 +85,89 @@ function getNodeKey(node) {
   return node ? `${node.id}-${node.label}` : "";
 }
 
+function resolveOriginalQuestion(node, codeExamples) {
+  if (!node) {
+    return null;
+  }
+
+  const rawNode = node.raw ?? {};
+  const storedExample =
+    codeExamples.get(node.id) ?? codeExamples.get(rawNode.local_id);
+  if (storedExample) {
+    return storedExample;
+  }
+
+  // 新版图谱的示例 ID 与旧静态索引不一致时，直接回退到节点证据内容。
+  const sources = (rawNode.sources ?? []).filter(
+    (source) => typeof source?.content === "string" && source.content.trim()
+  );
+  if (!sources.length) {
+    return null;
+  }
+
+  return {
+    code: sources.map((source) => source.content.trim()).join("\n\n---\n\n"),
+    language: rawNode.language ?? rawNode.language_scope?.[0] ?? "",
+    sources
+  };
+}
+
+function summarizeApiHealth(health) {
+  if (!health || health.mode === "mock") {
+    return null;
+  }
+
+  const missingFiles = Object.entries(health.exists ?? {})
+    .filter(([, exists]) => !exists)
+    .map(([name]) => name);
+  if (!health.ok || missingFiles.length) {
+    return {
+      level: "error",
+      message: missingFiles.length
+        ? `API 关键数据文件缺失：${missingFiles.join("、")}`
+        : "API 健康检查未通过"
+    };
+  }
+
+  const integrity = health.integrity ?? {};
+  const questionMapping = integrity.question_mapping ?? {};
+  const issues = [];
+  if (integrity.invalid_edges > 0) {
+    issues.push(`${integrity.invalid_edges} 条无效关系`);
+  }
+  if (integrity.self_loops > 0) {
+    issues.push(`${integrity.self_loops} 条自环`);
+  }
+  if (integrity.isolated_nodes > 0) {
+    issues.push(`${integrity.isolated_nodes} 个孤立节点`);
+  }
+  if (questionMapping.invalid_node_ids > 0) {
+    issues.push(`${questionMapping.invalid_node_ids} 个失效知识点映射`);
+  }
+  if (questionMapping.unresolved_links > 0) {
+    issues.push(`${questionMapping.unresolved_links} 条未解析映射`);
+  }
+  if (questionMapping.questions_without_mapping > 0) {
+    issues.push(`${questionMapping.questions_without_mapping} 道题无映射`);
+  }
+
+  return issues.length
+    ? { level: "warning", message: `数据完整性检查：${issues.join("，")}` }
+    : {
+        level: "success",
+        message: `API 健康检查通过：${health.counts?.nodes ?? 0} 个节点，${
+          health.counts?.edges ?? 0
+        } 条关系，${health.counts?.questions ?? 0} 道题，${
+          questionMapping.links ?? 0
+        } 条题目映射`
+      };
+}
+
 function indexHierarchy(graph) {
   const labels = new Map(
     (graph?.nodes ?? []).map((node) => [node.id, node.label])
   );
+  // part_of 在正式 JSON 中方向为“子 -> 父”，这里反向建立面包屑父级索引。
   const parents = new Map(
     (graph?.edges ?? [])
       .filter((edge) => edge.sourceType === "part_of")
@@ -142,6 +224,9 @@ export default function App() {
   const [codeExamplesReloadKey, setCodeExamplesReloadKey] = useState(0);
   const [isGraphLoading, setIsGraphLoading] = useState(true);
   const [graphReloadKey, setGraphReloadKey] = useState(0);
+  const [healthReloadKey, setHealthReloadKey] = useState(0);
+  const [apiHealthAlert, setApiHealthAlert] = useState(null);
+  const [isApiHealthChecking, setIsApiHealthChecking] = useState(true);
   const [isSearching, setIsSearching] = useState(false);
   const [error, setError] = useState("");
   const [isLeftRailCollapsed, setIsLeftRailCollapsed] = useState(false);
@@ -150,6 +235,37 @@ export default function App() {
   const [practiceIndex, setPracticeIndex] = useState(0);
   const [isPracticeAnswerVisible, setIsPracticeAnswerVisible] = useState(false);
   const [standalonePracticeQuestion, setStandalonePracticeQuestion] = useState(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
+
+    setIsApiHealthChecking(true);
+    fetchApiHealth({ signal: controller.signal })
+      .then((health) => {
+        if (active) {
+          setApiHealthAlert(summarizeApiHealth(health));
+        }
+      })
+      .catch((err) => {
+        if (active && !isAbortError(err)) {
+          setApiHealthAlert({
+            level: "error",
+            message: `API 无法连接：${err.message || "健康检查请求失败"}`
+          });
+        }
+      })
+      .finally(() => {
+        if (active) {
+          setIsApiHealthChecking(false);
+        }
+      });
+
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, [healthReloadKey]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -459,6 +575,7 @@ export default function App() {
       return;
     }
 
+    // 搜索结果先切换到所属子图，待图加载完成后再选中目标节点。
     const resultGraphId = result.graphId ?? "root";
     const resultGraphLabel = hierarchyRef.current.labels.get(resultGraphId) ?? result.label;
     clearSearch(false);
@@ -514,7 +631,7 @@ export default function App() {
   const isCodeExample =
     (selectedDisplay?.sourceType ?? selectedDisplay?.type) === "CodeExample";
   const originalQuestion = isCodeExample
-    ? codeExamples.get(selectedDisplay.id)
+    ? resolveOriginalQuestion(selectedDisplay, codeExamples)
     : null;
   const primarySource = originalQuestion?.sources?.[0];
   const nodeQuestions = selectedDisplay?.questions ?? [];
@@ -528,6 +645,7 @@ export default function App() {
     activeSearchIndex >= 0 ? `knowledge-search-option-${activeSearchIndex}` : undefined;
   const isOriginalQuestionPending =
     isCodeExample &&
+    !originalQuestion &&
     !hasLoadedCodeExamples &&
     !codeExamplesError;
   const shellClassName = [
@@ -564,6 +682,30 @@ export default function App() {
             </button>
           ))}
         </nav>
+
+        {apiHealthAlert ? (
+          <div
+            className={`api-health-alert is-${apiHealthAlert.level}`}
+            role="alert"
+            title={apiHealthAlert.message}
+          >
+            <AlertTriangle aria-hidden="true" size={16} />
+            <span>{apiHealthAlert.message}</span>
+            <button
+              aria-label="重新检查 API"
+              disabled={isApiHealthChecking}
+              onClick={() => setHealthReloadKey((key) => key + 1)}
+              title="重新检查 API"
+              type="button"
+            >
+              <RefreshCw
+                aria-hidden="true"
+                className={isApiHealthChecking ? "is-spinning" : ""}
+                size={15}
+              />
+            </button>
+          </div>
+        ) : null}
 
       </header>
 
@@ -848,11 +990,11 @@ export default function App() {
               <pre className="original-question-content">
                 {isCodeExamplesLoading || isOriginalQuestionPending
                   ? "原题加载中..."
-                  : codeExamplesError
-                    ? codeExamplesError
-                    : originalQuestion?.code || "未找到该代码示例的原题内容。"}
+                  : originalQuestion?.code ||
+                    codeExamplesError ||
+                    "未找到该代码示例的原题内容。"}
               </pre>
-              {codeExamplesError ? (
+              {codeExamplesError && !originalQuestion ? (
                 <button
                   className="secondary-action"
                   onClick={() => {

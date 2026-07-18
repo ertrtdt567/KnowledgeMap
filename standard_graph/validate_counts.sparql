@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX kg: <https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/>
+PREFIX type: <https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/type/>
+
+# 验证正式 RDF 中的节点与关系资源数量。
+SELECT
+  (COUNT(DISTINCT ?node) AS ?node_count)
+  (COUNT(DISTINCT ?edge) AS ?relationship_count)
+WHERE {
+  OPTIONAL { ?node kg:nodeId ?nodeId . }
+  OPTIONAL { ?edge rdf:type type:Relationship . }
+}
