@@ -1,0 +1,20 @@
+{
+  "schema_version": "rdf_sparql_execution_result_v1",
+  "executed_at": "2026-07-18T02:28:07.584291+00:00",
+  "engine": "stdlib limited SPARQL COUNT evaluator v1 (release query only)",
+  "scope": "validate_counts.sparql only",
+  "rdf_file": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\rdf\\standard_graph.rdf",
+  "rdf_sha256": "6012131A5B3DF996C5077822C913A8A5478678614864F9F486DFC51B4DA3922B",
+  "query_file": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\rdf\\validate_counts.sparql",
+  "query_sha256": "3EB3198A80110DB11E48085C94D76BE9DC1E94D97E80E0B2EE700F5753E73D21",
+  "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX kg: <https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/>\nPREFIX type: <https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/type/>\n\n# 验证正式 RDF 中的节点与关系资源数量。\nSELECT\n  (COUNT(DISTINCT ?node) AS ?node_count)\n  (COUNT(DISTINCT ?edge) AS ?relationship_count)\nWHERE {\n  OPTIONAL { ?node kg:nodeId ?nodeId . }\n  OPTIONAL { ?edge rdf:type type:Relationship . }\n}\n",
+  "bindings": {
+    "node_count": 2612,
+    "relationship_count": 6059
+  },
+  "expected": {
+    "node_count": 2612,
+    "relationship_count": 6059
+  },
+  "passed": true
+}

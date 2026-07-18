@@ -1,0 +1,3069 @@
+[
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q03",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "若定义：string str; 当语句cin>>str; 执行时，从键盘输入：\nMicrosoft Visual Studio 6.0!\n所得的结果是str=（ ）。",
+    "code": "",
+    "options": [
+      "A. Microsoft Visual Studio 6.0!",
+      "B. Microsoft",
+      "C. Microsoft Visual",
+      "D. Microsoft Visual Studio 6.0"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "3",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "3",
+      "stem_evidence": "若定义：string str; 当语句cin>>str; 执行时，从键盘输入：\nMicrosoft Visual Studio 6.0!\n所得的结果是str=（ ）。\nA. Microsoft Visual Studio 6.0! B. Microsoft\nC. Microsoft Visual D. Microsoft Visual Studio 6.0",
+      "answer_evidence": "1-5．C D B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q03",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "3",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "3",
+          "stem_evidence": "若定义：string str; 当语句cin>>str; 执行时，从键盘输入：\nMicrosoft Visual Studio 6.0!\n所得的结果是str=（ ）。\nA. Microsoft Visual Studio 6.0! B. Microsoft\nC. Microsoft Visual D. Microsoft Visual Studio 6.0",
+          "answer_evidence": "1-5．C D B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q04",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "考虑下面的函数原型声明：void testDefaulParam(int a,int b=7,char z='*');\n下面函数调用中，不合法的是（ ）。",
+    "code": "",
+    "options": [
+      "A. testDefaulParam(5);",
+      "B. testDefaulParam(5,8);",
+      "C. testDefaulParam(5,'#');",
+      "D. testDefaulParam(0,0,'*');"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "4",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "4",
+      "stem_evidence": "考虑下面的函数原型声明：void testDefaulParam(int a,int b=7,char z='*');\n下面函数调用中，不合法的是（ ）。\nA. testDefaulParam(5); B. testDefaulParam(5,8);\nC. testDefaulParam(5,'#'); D. testDefaulParam(0,0,'*');",
+      "answer_evidence": "1-5．C D B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q04",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "4",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "4",
+          "stem_evidence": "考虑下面的函数原型声明：void testDefaulParam(int a,int b=7,char z='*');\n下面函数调用中，不合法的是（ ）。\nA. testDefaulParam(5); B. testDefaulParam(5,8);\nC. testDefaulParam(5,'#'); D. testDefaulParam(0,0,'*');",
+          "answer_evidence": "1-5．C D B C C"
+        }
+      },
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q03",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "3",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "3",
+          "stem_evidence": "考虑下面的函数原型声明：void testDefaulParam(int a,int b=7,char z='*');\n下面函数调用中，不合法的是（ ）。\nA．testDefaulParam(5); B．testDefaulParam(5,8);\nC．testDefaulParam(5,'#'); D．testDefaulParam(0,0,'*');",
+          "answer_evidence": "1-5．D A C A D"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q05",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列语句中，将函数int sum(int x, int y)正确重载的是（ ）。",
+    "code": "",
+    "options": [
+      "A. float sum(int x, int y);",
+      "B. int sum(int a, int b);",
+      "C. float sum(float x, float y);",
+      "D. double sum(int y, int x);"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "5",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "5",
+      "stem_evidence": "下列语句中，将函数int sum(int x, int y)正确重载的是（ ）。\nA. float sum(int x, int y); B. int sum(int a, int b);\nC. float sum(float x, float y); D. double sum(int y, int x);",
+      "answer_evidence": "1-5．C D B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q05",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "5",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "5",
+          "stem_evidence": "下列语句中，将函数int sum(int x, int y)正确重载的是（ ）。\nA. float sum(int x, int y); B. int sum(int a, int b);\nC. float sum(float x, float y); D. double sum(int y, int x);",
+          "answer_evidence": "1-5．C D B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q06",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列表示引用的方法中，（ ）是正确的。\n已知：int a=1000;",
+    "code": "",
+    "options": [
+      "A. int &x=a;",
+      "B. char &y;",
+      "C. int &z=1000;",
+      "D. float &t=&a;"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "6",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "6",
+      "stem_evidence": "下列表示引用的方法中，（ ）是正确的。\n已知：int a=1000;\nA. int &x=a; B. char &y; C. int &z=1000; D. float &t=&a;",
+      "answer_evidence": "6-10．A A D D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q06",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "6",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "6",
+          "stem_evidence": "下列表示引用的方法中，（ ）是正确的。\n已知：int a=1000;\nA. int &x=a; B. char &y; C. int &z=1000; D. float &t=&a;",
+          "answer_evidence": "6-10．A A D D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q07",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "在一个函数中，要求通过函数来实现一种不太复杂的功能，并且要求加快执行速度，选用（ ）。",
+    "code": "",
+    "options": [
+      "A. 内联函数",
+      "B. 重载函数",
+      "C. 递归调用",
+      "D. 嵌套调用"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "7",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "7",
+      "stem_evidence": "在一个函数中，要求通过函数来实现一种不太复杂的功能，并且要求加快执行速度，选用（ ）。\nA. 内联函数 B. 重载函数 C. 递归调用 D. 嵌套调用",
+      "answer_evidence": "6-10．A A D D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q07",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "7",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "7",
+          "stem_evidence": "在一个函数中，要求通过函数来实现一种不太复杂的功能，并且要求加快执行速度，选用（ ）。\nA. 内联函数 B. 重载函数 C. 递归调用 D. 嵌套调用",
+          "answer_evidence": "6-10．A A D D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q08",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列有关C++类的说法中，不正确的是（ ）。",
+    "code": "",
+    "options": [
+      "A. 类是一种用户自定义的数据类型",
+      "B. 只有类中的成员函数或类的友元函数才能存取类中的私有成员",
+      "C. 在类中，如果不做特别说明，所有成员的访问权限均为私有的",
+      "D. 在类中，如果不做特别说明，所有成员的访问权限均为公用的"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "8",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "8",
+      "stem_evidence": "下列有关C++类的说法中，不正确的是（ ）。\nA. 类是一种用户自定义的数据类型\nB. 只有类中的成员函数或类的友元函数才能存取类中的私有成员\nC. 在类中，如果不做特别说明，所有成员的访问权限均为私有的\nD. 在类中，如果不做特别说明，所有成员的访问权限均为公用的",
+      "answer_evidence": "6-10．A A D D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q08",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "8",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "8",
+          "stem_evidence": "下列有关C++类的说法中，不正确的是（ ）。\nA. 类是一种用户自定义的数据类型\nB. 只有类中的成员函数或类的友元函数才能存取类中的私有成员\nC. 在类中，如果不做特别说明，所有成员的访问权限均为私有的\nD. 在类中，如果不做特别说明，所有成员的访问权限均为公用的",
+          "answer_evidence": "6-10．A A D D B"
+        }
+      },
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q05",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "5",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "5",
+          "stem_evidence": "下列有关C++类的说法中，不正确的是（ ）。\nA．类是一种用户自定义的数据类型\nB．只有类中的成员函数或类的友元函数才能存取类中的私有成员\nC．在类中，如果不做特别说明，所有成员的访问权限均为私有的\nD．在类中，如果不做特别说明，所有成员的访问权限均为公用的",
+          "answer_evidence": "1-5．D A C A D"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q09",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "已知X类，则当程序执行到语句：X array[3];时，调用了（ ）次构造函数。",
+    "code": "",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "9",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "9",
+      "stem_evidence": "已知X类，则当程序执行到语句：X array[3];时，调用了（ ）次构造函数。\nA. 0 B. 1 C. 2 D. 3",
+      "answer_evidence": "6-10．A A D D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q09",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "9",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "9",
+          "stem_evidence": "已知X类，则当程序执行到语句：X array[3];时，调用了（ ）次构造函数。\nA. 0 B. 1 C. 2 D. 3",
+          "answer_evidence": "6-10．A A D D B"
+        }
+      },
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q06",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "6",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "6",
+          "stem_evidence": "已知X类，则当程序执行到语句X array[3];时，调用了（ ）次构造函数。\nA．0 B．1 C．2 D．3",
+          "answer_evidence": "6-10．D B C D C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q10",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下面说法中，正确的是（ ）",
+    "code": "",
+    "options": [
+      "A. 一个类只能定义一个构造函数，但可以定义多个析构函数",
+      "B. 一个类只能定义一个析构函数，但可以定义多个构造函数",
+      "C. 构造函数与析构函数同名，只要名字前加了一个求反符号（~）",
+      "D. 构造函数可以指定返回类型，而析构函数不能指定任何返回类型，即使是void类型也不可以"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "10",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "10",
+      "stem_evidence": "下面说法中，正确的是（ ）\nA. 一个类只能定义一个构造函数，但可以定义多个析构函数\nB. 一个类只能定义一个析构函数，但可以定义多个构造函数\nC. 构造函数与析构函数同名，只要名字前加了一个求反符号（~）\nD. 构造函数可以指定返回类型，而析构函数不能指定任何返回类型，即使是void类型也不可以",
+      "answer_evidence": "6-10．A A D D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q10",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "10",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "10",
+          "stem_evidence": "下面说法中，正确的是（ ）\nA. 一个类只能定义一个构造函数，但可以定义多个析构函数\nB. 一个类只能定义一个析构函数，但可以定义多个构造函数\nC. 构造函数与析构函数同名，只要名字前加了一个求反符号（~）\nD. 构造函数可以指定返回类型，而析构函数不能指定任何返回类型，即使是void类型也不可以",
+          "answer_evidence": "6-10．A A D D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q11",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "已知：print( )函数是一个类的常成员函数，它无返回值，下列表示中，（ ）是正确的。",
+    "code": "",
+    "options": [
+      "A. void print( ) const;",
+      "B. const void print( );",
+      "C. void const print( );",
+      "D. void print(const);"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "11",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "11",
+      "stem_evidence": "已知：print( )函数是一个类的常成员函数，它无返回值，下列表示中，（ ）是正确的。\n A. void print( ) const; B. const void print( );\n C. void const print( ); D. void print(const);",
+      "answer_evidence": "11-15．A B B B C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q11",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "11",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "11",
+          "stem_evidence": "已知：print( )函数是一个类的常成员函数，它无返回值，下列表示中，（ ）是正确的。\n A. void print( ) const; B. const void print( );\n C. void const print( ); D. void print(const);",
+          "answer_evidence": "11-15．A B B B C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q12",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下面描述中，表达错误的是（ ）",
+    "code": "",
+    "options": [
+      "A. 公用继承时基类中的public成员在派生类中仍是public的",
+      "B. 公用继承时基类中的private成员在派生类中仍是private的",
+      "C. 公用继承时基类中的protected成员在派生类中仍是protected的",
+      "D. 私有继承时基类中的public成员在派生类中是private的"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "12",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "12",
+      "stem_evidence": "下面描述中，表达错误的是（ ） \nA. 公用继承时基类中的public成员在派生类中仍是public的\nB. 公用继承时基类中的private成员在派生类中仍是private的\nC. 公用继承时基类中的protected成员在派生类中仍是protected的\nD. 私有继承时基类中的public成员在派生类中是private的",
+      "answer_evidence": "11-15．A B B B C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q12",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "12",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "12",
+          "stem_evidence": "下面描述中，表达错误的是（ ） \nA. 公用继承时基类中的public成员在派生类中仍是public的\nB. 公用继承时基类中的private成员在派生类中仍是private的\nC. 公用继承时基类中的protected成员在派生类中仍是protected的\nD. 私有继承时基类中的public成员在派生类中是private的",
+          "answer_evidence": "11-15．A B B B C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q13",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "设置虚基类的目的是（ 　）。",
+    "code": "",
+    "options": [
+      "A. 简化程序",
+      "B. 消除二义性",
+      "C. 提高运行效率",
+      "D. 减少目标代码"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "13",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "13",
+      "stem_evidence": "设置虚基类的目的是（ 　）。\nA. 简化程序 B. 消除二义性 C. 提高运行效率 D. 减少目标代码",
+      "answer_evidence": "11-15．A B B B C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q13",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "13",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "13",
+          "stem_evidence": "设置虚基类的目的是（ 　）。\nA. 简化程序 B. 消除二义性 C. 提高运行效率 D. 减少目标代码",
+          "answer_evidence": "11-15．A B B B C"
+        }
+      },
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q13",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "13",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "13",
+          "stem_evidence": "设置虚基类的目的是（ ）。\nA．简化程序 B．消除二义性 C．提高运行效率 D．减少目标代码",
+          "answer_evidence": "11-15．D C B D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q14",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下面（ ）的叙述不符合赋值兼容规则。",
+    "code": "",
+    "options": [
+      "A. 派生类的对象可以赋值给基类的对象",
+      "B. 基类的对象可以赋值给派生类的对象",
+      "C. 派生类的对象可以初始化基类的对象",
+      "D. 派生类的对象的地址可以赋值给指向基类的指针"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "14",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "14",
+      "stem_evidence": "下面（ ）的叙述不符合赋值兼容规则。\nA. 派生类的对象可以赋值给基类的对象\nB. 基类的对象可以赋值给派生类的对象\nC. 派生类的对象可以初始化基类的对象\nD. 派生类的对象的地址可以赋值给指向基类的指针",
+      "answer_evidence": "11-15．A B B B C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q14",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "14",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "14",
+          "stem_evidence": "下面（ ）的叙述不符合赋值兼容规则。\nA. 派生类的对象可以赋值给基类的对象\nB. 基类的对象可以赋值给派生类的对象\nC. 派生类的对象可以初始化基类的对象\nD. 派生类的对象的地址可以赋值给指向基类的指针",
+          "answer_evidence": "11-15．A B B B C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q15",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "关于虚函数的描述中，（ ）是正确的。",
+    "code": "",
+    "options": [
+      "A. 虚函数是一个static类型的成员函数",
+      "B. 虚函数是一个非成员函数",
+      "C. 基类中说明了虚函数后，派生类中与其对应的函数可不必说明为虚函数",
+      "D. 派生类的虚函数与基类的虚函数具有不同的参数个数和类型"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "15",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "15",
+      "stem_evidence": "关于虚函数的描述中，（ ）是正确的。\n A. 虚函数是一个static类型的成员函数\n B. 虚函数是一个非成员函数\n C. 基类中说明了虚函数后，派生类中与其对应的函数可不必说明为虚函数\n D. 派生类的虚函数与基类的虚函数具有不同的参数个数和类型",
+      "answer_evidence": "11-15．A B B B C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q15",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "15",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "15",
+          "stem_evidence": "关于虚函数的描述中，（ ）是正确的。\n A. 虚函数是一个static类型的成员函数\n B. 虚函数是一个非成员函数\n C. 基类中说明了虚函数后，派生类中与其对应的函数可不必说明为虚函数\n D. 派生类的虚函数与基类的虚函数具有不同的参数个数和类型",
+          "answer_evidence": "11-15．A B B B C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q16",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下面关于友元的描述中，错误的是（ ）。",
+    "code": "",
+    "options": [
+      "A. 友元函数可以访问该类的私有数据成员",
+      "B. 一个类的友元类中的成员函数都是这个类的友元函数",
+      "C. 友元可以提高程序的运行效率",
+      "D. 类与类之间的友元关系可以继承"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "16",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "16",
+      "stem_evidence": "下面关于友元的描述中，错误的是（ ）。\nA. 友元函数可以访问该类的私有数据成员\nB. 一个类的友元类中的成员函数都是这个类的友元函数\nC. 友元可以提高程序的运行效率\nD. 类与类之间的友元关系可以继承",
+      "answer_evidence": "16-20．D C B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q16",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "16",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "16",
+          "stem_evidence": "下面关于友元的描述中，错误的是（ ）。\nA. 友元函数可以访问该类的私有数据成员\nB. 一个类的友元类中的成员函数都是这个类的友元函数\nC. 友元可以提高程序的运行效率\nD. 类与类之间的友元关系可以继承",
+          "answer_evidence": "16-20．D C B C C"
+        }
+      },
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q17",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "17",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "17",
+          "stem_evidence": "下面关于友元的描述中，错误的是（ ）。\nA．友元函数可以访问该类的私有数据成员\nB．一个类的友元类中的成员函数都是这个类的友元函数\nC．友元可以提高程序的运行效率\nD．类与类之间的友元关系可以继承",
+          "answer_evidence": "16-20．A D C C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q17",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列关于静态数据成员的说法，不正确的是（ ）。",
+    "code": "",
+    "options": [
+      "A. 类中定义的公用静态数据成员，可以通过类的对象来访问",
+      "B. 类中定义的所有静态数据成员，都必须在类外初始化",
+      "C. 静态数据成员不是所有对象所共用的",
+      "D. 普通的成员函数可以直接访问类中的静态数据成员"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "17",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "17",
+      "stem_evidence": "下列关于静态数据成员的说法，不正确的是（ ）。\nA. 类中定义的公用静态数据成员，可以通过类的对象来访问\nB. 类中定义的所有静态数据成员，都必须在类外初始化\nC. 静态数据成员不是所有对象所共用的\nD. 普通的成员函数可以直接访问类中的静态数据成员",
+      "answer_evidence": "16-20．D C B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q17",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "17",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "17",
+          "stem_evidence": "下列关于静态数据成员的说法，不正确的是（ ）。\nA. 类中定义的公用静态数据成员，可以通过类的对象来访问\nB. 类中定义的所有静态数据成员，都必须在类外初始化\nC. 静态数据成员不是所有对象所共用的\nD. 普通的成员函数可以直接访问类中的静态数据成员",
+          "answer_evidence": "16-20．D C B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q18",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "如果表达式++i*k中的“++”和“*”都是重载的友元运算符，若采用运算符函数调用格式，则表达式还可以表示为（ ）。",
+    "code": "",
+    "options": [
+      "A. operator*(i.operator++(),k)",
+      "B. operator*(operator++(i),k)",
+      "C. i.operator++().operator*(k)",
+      "D. k.operator*(operator++(i))"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "18",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "18",
+      "stem_evidence": "如果表达式++i*k中的“++”和“*”都是重载的友元运算符，若采用运算符函数调用格式，则表达式还可以表示为（ ）。\nA. operator*(i.operator++(),k) B. operator*(operator++(i),k)\nC. i.operator++().operator*(k) D. k.operator*(operator++(i))",
+      "answer_evidence": "16-20．D C B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q18",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "18",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "18",
+          "stem_evidence": "如果表达式++i*k中的“++”和“*”都是重载的友元运算符，若采用运算符函数调用格式，则表达式还可以表示为（ ）。\nA. operator*(i.operator++(),k) B. operator*(operator++(i),k)\nC. i.operator++().operator*(k) D. k.operator*(operator++(i))",
+          "answer_evidence": "16-20．D C B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q19",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下面对模板的声明，正确的是（ ）。",
+    "code": "",
+    "options": [
+      "A. template<T>",
+      "B. template<class T1, T2>",
+      "C. template<class T1, class T2>",
+      "D. template<class T1; class T2>"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "19",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "19",
+      "stem_evidence": "下面对模板的声明，正确的是（ ）。\nA. template<T> B. template<class T1, T2>\nC. template<class T1, class T2> D. template<class T1; class T2>",
+      "answer_evidence": "16-20．D C B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q19",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "19",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "19",
+          "stem_evidence": "下面对模板的声明，正确的是（ ）。\nA. template<T> B. template<class T1, T2>\nC. template<class T1, class T2> D. template<class T1; class T2>",
+          "answer_evidence": "16-20．D C B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q20",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列的各类函数中，（ ）不是类的成员函数",
+    "code": "",
+    "options": [
+      "A. 构造函数",
+      "B. 析构函数",
+      "C. 友元函数",
+      "D. 复制构造函数"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+      "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+      "section": "一、选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "20",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、选择题（每小题2分，共40分）",
+      "question_number": "20",
+      "stem_evidence": "下列的各类函数中，（ ）不是类的成员函数\nA. 构造函数 B. 析构函数 C. 友元函数 D. 复制构造函数",
+      "answer_evidence": "16-20．D C B C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_A_C_A_S01_Q20",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案(A).doc",
+          "sha256": "e59b21261b7f72f5153b55aea3006051a8163dffa6fa5e7f19448f50bd2503a8",
+          "section": "一、选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "20",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、选择题（每小题2分，共40分）",
+          "question_number": "20",
+          "stem_evidence": "下列的各类函数中，（ ）不是类的成员函数\nA. 构造函数 B. 析构函数 C. 友元函数 D. 复制构造函数",
+          "answer_evidence": "16-20．D C B C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q02",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "已知：int m=10; 下列表示引用的方法中，（ ）是正确的。",
+    "code": "",
+    "options": [
+      "A．int &x=m;",
+      "B．int &y=10;",
+      "C．int &z;",
+      "D．float &t=&m;"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "2",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "2",
+      "stem_evidence": "已知：int m=10; 下列表示引用的方法中，（ ）是正确的。\nA．int &x=m; B．int &y=10; C．int &z; D．float &t=&m;",
+      "answer_evidence": "1-5．D A C A D"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q02",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "2",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "2",
+          "stem_evidence": "已知：int m=10; 下列表示引用的方法中，（ ）是正确的。\nA．int &x=m; B．int &y=10; C．int &z; D．float &t=&m;",
+          "answer_evidence": "1-5．D A C A D"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q04",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "系统在调用重载函数时往往根据一些条件确定哪个重载函数被调用，在下列选项中，不能作为依据的是（ ）。",
+    "code": "",
+    "options": [
+      "A．函数的返回值类型",
+      "B．参数的类型",
+      "C．函数名称",
+      "D．参数个数"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "4",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "4",
+      "stem_evidence": "系统在调用重载函数时往往根据一些条件确定哪个重载函数被调用，在下列选项中，不能作为依据的是（ ）。\nA．函数的返回值类型 B．参数的类型 C．函数名称 D．参数个数",
+      "answer_evidence": "1-5．D A C A D"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q04",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "4",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "4",
+          "stem_evidence": "系统在调用重载函数时往往根据一些条件确定哪个重载函数被调用，在下列选项中，不能作为依据的是（ ）。\nA．函数的返回值类型 B．参数的类型 C．函数名称 D．参数个数",
+          "answer_evidence": "1-5．D A C A D"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q07",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "有关析构函数的说法，不正确的是（ ）。",
+    "code": "",
+    "options": [
+      "A．析构函数有且仅有一个",
+      "B．析构函数和构造函数一样可以有形参",
+      "C．析构函数的功能是在系统释放对象之前作一些内存清理工作",
+      "D．析构函数无任何函数类型"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "7",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "7",
+      "stem_evidence": "有关析构函数的说法，不正确的是（ ）。\nA．析构函数有且仅有一个\nB．析构函数和构造函数一样可以有形参\nC．析构函数的功能是在系统释放对象之前作一些内存清理工作\nD．析构函数无任何函数类型",
+      "answer_evidence": "6-10．D B C D C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q07",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "7",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "7",
+          "stem_evidence": "有关析构函数的说法，不正确的是（ ）。\nA．析构函数有且仅有一个\nB．析构函数和构造函数一样可以有形参\nC．析构函数的功能是在系统释放对象之前作一些内存清理工作\nD．析构函数无任何函数类型",
+          "answer_evidence": "6-10．D B C D C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q08",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "类定义的内容允许被其对象无限制地存取的是（ ）。",
+    "code": "",
+    "options": [
+      "A．private 部分",
+      "B． protected 部分",
+      "C．public 部分",
+      "D．以上都不对"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "8",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "8",
+      "stem_evidence": "类定义的内容允许被其对象无限制地存取的是（ ）。\nA．private 部分 B． protected 部分 C．public 部分 D．以上都不对",
+      "answer_evidence": "6-10．D B C D C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q08",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "8",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "8",
+          "stem_evidence": "类定义的内容允许被其对象无限制地存取的是（ ）。\nA．private 部分 B． protected 部分 C．public 部分 D．以上都不对",
+          "answer_evidence": "6-10．D B C D C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q09",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "关于常数据成员的说法，不正确的是（ ）。",
+    "code": "",
+    "options": [
+      "A．常数据成员的定义形式与一般常变量的定义形式相同，只不过常数据成员的定义必须出现在类体中",
+      "B．常数据成员必须进行初始化，并且不能被更新",
+      "C．常数据成员通过构造函数的成员初始化列表进行初始化",
+      "D．常数据成员可以在定义时直接初始化"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "9",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "9",
+      "stem_evidence": "关于常数据成员的说法，不正确的是（ ）。\nA．常数据成员的定义形式与一般常变量的定义形式相同，只不过常数据成员的定义必须出现在类体中\nB．常数据成员必须进行初始化，并且不能被更新\nC．常数据成员通过构造函数的成员初始化列表进行初始化\nD．常数据成员可以在定义时直接初始化",
+      "answer_evidence": "6-10．D B C D C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q09",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "9",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "9",
+          "stem_evidence": "关于常数据成员的说法，不正确的是（ ）。\nA．常数据成员的定义形式与一般常变量的定义形式相同，只不过常数据成员的定义必须出现在类体中\nB．常数据成员必须进行初始化，并且不能被更新\nC．常数据成员通过构造函数的成员初始化列表进行初始化\nD．常数据成员可以在定义时直接初始化",
+          "answer_evidence": "6-10．D B C D C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q10",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "运用运算符delete删除一个动态对象时（ ）。",
+    "code": "",
+    "options": [
+      "A．系统首先为该动态对象调用构造函数，再释放其占用的内存",
+      "B．系统首先释放该动态对象占用的内存，再为其调用构造函数",
+      "C．系统首先为该动态对象调用析构函数，再释放其占用的内存",
+      "D．系统首先释放动态对象占用的内存，再为其调用析构函数"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "10",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "10",
+      "stem_evidence": "运用运算符delete删除一个动态对象时（ ）。\nA．系统首先为该动态对象调用构造函数，再释放其占用的内存\nB．系统首先释放该动态对象占用的内存，再为其调用构造函数\nC．系统首先为该动态对象调用析构函数，再释放其占用的内存\nD．系统首先释放动态对象占用的内存，再为其调用析构函数",
+      "answer_evidence": "6-10．D B C D C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q10",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "10",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "10",
+          "stem_evidence": "运用运算符delete删除一个动态对象时（ ）。\nA．系统首先为该动态对象调用构造函数，再释放其占用的内存\nB．系统首先释放该动态对象占用的内存，再为其调用构造函数\nC．系统首先为该动态对象调用析构函数，再释放其占用的内存\nD．系统首先释放动态对象占用的内存，再为其调用析构函数",
+          "answer_evidence": "6-10．D B C D C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q11",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "可以在类外用p.a的形式访问派生类对象p的基类成员a，其中a是（ ）。",
+    "code": "",
+    "options": [
+      "A．私有继承的公用成员",
+      "B．公用继承的私有成员",
+      "C．公用继承的保护成员",
+      "D．公用继承的公用成员"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "11",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "11",
+      "stem_evidence": "可以在类外用p.a的形式访问派生类对象p的基类成员a，其中a是（ ）。\nA．私有继承的公用成员 B．公用继承的私有成员\nC．公用继承的保护成员 D．公用继承的公用成员",
+      "answer_evidence": "11-15．D C B D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q11",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "11",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "11",
+          "stem_evidence": "可以在类外用p.a的形式访问派生类对象p的基类成员a，其中a是（ ）。\nA．私有继承的公用成员 B．公用继承的私有成员\nC．公用继承的保护成员 D．公用继承的公用成员",
+          "answer_evidence": "11-15．D C B D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q12",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "在公用继承方式下，有关派生类对象和基类对象的关系，不正确的叙述是（　 ）。",
+    "code": "",
+    "options": [
+      "A．派生类的对象可以赋给基类的对象",
+      "B．派生类的对象可以初始化基类的引用",
+      "C．派生类的对象可以直接访问基类中的成员",
+      "D．派生类的对象的地址可以赋给指向基类的指针"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "12",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "12",
+      "stem_evidence": "在公用继承方式下，有关派生类对象和基类对象的关系，不正确的叙述是（　 ）。\nA．派生类的对象可以赋给基类的对象\nB．派生类的对象可以初始化基类的引用\nC．派生类的对象可以直接访问基类中的成员\nD．派生类的对象的地址可以赋给指向基类的指针",
+      "answer_evidence": "11-15．D C B D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q12",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "12",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "12",
+          "stem_evidence": "在公用继承方式下，有关派生类对象和基类对象的关系，不正确的叙述是（　 ）。\nA．派生类的对象可以赋给基类的对象\nB．派生类的对象可以初始化基类的引用\nC．派生类的对象可以直接访问基类中的成员\nD．派生类的对象的地址可以赋给指向基类的指针",
+          "answer_evidence": "11-15．D C B D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q14",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "在C++中，用于实现动态多态性的是（ ）。",
+    "code": "",
+    "options": [
+      "A．内联函数",
+      "B．重载函数",
+      "C．模板函数",
+      "D．虚函数"
+    ],
+    "answer": "D",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "14",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "14",
+      "stem_evidence": "在C++中，用于实现动态多态性的是（ ）。\nA．内联函数 B．重载函数 C．模板函数 D．虚函数",
+      "answer_evidence": "11-15．D C B D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q14",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "14",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "14",
+          "stem_evidence": "在C++中，用于实现动态多态性的是（ ）。\nA．内联函数 B．重载函数 C．模板函数 D．虚函数",
+          "answer_evidence": "11-15．D C B D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q15",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "不能说明为虚函数的是（ ）。",
+    "code": "",
+    "options": [
+      "A．析构函数",
+      "B．构造函数",
+      "C．类的成员函数",
+      "D．以上都不对"
+    ],
+    "answer": "B",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "15",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "15",
+      "stem_evidence": "不能说明为虚函数的是（ ）。\nA．析构函数 B．构造函数 C．类的成员函数 D．以上都不对",
+      "answer_evidence": "11-15．D C B D B"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q15",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "15",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "15",
+          "stem_evidence": "不能说明为虚函数的是（ ）。\nA．析构函数 B．构造函数 C．类的成员函数 D．以上都不对",
+          "answer_evidence": "11-15．D C B D B"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q16",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "如果一个类至少有一个纯虚函数，那么就称该类为（ ）。",
+    "code": "",
+    "options": [
+      "A．抽象类",
+      "B．派生类",
+      "C．纯基类",
+      "D．以上都不对"
+    ],
+    "answer": "A",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "16",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "16",
+      "stem_evidence": "如果一个类至少有一个纯虚函数，那么就称该类为（ ）。\nA．抽象类 B．派生类 C．纯基类 D．以上都不对",
+      "answer_evidence": "16-20．A D C C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q16",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "16",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "16",
+          "stem_evidence": "如果一个类至少有一个纯虚函数，那么就称该类为（ ）。\nA．抽象类 B．派生类 C．纯基类 D．以上都不对",
+          "answer_evidence": "16-20．A D C C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q18",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "下列运算符中，（ ）运算符在C++中不能被重载。",
+    "code": "",
+    "options": [
+      "A．&&",
+      "B．[]",
+      "C．::",
+      "D．new"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "18",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "18",
+      "stem_evidence": "下列运算符中，（ ）运算符在C++中不能被重载。\nA．&& B．[] C．:: D．new",
+      "answer_evidence": "16-20．A D C C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q18",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "18",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "18",
+          "stem_evidence": "下列运算符中，（ ）运算符在C++中不能被重载。\nA．&& B．[] C．:: D．new",
+          "answer_evidence": "16-20．A D C C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q19",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "模板的使用实际上是将类模板实例化成一个（ ）。",
+    "code": "",
+    "options": [
+      "A．函数",
+      "B．对象",
+      "C．类",
+      "D．抽象类"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "19",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "19",
+      "stem_evidence": "模板的使用实际上是将类模板实例化成一个（ ）。\nA．函数 B．对象 C．类 D．抽象类",
+      "answer_evidence": "16-20．A D C C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q19",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "19",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "19",
+          "stem_evidence": "模板的使用实际上是将类模板实例化成一个（ ）。\nA．函数 B．对象 C．类 D．抽象类",
+          "answer_evidence": "16-20．A D C C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q20",
+    "type": "multiple_choice",
+    "type_label": "选择题",
+    "language": "C++",
+    "stem": "假定MyClass为一个类，则该类的拷贝构造函数的声明语句为（ ）。",
+    "code": "",
+    "options": [
+      "A．MyClass(MyClass x)",
+      "B．MyClass&(MyClass x)",
+      "C．MyClass(MyClass &x)",
+      "D．MyClass(MyClass *x)"
+    ],
+    "answer": "C",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "standard_answer_key",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "选择题答案由同一来源文档中的题号范围答案键精确展开。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "legacy_doc_answer_key",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+      "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "section_index": 1,
+      "question_number": "20",
+      "parser": "legacy_doc_mcq_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_exam_numbered_answer_key",
+      "section": "一、单项选择题（每小题2分，共40分）",
+      "question_number": "20",
+      "stem_evidence": "假定MyClass为一个类，则该类的拷贝构造函数的声明语句为（ ）。\nA．MyClass(MyClass x) B．MyClass&(MyClass x)\nC．MyClass(MyClass &x) D．MyClass(MyClass *x)",
+      "answer_evidence": "16-20．A D C C C"
+    },
+    "course_id": "course_cpp",
+    "source_occurrences": [
+      {
+        "original_question_id": "XDU_CPP_COLLECTION_C_S01_Q20",
+        "source": {
+          "kind": "legacy_doc_answer_key",
+          "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\C++\\《面向对象程序设计C--》期末试卷及标准答案集总解析.doc",
+          "sha256": "3ee0e5e8f29258bbab4393c7808a69950d0401f45e16bc47d7ea3896baf7b887",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "section_index": 1,
+          "question_number": "20",
+          "parser": "legacy_doc_mcq_v1"
+        },
+        "answer_pairing": {
+          "status": "verified",
+          "method": "same_exam_numbered_answer_key",
+          "section": "一、单项选择题（每小题2分，共40分）",
+          "question_number": "20",
+          "stem_evidence": "假定MyClass为一个类，则该类的拷贝构造函数的声明语句为（ ）。\nA．MyClass(MyClass x) B．MyClass&(MyClass x)\nC．MyClass(MyClass &x) D．MyClass(MyClass *x)",
+          "answer_evidence": "16-20．A D C C C"
+        }
+      }
+    ]
+  },
+  {
+    "question_id": "XDU_JAVA_2019_SHORT_Q01",
+    "type": "short_answer",
+    "type_label": "简答题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "说明类、对象及对象引用的概念，并举例。",
+    "code": "",
+    "options": [],
+    "answer": "例如 Student s = new Student(); 中 Student 是类，new Student() 创建的是对象，s 是对象引用。",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解",
+      "示例说明"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 1,
+      "section": "简答题",
+      "question_number": "1",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 1,
+      "answer_page": 1,
+      "section": "简答题",
+      "question_number": "1",
+      "stem_evidence": "1. 说明类、对象及对象引用的概念，并举例。",
+      "answer_evidence": "Student s = new Student(); Student是类，new出来的是对象，s是对象引用"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_SHORT_Q02",
+    "type": "short_answer",
+    "type_label": "简答题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "简述 Java 的多态性，以及运行时多态的三个必要条件。",
+    "code": "",
+    "options": [],
+    "answer": "运行时多态的必要条件是：继承和方法重写、向上转型、动态绑定。",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 2,
+    "difficulty_label": "中等",
+    "abilities": [
+      "概念理解"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 1,
+      "section": "简答题",
+      "question_number": "2",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 1,
+      "answer_page": 1,
+      "section": "简答题",
+      "question_number": "2",
+      "stem_evidence": "2. 简述Java的多态性，以及运行时多态的三个必要条件。",
+      "answer_evidence": "必要条件：1.继承和方法重写 2.向上转型 3.动态绑定"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q01",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "写出下列 Java 程序的运行结果。",
+    "code": "public class Test1 {\n    public static void main(String[] args) {\n        int i, s = 0;\n        int a[] = {1,2,3,4,5,6,7,8,9};\n        for (i = 0; i < a.length; i++) {\n            if (a[i] % 2 == 0) {\n                s += a[i];\n                System.out.println(\"s = \" + s);\n            }\n        }\n    }\n}",
+    "options": [],
+    "answer": "s = 2\ns = 6\ns = 12\ns = 20",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 1,
+      "section": "读程题",
+      "question_number": "1",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 1,
+      "answer_page": 1,
+      "section": "读程题",
+      "question_number": "1",
+      "stem_evidence": "读程题1：Test1 对数组中的偶数进行累加，并在每次累加后输出 s。",
+      "answer_evidence": "s = 2; s = 6; s = 12; s = 20"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q02",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "写出下列 Java 程序的运行结果。",
+    "code": "public class Test2 {\n    static int x = 1;\n    int y;\n    Test2() { y++; }\n    static { x++; }\n    public static void main(String[] args) {\n        Test2 st = new Test2();\n        System.out.println(\"x = \" + x);\n        System.out.println(\"st.y = \" + st.y);\n        st = new Test2();\n        System.out.println(\"x = \" + x);\n        System.out.println(\"st.y = \" + st.y);\n    }\n}",
+    "options": [],
+    "answer": "x = 2\nst.y = 1\nx = 2\nst.y = 1",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 2,
+      "section": "读程题",
+      "question_number": "2",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 2,
+      "answer_page": 2,
+      "section": "读程题",
+      "question_number": "2",
+      "stem_evidence": "读程题2：Test2 包含静态变量 x、实例变量 y、构造方法和静态初始化块。",
+      "answer_evidence": "x = 2; st.y = 1; x = 2; st.y = 1"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q03",
+    "type": "code_reading",
+    "type_label": "代码阅读题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "写出下列 Java 程序的运行结果。",
+    "code": "class Animal {\n    String name;\n    Animal(String name) {\n        this.name = name;\n        System.out.println(\"Animal \" + name);\n    }\n    void eat() { System.out.println(\"Animal eat\"); }\n}\n\npublic class Cat extends Animal {\n    int id;\n    Cat(int id, String name) {\n        super(name);\n        this.id = id;\n        System.out.println(\"Cat \" + name);\n    }\n    void eat() {\n        System.out.println(\"Cat name: \" + name);\n        System.out.println(\"Cat \" + id + \" eat\");\n    }\n    public static void main(String[] args) {\n        Animal a = new Cat(1, \"mimi\");\n        a.eat();\n    }\n}",
+    "options": [],
+    "answer": "Animal mimi\nCat mimi\nCat name: mimi\nCat 1 eat",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码阅读",
+      "运行结果分析",
+      "多态分析"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 2,
+      "section": "读程题",
+      "question_number": "3",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 2,
+      "answer_page": 2,
+      "section": "读程题",
+      "question_number": "3",
+      "stem_evidence": "读程题3：Animal 引用指向 Cat 对象并调用被重写的 eat 方法。",
+      "answer_evidence": "Animal mimi; Cat mimi; Cat name: mimi; Cat 1 eat"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q01",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "在给定 Animal/Bird/Cat 程序中补全 Cat 构造方法：分别实现三个参数的传递赋值，完成对象初始化。",
+    "code": "abstract class Animal {\n    protected int id;\n    double weight;\n    public Animal(int id, double weight) {\n        this.id = id;\n        this.weight = weight;\n    }\n    abstract public void eat();\n}\n\nclass Bird extends Animal implements Flyable {\n    public Bird(int id, double weight) { super(id, weight); }\n    public void eat() { weight += 1; }\n    public void fly() { System.out.println(\"Bird \" + id + \" flys\"); }\n}\n\nclass Cat extends Animal implements Runner {\n    String name;\n    public Cat(int id, String name, double weight) {\n        /* 填充1 */\n    }\n    /* 填充2 */\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "super(id, weight);\nthis.name = name;",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 4,
+      "section": "编程题1",
+      "question_number": "填充1",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 4,
+      "answer_page": 4,
+      "section": "编程题1",
+      "question_number": "填充1",
+      "stem_evidence": "填充1：分别实现三个参数的传递赋值，完成对象初始化（2分）",
+      "answer_evidence": "super(id, weight); this.name = name;"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q02",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "在给定 Animal/Bird/Cat 程序中实现 Cat 的喂养方法，每次喂养使体重增加 20。",
+    "code": "abstract class Animal {\n    protected int id;\n    double weight;\n    public Animal(int id, double weight) {\n        this.id = id;\n        this.weight = weight;\n    }\n    abstract public void eat();\n}\n\nclass Bird extends Animal implements Flyable {\n    public Bird(int id, double weight) { super(id, weight); }\n    public void eat() { weight += 1; }\n    public void fly() { System.out.println(\"Bird \" + id + \" flys\"); }\n}\n\nclass Cat extends Animal implements Runner {\n    String name;\n    public Cat(int id, String name, double weight) {\n        /* 填充1 */\n    }\n    /* 填充2 */\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "public void eat() { weight += 20; }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 5,
+      "section": "编程题1",
+      "question_number": "填充2",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 5,
+      "answer_page": 5,
+      "section": "编程题1",
+      "question_number": "填充2",
+      "stem_evidence": "填充2：实现喂养方法（返回值、参数和函数体），每次喂养体重增加20（2分）",
+      "answer_evidence": "public void eat() { weight += 20; }"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q03",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "在给定 Animal/Bird/Cat 程序中实现 Runner 接口方法，输出猫的 id、name 及必要描述。",
+    "code": "abstract class Animal {\n    protected int id;\n    double weight;\n    public Animal(int id, double weight) {\n        this.id = id;\n        this.weight = weight;\n    }\n    abstract public void eat();\n}\n\nclass Bird extends Animal implements Flyable {\n    public Bird(int id, double weight) { super(id, weight); }\n    public void eat() { weight += 1; }\n    public void fly() { System.out.println(\"Bird \" + id + \" flys\"); }\n}\n\nclass Cat extends Animal implements Runner {\n    String name;\n    public Cat(int id, String name, double weight) {\n        /* 填充1 */\n    }\n    /* 填充2 */\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "public void run() { System.out.println(\"Cat \" + id + \" \" + name + \" is running...\"); }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 5,
+      "section": "编程题1",
+      "question_number": "填充3",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 5,
+      "answer_page": 5,
+      "section": "编程题1",
+      "question_number": "填充3",
+      "stem_evidence": "填充3：实现接口方法，该方法中需输出猫的id、name及其他必要描述信息（3分）",
+      "answer_evidence": "public void run() { System.out.println(\"Cat \" + id + \" \" + name + \" is running...\"); }"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q04",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2019,
+    "stem": "补全 raiseAllPets(Animal[] animals)，遍历数组并喂养所有宠物。",
+    "code": "private static void raiseAllPets(Animal[] animals) {\n    /* 填充4 */\n}",
+    "options": [],
+    "answer": "for (Animal a : animals) { a.eat(); }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 5,
+      "section": "编程题1",
+      "question_number": "填充4",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 5,
+      "answer_page": 5,
+      "section": "编程题1",
+      "question_number": "填充4",
+      "stem_evidence": "填充4：喂养所有的宠物（4分）",
+      "answer_evidence": "for (Animal a : animals) { a.eat(); }"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q01",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2018,
+    "stem": "在 Pet 类中实现 getInfo，按指定格式返回宠物名称和体重信息。",
+    "code": "abstract class Pet {\n    private String name;\n    double weight;\n    public Pet(String name, double weight) {\n        this.name = name;\n        this.weight = weight;\n    }\n    public abstract void raise();\n    /* 填充1 */\n}\n\nclass Dog extends Pet {\n    public Dog(String name, double weight) { super(name, weight); }\n    /* 填充2 */\n}\n\nclass Cat extends Pet {\n    public Cat(String name, double weight) { super(name, weight); }\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "public String getInfo() { return \"name = \" + this.name + \", weight = \" + this.weight; }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 10,
+      "section": "编程题1",
+      "question_number": "填充1",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 10,
+      "answer_page": 10,
+      "section": "编程题1",
+      "question_number": "填充1",
+      "stem_evidence": "填充1：输出宠物类的名称和重量信息，并以一定的格式分隔开（2分）",
+      "answer_evidence": "public String getInfo() { return \"name = \" + this.name + \", weight = \" + this.weight; }"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q02",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2018,
+    "stem": "在 Dog 类中重写 raise 方法，使每次调用后小狗体重增加 0.2。",
+    "code": "abstract class Pet {\n    private String name;\n    double weight;\n    public Pet(String name, double weight) {\n        this.name = name;\n        this.weight = weight;\n    }\n    public abstract void raise();\n    /* 填充1 */\n}\n\nclass Dog extends Pet {\n    public Dog(String name, double weight) { super(name, weight); }\n    /* 填充2 */\n}\n\nclass Cat extends Pet {\n    public Cat(String name, double weight) { super(name, weight); }\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "public void raise() { weight = weight + 0.2; }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 10,
+      "section": "编程题1",
+      "question_number": "填充2",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 10,
+      "answer_page": 10,
+      "section": "编程题1",
+      "question_number": "填充2",
+      "stem_evidence": "填充2：填写下一行中等号右边部分，使每次调用该方法小狗体重增加0.2",
+      "answer_evidence": "weight = weight + 0.2;"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q03",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2018,
+    "stem": "在 Cat 类中创建 raise 方法，使小猫每次喂养体重增加 0.1。",
+    "code": "abstract class Pet {\n    private String name;\n    double weight;\n    public Pet(String name, double weight) {\n        this.name = name;\n        this.weight = weight;\n    }\n    public abstract void raise();\n    /* 填充1 */\n}\n\nclass Dog extends Pet {\n    public Dog(String name, double weight) { super(name, weight); }\n    /* 填充2 */\n}\n\nclass Cat extends Pet {\n    public Cat(String name, double weight) { super(name, weight); }\n    /* 填充3 */\n}",
+    "options": [],
+    "answer": "public void raise() { weight += 0.1; }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 11,
+      "section": "编程题1",
+      "question_number": "填充3",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 11,
+      "answer_page": 11,
+      "section": "编程题1",
+      "question_number": "填充3",
+      "stem_evidence": "填充3：创建相应方法，并使小猫每次喂养体重增加0.1",
+      "answer_evidence": "public void raise() { weight += 0.1; }"
+    }
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q04",
+    "type": "code_fill",
+    "type_label": "编程填空题",
+    "language": "Java",
+    "course_id": "course_java",
+    "year": 2018,
+    "stem": "补全 raiseAllPets(List<Pet> p)：为列表中的每个宠物喂养一次，并输出名称和体重。",
+    "code": "public static void raiseAllPets(List<Pet> p) {\n    /* 填充4 */\n}",
+    "options": [],
+    "answer": "for (Pet pet : p) { pet.raise(); System.out.println(pet.getInfo()); }",
+    "analysis": "",
+    "answer_source": "source_provided",
+    "answer_kind": "inline_standard_answer",
+    "answer_status": "source_verified_complete",
+    "answer_confidence": 1.0,
+    "answer_completeness": {
+      "status": "complete",
+      "confidence": 1.0,
+      "reason": "题干与答案在同一原始 PDF 的同一题目区域中直接对应，并经页面可视复核。"
+    },
+    "formal_import_eligible": true,
+    "difficulty": 3,
+    "difficulty_label": "较难",
+    "abilities": [
+      "代码补全",
+      "程序设计"
+    ],
+    "gold_knowledge_points": [],
+    "source": {
+      "kind": "inline_answer_pdf",
+      "file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "page": 11,
+      "section": "编程题1",
+      "question_number": "填充4",
+      "parser": "manual_visual_review_v1"
+    },
+    "answer_pairing": {
+      "status": "verified",
+      "method": "same_pdf_question_region_visual_review",
+      "source_file": "C:\\Users\\23189\\Desktop\\西电历年考试题整理\\西电历年考试题整理\\Java\\JAVA真题.pdf",
+      "source_sha256": "9636dc60779e01ad15fc7cfc5125d12f73ae3ce3c0ee0626a09149d5906ef932",
+      "question_page": 11,
+      "answer_page": 11,
+      "section": "编程题1",
+      "question_number": "填充4",
+      "stem_evidence": "填充4：为列表p中的每个宠物喂养一次，并输出宠物的名称和体重",
+      "answer_evidence": "for (Pet pet : p) { pet.raise(); System.out.println(pet.getInfo()); }"
+    }
+  }
+]

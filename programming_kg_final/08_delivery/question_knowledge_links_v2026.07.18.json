@@ -1,0 +1,3168 @@
+[
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q03",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 1,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D1_1",
+        "knowledge_name": "字符串",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：String"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D1_1",
+        "knowledge_name": "字符串",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "cin>> 读取字符串时以空白字符为分隔符，输入 'Microsoft Visual Studio 6.0!' 中的第一个单词 'Microsoft' 被读取，遇到空格停止，因此 str 结果为 'Microsoft'。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q03"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q04",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：函数调用",
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_char",
+        "knowledge_name": "char",
+        "knowledge_type": "SyntaxElement",
+        "description": "表示字符类型的基本数据类型关键字",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：char"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_int",
+        "knowledge_name": "int",
+        "knowledge_type": "SyntaxElement",
+        "description": "有符号整数类型关键字，用于声明整型变量",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：int"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_5",
+        "knowledge_name": "缺省参数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：defaulparam"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_5",
+        "knowledge_name": "缺省参数",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "函数原型中int b=7, char z='*'为缺省参数，选项C的调用testDefaulParam(5,'#');违反了缺省参数从右向左连续匹配的规则，导致不合法",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q04",
+      "XDU_CPP_COLLECTION_C_S01_Q03"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q05",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_int",
+        "knowledge_name": "int",
+        "knowledge_type": "SyntaxElement",
+        "description": "有符号整数类型关键字，用于声明整型变量",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：int"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_float",
+        "knowledge_name": "float",
+        "knowledge_type": "SyntaxElement",
+        "description": "浮点型基本数据类型，用于表示单精度浮点数",
+        "score": 3.5,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：float"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_double",
+        "knowledge_name": "double",
+        "knowledge_type": "SyntaxElement",
+        "description": "双精度浮点型基本数据类型，用于表示更高精度的浮点数",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：double"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确要求选择正确重载的函数，正确选项C通过改变参数类型实现了重载，核心考点是函数重载的规则（参数列表不同，返回类型无关）",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q05"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q06",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 6,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：引用",
+          "题干命中编程特征：引用"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_int",
+        "knowledge_name": "int",
+        "knowledge_type": "SyntaxElement",
+        "description": "有符号整数类型关键字，用于声明整型变量",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：int"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_2",
+        "knowledge_name": "列表",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：列表"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_char",
+        "knowledge_name": "char",
+        "knowledge_type": "SyntaxElement",
+        "description": "表示字符类型的基本数据类型关键字",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：char"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_float",
+        "knowledge_name": "float",
+        "knowledge_type": "SyntaxElement",
+        "description": "浮点型基本数据类型，用于表示单精度浮点数",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：float"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确考察引用的正确声明方式，正确选项A为int &x=a;，涉及引用的定义与初始化规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q06"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q07",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_7",
+        "knowledge_name": "内联函数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：内联函数",
+          "来源验证的正确选项命中编程特征：内联函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：重载函数",
+          "题目选项低权重命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：重载"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_7",
+        "knowledge_name": "内联函数",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干要求加快执行速度，内联函数通过减少函数调用开销实现加速，正确选项为内联函数。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q07"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q08",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：友元",
+          "题目选项低权重命中知识点名称/别名：友元函数",
+          "题目选项低权重命中编程特征：友元"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A2_5",
+        "knowledge_name": "类型系统",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：私有成员"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干考查类中成员默认访问权限，选项C（私有）与D（公用）直接对比，核心知识点是访问控制规则",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q08",
+      "XDU_CPP_COLLECTION_C_S01_Q05"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q09",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_1",
+        "knowledge_name": "数组",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：array"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：构造函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A1_1",
+        "knowledge_name": "源代码与程序执行",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：程序执行"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确询问调用了多少次构造函数，核心是构造函数的调用次数。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_1",
+        "knowledge_name": "数组",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.9,
+        "evidence": "语句定义了一个包含3个元素的数组，导致构造函数被调用3次。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q09",
+      "XDU_CPP_COLLECTION_C_S01_Q06"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q10",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：构造函数",
+          "来源验证的正确选项命中知识点名称/别名：析构函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：类",
+          "来源验证的正确选项命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.7,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A2_5",
+        "knowledge_name": "类型系统",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类型"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "正确选项B直接陈述构造函数可以定义多个，析构函数只能定义一个，这是构造方法与析构方法的核心特性。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q10"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q11",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_9",
+        "knowledge_name": "常成员",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 11.0,
+        "evidence": [
+          "题干命中知识点名称/别名：常成员",
+          "题干命中知识点名称/别名：常成员函数",
+          "题干命中编程特征：常成员函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_int",
+        "knowledge_name": "int",
+        "knowledge_type": "SyntaxElement",
+        "description": "有符号整数类型关键字，用于声明整型变量",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：int"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_2",
+        "knowledge_name": "列表",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：列表"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_2",
+        "knowledge_name": "参数与返回值",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：返回值"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_const",
+        "knowledge_name": "const",
+        "knowledge_type": "SyntaxElement",
+        "description": "用于声明常量或不可变数据成员的C++语法关键字。",
+        "score": 3.5,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：const"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_9",
+        "knowledge_name": "常成员",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确指出print()是类的常成员函数，正确选项A是常成员函数的正确声明形式",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q11"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q12",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 6,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题目选项低权重命中编程特征：private",
+          "题目选项低权重命中编程特征：protected",
+          "题目选项低权重命中编程特征：public",
+          "题目选项低权重命中编程特征：公用继承",
+          "题目选项低权重命中编程特征：私有继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_1",
+        "knowledge_name": "封装",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.6,
+        "evidence": [
+          "题目选项低权重命中编程特征：private",
+          "题目选项低权重命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.6,
+        "evidence": [
+          "题目选项低权重命中编程特征：公用继承",
+          "题目选项低权重命中编程特征：私有继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_private",
+        "knowledge_name": "private",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_protected",
+        "knowledge_name": "protected",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：protected"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxElement",
+        "description": "访问控制修饰符，表示公共访问级别，允许类外部的代码访问成员。",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：public"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目考查公用继承和私有继承下基类成员在派生类中的可访问性变化，核心是访问控制规则",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q12"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q13",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 1,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_6",
+        "knowledge_name": "虚继承",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：虚基类",
+          "题干命中编程特征：虚基类"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_6",
+        "knowledge_name": "虚继承",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干直接询问设置虚基类的目的，虚继承的核心作用正是消除多重继承中的二义性，与正确选项B一致。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q13",
+      "XDU_CPP_COLLECTION_C_S01_Q13"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q14",
+    "method": "manual_semantic_review_v1",
+    "llm_error": "",
+    "candidate_count": 2,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：对象",
+          "题目选项低权重命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_1",
+        "knowledge_name": "指针",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：指针",
+          "题目选项低权重命中编程特征：指针"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "赋值兼容规则由基类与派生类的方向关系决定。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q14"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q15",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 6,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：虚函数",
+          "题干命中编程特征：虚函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_static",
+        "knowledge_name": "static",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：static"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A2_5",
+        "knowledge_name": "类型系统",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类型"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_2",
+        "knowledge_name": "参数与返回值",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：参数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干直接考查虚函数的特性，而虚函数是实现动态绑定的核心机制；正确选项C描述的是派生类中虚函数自动继承基类虚函数的特性，属于动态绑定的重要规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q15"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q16",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 3,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 9.4,
+        "evidence": [
+          "题干命中知识点名称/别名：友元",
+          "题目选项低权重命中知识点名称/别名：友元函数",
+          "题目选项低权重命中知识点名称/别名：友元类",
+          "题干命中编程特征：友元"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干直接提及友元，选项围绕友元函数、友元类及友元关系继承展开，核心考察友元特性",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q16",
+      "XDU_CPP_COLLECTION_C_S01_Q17"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q17",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_5",
+        "knowledge_name": "静态成员",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：静态数据成员",
+          "题干命中编程特征：静态数据成员"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：对象",
+          "题目选项低权重命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_5",
+        "knowledge_name": "静态成员",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干直接考查静态数据成员的概念与特性，正确选项C描述静态数据成员不是所有对象所共用的，正是对静态成员共享性的错误理解，因此静态成员是本题的核心知识点。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q17"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q18",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 6,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：函数调用",
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：友元",
+          "题干命中编程特征：友元"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A3_1",
+        "knowledge_name": "运算符与表达式",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：表达式"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确要求将重载运算符表达式转换为运算符函数调用格式，核心是理解重载运算符的友元函数调用约定",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "题干指明“++”和“*”都是重载的友元运算符，决定了调用形式中操作数为参数而非this指针",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q18"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q19",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 3,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_3",
+        "knowledge_name": "泛型与模板",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 9.7,
+        "evidence": [
+          "题干命中知识点名称/别名：模板",
+          "来源验证的正确选项命中编程特征：template",
+          "题干命中编程特征：模板"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：class",
+          "来源验证的正确选项命中编程特征：class"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_template",
+        "knowledge_name": "template",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 3.5,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：template"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_3",
+        "knowledge_name": "泛型与模板",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干直接询问模板的正确声明，正确选项C展示了多个模板参数的正确语法，核心考点是模板声明规则，属于泛型与模板知识点。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q19"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_A_C_A_S01_Q20",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 9.7,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：友元",
+          "来源验证的正确选项命中知识点名称/别名：友元函数",
+          "来源验证的正确选项命中编程特征：友元"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.4,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：构造函数",
+          "题目选项低权重命中知识点名称/别名：析构函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_10",
+        "knowledge_name": "拷贝构造函数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：复制构造函数",
+          "题目选项低权重命中编程特征：复制构造"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_3",
+        "knowledge_name": "友元",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "正确选项C.友元函数不是类的成员函数，友元是本题的核心考点",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_A_C_A_S01_Q20"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q02",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：引用",
+          "题干命中编程特征：引用"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_int",
+        "knowledge_name": "int",
+        "knowledge_type": "SyntaxElement",
+        "description": "有符号整数类型关键字，用于声明整型变量",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：int"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_2",
+        "knowledge_name": "列表",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：列表"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：方法"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_float",
+        "knowledge_name": "float",
+        "knowledge_type": "SyntaxElement",
+        "description": "浮点型基本数据类型，用于表示单精度浮点数",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：float"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确考查引用的声明和初始化规则，正确选项A展示了引用必须初始化为变量，错误选项B、C、D分别对应引用不能绑定常量、必须初始化、类型须匹配等规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q02"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q04",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：重载函数",
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_2",
+        "knowledge_name": "参数与返回值",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：返回值",
+          "题目选项低权重命中编程特征：参数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A2_5",
+        "knowledge_name": "类型系统",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类型"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干明确提及'重载函数'，且选项涉及重载函数调用的依据（参数类型、参数个数、函数名称、返回值类型），正确选项指出返回值类型不能作为依据，直接考察函数重载的判定规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q04"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q07",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 5.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：构造函数",
+          "题干命中知识点名称/别名：析构函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：对象",
+          "题目选项低权重命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A2_5",
+        "knowledge_name": "类型系统",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类型"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题目考查析构函数的特性（不能有参数、只能一个、无返回值等），正确选项B指出析构函数不能有形参，与构造函数不同，核心知识点是析构函数的定义与规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q07"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q08",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：对象",
+          "题干命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.3,
+        "evidence": [
+          "题目选项低权重命中编程特征：private",
+          "题目选项低权重命中编程特征：protected",
+          "来源验证的正确选项命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_public",
+        "knowledge_name": "public",
+        "knowledge_type": "SyntaxElement",
+        "description": "访问控制修饰符，表示公共访问级别，允许类外部的代码访问成员。",
+        "score": 3.5,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_1",
+        "knowledge_name": "封装",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.5,
+        "evidence": [
+          "题目选项低权重命中编程特征：private",
+          "来源验证的正确选项命中编程特征：public"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_private",
+        "knowledge_name": "private",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：private"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_protected",
+        "knowledge_name": "protected",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：protected"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目询问类定义中允许对象无限制存取的部分，正确答案为public部分，直接考察访问控制的概念。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q08"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q09",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_9",
+        "knowledge_name": "常成员",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：常数据成员",
+          "题干命中编程特征：常数据成员"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_D2_2",
+        "knowledge_name": "列表",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：列表"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：构造函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_9",
+        "knowledge_name": "常成员",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干直接提问“常数据成员”，选项围绕常数据成员定义、初始化、更新规则，核心考点是常数据成员的特性",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "常数据成员必须通过构造函数的成员初始化列表进行初始化，选项C和D涉及初始化方式，属于构造函数相关规则",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q09"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q10",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：对象",
+          "题干命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.7,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：构造函数",
+          "来源验证的正确选项命中知识点名称/别名：析构函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_8",
+        "knowledge_name": "对象的动态创建与销毁",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：delete"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.7,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_8",
+        "knowledge_name": "对象的动态创建与销毁",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确使用delete运算符删除动态对象，核心考察动态对象销毁的语义顺序",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.9,
+        "evidence": "正确选项指出先调用析构函数再释放内存，涉及析构函数的调用时机",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q10"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q11",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.8,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：公用继承",
+          "题目选项低权重命中编程特征：私有继承",
+          "来源验证的正确选项命中编程特征：公用成员",
+          "题目选项低权重命中编程特征：私有成员",
+          "题目选项低权重命中编程特征：保护成员"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：对象",
+          "题干命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.5,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：公用继承",
+          "题目选项低权重命中编程特征：私有继承"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目考查派生类对象在类外访问基类成员的可访问性，核心是继承中的访问权限规则，正确选项为公用继承的公用成员",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.8,
+        "evidence": "题目涉及派生类对象访问基类成员，需要理解继承关系中的父类与子类概念",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q11"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q12",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 5,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：对象",
+          "题干命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：公用继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：公用继承"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：引用",
+          "题目选项低权重命中编程特征：引用"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_A4_1",
+        "knowledge_name": "指针",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：指针",
+          "题目选项低权重命中编程特征：指针"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E2_2",
+        "knowledge_name": "访问控制",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题干考查公用继承下派生类对象对基类成员的访问权限，选项C不正确的原因即在于派生类对象不能直接访问基类的私有成员，核心知识点为访问控制。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E3_1",
+        "knowledge_name": "父类与子类",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.85,
+        "evidence": "题目涉及公用继承下派生类与基类的关系，理解父类与子类的继承关系是分析选项的基础。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q12"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q14",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 9.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：虚函数",
+          "题干命中编程特征：动态多态性",
+          "来源验证的正确选项命中编程特征：虚函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.7,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_7",
+        "knowledge_name": "内联函数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：内联函数",
+          "题目选项低权重命中编程特征：内联函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：重载函数",
+          "题目选项低权重命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_3",
+        "knowledge_name": "泛型与模板",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：模板",
+          "题目选项低权重命中编程特征：模板"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：重载"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确询问实现动态多态性的机制，正确选项‘虚函数’是动态绑定的基础，且候选知识点‘动态绑定’的规则证据直接匹配题干和正确选项。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q14"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q15",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：虚函数",
+          "题干命中编程特征：虚函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.4,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：构造函数",
+          "题目选项低权重命中知识点名称/别名：析构函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：类",
+          "题目选项低权重命中编程特征：类"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目考查构造函数不能为虚函数，辨析析构函数与构造函数在虚函数声明上的区别，选项B正确对应此知识点",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q15"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q16",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 7,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_0",
+        "knowledge_name": "抽象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 8.9,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：抽象",
+          "来源验证的正确选项命中编程特征：抽象类",
+          "来源验证的正确选项命中编程特征：抽象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：虚函数",
+          "题干命中编程特征：虚函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_1",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：抽象类",
+          "来源验证的正确选项命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_4",
+        "knowledge_name": "抽象方法与纯虚函数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：纯虚函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 2.7,
+        "evidence": [
+          "来源验证的正确选项命中编程特征：抽象类"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_1",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干：如果一个类至少有一个纯虚函数，那么就称该类为抽象类。正确选项为抽象类，考查抽象类的定义。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q16"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q18",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_4",
+        "knowledge_name": "函数重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_3",
+        "knowledge_name": "方法重载",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：重载"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_new",
+        "knowledge_name": "new",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 1.2,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：new"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E4_4",
+        "knowledge_name": "操作符重载",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 0.95,
+        "evidence": "题目考察C++中哪些运算符不能被重载，正确选项为::，属于操作符重载的限制规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q18"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q19",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 8,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_3",
+        "knowledge_name": "泛型与模板",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 7.0,
+        "evidence": [
+          "题干命中知识点名称/别名：模板",
+          "题干命中编程特征：模板"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.2,
+        "evidence": [
+          "来源验证的正确选项命中知识点名称/别名：类",
+          "来源验证的正确选项命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 6.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：对象",
+          "题干命中知识点名称/别名：实例",
+          "题目选项低权重命中编程特征：对象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_6",
+        "knowledge_name": "实例化",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：实例化"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_0",
+        "knowledge_name": "抽象",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.8,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：抽象",
+          "题目选项低权重命中编程特征：抽象类",
+          "题目选项低权重命中编程特征：抽象"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_1",
+        "knowledge_name": "抽象类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 2.0,
+        "evidence": [
+          "题目选项低权重命中知识点名称/别名：抽象类",
+          "题目选项低权重命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__SyntaxRule_abstract",
+        "knowledge_name": "abstract",
+        "knowledge_type": "SyntaxElement",
+        "description": "编程语言语法规则",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：抽象类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 0.8,
+        "evidence": [
+          "题目选项低权重命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E5_3",
+        "knowledge_name": "泛型与模板",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确提及‘模板的使用’，且题目核心考察类模板实例化的概念",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_6",
+        "knowledge_name": "实例化",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 1.0,
+        "evidence": "题干中出现‘实例化’，是模板使用的具体过程",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q19"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_CPP_COLLECTION_C_S01_Q20",
+    "method": "prior_mapping_v4_rebased_to_current_graph",
+    "llm_error": "",
+    "candidate_count": 4,
+    "candidates": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 14.0,
+        "evidence": [
+          "题干命中知识点名称/别名：类",
+          "题干命中知识点名称/别名：class",
+          "题干命中编程特征：class",
+          "题干命中编程特征：类"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_10",
+        "knowledge_name": "拷贝构造函数",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 11.0,
+        "evidence": [
+          "题干命中知识点名称/别名：拷贝构造函数",
+          "题干命中知识点名称/别名：拷贝构造",
+          "题干命中编程特征：拷贝构造"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 4.0,
+        "evidence": [
+          "题干命中知识点名称/别名：构造函数"
+        ]
+      },
+      {
+        "knowledge_node_id": "course_cpp__curriculum_C1_1",
+        "knowledge_name": "函数定义与调用",
+        "knowledge_type": "KnowledgePoint",
+        "description": "由课程材料直接证实的标准知识节点",
+        "score": 3.0,
+        "evidence": [
+          "题干命中编程特征：函数"
+        ]
+      }
+    ],
+    "links": [
+      {
+        "knowledge_node_id": "course_cpp__curriculum_E1_10",
+        "knowledge_name": "拷贝构造函数",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题干明确要求选择拷贝构造函数的正确声明语句，正确选项C使用引用参数，这是拷贝构造函数的核心语法规则。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      }
+    ],
+    "unresolved_gold_items": [],
+    "language_context": "C++",
+    "verified_answer_context_used": true,
+    "mapping_source": "xdu_cpp_verified_40/mapping_course_cpp_v4",
+    "original_mapping_ids": [
+      "XDU_CPP_COLLECTION_C_S01_Q20"
+    ],
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_SHORT_Q01",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_1",
+        "knowledge_name": "类",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目直接考查类的概念。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_2",
+        "knowledge_name": "对象",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题目同时要求说明对象。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_A4_2",
+        "knowledge_name": "引用",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题目同时要求说明对象引用。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_SHORT_Q02",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "运行时多态的核心机制是动态绑定。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题目答案明确包含方法重写。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_2",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "题目答案明确包含向上转型。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q01",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_D2_1",
+        "knowledge_name": "数组",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "程序遍历并读取数组元素。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_B2_1",
+        "knowledge_name": "for循环",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "使用 for 循环遍历数组。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_B1_2",
+        "knowledge_name": "if语句",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "使用 if 判断偶数。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q02",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 2,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_5",
+        "knowledge_name": "静态成员",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目核心是静态变量和静态初始化块只初始化一次。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_6",
+        "knowledge_name": "实例化",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "两次创建对象用于比较实例成员状态。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_READ_Q03",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "父类引用调用子类重写方法体现动态绑定。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "Cat 重写 Animal.eat。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_2",
+        "knowledge_name": "向上转型",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "Animal 引用指向 Cat 对象体现向上转型。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q01",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_4",
+        "knowledge_name": "构造方法与析构方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目要求补全子类构造方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "答案完成 name 属性赋值。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q02",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 2,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "Cat 实现父类抽象 eat 方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "方法修改对象 weight 属性。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q03",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E5_2",
+        "knowledge_name": "接口",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目明确要求实现 Runner 接口方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "实现接口方法属于方法实现/重写。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_A3_2",
+        "knowledge_name": "输入输出",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "方法通过 println 输出信息。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2019_FILL_Q04",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_B2_1",
+        "knowledge_name": "for循环",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "答案使用增强 for 循环遍历数组。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "对 Animal 引用调用 eat 会触发动态绑定。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_D2_1",
+        "knowledge_name": "数组",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "遍历对象数组。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q01",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目要求实现对象信息方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_C1_2",
+        "knowledge_name": "参数与返回值",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "方法构造并返回字符串结果。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_D1_1",
+        "knowledge_name": "字符串",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "返回值是格式化字符串。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q02",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 2,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "Dog 重写抽象 raise 方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "方法更新 weight 属性。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q03",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 2,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_E3_2",
+        "knowledge_name": "方法重写",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "Cat 重写抽象 raise 方法。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E1_3",
+        "knowledge_name": "属性与方法",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "方法更新 weight 属性。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  },
+  {
+    "question_id": "XDU_JAVA_2018_FILL_Q04",
+    "method": "manual_source_evidence_alignment_v1",
+    "candidate_count": 3,
+    "links": [
+      {
+        "knowledge_node_id": "course_java__curriculum_D2_2",
+        "knowledge_name": "列表",
+        "knowledge_type": "KnowledgePoint",
+        "role": "primary",
+        "confidence": 1.0,
+        "evidence": "题目遍历 List<Pet> 列表。",
+        "rank": 1,
+        "role_weight": 1.0,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_B2_1",
+        "knowledge_name": "for循环",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "答案使用增强 for 循环。",
+        "rank": 2,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      },
+      {
+        "knowledge_node_id": "course_java__curriculum_E4_1",
+        "knowledge_name": "动态绑定",
+        "knowledge_type": "KnowledgePoint",
+        "role": "secondary",
+        "confidence": 0.95,
+        "evidence": "对 Pet 引用调用 raise 体现动态绑定。",
+        "rank": 3,
+        "role_weight": 0.6,
+        "mapping_status": "approved"
+      }
+    ],
+    "language_context": "Java",
+    "verified_answer_context_used": true,
+    "release_status": "approved"
+  }
+]

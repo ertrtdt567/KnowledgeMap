@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "release_version": "v2026.07.18",
+  "counts": {
+    "json": {
+      "nodes": 2612,
+      "relationships": 6059
+    },
+    "rdf": {
+      "nodes": 2612,
+      "relationships": 6059
+    },
+    "neo4j_import": {
+      "nodes": 2612,
+      "relationships": 6059
+    }
+  },
+  "rdf_parser_validation": {
+    "parser": "xml.etree.ElementTree",
+    "rdf_xml_well_formed": true,
+    "entity_resource_count": 2612,
+    "relationship_resource_count": 6059,
+    "expected_node_count": 2612,
+    "expected_edge_count": 6059,
+    "passed": true,
+    "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+    "ttl": "standard_graph.ttl",
+    "rdf": "standard_graph.rdf",
+    "namespace": "https://github.com/ertrtdt567/KnowledgeMap/kg/v2026.07.18/"
+  },
+  "neo4j_import_source": "work\\oop_kg_demo\\output\\programming_kg\\release\\v2026.07.18\\standard_graph_v2026.07.18.json",
+  "frontend_graph": {
+    "file": "frontend\\standard_graph.json",
+    "sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8"
+  },
+  "frontend_question_assets": {
+    "passed": true,
+    "question_file": {
+      "file": "frontend\\combined_official_questions.json",
+      "sha256": "87A8C086BF2AC70F6962965E0E364F0CD3A7938989F00CDCF08A09C016B9B761"
+    },
+    "mapping_file": {
+      "file": "frontend\\question_knowledge_links.json",
+      "sha256": "9BC9B7DBECDAB21FF88DA414F08C49BE0278D2DE244C106196EA07D8DAC4F734"
+    },
+    "question_count": 45,
+    "mapping_record_count": 45,
+    "mapping_link_count": 73
+  }
+}

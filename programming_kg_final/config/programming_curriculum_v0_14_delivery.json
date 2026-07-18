@@ -1,0 +1,6566 @@
+{
+  "schema_version": "programming_curriculum_v0_14_delivery",
+  "title": "编程领域标准课程知识目录 v0.14（正式交付版）",
+  "relationship_direction": "子节点 -[:属于]-> 父节点",
+  "nodes": [
+    {
+      "id": "ROOT",
+      "name": "编程领域",
+      "type": "KnowledgeDomain",
+      "parent_id": "",
+      "aliases": [
+        "程序设计"
+      ],
+      "keywords": [
+        "编程",
+        "程序设计"
+      ]
+    },
+    {
+      "id": "A",
+      "name": "程序设计基础",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [],
+      "source_titles": [
+        "Java语言基础",
+        "Python基础知识"
+      ],
+      "keywords": [
+        "标识符",
+        "关键字",
+        "数据类型",
+        "变量",
+        "表达式",
+        "输入输出"
+      ]
+    },
+    {
+      "id": "A1",
+      "name": "程序执行与语言基础",
+      "type": "KnowledgeUnit",
+      "parent_id": "A",
+      "aliases": [
+        "编程语言基础"
+      ],
+      "keywords": [
+        "源代码",
+        "编译",
+        "解释执行",
+        "程序入口",
+        "main",
+        "字节码"
+      ]
+    },
+    {
+      "id": "A1_1",
+      "name": "源代码与程序执行",
+      "type": "KnowledgePoint",
+      "parent_id": "A1",
+      "aliases": [
+        "编译与解释",
+        "程序执行"
+      ],
+      "alignment_terms": [
+        "源代码",
+        "编译",
+        "解释",
+        "程序执行过程"
+      ],
+      "keywords": [
+        "源代码",
+        "编译",
+        "解释执行",
+        "字节码"
+      ]
+    },
+    {
+      "id": "A1_2",
+      "name": "程序入口",
+      "type": "KnowledgePoint",
+      "parent_id": "A1",
+      "aliases": [
+        "main函数",
+        "main 方法"
+      ],
+      "keywords": [
+        "main",
+        "程序入口"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "数据与变量",
+      "type": "KnowledgeUnit",
+      "parent_id": "A",
+      "aliases": [
+        "变量和数据类型"
+      ],
+      "keywords": [
+        "数据类型",
+        "变量",
+        "常量",
+        "赋值",
+        "标识符"
+      ]
+    },
+    {
+      "id": "A2_1",
+      "name": "基本数据类型",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "基本类型"
+      ],
+      "alignment_terms": [
+        "数据类型"
+      ],
+      "keywords": [
+        "数据类型",
+        "int",
+        "double",
+        "float",
+        "char",
+        "bool"
+      ]
+    },
+    {
+      "id": "A2_2",
+      "name": "变量与常量",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "变量和常量"
+      ],
+      "alignment_terms": [
+        "变量",
+        "常量"
+      ],
+      "keywords": [
+        "变量",
+        "常量",
+        "赋值",
+        "const",
+        "final"
+      ]
+    },
+    {
+      "id": "A2_3",
+      "name": "标识符与关键字",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "标识符",
+        "关键字"
+      ],
+      "keywords": [
+        "标识符",
+        "关键字"
+      ]
+    },
+    {
+      "id": "A2_4",
+      "name": "类型转换",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "类型转换",
+        "隐式转换",
+        "显式转换"
+      ],
+      "keywords": [
+        "类型转换",
+        "隐式转换",
+        "强制转换",
+        "cast"
+      ]
+    },
+    {
+      "id": "A2_5",
+      "name": "类型系统",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "类型",
+        "动态类型",
+        "静态类型"
+      ],
+      "keywords": [
+        "类型",
+        "动态类型",
+        "静态类型",
+        "type"
+      ]
+    },
+    {
+      "id": "A2_6",
+      "name": "二进制与位",
+      "type": "KnowledgePoint",
+      "parent_id": "A2",
+      "aliases": [
+        "bit",
+        "比特"
+      ],
+      "alignment_terms": [
+        "位"
+      ],
+      "evidence_terms": [
+        "Bit（比特、位）"
+      ],
+      "keywords": [
+        "bit",
+        "比特",
+        "位",
+        "二进制"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "表达式与输入输出",
+      "type": "KnowledgeUnit",
+      "parent_id": "A",
+      "aliases": [
+        "运算与输入输出"
+      ],
+      "keywords": [
+        "运算符",
+        "表达式",
+        "输入",
+        "输出",
+        "cout",
+        "print"
+      ]
+    },
+    {
+      "id": "A3_1",
+      "name": "运算符与表达式",
+      "type": "KnowledgePoint",
+      "parent_id": "A3",
+      "aliases": [
+        "表达式",
+        "操作符"
+      ],
+      "alignment_terms": [
+        "运算符"
+      ],
+      "keywords": [
+        "运算符",
+        "表达式",
+        "operator"
+      ]
+    },
+    {
+      "id": "A3_2",
+      "name": "输入输出",
+      "type": "KnowledgePoint",
+      "parent_id": "A3",
+      "aliases": [
+        "标准输入输出",
+        "格式化输出"
+      ],
+      "keywords": [
+        "输入",
+        "输出",
+        "cout",
+        "cin",
+        "print",
+        "format"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "指针与引用",
+      "type": "KnowledgeUnit",
+      "parent_id": "A",
+      "aliases": [
+        "引用与指针"
+      ],
+      "keywords": [
+        "指针",
+        "引用",
+        "int*",
+        "int&",
+        "地址"
+      ]
+    },
+    {
+      "id": "A4_1",
+      "name": "指针",
+      "type": "KnowledgePoint",
+      "parent_id": "A4",
+      "aliases": [
+        "指针变量"
+      ],
+      "keywords": [
+        "指针",
+        "*",
+        "地址"
+      ]
+    },
+    {
+      "id": "A4_2",
+      "name": "引用",
+      "type": "KnowledgePoint",
+      "parent_id": "A4",
+      "aliases": [
+        "引用参数"
+      ],
+      "keywords": [
+        "引用",
+        "int&",
+        "引用传递"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "程序控制",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "选择与循环",
+        "流程控制"
+      ],
+      "keywords": [
+        "条件表达式",
+        "if",
+        "switch",
+        "循环",
+        "for",
+        "while"
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "选择结构",
+      "type": "KnowledgeUnit",
+      "parent_id": "B",
+      "aliases": [
+        "条件分支"
+      ],
+      "keywords": [
+        "if",
+        "else",
+        "switch",
+        "条件表达式",
+        "match"
+      ]
+    },
+    {
+      "id": "B1_1",
+      "name": "条件表达式",
+      "type": "KnowledgePoint",
+      "parent_id": "B1",
+      "aliases": [
+        "布尔表达式"
+      ],
+      "keywords": [
+        "条件表达式",
+        "布尔",
+        "比较运算符"
+      ]
+    },
+    {
+      "id": "B1_2",
+      "name": "if语句",
+      "type": "KnowledgePoint",
+      "parent_id": "B1",
+      "aliases": [
+        "if else",
+        "if/else"
+      ],
+      "evidence_terms": [
+        "if语句",
+        "if-else语句"
+      ],
+      "keywords": [
+        "if",
+        "else"
+      ]
+    },
+    {
+      "id": "B1_3",
+      "name": "switch语句",
+      "type": "KnowledgePoint",
+      "parent_id": "B1",
+      "aliases": [
+        "match语句"
+      ],
+      "evidence_terms": [
+        "switch语句",
+        "switch-case"
+      ],
+      "keywords": [
+        "switch",
+        "case",
+        "match"
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "循环结构",
+      "type": "KnowledgeUnit",
+      "parent_id": "B",
+      "aliases": [
+        "循环"
+      ],
+      "keywords": [
+        "for",
+        "while",
+        "break",
+        "continue",
+        "循环"
+      ]
+    },
+    {
+      "id": "B2_1",
+      "name": "for循环",
+      "type": "KnowledgePoint",
+      "parent_id": "B2",
+      "aliases": [
+        "for 循环"
+      ],
+      "keywords": [
+        "for",
+        "for-in"
+      ]
+    },
+    {
+      "id": "B2_2",
+      "name": "while循环",
+      "type": "KnowledgePoint",
+      "parent_id": "B2",
+      "aliases": [
+        "while 循环"
+      ],
+      "keywords": [
+        "while"
+      ]
+    },
+    {
+      "id": "B2_3",
+      "name": "循环控制",
+      "type": "KnowledgePoint",
+      "parent_id": "B2",
+      "aliases": [
+        "break和continue"
+      ],
+      "evidence_terms": [
+        "break和continue",
+        "循环控制语句"
+      ],
+      "keywords": [
+        "break",
+        "continue"
+      ]
+    },
+    {
+      "id": "B2_4",
+      "name": "嵌套循环",
+      "type": "KnowledgePoint",
+      "parent_id": "B2",
+      "aliases": [],
+      "keywords": [
+        "嵌套循环"
+      ]
+    },
+    {
+      "id": "B3",
+      "name": "递归",
+      "type": "KnowledgeUnit",
+      "parent_id": "B",
+      "aliases": [],
+      "keywords": [
+        "递归",
+        "recursive"
+      ]
+    },
+    {
+      "id": "B3_1",
+      "name": "递归调用",
+      "type": "KnowledgePoint",
+      "parent_id": "B3",
+      "aliases": [
+        "递归函数"
+      ],
+      "keywords": [
+        "递归",
+        "recursive"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "函数与模块化",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [],
+      "keywords": [
+        "函数",
+        "参数",
+        "返回值",
+        "作用域",
+        "模块",
+        "包"
+      ]
+    },
+    {
+      "id": "C1",
+      "name": "函数基础",
+      "type": "KnowledgeUnit",
+      "parent_id": "C",
+      "aliases": [],
+      "keywords": [
+        "函数定义",
+        "函数调用",
+        "return",
+        "参数"
+      ]
+    },
+    {
+      "id": "C1_1",
+      "name": "函数定义与调用",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "函数调用"
+      ],
+      "alignment_terms": [
+        "函数",
+        "函数声明",
+        "函数定义"
+      ],
+      "keywords": [
+        "函数",
+        "函数声明",
+        "函数定义",
+        "函数调用",
+        "return"
+      ]
+    },
+    {
+      "id": "C1_2",
+      "name": "参数与返回值",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "形参实参",
+        "返回值"
+      ],
+      "alignment_terms": [
+        "参数",
+        "参数传递",
+        "pass by value",
+        "pass by reference",
+        "形参是实参的副本",
+        "参数传递方式",
+        "值传递",
+        "引用传递"
+      ],
+      "keywords": [
+        "形参",
+        "实参",
+        "参数",
+        "参数传递",
+        "返回值"
+      ],
+      "evidence_terms": [
+        "参数传递方式",
+        "值传递",
+        "引用传递"
+      ]
+    },
+    {
+      "id": "C1_3",
+      "name": "作用域与生命周期",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "变量作用域",
+        "生命周期"
+      ],
+      "alignment_terms": [
+        "作用域",
+        "生存期"
+      ],
+      "keywords": [
+        "作用域",
+        "局部变量",
+        "全局变量",
+        "生命周期",
+        "生存期",
+        "LEGB"
+      ]
+    },
+    {
+      "id": "C1_4",
+      "name": "函数重载",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "重载函数"
+      ],
+      "alignment_terms": [
+        "重载"
+      ],
+      "evidence_terms": [
+        "函数重载",
+        "重载函数"
+      ],
+      "alignment_context_keywords": [
+        "函数",
+        "print",
+        "调用解析"
+      ],
+      "keywords": [
+        "函数重载",
+        "重载函数",
+        "overload resolution"
+      ]
+    },
+    {
+      "id": "C1_5",
+      "name": "缺省参数",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "默认参数"
+      ],
+      "evidence_terms": [
+        "缺省参数",
+        "默认参数"
+      ],
+      "keywords": [
+        "缺省参数",
+        "默认参数",
+        "default argument"
+      ]
+    },
+    {
+      "id": "C1_6",
+      "name": "Lambda表达式",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "lambda表达式"
+      ],
+      "alignment_terms": [
+        "匿名函数"
+      ],
+      "evidence_terms": [
+        "lambda表达式"
+      ],
+      "keywords": [
+        "lambda",
+        "lambda表达式",
+        "匿名函数"
+      ]
+    },
+    {
+      "id": "C1_7",
+      "name": "内联函数",
+      "type": "KnowledgePoint",
+      "parent_id": "C1",
+      "aliases": [
+        "inline函数"
+      ],
+      "evidence_terms": [
+        "inline"
+      ],
+      "keywords": [
+        "内联函数",
+        "inline函数",
+        "inline"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "模块与包",
+      "type": "KnowledgeUnit",
+      "parent_id": "C",
+      "aliases": [
+        "模块化"
+      ],
+      "alignment_terms": [
+        "模块"
+      ],
+      "keywords": [
+        "模块",
+        "包",
+        "命名空间",
+        "import"
+      ]
+    },
+    {
+      "id": "C2_1",
+      "name": "模块导入",
+      "type": "KnowledgePoint",
+      "parent_id": "C2",
+      "aliases": [
+        "import语句"
+      ],
+      "evidence_terms": [
+        "模块导入",
+        "导入模块",
+        "import语句"
+      ],
+      "keywords": [
+        "import",
+        "模块导入"
+      ]
+    },
+    {
+      "id": "C2_2",
+      "name": "命名空间",
+      "type": "KnowledgePoint",
+      "parent_id": "C2",
+      "aliases": [
+        "namespace"
+      ],
+      "keywords": [
+        "命名空间",
+        "namespace",
+        "using"
+      ]
+    },
+    {
+      "id": "C2_3",
+      "name": "限定名称",
+      "type": "KnowledgePoint",
+      "parent_id": "C2",
+      "aliases": [
+        "Qualified Names"
+      ],
+      "alignment_terms": [
+        "限定名"
+      ],
+      "evidence_terms": [
+        "Qualified Names",
+        "限定名称"
+      ],
+      "keywords": [
+        "限定名称",
+        "qualified name",
+        "命名空间"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "数据组织与算法基础",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "数据组织",
+        "数据组织与算法"
+      ],
+      "keywords": [
+        "数据结构",
+        "列表",
+        "数组",
+        "集合",
+        "映射",
+        "栈",
+        "队列",
+        "链表",
+        "迭代"
+      ]
+    },
+    {
+      "id": "D0",
+      "name": "数据结构基本概念",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [],
+      "keywords": [
+        "数据结构",
+        "逻辑结构",
+        "物理结构",
+        "存储结构"
+      ]
+    },
+    {
+      "id": "D0_1",
+      "name": "数据元素、数据项与数据对象",
+      "type": "KnowledgePoint",
+      "parent_id": "D0",
+      "aliases": [],
+      "alignment_terms": [
+        "数据元素",
+        "数据项",
+        "数据对象"
+      ],
+      "keywords": [
+        "数据元素",
+        "数据项",
+        "数据对象"
+      ]
+    },
+    {
+      "id": "D0_2",
+      "name": "数据的逻辑结构与物理结构",
+      "type": "KnowledgePoint",
+      "parent_id": "D0",
+      "aliases": [],
+      "alignment_terms": [
+        "逻辑结构",
+        "物理结构",
+        "存储结构"
+      ],
+      "keywords": [
+        "逻辑结构",
+        "物理结构",
+        "存储结构",
+        "顺序存储",
+        "链式存储"
+      ]
+    },
+    {
+      "id": "D1",
+      "name": "字符串与序列",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "Unicode与字符串"
+      ],
+      "keywords": [
+        "字符串",
+        "Unicode",
+        "ASCII",
+        "字符"
+      ]
+    },
+    {
+      "id": "D1_1",
+      "name": "字符串",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [
+        "String",
+        "串",
+        "串(String)"
+      ],
+      "keywords": [
+        "字符串",
+        "String",
+        "char",
+        "串"
+      ]
+    },
+    {
+      "id": "D1_2",
+      "name": "字符编码",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "evidence_terms": [
+        "字符编码",
+        "Unicode编码",
+        "ASCII编码"
+      ],
+      "keywords": [
+        "Unicode",
+        "ASCII",
+        "字符编码"
+      ]
+    },
+    {
+      "id": "D1_3",
+      "name": "ASCII",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "ASCII"
+      ],
+      "evidence_terms": [
+        "ASCII编码",
+        "ASCII字符集"
+      ],
+      "keywords": [
+        "ASCII",
+        "字符集"
+      ]
+    },
+    {
+      "id": "D1_4",
+      "name": "Unicode",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "Unicode"
+      ],
+      "evidence_terms": [
+        "Unicode编码",
+        "Unicode字符集"
+      ],
+      "keywords": [
+        "Unicode",
+        "字符编码"
+      ]
+    },
+    {
+      "id": "D1_5",
+      "name": "UTF-8",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "UTF-8"
+      ],
+      "evidence_terms": [
+        "UTF-8"
+      ],
+      "keywords": [
+        "UTF-8",
+        "Unicode"
+      ]
+    },
+    {
+      "id": "D1_6",
+      "name": "GB2312",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "GB2312"
+      ],
+      "evidence_terms": [
+        "GB2312"
+      ],
+      "keywords": [
+        "GB2312",
+        "中文编码"
+      ]
+    },
+    {
+      "id": "D1_7",
+      "name": "GBK",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "GBK"
+      ],
+      "evidence_terms": [
+        "GBK"
+      ],
+      "keywords": [
+        "GBK",
+        "中文编码"
+      ]
+    },
+    {
+      "id": "D1_8",
+      "name": "Latin-1（ISO-8859-1）",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [
+        "Latin-1",
+        "ISO-8859-1"
+      ],
+      "evidence_terms": [
+        "Latin-1",
+        "ISO-8859-1"
+      ],
+      "keywords": [
+        "Latin-1",
+        "ISO-8859"
+      ]
+    },
+    {
+      "id": "D1_9",
+      "name": "ISO-8859-2",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "ISO-8859-2"
+      ],
+      "evidence_terms": [
+        "ISO-8859-2"
+      ],
+      "keywords": [
+        "ISO-8859"
+      ]
+    },
+    {
+      "id": "D1_10",
+      "name": "扩展ASCII",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [
+        "EASCII",
+        "Extended ASCII"
+      ],
+      "evidence_terms": [
+        "EASCII"
+      ],
+      "keywords": [
+        "EASCII",
+        "扩展ASCII",
+        "Extended ASCII"
+      ]
+    },
+    {
+      "id": "D1_11",
+      "name": "串的存储与基本操作",
+      "type": "OperationRule",
+      "parent_id": "D1",
+      "aliases": [],
+      "alignment_terms": [
+        "主串",
+        "模式串",
+        "空串",
+        "空白串"
+      ],
+      "keywords": [
+        "串",
+        "主串",
+        "模式串",
+        "空串"
+      ]
+    },
+    {
+      "id": "D1_12",
+      "name": "串的模式匹配",
+      "type": "KnowledgePoint",
+      "parent_id": "D1",
+      "aliases": [
+        "字符串匹配"
+      ],
+      "alignment_terms": [
+        "模式匹配"
+      ],
+      "keywords": [
+        "串",
+        "模式匹配",
+        "字符串匹配"
+      ]
+    },
+    {
+      "id": "D1_13",
+      "name": "朴素模式匹配算法",
+      "type": "Algorithm",
+      "parent_id": "D1",
+      "aliases": [
+        "朴素的串匹配算法"
+      ],
+      "keywords": [
+        "朴素模式匹配",
+        "暴力匹配"
+      ]
+    },
+    {
+      "id": "D1_14",
+      "name": "KMP模式匹配算法",
+      "type": "Algorithm",
+      "parent_id": "D1",
+      "aliases": [
+        "KMP算法",
+        "KMP模式匹配"
+      ],
+      "keywords": [
+        "KMP",
+        "模式匹配",
+        "next数组"
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "线性与复合数据类型",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "复合数据类型"
+      ],
+      "keywords": [
+        "列表",
+        "数组",
+        "元组",
+        "集合",
+        "字典",
+        "映射"
+      ]
+    },
+    {
+      "id": "D2_1",
+      "name": "数组",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [
+        "array",
+        "Arrays"
+      ],
+      "keywords": [
+        "数组",
+        "array",
+        "Arrays"
+      ]
+    },
+    {
+      "id": "D2_2",
+      "name": "列表",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [
+        "list"
+      ],
+      "keywords": [
+        "列表",
+        "list"
+      ]
+    },
+    {
+      "id": "D2_3",
+      "name": "集合",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [
+        "set"
+      ],
+      "evidence_terms": [
+        "集合类型",
+        "Set接口"
+      ],
+      "keywords": [
+        "集合",
+        "set"
+      ]
+    },
+    {
+      "id": "D2_4",
+      "name": "映射与字典",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [
+        "字典",
+        "dictionary"
+      ],
+      "alignment_terms": [
+        "映射"
+      ],
+      "evidence_terms": [
+        "字典类型",
+        "Map接口",
+        "映射类型"
+      ],
+      "keywords": [
+        "映射",
+        "字典",
+        "map",
+        "dict"
+      ]
+    },
+    {
+      "id": "D2_5",
+      "name": "动态数组与向量",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [
+        "vector"
+      ],
+      "keywords": [
+        "vector",
+        "动态数组"
+      ]
+    },
+    {
+      "id": "D2_6",
+      "name": "特殊矩阵",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [],
+      "keywords": [
+        "特殊矩阵",
+        "对称矩阵",
+        "三角矩阵",
+        "对角矩阵"
+      ]
+    },
+    {
+      "id": "D2_7",
+      "name": "稀疏矩阵与三元组顺序表",
+      "type": "KnowledgePoint",
+      "parent_id": "D2",
+      "aliases": [],
+      "alignment_terms": [
+        "稀疏矩阵",
+        "三元组顺序表"
+      ],
+      "keywords": [
+        "稀疏矩阵",
+        "三元组",
+        "三元组顺序表"
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "线性数据结构",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "栈队列链表"
+      ],
+      "alignment_terms": [
+        "线性表",
+        "Linear List"
+      ],
+      "keywords": [
+        "栈",
+        "队列",
+        "链表",
+        "线性表"
+      ]
+    },
+    {
+      "id": "D3_1",
+      "name": "栈",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [
+        "stack"
+      ],
+      "keywords": [
+        "栈",
+        "stack"
+      ]
+    },
+    {
+      "id": "D3_2",
+      "name": "队列",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [
+        "queue"
+      ],
+      "keywords": [
+        "队列",
+        "queue"
+      ]
+    },
+    {
+      "id": "D3_3",
+      "name": "链表",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [
+        "linked list",
+        "线性链表"
+      ],
+      "keywords": [
+        "链表",
+        "linked list"
+      ]
+    },
+    {
+      "id": "D3_4",
+      "name": "顺序表",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [],
+      "keywords": [
+        "顺序表",
+        "顺序存储"
+      ]
+    },
+    {
+      "id": "D3_5",
+      "name": "单链表",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [],
+      "keywords": [
+        "单链表",
+        "单向链表"
+      ]
+    },
+    {
+      "id": "D3_6",
+      "name": "双向链表",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [
+        "双链表"
+      ],
+      "keywords": [
+        "双向链表",
+        "双链表"
+      ]
+    },
+    {
+      "id": "D3_7",
+      "name": "栈的基本操作",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [],
+      "alignment_terms": [
+        "入栈",
+        "出栈"
+      ],
+      "keywords": [
+        "栈",
+        "入栈",
+        "出栈"
+      ]
+    },
+    {
+      "id": "D3_8",
+      "name": "队列的基本操作",
+      "type": "KnowledgePoint",
+      "parent_id": "D3",
+      "aliases": [],
+      "alignment_terms": [
+        "入队",
+        "出队"
+      ],
+      "keywords": [
+        "队列",
+        "入队",
+        "出队"
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "迭代与算法基础",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "迭代"
+      ],
+      "keywords": [
+        "迭代",
+        "迭代器",
+        "查找",
+        "排序"
+      ]
+    },
+    {
+      "id": "D4_1",
+      "name": "迭代器",
+      "type": "KnowledgePoint",
+      "parent_id": "D4",
+      "aliases": [
+        "可迭代对象"
+      ],
+      "keywords": [
+        "迭代器",
+        "可迭代对象",
+        "iter",
+        "next"
+      ]
+    },
+    {
+      "id": "D4_2",
+      "name": "查找与排序",
+      "type": "KnowledgePoint",
+      "parent_id": "D4",
+      "aliases": [],
+      "keywords": [
+        "查找",
+        "排序"
+      ]
+    },
+    {
+      "id": "D4_3",
+      "name": "算法复杂度分析",
+      "type": "KnowledgePoint",
+      "parent_id": "D4",
+      "aliases": [
+        "复杂度分析"
+      ],
+      "alignment_terms": [
+        "时间复杂度",
+        "空间复杂度"
+      ],
+      "keywords": [
+        "算法复杂度",
+        "时间复杂度",
+        "空间复杂度",
+        "O(nlogn)"
+      ]
+    },
+    {
+      "id": "D5",
+      "name": "树与二叉树",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [],
+      "keywords": [
+        "树",
+        "二叉树",
+        "二叉排序树",
+        "堆"
+      ]
+    },
+    {
+      "id": "D5_1",
+      "name": "树的基本概念与术语",
+      "type": "KnowledgePoint",
+      "parent_id": "D5",
+      "aliases": [],
+      "keywords": [
+        "树",
+        "结点",
+        "根结点",
+        "叶子结点",
+        "度",
+        "层次"
+      ]
+    },
+    {
+      "id": "D5_0",
+      "name": "二叉树",
+      "type": "KnowledgeUnit",
+      "parent_id": "D5",
+      "aliases": [
+        "Binary Tree"
+      ],
+      "keywords": [
+        "二叉树",
+        "满二叉树",
+        "完全二叉树"
+      ]
+    },
+    {
+      "id": "D5_2",
+      "name": "二叉树的定义与性质",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "keywords": [
+        "二叉树",
+        "满二叉树",
+        "完全二叉树"
+      ]
+    },
+    {
+      "id": "D5_3",
+      "name": "二叉树的存储结构",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "keywords": [
+        "二叉树",
+        "顺序存储",
+        "链式存储"
+      ]
+    },
+    {
+      "id": "D5_4",
+      "name": "二叉树遍历",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "alignment_terms": [
+        "先序遍历",
+        "中序遍历",
+        "后序遍历",
+        "层次遍历"
+      ],
+      "keywords": [
+        "二叉树遍历",
+        "先序遍历",
+        "中序遍历",
+        "后序遍历",
+        "层次遍历"
+      ]
+    },
+    {
+      "id": "D5_5",
+      "name": "线索二叉树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "keywords": [
+        "线索二叉树",
+        "线索化"
+      ]
+    },
+    {
+      "id": "D5_6",
+      "name": "二叉排序树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [
+        "BST",
+        "二叉查找树",
+        "二叉搜索树"
+      ],
+      "keywords": [
+        "二叉排序树",
+        "BST",
+        "二叉查找树"
+      ]
+    },
+    {
+      "id": "D5_7",
+      "name": "平衡二叉树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [
+        "AVL树",
+        "平衡二叉排序树"
+      ],
+      "keywords": [
+        "平衡二叉树",
+        "AVL",
+        "平衡因子"
+      ],
+      "alignment_terms": [
+        "LL型平衡旋转",
+        "RR型平衡旋转",
+        "LR型平衡旋转",
+        "RL型平衡旋转"
+      ],
+      "evidence_terms": [
+        "LL型平衡旋转",
+        "RR型平衡旋转",
+        "LR型平衡旋转",
+        "RL型平衡旋转"
+      ]
+    },
+    {
+      "id": "D5_8",
+      "name": "堆与优先队列",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "alignment_terms": [
+        "堆",
+        "二叉堆",
+        "大顶堆",
+        "小顶堆",
+        "堆的定义",
+        "大顶堆(max heap)",
+        "小顶堆(min heap)"
+      ],
+      "keywords": [
+        "堆",
+        "二叉堆",
+        "优先队列",
+        "大顶堆",
+        "小顶堆"
+      ],
+      "evidence_terms": [
+        "堆的定义",
+        "大顶堆(max heap)",
+        "小顶堆(min heap)"
+      ]
+    },
+    {
+      "id": "D5_9",
+      "name": "赫夫曼树与赫夫曼编码",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_0",
+      "aliases": [],
+      "keywords": [
+        "赫夫曼树",
+        "赫夫曼编码",
+        "Huffman"
+      ],
+      "alignment_terms": [
+        "赫夫曼树的构造",
+        "赫夫曼编码",
+        "赫夫曼编码与译码"
+      ],
+      "evidence_terms": [
+        "赫夫曼树的构造",
+        "赫夫曼编码",
+        "赫夫曼编码与译码"
+      ]
+    },
+    {
+      "id": "D5_10",
+      "name": "并查集",
+      "type": "KnowledgePoint",
+      "parent_id": "D5",
+      "aliases": [
+        "Union-Find",
+        "不相交集合"
+      ],
+      "keywords": [
+        "并查集",
+        "Union-Find",
+        "路径压缩"
+      ],
+      "alignment_terms": [
+        "并查集的概念",
+        "并查集的实现以及优化",
+        "路径压缩"
+      ],
+      "evidence_terms": [
+        "并查集的概念",
+        "并查集的实现以及优化",
+        "路径压缩"
+      ]
+    },
+    {
+      "id": "D6",
+      "name": "图",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "Graph"
+      ],
+      "keywords": [
+        "图",
+        "顶点",
+        "边",
+        "邻接矩阵",
+        "邻接表"
+      ]
+    },
+    {
+      "id": "D6_1",
+      "name": "图的基本概念与存储",
+      "type": "KnowledgePoint",
+      "parent_id": "D6",
+      "aliases": [],
+      "alignment_terms": [
+        "邻接矩阵",
+        "邻接表"
+      ],
+      "keywords": [
+        "图",
+        "顶点",
+        "边",
+        "邻接矩阵",
+        "邻接表"
+      ]
+    },
+    {
+      "id": "D6_2",
+      "name": "图的遍历",
+      "type": "KnowledgePoint",
+      "parent_id": "D6",
+      "aliases": [],
+      "alignment_terms": [
+        "深度优先搜索",
+        "广度优先搜索",
+        "DFS",
+        "BFS"
+      ],
+      "keywords": [
+        "图遍历",
+        "深度优先",
+        "广度优先",
+        "DFS",
+        "BFS"
+      ]
+    },
+    {
+      "id": "D6_3",
+      "name": "最小生成树",
+      "type": "AlgorithmProblem",
+      "parent_id": "D6",
+      "aliases": [],
+      "alignment_terms": [
+        "Prim算法",
+        "Kruskal算法"
+      ],
+      "keywords": [
+        "最小生成树",
+        "Prim",
+        "Kruskal"
+      ]
+    },
+    {
+      "id": "D6_4",
+      "name": "最短路径",
+      "type": "AlgorithmProblem",
+      "parent_id": "D6",
+      "aliases": [],
+      "alignment_terms": [
+        "Floyd算法",
+        "Dijkstra算法"
+      ],
+      "keywords": [
+        "最短路径",
+        "Floyd",
+        "Dijkstra"
+      ]
+    },
+    {
+      "id": "D6_5",
+      "name": "拓扑排序与有向无环图（专题）",
+      "type": "KnowledgePoint",
+      "parent_id": "D6",
+      "aliases": [
+        "拓扑排序与有向无环图"
+      ],
+      "alignment_terms": [
+        "AOV网"
+      ],
+      "keywords": [
+        "拓扑排序",
+        "有向无环图",
+        "DAG",
+        "AOV网"
+      ]
+    },
+    {
+      "id": "D6_6",
+      "name": "关键路径与AOE网",
+      "type": "KnowledgePoint",
+      "parent_id": "D6",
+      "aliases": [],
+      "alignment_terms": [
+        "关键路径",
+        "AOE网"
+      ],
+      "keywords": [
+        "关键路径",
+        "AOE网",
+        "活动网络"
+      ]
+    },
+    {
+      "id": "D7",
+      "name": "查找",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "搜索"
+      ],
+      "keywords": [
+        "查找",
+        "搜索",
+        "查找表",
+        "哈希"
+      ]
+    },
+    {
+      "id": "D7_1",
+      "name": "查找表与平均查找长度（专题）",
+      "type": "KnowledgePoint",
+      "parent_id": "D7",
+      "aliases": [
+        "查找表与平均查找长度"
+      ],
+      "alignment_terms": [],
+      "keywords": [
+        "查找表",
+        "平均查找长度",
+        "ASL"
+      ]
+    },
+    {
+      "id": "D7_2",
+      "name": "顺序查找",
+      "type": "Algorithm",
+      "parent_id": "D7",
+      "aliases": [
+        "线性查找"
+      ],
+      "keywords": [
+        "顺序查找",
+        "线性查找"
+      ]
+    },
+    {
+      "id": "D7_3",
+      "name": "折半查找",
+      "type": "Algorithm",
+      "parent_id": "D7",
+      "aliases": [
+        "二分查找",
+        "折半搜索",
+        "二分搜索"
+      ],
+      "keywords": [
+        "折半查找",
+        "二分查找"
+      ]
+    },
+    {
+      "id": "D7_4",
+      "name": "分块查找",
+      "type": "Algorithm",
+      "parent_id": "D7",
+      "aliases": [
+        "索引顺序查找"
+      ],
+      "keywords": [
+        "分块查找",
+        "索引顺序查找"
+      ]
+    },
+    {
+      "id": "D7_5",
+      "name": "树表查找",
+      "type": "KnowledgePoint",
+      "parent_id": "D7",
+      "aliases": [],
+      "keywords": [
+        "树表查找",
+        "二叉排序树"
+      ]
+    },
+    {
+      "id": "D7_6",
+      "name": "散列查找",
+      "type": "Algorithm",
+      "parent_id": "D7_0",
+      "aliases": [
+        "哈希查找"
+      ],
+      "alignment_terms": [
+        "冲突处理",
+        "链地址法",
+        "开放定址法",
+        "线性探测",
+        "二次探测",
+        "再散列",
+        "散列查找性能"
+      ],
+      "keywords": [
+        "散列查找",
+        "哈希",
+        "哈希表",
+        "散列表"
+      ],
+      "evidence_terms": [
+        "链地址法",
+        "开放定址法",
+        "线性探测",
+        "二次探测",
+        "再散列",
+        "散列查找性能"
+      ]
+    },
+    {
+      "id": "D8",
+      "name": "排序",
+      "type": "KnowledgeUnit",
+      "parent_id": "D",
+      "aliases": [
+        "排序算法"
+      ],
+      "keywords": [
+        "排序",
+        "内部排序",
+        "外部排序",
+        "稳定性"
+      ]
+    },
+    {
+      "id": "D8_1",
+      "name": "排序基本概念与性能分析",
+      "type": "KnowledgePoint",
+      "parent_id": "D8",
+      "aliases": [],
+      "alignment_terms": [
+        "内部排序",
+        "外部排序",
+        "排序稳定性",
+        "时间复杂度"
+      ],
+      "keywords": [
+        "排序",
+        "内部排序",
+        "外部排序",
+        "稳定性",
+        "时间复杂度"
+      ]
+    },
+    {
+      "id": "D8_2",
+      "name": "插入排序",
+      "type": "Algorithm",
+      "parent_id": "D8",
+      "aliases": [],
+      "alignment_terms": [
+        "直接插入排序",
+        "希尔排序"
+      ],
+      "keywords": [
+        "插入排序",
+        "直接插入排序",
+        "希尔排序"
+      ]
+    },
+    {
+      "id": "D8_3",
+      "name": "交换排序",
+      "type": "Algorithm",
+      "parent_id": "D8",
+      "aliases": [],
+      "alignment_terms": [
+        "冒泡排序",
+        "快速排序",
+        "划分",
+        "一趟划分",
+        "划分(Partition)",
+        "快速排序中的一趟划分"
+      ],
+      "keywords": [
+        "交换排序",
+        "冒泡排序",
+        "快速排序"
+      ],
+      "evidence_terms": [
+        "一趟划分",
+        "划分(Partition)",
+        "快速排序中的一趟划分"
+      ]
+    },
+    {
+      "id": "D8_4",
+      "name": "选择排序",
+      "type": "Algorithm",
+      "parent_id": "D8",
+      "aliases": [],
+      "alignment_terms": [
+        "简单选择排序",
+        "堆排序"
+      ],
+      "keywords": [
+        "选择排序",
+        "简单选择排序",
+        "堆排序"
+      ]
+    },
+    {
+      "id": "D8_5",
+      "name": "归并排序",
+      "type": "Algorithm",
+      "parent_id": "D8",
+      "aliases": [],
+      "alignment_terms": [
+        "多路归并",
+        "多相归并",
+        "败者树"
+      ],
+      "keywords": [
+        "归并排序",
+        "多路归并",
+        "败者树"
+      ]
+    },
+    {
+      "id": "D8_6",
+      "name": "基数排序",
+      "type": "Algorithm",
+      "parent_id": "D8",
+      "aliases": [],
+      "keywords": [
+        "基数排序",
+        "桶排序"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "面向对象编程",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "面向对象",
+        "OOP",
+        "面向对象程序设计"
+      ],
+      "keywords": [
+        "类",
+        "对象",
+        "封装",
+        "继承",
+        "多态",
+        "接口",
+        "抽象"
+      ]
+    },
+    {
+      "id": "E1",
+      "name": "类与对象",
+      "type": "KnowledgeUnit",
+      "parent_id": "E",
+      "aliases": [
+        "对象与类"
+      ],
+      "keywords": [
+        "类",
+        "对象",
+        "属性",
+        "方法",
+        "构造"
+      ]
+    },
+    {
+      "id": "E1_1",
+      "name": "类",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "class"
+      ],
+      "keywords": [
+        "类",
+        "class"
+      ]
+    },
+    {
+      "id": "E1_2",
+      "name": "对象",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "实例",
+        "instance"
+      ],
+      "keywords": [
+        "对象",
+        "实例",
+        "instance"
+      ]
+    },
+    {
+      "id": "E1_3",
+      "name": "属性与方法",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "属性",
+        "方法",
+        "成员变量",
+        "成员方法"
+      ],
+      "alignment_terms": [
+        "数据成员",
+        "对象的结构特征",
+        "行为特征"
+      ],
+      "keywords": [
+        "属性",
+        "方法",
+        "成员变量",
+        "成员方法",
+        "数据成员",
+        "行为特征"
+      ]
+    },
+    {
+      "id": "E1_4",
+      "name": "构造方法与析构方法",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "构造方法",
+        "构造函数",
+        "析构方法",
+        "析构函数"
+      ],
+      "alignment_terms": [
+        "构造和析构"
+      ],
+      "keywords": [
+        "构造",
+        "析构",
+        "constructor",
+        "destructor"
+      ]
+    },
+    {
+      "id": "E1_5",
+      "name": "静态成员",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "静态变量",
+        "静态方法",
+        "静态数据成员",
+        "静态成员函数",
+        "类变量",
+        "类方法"
+      ],
+      "evidence_terms": [
+        "静态成员",
+        "静态数据成员",
+        "静态成员函数",
+        "类变量",
+        "静态方法"
+      ],
+      "keywords": [
+        "static",
+        "静态变量",
+        "静态方法",
+        "类方法"
+      ]
+    },
+    {
+      "id": "E1_6",
+      "name": "实例化",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "对象实例化",
+        "类的实例化"
+      ],
+      "keywords": [
+        "实例化",
+        "instantiate"
+      ]
+    },
+    {
+      "id": "E1_7",
+      "name": "消息传递",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "对象消息"
+      ],
+      "keywords": [
+        "消息传递",
+        "消息"
+      ]
+    },
+    {
+      "id": "E1_8",
+      "name": "对象的动态创建与销毁",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "动态创建&销毁对象"
+      ],
+      "alignment_terms": [
+        "分配内存空间"
+      ],
+      "evidence_terms": [
+        "动态 创建&销毁 对象",
+        "分配内存空间"
+      ],
+      "keywords": [
+        "动态创建",
+        "销毁对象",
+        "分配内存",
+        "new",
+        "delete"
+      ]
+    },
+    {
+      "id": "E1_9",
+      "name": "常成员",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "常数据成员",
+        "常量数据成员",
+        "常成员函数",
+        "常量成员函数"
+      ],
+      "evidence_terms": [
+        "常量数据成员",
+        "常量成员函数"
+      ],
+      "keywords": [
+        "const成员",
+        "常数据成员",
+        "常量数据成员",
+        "常成员函数",
+        "常量成员函数"
+      ]
+    },
+    {
+      "id": "E1_10",
+      "name": "拷贝构造函数",
+      "type": "KnowledgePoint",
+      "parent_id": "E1",
+      "aliases": [
+        "复制构造函数",
+        "拷贝构造"
+      ],
+      "evidence_terms": [
+        "拷贝构造",
+        "拷贝构造函数"
+      ],
+      "keywords": [
+        "拷贝构造",
+        "拷贝构造函数",
+        "复制构造函数",
+        "copy constructor"
+      ]
+    },
+    {
+      "id": "E2",
+      "name": "封装与访问控制",
+      "type": "KnowledgeUnit",
+      "parent_id": "E",
+      "aliases": [],
+      "keywords": [
+        "封装",
+        "private",
+        "protected",
+        "public",
+        "访问控制"
+      ]
+    },
+    {
+      "id": "E2_1",
+      "name": "封装",
+      "type": "KnowledgePoint",
+      "parent_id": "E2",
+      "aliases": [
+        "信息隐藏"
+      ],
+      "keywords": [
+        "封装",
+        "信息隐藏"
+      ]
+    },
+    {
+      "id": "E2_2",
+      "name": "访问控制",
+      "type": "KnowledgePoint",
+      "parent_id": "E2",
+      "aliases": [
+        "访问修饰符"
+      ],
+      "evidence_terms": [
+        "访问权限控制",
+        "访问控制",
+        "权限修饰符"
+      ],
+      "keywords": [
+        "private",
+        "protected",
+        "public",
+        "访问控制"
+      ]
+    },
+    {
+      "id": "E2_3",
+      "name": "友元",
+      "type": "KnowledgePoint",
+      "parent_id": "E2",
+      "aliases": [
+        "友元函数",
+        "友元类"
+      ],
+      "evidence_terms": [
+        "友元"
+      ],
+      "keywords": [
+        "友元",
+        "友元函数",
+        "友元类",
+        "friend"
+      ]
+    },
+    {
+      "id": "E3",
+      "name": "继承",
+      "type": "KnowledgeUnit",
+      "parent_id": "E",
+      "aliases": [
+        "类继承"
+      ],
+      "alignment_terms": [
+        "继承方式"
+      ],
+      "keywords": [
+        "继承",
+        "父类",
+        "子类",
+        "extends",
+        "super"
+      ]
+    },
+    {
+      "id": "E3_1",
+      "name": "父类与子类",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "基类与派生类"
+      ],
+      "alignment_terms": [
+        "父类",
+        "子类",
+        "派生类",
+        "直接 基类/派生类"
+      ],
+      "keywords": [
+        "父类",
+        "子类",
+        "基类",
+        "派生类"
+      ]
+    },
+    {
+      "id": "E3_2",
+      "name": "方法重写",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "重写",
+        "override"
+      ],
+      "keywords": [
+        "重写",
+        "override"
+      ]
+    },
+    {
+      "id": "E3_3",
+      "name": "父类调用",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "super",
+        "基类调用"
+      ],
+      "keywords": [
+        "super",
+        "父类调用",
+        "基类调用"
+      ]
+    },
+    {
+      "id": "E3_4",
+      "name": "多重继承",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "多继承"
+      ],
+      "evidence_terms": [
+        "多重继承",
+        "多继承"
+      ],
+      "keywords": [
+        "多重继承",
+        "多继承",
+        "multiple inheritance"
+      ]
+    },
+    {
+      "id": "E3_5",
+      "name": "单重继承",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [],
+      "alignment_terms": [
+        "单重继承"
+      ],
+      "evidence_terms": [
+        "单重继承"
+      ],
+      "keywords": [
+        "single inheritance",
+        "单重继承"
+      ]
+    },
+    {
+      "id": "E3_6",
+      "name": "虚继承",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "虚基类"
+      ],
+      "alignment_terms": [
+        "虚继承"
+      ],
+      "evidence_terms": [
+        "虚继承"
+      ],
+      "keywords": [
+        "virtual inheritance",
+        "虚继承",
+        "虚基类"
+      ]
+    },
+    {
+      "id": "E3_7",
+      "name": "多重继承中的基类顺序",
+      "type": "KnowledgePoint",
+      "parent_id": "E3",
+      "aliases": [
+        "多个直接基类的继承顺序"
+      ],
+      "evidence_terms": [
+        "多个直接基类的继承顺序"
+      ],
+      "keywords": [
+        "多重继承",
+        "直接基类",
+        "继承顺序"
+      ]
+    },
+    {
+      "id": "E4",
+      "name": "多态",
+      "type": "KnowledgeUnit",
+      "parent_id": "E",
+      "aliases": [
+        "多态机制"
+      ],
+      "keywords": [
+        "多态",
+        "动态绑定",
+        "虚函数",
+        "向上转型"
+      ]
+    },
+    {
+      "id": "E4_1",
+      "name": "动态绑定",
+      "type": "KnowledgePoint",
+      "parent_id": "E4",
+      "aliases": [
+        "运行时多态",
+        "虚函数"
+      ],
+      "keywords": [
+        "动态绑定",
+        "虚函数",
+        "virtual"
+      ]
+    },
+    {
+      "id": "E4_2",
+      "name": "向上转型",
+      "type": "KnowledgePoint",
+      "parent_id": "E4",
+      "aliases": [
+        "父类引用"
+      ],
+      "keywords": [
+        "向上转型",
+        "父类引用"
+      ]
+    },
+    {
+      "id": "E4_3",
+      "name": "方法重载",
+      "type": "KnowledgePoint",
+      "parent_id": "E4",
+      "aliases": [],
+      "alignment_terms": [
+        "重载"
+      ],
+      "alignment_context_keywords": [
+        "方法",
+        "成员函数",
+        "构造函数",
+        "类"
+      ],
+      "keywords": [
+        "方法重载",
+        "成员函数重载",
+        "构造函数重载"
+      ]
+    },
+    {
+      "id": "E4_4",
+      "name": "操作符重载",
+      "type": "KnowledgePoint",
+      "parent_id": "E4",
+      "aliases": [
+        "运算符重载",
+        "操作符过载"
+      ],
+      "evidence_terms": [
+        "操作符重载",
+        "运算符重载"
+      ],
+      "keywords": [
+        "操作符重载",
+        "运算符重载",
+        "operator overloading"
+      ]
+    },
+    {
+      "id": "E5",
+      "name": "抽象、接口与泛型",
+      "type": "KnowledgeUnit",
+      "parent_id": "E",
+      "aliases": [
+        "抽象类和接口"
+      ],
+      "keywords": [
+        "抽象类",
+        "接口",
+        "泛型",
+        "模板"
+      ]
+    },
+    {
+      "id": "E5_0",
+      "name": "抽象",
+      "type": "KnowledgePoint",
+      "parent_id": "E5",
+      "aliases": [
+        "抽象机制"
+      ],
+      "keywords": [
+        "抽象",
+        "abstraction"
+      ]
+    },
+    {
+      "id": "E5_1",
+      "name": "抽象类",
+      "type": "KnowledgePoint",
+      "parent_id": "E5",
+      "aliases": [],
+      "keywords": [
+        "抽象类"
+      ]
+    },
+    {
+      "id": "E5_4",
+      "name": "抽象方法与纯虚函数",
+      "type": "KnowledgePoint",
+      "parent_id": "E5",
+      "aliases": [
+        "抽象方法",
+        "纯虚函数"
+      ],
+      "evidence_terms": [
+        "抽象方法",
+        "纯虚函数"
+      ],
+      "keywords": [
+        "抽象方法",
+        "纯虚函数"
+      ]
+    },
+    {
+      "id": "E5_2",
+      "name": "接口",
+      "type": "KnowledgePoint",
+      "parent_id": "E5",
+      "aliases": [
+        "interface"
+      ],
+      "keywords": [
+        "接口",
+        "interface",
+        "implements"
+      ]
+    },
+    {
+      "id": "E5_3",
+      "name": "泛型与模板",
+      "type": "KnowledgePoint",
+      "parent_id": "E5",
+      "aliases": [
+        "泛型",
+        "模板"
+      ],
+      "keywords": [
+        "泛型",
+        "模板",
+        "template"
+      ]
+    },
+    {
+      "id": "F",
+      "name": "异常处理与调试",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "异常处理"
+      ],
+      "alignment_terms": [
+        "错误处理"
+      ],
+      "keywords": [
+        "异常",
+        "错误处理",
+        "try",
+        "except",
+        "catch",
+        "throw",
+        "调试"
+      ]
+    },
+    {
+      "id": "F1",
+      "name": "异常机制",
+      "type": "KnowledgeUnit",
+      "parent_id": "F",
+      "aliases": [
+        "异常"
+      ],
+      "keywords": [
+        "异常",
+        "Exception",
+        "错误"
+      ]
+    },
+    {
+      "id": "F1_1",
+      "name": "异常类型",
+      "type": "KnowledgePoint",
+      "parent_id": "F1",
+      "aliases": [
+        "内置异常"
+      ],
+      "evidence_terms": [
+        "异常类型",
+        "内置异常"
+      ],
+      "keywords": [
+        "异常类型",
+        "Exception"
+      ]
+    },
+    {
+      "id": "F1_2",
+      "name": "异常捕获与处理",
+      "type": "KnowledgePoint",
+      "parent_id": "F1",
+      "aliases": [
+        "try except",
+        "try catch"
+      ],
+      "evidence_terms": [
+        "异常捕获",
+        "异常处理语句",
+        "try-except",
+        "try-catch"
+      ],
+      "keywords": [
+        "try",
+        "except",
+        "catch",
+        "finally"
+      ]
+    },
+    {
+      "id": "F1_3",
+      "name": "异常抛出与传播",
+      "type": "KnowledgePoint",
+      "parent_id": "F1",
+      "aliases": [],
+      "keywords": [
+        "throw",
+        "throws",
+        "raise",
+        "raises"
+      ]
+    },
+    {
+      "id": "F2",
+      "name": "调试与错误模式",
+      "type": "KnowledgeUnit",
+      "parent_id": "F",
+      "aliases": [
+        "常见错误"
+      ],
+      "keywords": [
+        "错误",
+        "调试",
+        "断言",
+        "日志"
+      ]
+    },
+    {
+      "id": "F2_1",
+      "name": "常见错误模式",
+      "type": "KnowledgePoint",
+      "parent_id": "F2",
+      "aliases": [
+        "代码错误"
+      ],
+      "keywords": [
+        "错误",
+        "改错",
+        "编译错误"
+      ]
+    },
+    {
+      "id": "F2_2",
+      "name": "断言与调试",
+      "type": "KnowledgePoint",
+      "parent_id": "F2",
+      "aliases": [
+        "调试",
+        "assert"
+      ],
+      "keywords": [
+        "断言",
+        "assert",
+        "调试"
+      ],
+      "evidence_terms": [
+        "断言(Assertion)",
+        "断言的定义",
+        "Eclipse调试"
+      ],
+      "alignment_terms": [
+        "Eclipse调试"
+      ]
+    },
+    {
+      "id": "G",
+      "name": "文件与数据持久化",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "文件操作"
+      ],
+      "keywords": [
+        "文件",
+        "目录",
+        "流",
+        "读写",
+        "序列化"
+      ]
+    },
+    {
+      "id": "G1",
+      "name": "文件与目录",
+      "type": "KnowledgeUnit",
+      "parent_id": "G",
+      "aliases": [],
+      "keywords": [
+        "文件",
+        "目录",
+        "File"
+      ]
+    },
+    {
+      "id": "G1_1",
+      "name": "文件与目录操作",
+      "type": "KnowledgePoint",
+      "parent_id": "G1",
+      "aliases": [
+        "File类"
+      ],
+      "alignment_terms": [
+        "文件"
+      ],
+      "keywords": [
+        "文件",
+        "目录",
+        "File"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "流与读写",
+      "type": "KnowledgeUnit",
+      "parent_id": "G",
+      "aliases": [
+        "流式输入输出"
+      ],
+      "keywords": [
+        "输入流",
+        "输出流",
+        "读写",
+        "Reader",
+        "Writer"
+      ]
+    },
+    {
+      "id": "G2_1",
+      "name": "文本文件读写",
+      "type": "KnowledgePoint",
+      "parent_id": "G2",
+      "aliases": [
+        "文本流"
+      ],
+      "evidence_terms": [
+        "文本文件读写",
+        "FileReader",
+        "FileWriter"
+      ],
+      "keywords": [
+        "文本文件",
+        "Reader",
+        "Writer",
+        "read",
+        "write"
+      ]
+    },
+    {
+      "id": "G2_2",
+      "name": "二进制数据读写",
+      "type": "KnowledgePoint",
+      "parent_id": "G2",
+      "aliases": [
+        "字节流"
+      ],
+      "evidence_terms": [
+        "二进制数据读写",
+        "FileInputStream",
+        "FileOutputStream"
+      ],
+      "keywords": [
+        "二进制",
+        "InputStream",
+        "OutputStream"
+      ]
+    },
+    {
+      "id": "G2_3",
+      "name": "序列化与反序列化",
+      "type": "KnowledgePoint",
+      "parent_id": "G2",
+      "aliases": [
+        "可串行化"
+      ],
+      "evidence_terms": [
+        "序列化与反序列化",
+        "对象序列化",
+        "Serializable"
+      ],
+      "keywords": [
+        "序列化",
+        "反序列化",
+        "Serializable"
+      ]
+    },
+    {
+      "id": "H",
+      "name": "程序质量与工程实践",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "软件工程实践"
+      ],
+      "keywords": [
+        "编码规范",
+        "测试",
+        "版本控制",
+        "项目"
+      ]
+    },
+    {
+      "id": "H1",
+      "name": "代码质量",
+      "type": "KnowledgeUnit",
+      "parent_id": "H",
+      "aliases": [
+        "编码规范"
+      ],
+      "keywords": [
+        "编码规范",
+        "可读性",
+        "重构"
+      ]
+    },
+    {
+      "id": "H1_1",
+      "name": "编码规范与可读性",
+      "type": "KnowledgePoint",
+      "parent_id": "H1",
+      "aliases": [
+        "代码规范"
+      ],
+      "keywords": [
+        "编码规范",
+        "可读性"
+      ]
+    },
+    {
+      "id": "H1_2",
+      "name": "Python编码规范",
+      "type": "KnowledgePoint",
+      "parent_id": "H1",
+      "aliases": [],
+      "evidence_terms": [
+        "Python编码规范"
+      ],
+      "supported_languages": [
+        "Python"
+      ],
+      "keywords": [
+        "Python编码规范",
+        "PEP 8",
+        "Python风格"
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "测试与项目组织",
+      "type": "KnowledgeUnit",
+      "parent_id": "H",
+      "aliases": [],
+      "keywords": [
+        "测试",
+        "项目组织",
+        "版本控制"
+      ]
+    },
+    {
+      "id": "H2_1",
+      "name": "单元测试",
+      "type": "KnowledgePoint",
+      "parent_id": "H2",
+      "aliases": [
+        "测试"
+      ],
+      "alignment_terms": [
+        "测试用例"
+      ],
+      "keywords": [
+        "单元测试",
+        "测试用例",
+        "test"
+      ]
+    },
+    {
+      "id": "H2_2",
+      "name": "版本控制基础",
+      "type": "KnowledgePoint",
+      "parent_id": "H2",
+      "aliases": [
+        "Git"
+      ],
+      "keywords": [
+        "版本控制",
+        "git"
+      ]
+    },
+    {
+      "id": "I",
+      "name": "并发与线程",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [],
+      "alignment_terms": [
+        "并发"
+      ],
+      "keywords": [
+        "线程",
+        "Thread",
+        "并发",
+        "同步"
+      ]
+    },
+    {
+      "id": "I1",
+      "name": "线程基础",
+      "type": "KnowledgeUnit",
+      "parent_id": "I",
+      "aliases": [],
+      "keywords": [
+        "进程",
+        "线程",
+        "Thread",
+        "生命周期"
+      ]
+    },
+    {
+      "id": "I1_1",
+      "name": "进程与线程",
+      "type": "KnowledgePoint",
+      "parent_id": "I1",
+      "aliases": [
+        "线程概念"
+      ],
+      "alignment_terms": [
+        "线程"
+      ],
+      "keywords": [
+        "进程",
+        "线程"
+      ]
+    },
+    {
+      "id": "I1_2",
+      "name": "线程创建与生命周期",
+      "type": "KnowledgePoint",
+      "parent_id": "I1",
+      "aliases": [
+        "线程创建"
+      ],
+      "alignment_terms": [
+        "线程基本控制"
+      ],
+      "evidence_terms": [
+        "线程创建",
+        "线程生命周期",
+        "线程状态"
+      ],
+      "keywords": [
+        "线程创建",
+        "线程基本控制",
+        "start",
+        "run",
+        "生命周期"
+      ]
+    },
+    {
+      "id": "I2",
+      "name": "线程协作",
+      "type": "KnowledgeUnit",
+      "parent_id": "I",
+      "aliases": [],
+      "keywords": [
+        "同步",
+        "互斥",
+        "通信",
+        "线程安全"
+      ]
+    },
+    {
+      "id": "I2_1",
+      "name": "线程同步",
+      "type": "KnowledgePoint",
+      "parent_id": "I2",
+      "aliases": [
+        "线程同步机制"
+      ],
+      "alignment_terms": [
+        "同步"
+      ],
+      "keywords": [
+        "同步",
+        "synchronized"
+      ]
+    },
+    {
+      "id": "I2_3",
+      "name": "互斥与锁",
+      "type": "KnowledgePoint",
+      "parent_id": "I2",
+      "aliases": [
+        "互斥锁"
+      ],
+      "keywords": [
+        "互斥",
+        "mutex",
+        "lock"
+      ]
+    },
+    {
+      "id": "I2_2",
+      "name": "线程通信与并发安全",
+      "type": "KnowledgePoint",
+      "parent_id": "I2",
+      "aliases": [
+        "线程通信",
+        "线程安全"
+      ],
+      "evidence_terms": [
+        "线程通信",
+        "线程安全"
+      ],
+      "keywords": [
+        "通信",
+        "线程安全",
+        "wait",
+        "notify"
+      ]
+    },
+    {
+      "id": "J",
+      "name": "面向对象分析与设计",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [
+        "OOAD"
+      ],
+      "alignment_terms": [
+        "面向对象分析与建模",
+        "面向对象设计",
+        "面向对象设计与构造",
+        "面向对象软件开发"
+      ],
+      "keywords": [
+        "OOAD",
+        "面向对象分析",
+        "面向对象设计",
+        "建模",
+        "UML"
+      ]
+    },
+    {
+      "id": "J1",
+      "name": "需求与用例建模",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [],
+      "keywords": [
+        "需求",
+        "用例",
+        "用例建模",
+        "用例识别"
+      ]
+    },
+    {
+      "id": "J1_1",
+      "name": "用例识别",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [],
+      "alignment_terms": [
+        "用例识别",
+        "识别用例"
+      ],
+      "evidence_terms": [
+        "用例识别",
+        "识别用例"
+      ],
+      "keywords": [
+        "用例识别",
+        "actor"
+      ]
+    },
+    {
+      "id": "J1_2",
+      "name": "用例建模",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [],
+      "alignment_terms": [
+        "用例建模",
+        "用例建模流程"
+      ],
+      "evidence_terms": [
+        "用例建模",
+        "用例建模流程"
+      ],
+      "keywords": [
+        "用例",
+        "用例模型"
+      ]
+    },
+    {
+      "id": "J2",
+      "name": "静态结构建模",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [
+        "静态设计"
+      ],
+      "alignment_terms": [
+        "静态设计",
+        "类的结构",
+        "类层次结构"
+      ],
+      "keywords": [
+        "静态建模",
+        "类图",
+        "类层次结构"
+      ]
+    },
+    {
+      "id": "J2_1",
+      "name": "类图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [],
+      "alignment_terms": [
+        "类图",
+        "设计类图"
+      ],
+      "evidence_terms": [
+        "类图",
+        "设计类图"
+      ],
+      "keywords": [
+        "类图",
+        "class diagram"
+      ]
+    },
+    {
+      "id": "J3",
+      "name": "动态行为建模",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [
+        "动态建模"
+      ],
+      "alignment_terms": [
+        "动态建模"
+      ],
+      "keywords": [
+        "动态建模",
+        "对象交互",
+        "顺序图"
+      ]
+    },
+    {
+      "id": "J3_1",
+      "name": "顺序图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [],
+      "alignment_terms": [
+        "顺序图"
+      ],
+      "evidence_terms": [
+        "顺序图"
+      ],
+      "keywords": [
+        "顺序图",
+        "sequence diagram",
+        "对象交互"
+      ]
+    },
+    {
+      "id": "J3_2",
+      "name": "对象交互",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [],
+      "evidence_terms": [
+        "对象交互"
+      ],
+      "keywords": [
+        "对象交互",
+        "消息传递",
+        "动态建模"
+      ]
+    },
+    {
+      "id": "J3_3",
+      "name": "对象交互协议",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [],
+      "evidence_terms": [
+        "对象交互协议"
+      ],
+      "keywords": [
+        "对象交互协议",
+        "顺序图"
+      ]
+    },
+    {
+      "id": "J4",
+      "name": "统一建模语言与建模原则",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [],
+      "keywords": [
+        "UML",
+        "统一建模语言",
+        "建模原则"
+      ]
+    },
+    {
+      "id": "J4_1",
+      "name": "统一建模语言UML",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [
+        "UML",
+        "统一建模语言"
+      ],
+      "evidence_terms": [
+        "统一建模语言",
+        "UML"
+      ],
+      "keywords": [
+        "UML",
+        "建模语言"
+      ]
+    },
+    {
+      "id": "J4_2",
+      "name": "建模原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [],
+      "alignment_terms": [
+        "建模的四个基本原则"
+      ],
+      "evidence_terms": [
+        "建模的四个基本原则"
+      ],
+      "keywords": [
+        "建模原则",
+        "建模方法"
+      ]
+    },
+    {
+      "id": "J4_3",
+      "name": "UML通用机制",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [],
+      "alignment_terms": [
+        "规格说明",
+        "可视化模型",
+        "基本符号",
+        "修饰",
+        "语义背板"
+      ],
+      "alignment_context_keywords": [
+        "UML",
+        "通用机制",
+        "建模"
+      ],
+      "keywords": [
+        "UML",
+        "规格说明",
+        "可视化模型",
+        "基本符号",
+        "修饰"
+      ]
+    },
+    {
+      "id": "J1_3",
+      "name": "需求与需求获取",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "需求获取"
+      ],
+      "alignment_terms": [
+        "需求",
+        "需求获取",
+        "获取原始需求",
+        "理解需求"
+      ],
+      "keywords": [
+        "需求",
+        "需求获取",
+        "原始需求",
+        "软件需求",
+        "系统需求"
+      ]
+    },
+    {
+      "id": "J1_4",
+      "name": "涉众与参与者",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "参与者",
+        "涉众",
+        "Actor"
+      ],
+      "alignment_terms": [
+        "参与者",
+        "涉众",
+        "业务参与者",
+        "系统参与者"
+      ],
+      "keywords": [
+        "参与者",
+        "涉众",
+        "Actor",
+        "用户视角"
+      ]
+    },
+    {
+      "id": "J1_5",
+      "name": "用例与用例图",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "用例图"
+      ],
+      "alignment_terms": [
+        "用例",
+        "用例图",
+        "系统用例"
+      ],
+      "keywords": [
+        "用例",
+        "用例图",
+        "Use Case",
+        "系统用例"
+      ]
+    },
+    {
+      "id": "J1_6",
+      "name": "用例模型与用例文档",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "用例模型",
+        "用例文档"
+      ],
+      "alignment_terms": [
+        "用例模型",
+        "用例文档",
+        "编写用例文档",
+        "构建初始用例模型",
+        "重构用例模型"
+      ],
+      "keywords": [
+        "用例模型",
+        "用例文档",
+        "用例规约"
+      ],
+      "evidence_terms": [
+        "构建初始用例模型",
+        "重构用例模型"
+      ]
+    },
+    {
+      "id": "J1_7",
+      "name": "用例事件流",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "事件流"
+      ],
+      "alignment_terms": [
+        "事件流",
+        "用例事件流",
+        "基本事件流",
+        "备选事件流"
+      ],
+      "keywords": [
+        "事件流",
+        "基本事件流",
+        "备选路径"
+      ]
+    },
+    {
+      "id": "J1_8",
+      "name": "前置条件与后置条件",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [],
+      "alignment_terms": [
+        "前置条件",
+        "后置条件"
+      ],
+      "keywords": [
+        "前置条件",
+        "后置条件",
+        "用例条件"
+      ]
+    },
+    {
+      "id": "J1_9",
+      "name": "用例关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "用例间的关系"
+      ],
+      "alignment_terms": [
+        "用例关系",
+        "用例间的关系",
+        "识别用例间的关系"
+      ],
+      "keywords": [
+        "用例关系",
+        "包含",
+        "扩展",
+        "泛化"
+      ]
+    },
+    {
+      "id": "J1_10",
+      "name": "包含关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "包含",
+        "Include"
+      ],
+      "alignment_terms": [
+        "包含",
+        "包含关系",
+        "include"
+      ],
+      "keywords": [
+        "包含关系",
+        "include",
+        "基用例",
+        "子用例"
+      ]
+    },
+    {
+      "id": "J1_11",
+      "name": "扩展关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "扩展",
+        "Extend"
+      ],
+      "alignment_terms": [
+        "扩展",
+        "扩展关系",
+        "extend"
+      ],
+      "keywords": [
+        "扩展关系",
+        "extend",
+        "扩展点"
+      ]
+    },
+    {
+      "id": "J1_12",
+      "name": "用例粒度与分级",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "用例粒度",
+        "用例分级"
+      ],
+      "alignment_terms": [
+        "用例粒度",
+        "用例分级",
+        "用例分包",
+        "对用例进行分包和分级",
+        "用例分包和分级"
+      ],
+      "keywords": [
+        "用例粒度",
+        "用例分级",
+        "用例分包",
+        "业务级用例"
+      ],
+      "evidence_terms": [
+        "对用例进行分包和分级",
+        "用例分包和分级"
+      ]
+    },
+    {
+      "id": "J2_2",
+      "name": "包图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "Package Diagram"
+      ],
+      "alignment_terms": [
+        "包图"
+      ],
+      "keywords": [
+        "包图",
+        "包",
+        "Package Diagram"
+      ]
+    },
+    {
+      "id": "J2_3",
+      "name": "构件图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "组件图",
+        "Component Diagram"
+      ],
+      "alignment_terms": [
+        "构件图",
+        "组件图"
+      ],
+      "keywords": [
+        "构件图",
+        "组件图",
+        "Component Diagram"
+      ]
+    },
+    {
+      "id": "J2_4",
+      "name": "关联关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "关联"
+      ],
+      "alignment_terms": [
+        "关联关系",
+        "单方向关联",
+        "双方向关联",
+        "导航性"
+      ],
+      "keywords": [
+        "关联关系",
+        "关联",
+        "导航性",
+        "多重性"
+      ]
+    },
+    {
+      "id": "J2_5",
+      "name": "聚合与组合关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "聚合关系",
+        "组合关系"
+      ],
+      "alignment_terms": [
+        "聚合",
+        "聚合关系",
+        "组合关系"
+      ],
+      "keywords": [
+        "聚合",
+        "组合",
+        "整体",
+        "部分",
+        "生命周期"
+      ]
+    },
+    {
+      "id": "J2_6",
+      "name": "依赖与泛化关系",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "依赖关系",
+        "泛化关系"
+      ],
+      "alignment_terms": [
+        "依赖关系",
+        "泛化关系",
+        "Generalization"
+      ],
+      "keywords": [
+        "依赖",
+        "泛化",
+        "Generalization",
+        "继承"
+      ]
+    },
+    {
+      "id": "J2_7",
+      "name": "组合结构图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "Composite Structure Diagram"
+      ],
+      "alignment_terms": [
+        "组合结构图"
+      ],
+      "keywords": [
+        "组合结构图",
+        "Composite Structure"
+      ]
+    },
+    {
+      "id": "J3_4",
+      "name": "通信图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [
+        "协作图",
+        "Communication Diagram"
+      ],
+      "alignment_terms": [
+        "通信图",
+        "协作图"
+      ],
+      "keywords": [
+        "通信图",
+        "协作图",
+        "对象交互"
+      ]
+    },
+    {
+      "id": "J3_5",
+      "name": "活动图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [
+        "Activity Diagram"
+      ],
+      "alignment_terms": [
+        "活动图"
+      ],
+      "keywords": [
+        "活动图",
+        "活动",
+        "业务流程"
+      ]
+    },
+    {
+      "id": "J3_6",
+      "name": "状态机图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [
+        "状态图",
+        "State Machine Diagram"
+      ],
+      "alignment_terms": [
+        "状态机图",
+        "状态图"
+      ],
+      "keywords": [
+        "状态机图",
+        "状态图",
+        "状态",
+        "转移"
+      ]
+    },
+    {
+      "id": "J3_7",
+      "name": "交互图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [
+        "Interaction Diagram"
+      ],
+      "alignment_terms": [
+        "交互图"
+      ],
+      "keywords": [
+        "交互图",
+        "顺序图",
+        "通信图",
+        "消息"
+      ]
+    },
+    {
+      "id": "J3_8",
+      "name": "交互纵览图",
+      "type": "KnowledgePoint",
+      "parent_id": "J3",
+      "aliases": [
+        "交互概览图",
+        "Interaction Overview Diagram"
+      ],
+      "alignment_terms": [
+        "交互纵览图",
+        "交互概览图"
+      ],
+      "keywords": [
+        "交互纵览图",
+        "交互概览图"
+      ]
+    },
+    {
+      "id": "J4_4",
+      "name": "可视化建模",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [
+        "可视化建模基础"
+      ],
+      "alignment_terms": [
+        "可视化建模",
+        "可视化建模基础"
+      ],
+      "keywords": [
+        "可视化建模",
+        "模型",
+        "建模语言"
+      ]
+    },
+    {
+      "id": "J4_5",
+      "name": "UML版本与演化",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [],
+      "alignment_terms": [
+        "UML1.x",
+        "UML 1.5",
+        "UML2",
+        "UML 2.0",
+        "UML 2.5"
+      ],
+      "keywords": [
+        "UML1",
+        "UML2",
+        "UML 2.0",
+        "UML版本"
+      ]
+    },
+    {
+      "id": "J4_6",
+      "name": "UML图分类",
+      "type": "KnowledgePoint",
+      "parent_id": "J4",
+      "aliases": [
+        "UML2组成结构",
+        "UML2概念模型"
+      ],
+      "alignment_terms": [
+        "UML2组成结构",
+        "UML2概念模型",
+        "UML模型"
+      ],
+      "keywords": [
+        "UML图",
+        "结构图",
+        "行为图",
+        "交互图"
+      ]
+    },
+    {
+      "id": "J5",
+      "name": "业务建模",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [
+        "Business Modeling"
+      ],
+      "keywords": [
+        "业务建模",
+        "业务模型",
+        "业务用例",
+        "业务参与者"
+      ]
+    },
+    {
+      "id": "J5_1",
+      "name": "业务模型",
+      "type": "KnowledgePoint",
+      "parent_id": "J5",
+      "aliases": [],
+      "alignment_terms": [
+        "业务模型",
+        "业务对象模型"
+      ],
+      "keywords": [
+        "业务模型",
+        "业务对象模型",
+        "业务流程"
+      ]
+    },
+    {
+      "id": "J5_2",
+      "name": "业务用例",
+      "type": "KnowledgePoint",
+      "parent_id": "J5",
+      "aliases": [],
+      "alignment_terms": [
+        "业务用例",
+        "业务用例模型"
+      ],
+      "keywords": [
+        "业务用例",
+        "业务用例模型"
+      ]
+    },
+    {
+      "id": "J5_3",
+      "name": "业务参与者",
+      "type": "KnowledgePoint",
+      "parent_id": "J5",
+      "aliases": [
+        "业务Actor"
+      ],
+      "alignment_terms": [
+        "业务参与者",
+        "业务工人"
+      ],
+      "keywords": [
+        "业务参与者",
+        "业务工人"
+      ]
+    },
+    {
+      "id": "J5_4",
+      "name": "业务模型到系统模型",
+      "type": "KnowledgePoint",
+      "parent_id": "J5",
+      "aliases": [],
+      "alignment_terms": [
+        "业务模型映射到系统模型",
+        "系统模型"
+      ],
+      "keywords": [
+        "业务模型",
+        "系统模型",
+        "映射",
+        "系统需求"
+      ]
+    },
+    {
+      "id": "J6",
+      "name": "用例分析与分析模型",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [
+        "Use-Case Analysis",
+        "Analysis Workflow"
+      ],
+      "keywords": [
+        "用例分析",
+        "分析模型",
+        "分析类",
+        "用例实现"
+      ]
+    },
+    {
+      "id": "J6_1",
+      "name": "用例分析",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [],
+      "alignment_terms": [
+        "用例分析",
+        "分析工作流"
+      ],
+      "keywords": [
+        "用例分析",
+        "分析工作流",
+        "从需求到分析"
+      ]
+    },
+    {
+      "id": "J6_2",
+      "name": "分析模型",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [],
+      "alignment_terms": [
+        "分析模型",
+        "概念模型"
+      ],
+      "keywords": [
+        "分析模型",
+        "概念模型",
+        "分析类图"
+      ]
+    },
+    {
+      "id": "J6_3",
+      "name": "分析类",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [],
+      "alignment_terms": [
+        "分析类"
+      ],
+      "keywords": [
+        "分析类",
+        "构造型",
+        "职责"
+      ]
+    },
+    {
+      "id": "J6_4",
+      "name": "边界类",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [
+        "Boundary Class"
+      ],
+      "evidence_terms": [
+        "边界类"
+      ],
+      "alignment_terms": [
+        "边界类",
+        "boundary"
+      ],
+      "keywords": [
+        "边界类",
+        "boundary",
+        "系统边界",
+        "参与者"
+      ]
+    },
+    {
+      "id": "J6_5",
+      "name": "控制类",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [
+        "Control Class"
+      ],
+      "evidence_terms": [
+        "控制类"
+      ],
+      "alignment_terms": [
+        "控制类",
+        "control"
+      ],
+      "keywords": [
+        "控制类",
+        "control",
+        "控制逻辑",
+        "协调器"
+      ]
+    },
+    {
+      "id": "J6_6",
+      "name": "实体类",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [
+        "Entity Class"
+      ],
+      "alignment_terms": [
+        "实体类",
+        "entity"
+      ],
+      "keywords": [
+        "实体类",
+        "entity",
+        "业务实体",
+        "逻辑数据结构"
+      ]
+    },
+    {
+      "id": "J6_7",
+      "name": "职责分配",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [],
+      "alignment_terms": [
+        "职责分配",
+        "将职责分配到分析类"
+      ],
+      "keywords": [
+        "职责分配",
+        "职责",
+        "分析类"
+      ]
+    },
+    {
+      "id": "J6_8",
+      "name": "用例实现",
+      "type": "KnowledgePoint",
+      "parent_id": "J6",
+      "aliases": [
+        "Use Case Realization"
+      ],
+      "alignment_terms": [
+        "用例实现",
+        "创建用例实现"
+      ],
+      "keywords": [
+        "用例实现",
+        "VOPC",
+        "顺序图"
+      ]
+    },
+    {
+      "id": "J7",
+      "name": "架构与设计细化",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [],
+      "keywords": [
+        "架构",
+        "分层架构",
+        "子系统",
+        "构件",
+        "进程分配"
+      ]
+    },
+    {
+      "id": "J7_1",
+      "name": "软件架构",
+      "type": "KnowledgePoint",
+      "parent_id": "J7",
+      "aliases": [
+        "系统架构",
+        "架构"
+      ],
+      "alignment_terms": [
+        "架构",
+        "软件架构",
+        "系统架构"
+      ],
+      "keywords": [
+        "架构",
+        "软件架构",
+        "系统架构",
+        "备选架构"
+      ]
+    },
+    {
+      "id": "J7_2",
+      "name": "分层架构",
+      "type": "KnowledgePoint",
+      "parent_id": "J7",
+      "aliases": [
+        "分层"
+      ],
+      "alignment_terms": [
+        "分层架构"
+      ],
+      "keywords": [
+        "分层架构",
+        "层",
+        "应用逻辑"
+      ]
+    },
+    {
+      "id": "J7_3",
+      "name": "子系统与构件",
+      "type": "KnowledgePoint",
+      "parent_id": "J7",
+      "aliases": [
+        "子系统",
+        "构件"
+      ],
+      "alignment_terms": [
+        "子系统",
+        "构件"
+      ],
+      "keywords": [
+        "子系统",
+        "构件",
+        "组件",
+        "接口"
+      ]
+    },
+    {
+      "id": "J7_4",
+      "name": "进程分配",
+      "type": "KnowledgePoint",
+      "parent_id": "J7",
+      "aliases": [],
+      "alignment_terms": [
+        "进程分配"
+      ],
+      "keywords": [
+        "进程分配",
+        "进程",
+        "物理节点",
+        "并发"
+      ]
+    },
+    {
+      "id": "J7_5",
+      "name": "设计约束与备选架构",
+      "type": "KnowledgePoint",
+      "parent_id": "J7",
+      "aliases": [
+        "设计约束",
+        "备选架构"
+      ],
+      "alignment_terms": [
+        "设计约束",
+        "备选架构"
+      ],
+      "keywords": [
+        "设计约束",
+        "备选架构",
+        "架构机制"
+      ]
+    },
+    {
+      "id": "J8",
+      "name": "面向对象设计原则与模式",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [],
+      "keywords": [
+        "设计原则",
+        "设计模式",
+        "重构",
+        "变化点"
+      ]
+    },
+    {
+      "id": "J8_1",
+      "name": "单一职责原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "SRP"
+      ],
+      "evidence_terms": [
+        "单一职责原则"
+      ],
+      "alignment_terms": [
+        "单一职责原则",
+        "SRP"
+      ],
+      "keywords": [
+        "单一职责",
+        "SRP",
+        "职责"
+      ]
+    },
+    {
+      "id": "J8_2",
+      "name": "开闭原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "OCP"
+      ],
+      "evidence_terms": [
+        "开放-封闭原则"
+      ],
+      "alignment_terms": [
+        "开闭原则",
+        "OCP"
+      ],
+      "keywords": [
+        "开闭原则",
+        "OCP",
+        "对扩展开放",
+        "对修改关闭"
+      ]
+    },
+    {
+      "id": "J8_3",
+      "name": "里氏替换原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "LSP"
+      ],
+      "evidence_terms": [
+        "Liskov替换原则"
+      ],
+      "alignment_terms": [
+        "里氏替换原则",
+        "LSP"
+      ],
+      "keywords": [
+        "里氏替换",
+        "LSP",
+        "子类型"
+      ]
+    },
+    {
+      "id": "J8_4",
+      "name": "依赖倒置原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "DIP"
+      ],
+      "evidence_terms": [
+        "依赖倒置原则"
+      ],
+      "alignment_terms": [
+        "依赖倒置原则",
+        "DIP"
+      ],
+      "keywords": [
+        "依赖倒置",
+        "DIP",
+        "抽象"
+      ]
+    },
+    {
+      "id": "J8_5",
+      "name": "接口隔离原则",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "ISP"
+      ],
+      "evidence_terms": [
+        "接口隔离原则"
+      ],
+      "alignment_terms": [
+        "接口隔离原则",
+        "ISP"
+      ],
+      "keywords": [
+        "接口隔离",
+        "ISP",
+        "接口"
+      ]
+    },
+    {
+      "id": "J8_6",
+      "name": "设计模式",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "Design Pattern"
+      ],
+      "alignment_terms": [
+        "设计模式"
+      ],
+      "keywords": [
+        "设计模式",
+        "模式",
+        "变化点",
+        "意图"
+      ]
+    },
+    {
+      "id": "J8_7",
+      "name": "重构",
+      "type": "KnowledgePoint",
+      "parent_id": "J8",
+      "aliases": [
+        "Refactoring"
+      ],
+      "alignment_terms": [
+        "重构",
+        "重构到模式"
+      ],
+      "keywords": [
+        "重构",
+        "Refactoring",
+        "设计模式"
+      ]
+    },
+    {
+      "id": "J9",
+      "name": "模型驱动开发与模型到代码",
+      "type": "KnowledgeUnit",
+      "parent_id": "J",
+      "aliases": [],
+      "keywords": [
+        "模型驱动",
+        "MDA",
+        "模型转换",
+        "代码生成"
+      ]
+    },
+    {
+      "id": "J9_1",
+      "name": "模型驱动开发",
+      "type": "KnowledgePoint",
+      "parent_id": "J9",
+      "aliases": [
+        "MDD",
+        "Model-Driven Development"
+      ],
+      "evidence_terms": [
+        "模型驱动的开发"
+      ],
+      "alignment_terms": [
+        "模型驱动开发",
+        "模型驱动的开发",
+        "MDD"
+      ],
+      "keywords": [
+        "模型驱动开发",
+        "MDD",
+        "模型演化"
+      ]
+    },
+    {
+      "id": "J9_2",
+      "name": "模型驱动架构",
+      "type": "KnowledgePoint",
+      "parent_id": "J9",
+      "aliases": [
+        "MDA",
+        "Model Driven Architecture"
+      ],
+      "alignment_terms": [
+        "MDA",
+        "模型驱动架构"
+      ],
+      "keywords": [
+        "MDA",
+        "模型驱动架构",
+        "PIM",
+        "PSM"
+      ]
+    },
+    {
+      "id": "J9_3",
+      "name": "模型转换",
+      "type": "KnowledgePoint",
+      "parent_id": "J9",
+      "aliases": [
+        "模型转换技术",
+        "Model Transformation"
+      ],
+      "alignment_terms": [
+        "模型转换",
+        "模型转换技术"
+      ],
+      "keywords": [
+        "模型转换",
+        "QVT",
+        "ATL",
+        "PIM",
+        "PSM"
+      ]
+    },
+    {
+      "id": "J9_4",
+      "name": "模型到代码与代码生成",
+      "type": "KnowledgePoint",
+      "parent_id": "J9",
+      "aliases": [
+        "代码自动生成",
+        "模型到代码"
+      ],
+      "evidence_terms": [
+        "模型到代码",
+        "代码生成"
+      ],
+      "alignment_terms": [
+        "代码自动生成",
+        "模型到代码",
+        "代码生成"
+      ],
+      "keywords": [
+        "代码生成",
+        "自动生成",
+        "框架代码",
+        "实现模型"
+      ]
+    },
+    {
+      "id": "K",
+      "name": "程序设计范型",
+      "type": "KnowledgeDomain",
+      "parent_id": "ROOT",
+      "aliases": [],
+      "evidence_terms": [
+        "程序设计范型"
+      ],
+      "keywords": [
+        "程序设计范型",
+        "programming paradigm",
+        "程序设计风格"
+      ]
+    },
+    {
+      "id": "K1",
+      "name": "过程程序设计",
+      "type": "KnowledgePoint",
+      "parent_id": "K",
+      "aliases": [],
+      "evidence_terms": [
+        "过程程序设计"
+      ],
+      "keywords": [
+        "过程程序设计",
+        "procedural programming"
+      ]
+    },
+    {
+      "id": "K2",
+      "name": "模块化程序设计",
+      "type": "KnowledgePoint",
+      "parent_id": "K",
+      "aliases": [],
+      "evidence_terms": [
+        "模块化程序设计"
+      ],
+      "keywords": [
+        "模块化程序设计",
+        "模块化"
+      ]
+    },
+    {
+      "id": "K3",
+      "name": "程序设计风格",
+      "type": "KnowledgePoint",
+      "parent_id": "K",
+      "aliases": [
+        "Programming Styles"
+      ],
+      "evidence_terms": [
+        "程序设计风格"
+      ],
+      "keywords": [
+        "程序设计风格",
+        "Programming Styles"
+      ]
+    },
+    {
+      "id": "D0_3",
+      "name": "顺序存储",
+      "type": "KnowledgePoint",
+      "parent_id": "D0",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "顺序存储"
+      ]
+    },
+    {
+      "id": "D2_8",
+      "name": "三元组顺序表上的转置",
+      "type": "OperationRule",
+      "parent_id": "D2_7",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "三元组顺序表转置"
+      ]
+    },
+    {
+      "id": "D3_4_1",
+      "name": "有序顺序表",
+      "type": "KnowledgePoint",
+      "parent_id": "D3_4",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "有序顺序表"
+      ]
+    },
+    {
+      "id": "D5_2_1",
+      "name": "完全二叉树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_2",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "完全二叉树"
+      ]
+    },
+    {
+      "id": "D5_5_1",
+      "name": "后序线索二叉树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_5",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "后序线索"
+      ]
+    },
+    {
+      "id": "D5_6_1",
+      "name": "二叉排序树的删除运算",
+      "type": "OperationRule",
+      "parent_id": "D5_6",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "二叉排序树删除"
+      ]
+    },
+    {
+      "id": "D5_6_2",
+      "name": "红黑树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_6",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "红黑树"
+      ]
+    },
+    {
+      "id": "D5_7_1",
+      "name": "最小不平衡子树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_7",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "最小不平衡子树"
+      ]
+    },
+    {
+      "id": "D5_9_1",
+      "name": "赫夫曼树",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_9",
+      "aliases": [
+        "Huffman树",
+        "Huffman Tree",
+        "哈夫曼树"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "赫夫曼树"
+      ]
+    },
+    {
+      "id": "D5_9_2",
+      "name": "赫夫曼编码",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_9",
+      "aliases": [
+        "Huffman编码",
+        "Huffman Coding",
+        "哈夫曼编码"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "赫夫曼编码"
+      ]
+    },
+    {
+      "id": "D5_9_3",
+      "name": "赫夫曼算法",
+      "type": "Algorithm",
+      "parent_id": "D5_9",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "Huffman算法"
+      ]
+    },
+    {
+      "id": "D6_1_1",
+      "name": "有向图",
+      "type": "KnowledgePoint",
+      "parent_id": "D6_1",
+      "aliases": [
+        "Directed Graph"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "有向图"
+      ]
+    },
+    {
+      "id": "D6_1_2",
+      "name": "顶点",
+      "type": "KnowledgePoint",
+      "parent_id": "D6_1",
+      "aliases": [
+        "Vertex"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "顶点"
+      ]
+    },
+    {
+      "id": "D6_5_1",
+      "name": "有向无环图",
+      "type": "KnowledgePoint",
+      "parent_id": "D6_5",
+      "aliases": [
+        "DAG",
+        "Directed Acyclic Graph"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "有向无环图"
+      ]
+    },
+    {
+      "id": "D6_5_2",
+      "name": "拓扑排序算法",
+      "type": "Algorithm",
+      "parent_id": "D6_5",
+      "aliases": [
+        "拓扑排序",
+        "Topological Sort"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "拓扑排序"
+      ]
+    },
+    {
+      "id": "D7_1_1",
+      "name": "查找表",
+      "type": "KnowledgePoint",
+      "parent_id": "D7_1",
+      "aliases": [],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "查找表"
+      ]
+    },
+    {
+      "id": "D7_1_2",
+      "name": "平均查找长度",
+      "type": "ComplexityMetric",
+      "parent_id": "D7_1",
+      "aliases": [
+        "ASL",
+        "Average Search Length",
+        "平均搜索长度"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "平均查找长度"
+      ]
+    },
+    {
+      "id": "D7_1_2_1",
+      "name": "ASL成功",
+      "type": "ComplexityMetric",
+      "parent_id": "D7_1_2",
+      "aliases": [
+        "成功查找平均长度"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "ASL成功"
+      ]
+    },
+    {
+      "id": "D7_1_2_2",
+      "name": "ASL失败",
+      "type": "ComplexityMetric",
+      "parent_id": "D7_1_2",
+      "aliases": [
+        "失败查找平均长度"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "ASL失败"
+      ]
+    },
+    {
+      "id": "D7_5_1",
+      "name": "树表查找算法",
+      "type": "Algorithm",
+      "parent_id": "D7_5",
+      "aliases": [
+        "树表的查找"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "树表查找"
+      ]
+    },
+    {
+      "id": "D7_0",
+      "name": "散列表（哈希表）",
+      "type": "KnowledgePoint",
+      "parent_id": "D7",
+      "aliases": [
+        "散列表",
+        "哈希表",
+        "Hash Table"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "散列表",
+        "哈希表"
+      ]
+    },
+    {
+      "id": "D7_6_1",
+      "name": "线性探测法",
+      "type": "OperationRule",
+      "parent_id": "D7_6",
+      "aliases": [
+        "线性探查法",
+        "Linear Probing"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "线性探测法"
+      ]
+    },
+    {
+      "id": "D8_4_1",
+      "name": "树形选择排序",
+      "type": "Algorithm",
+      "parent_id": "D8_4",
+      "aliases": [
+        "树型选择排序"
+      ],
+      "alignment_terms": [],
+      "evidence_terms": [
+        "树形选择排序"
+      ]
+    },
+    {
+      "id": "D5_9_4",
+      "name": "带权路径长度",
+      "type": "KnowledgePoint",
+      "parent_id": "D5_9",
+      "aliases": [],
+      "evidence_terms": [],
+      "keywords": [
+        "带权路径长度"
+      ]
+    },
+    {
+      "id": "D6_1_3",
+      "name": "连通分量",
+      "type": "KnowledgePoint",
+      "parent_id": "D6_1",
+      "aliases": [],
+      "evidence_terms": [],
+      "keywords": [
+        "连通分量"
+      ]
+    },
+    {
+      "id": "D3_9",
+      "name": "约瑟夫环问题",
+      "type": "AlgorithmProblem",
+      "parent_id": "D3",
+      "aliases": [
+        "Josephus问题",
+        "Josephus Problem"
+      ],
+      "alignment_terms": [
+        "约瑟夫环",
+        "约瑟夫问题",
+        "Josephus"
+      ],
+      "evidence_terms": [
+        "约瑟夫环",
+        "约瑟夫问题",
+        "Josephus"
+      ],
+      "keywords": [
+        "约瑟夫环",
+        "循环链表",
+        "Josephus"
+      ]
+    },
+    {
+      "id": "J1_13",
+      "name": "非功能需求与FURPS",
+      "type": "KnowledgePoint",
+      "parent_id": "J1",
+      "aliases": [
+        "非功能性需求"
+      ],
+      "alignment_terms": [
+        "非功能需求",
+        "FURPS",
+        "FURPS准则",
+        "FURPS+"
+      ],
+      "evidence_terms": [
+        "非功能需求",
+        "非功能性需求",
+        "FURPS",
+        "FURPS准则",
+        "FURPS+"
+      ],
+      "keywords": [
+        "非功能需求",
+        "FURPS",
+        "质量属性"
+      ]
+    },
+    {
+      "id": "J2_8",
+      "name": "对象图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "Object Diagram"
+      ],
+      "alignment_terms": [
+        "对象图"
+      ],
+      "evidence_terms": [
+        "对象图",
+        "Object Diagram"
+      ],
+      "keywords": [
+        "对象图",
+        "对象实例",
+        "Object Diagram"
+      ]
+    },
+    {
+      "id": "J2_9",
+      "name": "部署图",
+      "type": "KnowledgePoint",
+      "parent_id": "J2",
+      "aliases": [
+        "Deployment Diagram"
+      ],
+      "alignment_terms": [
+        "部署图"
+      ],
+      "evidence_terms": [
+        "部署图",
+        "Deployment Diagram"
+      ],
+      "keywords": [
+        "部署图",
+        "节点",
+        "连接",
+        "Deployment Diagram"
+      ]
+    }
+  ],
+  "semantic_relation_types": {
+    "has_core_concept": {
+      "display_name": "核心概念"
+    },
+    "has_core_feature": {
+      "display_name": "核心特点"
+    },
+    "has_control_structure": {
+      "display_name": "控制结构"
+    },
+    "has_implementation_mechanism": {
+      "display_name": "实现机制"
+    },
+    "has_data_structure": {
+      "display_name": "典型数据结构"
+    },
+    "has_error_handling": {
+      "display_name": "异常处理方式"
+    },
+    "has_persistence_mechanism": {
+      "display_name": "持久化方式"
+    },
+    "has_engineering_practice": {
+      "display_name": "工程实践方式"
+    },
+    "has_concurrency_mechanism": {
+      "display_name": "并发机制"
+    },
+    "has_algorithm": {
+      "display_name": "包含算法",
+      "description": "课程主题包含的具体算法。"
+    },
+    "has_operation_rule": {
+      "display_name": "包含操作规则",
+      "description": "课程主题包含的确定性操作过程。"
+    },
+    "has_complexity_metric": {
+      "display_name": "具有复杂度指标",
+      "description": "课程主题使用的性能或复杂度度量。"
+    },
+    "has_algorithm_strategy": {
+      "display_name": "包含算法策略",
+      "description": "课程主题包含的算法设计策略。"
+    },
+    "has_algorithm_problem": {
+      "display_name": "包含算法问题",
+      "description": "课程主题讨论的标准算法问题。"
+    },
+    "uses_strategy": {
+      "display_name": "采用策略",
+      "description": "具体算法采用的设计策略。"
+    },
+    "solves_problem": {
+      "display_name": "求解问题",
+      "description": "具体算法求解的标准问题。"
+    }
+  },
+  "semantic_relations": [
+    {
+      "source_id": "A",
+      "target_id": "A1_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A2_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A2_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A3_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A3_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A2_4",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "A",
+      "target_id": "A2_5",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B1_2",
+      "type": "has_control_structure"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B1_3",
+      "type": "has_control_structure"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B2_1",
+      "type": "has_control_structure"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B2_2",
+      "type": "has_control_structure"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B2_3",
+      "type": "has_control_structure"
+    },
+    {
+      "source_id": "B",
+      "target_id": "B3_1",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "C",
+      "target_id": "C1_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "C",
+      "target_id": "C1_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "C",
+      "target_id": "C1_3",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "C",
+      "target_id": "C2_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "C",
+      "target_id": "C2_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D1_1",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D2_1",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D2_2",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D2_3",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D2_4",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D2_5",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D3_1",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D3_2",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D3_3",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D4_1",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D4_2",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D0",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D5",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D6",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D7",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "D",
+      "target_id": "D8",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E1_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E1_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E5_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E2_1",
+      "type": "has_core_feature"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E3",
+      "type": "has_core_feature"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E4",
+      "type": "has_core_feature"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E5_0",
+      "type": "has_core_feature"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E1_4",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E3_2",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E4_1",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "E",
+      "target_id": "E5_4",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "F",
+      "target_id": "F1_1",
+      "type": "has_error_handling"
+    },
+    {
+      "source_id": "F",
+      "target_id": "F1_2",
+      "type": "has_error_handling"
+    },
+    {
+      "source_id": "F",
+      "target_id": "F1_3",
+      "type": "has_error_handling"
+    },
+    {
+      "source_id": "F",
+      "target_id": "F2_1",
+      "type": "has_engineering_practice"
+    },
+    {
+      "source_id": "F",
+      "target_id": "F2_2",
+      "type": "has_engineering_practice"
+    },
+    {
+      "source_id": "G",
+      "target_id": "G1_1",
+      "type": "has_persistence_mechanism"
+    },
+    {
+      "source_id": "G",
+      "target_id": "G2_1",
+      "type": "has_persistence_mechanism"
+    },
+    {
+      "source_id": "G",
+      "target_id": "G2_2",
+      "type": "has_persistence_mechanism"
+    },
+    {
+      "source_id": "G",
+      "target_id": "G2_3",
+      "type": "has_persistence_mechanism"
+    },
+    {
+      "source_id": "H",
+      "target_id": "H1_1",
+      "type": "has_engineering_practice"
+    },
+    {
+      "source_id": "H",
+      "target_id": "H2_1",
+      "type": "has_engineering_practice"
+    },
+    {
+      "source_id": "H",
+      "target_id": "H2_2",
+      "type": "has_engineering_practice"
+    },
+    {
+      "source_id": "I",
+      "target_id": "I1_1",
+      "type": "has_concurrency_mechanism"
+    },
+    {
+      "source_id": "I",
+      "target_id": "I1_2",
+      "type": "has_concurrency_mechanism"
+    },
+    {
+      "source_id": "I",
+      "target_id": "I2_1",
+      "type": "has_concurrency_mechanism"
+    },
+    {
+      "source_id": "I",
+      "target_id": "I2_3",
+      "type": "has_concurrency_mechanism"
+    },
+    {
+      "source_id": "I",
+      "target_id": "I2_2",
+      "type": "has_concurrency_mechanism"
+    },
+    {
+      "source_id": "D1",
+      "target_id": "D1_13",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D1",
+      "target_id": "D1_14",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D2_7",
+      "target_id": "D2_8",
+      "type": "has_operation_rule"
+    },
+    {
+      "source_id": "D5_6",
+      "target_id": "D5_6_1",
+      "type": "has_operation_rule"
+    },
+    {
+      "source_id": "D5_9",
+      "target_id": "D5_9_3",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D6_5",
+      "target_id": "D6_5_2",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_1_2",
+      "type": "has_complexity_metric"
+    },
+    {
+      "source_id": "D7_5",
+      "target_id": "D7_5_1",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D7",
+      "target_id": "D7_0",
+      "type": "has_data_structure"
+    },
+    {
+      "source_id": "D7_0",
+      "target_id": "D7_6",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "D7_6",
+      "target_id": "D7_6_1",
+      "type": "has_operation_rule"
+    },
+    {
+      "source_id": "D8_4",
+      "target_id": "D8_4_1",
+      "type": "has_algorithm"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_4",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_6",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_7",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_8",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J1_9",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J2",
+      "target_id": "J2_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J2",
+      "target_id": "J2_4",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J2",
+      "target_id": "J2_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J2",
+      "target_id": "J2_6",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J3",
+      "target_id": "J3_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J3",
+      "target_id": "J3_4",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J3",
+      "target_id": "J3_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J3",
+      "target_id": "J3_6",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J5",
+      "target_id": "J5_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J5",
+      "target_id": "J5_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J5",
+      "target_id": "J5_3",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J5",
+      "target_id": "J5_4",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J6",
+      "target_id": "J6_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6",
+      "target_id": "J6_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6",
+      "target_id": "J6_3",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6_3",
+      "target_id": "J6_4",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6_3",
+      "target_id": "J6_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6_3",
+      "target_id": "J6_6",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6",
+      "target_id": "J6_7",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J6",
+      "target_id": "J6_8",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J7",
+      "target_id": "J7_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J7",
+      "target_id": "J7_2",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J7",
+      "target_id": "J7_3",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J7",
+      "target_id": "J7_4",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J7",
+      "target_id": "J7_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_3",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_4",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_5",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_6",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J8",
+      "target_id": "J8_7",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J9",
+      "target_id": "J9_1",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J9",
+      "target_id": "J9_2",
+      "type": "has_core_concept"
+    },
+    {
+      "source_id": "J9",
+      "target_id": "J9_3",
+      "type": "has_implementation_mechanism"
+    },
+    {
+      "source_id": "J9_3",
+      "target_id": "J9_4",
+      "type": "has_implementation_mechanism"
+    }
+  ],
+  "prerequisite_relations": [
+    {
+      "source_id": "A1_1",
+      "target_id": "A1_2"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "A2_2"
+    },
+    {
+      "source_id": "A2_3",
+      "target_id": "A2_2"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "A2_4"
+    },
+    {
+      "source_id": "A2_2",
+      "target_id": "A2_4"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "A2_5"
+    },
+    {
+      "source_id": "A2_2",
+      "target_id": "A3_1"
+    },
+    {
+      "source_id": "A2_2",
+      "target_id": "A4_1"
+    },
+    {
+      "source_id": "A4_1",
+      "target_id": "A4_2"
+    },
+    {
+      "source_id": "A2_5",
+      "target_id": "B1_1"
+    },
+    {
+      "source_id": "B1_1",
+      "target_id": "B1_2"
+    },
+    {
+      "source_id": "B1_1",
+      "target_id": "B1_3"
+    },
+    {
+      "source_id": "B1_2",
+      "target_id": "B2_1"
+    },
+    {
+      "source_id": "B1_2",
+      "target_id": "B2_2"
+    },
+    {
+      "source_id": "B2_1",
+      "target_id": "B2_3"
+    },
+    {
+      "source_id": "B2_2",
+      "target_id": "B2_3"
+    },
+    {
+      "source_id": "B2_1",
+      "target_id": "B2_4"
+    },
+    {
+      "source_id": "B2_2",
+      "target_id": "B2_4"
+    },
+    {
+      "source_id": "B2_1",
+      "target_id": "B3_1"
+    },
+    {
+      "source_id": "B2_2",
+      "target_id": "B3_1"
+    },
+    {
+      "source_id": "A1_2",
+      "target_id": "C1_1"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "C1_1"
+    },
+    {
+      "source_id": "C1_1",
+      "target_id": "C1_2"
+    },
+    {
+      "source_id": "C1_2",
+      "target_id": "C1_3"
+    },
+    {
+      "source_id": "C1_1",
+      "target_id": "C1_4"
+    },
+    {
+      "source_id": "C1_2",
+      "target_id": "C1_5"
+    },
+    {
+      "source_id": "C1_1",
+      "target_id": "C2_1"
+    },
+    {
+      "source_id": "C2_1",
+      "target_id": "C2_2"
+    },
+    {
+      "source_id": "D1_1",
+      "target_id": "D1_2"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_3"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_4"
+    },
+    {
+      "source_id": "D1_4",
+      "target_id": "D1_5"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_6"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_7"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_8"
+    },
+    {
+      "source_id": "D1_2",
+      "target_id": "D1_9"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "D2_1"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D2_2"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D2_5"
+    },
+    {
+      "source_id": "D2_2",
+      "target_id": "D2_3"
+    },
+    {
+      "source_id": "D2_2",
+      "target_id": "D2_4"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D3_1"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D3_2"
+    },
+    {
+      "source_id": "D2_2",
+      "target_id": "D3_3"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D4_1"
+    },
+    {
+      "source_id": "D4_1",
+      "target_id": "D4_2"
+    },
+    {
+      "source_id": "A2_5",
+      "target_id": "E1_1"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E1_2"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E1_3"
+    },
+    {
+      "source_id": "E1_2",
+      "target_id": "E1_6"
+    },
+    {
+      "source_id": "E1_3",
+      "target_id": "E1_4"
+    },
+    {
+      "source_id": "E1_3",
+      "target_id": "E1_5"
+    },
+    {
+      "source_id": "E1_2",
+      "target_id": "E1_7"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E2"
+    },
+    {
+      "source_id": "E2",
+      "target_id": "E2_1"
+    },
+    {
+      "source_id": "E2",
+      "target_id": "E2_2"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E3"
+    },
+    {
+      "source_id": "E3",
+      "target_id": "E3_1"
+    },
+    {
+      "source_id": "E3_1",
+      "target_id": "E3_2"
+    },
+    {
+      "source_id": "E3_1",
+      "target_id": "E3_3"
+    },
+    {
+      "source_id": "E3_1",
+      "target_id": "E3_4"
+    },
+    {
+      "source_id": "E3_1",
+      "target_id": "E3_5"
+    },
+    {
+      "source_id": "E3_1",
+      "target_id": "E3_6"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E4"
+    },
+    {
+      "source_id": "E3",
+      "target_id": "E4"
+    },
+    {
+      "source_id": "E4",
+      "target_id": "E4_1"
+    },
+    {
+      "source_id": "E3",
+      "target_id": "E4_2"
+    },
+    {
+      "source_id": "C1_4",
+      "target_id": "E4_3"
+    },
+    {
+      "source_id": "E1_1",
+      "target_id": "E5"
+    },
+    {
+      "source_id": "E5",
+      "target_id": "E5_0"
+    },
+    {
+      "source_id": "E5_0",
+      "target_id": "E5_1"
+    },
+    {
+      "source_id": "E5_1",
+      "target_id": "E5_4"
+    },
+    {
+      "source_id": "E5_0",
+      "target_id": "E5_2"
+    },
+    {
+      "source_id": "A2_5",
+      "target_id": "E5_3"
+    },
+    {
+      "source_id": "B1_2",
+      "target_id": "F1_2"
+    },
+    {
+      "source_id": "F1_1",
+      "target_id": "F1_2"
+    },
+    {
+      "source_id": "F1_1",
+      "target_id": "F1_3"
+    },
+    {
+      "source_id": "F1_2",
+      "target_id": "F2_2"
+    },
+    {
+      "source_id": "F2_1",
+      "target_id": "F2_2"
+    },
+    {
+      "source_id": "C1_1",
+      "target_id": "G1_1"
+    },
+    {
+      "source_id": "G1_1",
+      "target_id": "G2_1"
+    },
+    {
+      "source_id": "G1_1",
+      "target_id": "G2_2"
+    },
+    {
+      "source_id": "E1_2",
+      "target_id": "G2_3"
+    },
+    {
+      "source_id": "G2_2",
+      "target_id": "G2_3"
+    },
+    {
+      "source_id": "H1_1",
+      "target_id": "H2_1"
+    },
+    {
+      "source_id": "F2_2",
+      "target_id": "H2_1"
+    },
+    {
+      "source_id": "H1_1",
+      "target_id": "H2_2"
+    },
+    {
+      "source_id": "B2",
+      "target_id": "I1_1"
+    },
+    {
+      "source_id": "I1_1",
+      "target_id": "I1_2"
+    },
+    {
+      "source_id": "I1_2",
+      "target_id": "I2_1"
+    },
+    {
+      "source_id": "I1_2",
+      "target_id": "I2_3"
+    },
+    {
+      "source_id": "I2_1",
+      "target_id": "I2_2"
+    },
+    {
+      "source_id": "I2_3",
+      "target_id": "I2_2"
+    },
+    {
+      "source_id": "J1",
+      "target_id": "J1_1"
+    },
+    {
+      "source_id": "J1_1",
+      "target_id": "J1_2"
+    },
+    {
+      "source_id": "J1",
+      "target_id": "J2"
+    },
+    {
+      "source_id": "J2",
+      "target_id": "J2_1"
+    },
+    {
+      "source_id": "J1",
+      "target_id": "J3"
+    },
+    {
+      "source_id": "J3",
+      "target_id": "J3_1"
+    },
+    {
+      "source_id": "J4_1",
+      "target_id": "J2_1"
+    },
+    {
+      "source_id": "J4_1",
+      "target_id": "J3_1"
+    },
+    {
+      "source_id": "J4_1",
+      "target_id": "J4_2"
+    },
+    {
+      "source_id": "A2_1",
+      "target_id": "A2_6"
+    },
+    {
+      "source_id": "C1_1",
+      "target_id": "C1_6"
+    },
+    {
+      "source_id": "C2_2",
+      "target_id": "C2_3"
+    },
+    {
+      "source_id": "D1_3",
+      "target_id": "D1_10"
+    },
+    {
+      "source_id": "E1_6",
+      "target_id": "E1_8"
+    },
+    {
+      "source_id": "E3_4",
+      "target_id": "E3_7"
+    },
+    {
+      "source_id": "J3_2",
+      "target_id": "J3_3"
+    },
+    {
+      "source_id": "J4_1",
+      "target_id": "J4_3"
+    },
+    {
+      "source_id": "K1",
+      "target_id": "K2"
+    },
+    {
+      "source_id": "K1",
+      "target_id": "K3"
+    },
+    {
+      "source_id": "D1_1",
+      "target_id": "D1_11"
+    },
+    {
+      "source_id": "D1_11",
+      "target_id": "D1_12"
+    },
+    {
+      "source_id": "D1_12",
+      "target_id": "D1_13"
+    },
+    {
+      "source_id": "D1_12",
+      "target_id": "D1_14"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D2_6"
+    },
+    {
+      "source_id": "D2_6",
+      "target_id": "D2_7"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D3_4"
+    },
+    {
+      "source_id": "D3_4",
+      "target_id": "D3_5"
+    },
+    {
+      "source_id": "D3_4",
+      "target_id": "D3_6"
+    },
+    {
+      "source_id": "D3_1",
+      "target_id": "D3_7"
+    },
+    {
+      "source_id": "D3_2",
+      "target_id": "D3_8"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D5_1"
+    },
+    {
+      "source_id": "D5_1",
+      "target_id": "D5_0"
+    },
+    {
+      "source_id": "D5_0",
+      "target_id": "D5_2"
+    },
+    {
+      "source_id": "D0_1",
+      "target_id": "D0_2"
+    },
+    {
+      "source_id": "D0_2",
+      "target_id": "D4_3"
+    },
+    {
+      "source_id": "D4_3",
+      "target_id": "D7_1"
+    },
+    {
+      "source_id": "D4_3",
+      "target_id": "D8_1"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_3"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_4"
+    },
+    {
+      "source_id": "D5_4",
+      "target_id": "D5_5"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_6"
+    },
+    {
+      "source_id": "D5_6",
+      "target_id": "D5_7"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_8"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_9"
+    },
+    {
+      "source_id": "D5_1",
+      "target_id": "D5_10"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D6_1"
+    },
+    {
+      "source_id": "D6_1",
+      "target_id": "D6_2"
+    },
+    {
+      "source_id": "D6_1",
+      "target_id": "D6_3"
+    },
+    {
+      "source_id": "D6_1",
+      "target_id": "D6_4"
+    },
+    {
+      "source_id": "D6_1",
+      "target_id": "D6_5"
+    },
+    {
+      "source_id": "D6_5",
+      "target_id": "D6_6"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D7_1"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_2"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_3"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_4"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_5"
+    },
+    {
+      "source_id": "D7_1",
+      "target_id": "D7_6"
+    },
+    {
+      "source_id": "D5_6",
+      "target_id": "D7_5"
+    },
+    {
+      "source_id": "D2_1",
+      "target_id": "D8_1"
+    },
+    {
+      "source_id": "D8_1",
+      "target_id": "D8_2"
+    },
+    {
+      "source_id": "D8_1",
+      "target_id": "D8_3"
+    },
+    {
+      "source_id": "D8_1",
+      "target_id": "D8_4"
+    },
+    {
+      "source_id": "D8_1",
+      "target_id": "D8_5"
+    },
+    {
+      "source_id": "D8_1",
+      "target_id": "D8_6"
+    },
+    {
+      "source_id": "D0_2",
+      "target_id": "D0_3"
+    },
+    {
+      "source_id": "D2_7",
+      "target_id": "D2_8"
+    },
+    {
+      "source_id": "D5_2",
+      "target_id": "D5_2_1"
+    },
+    {
+      "source_id": "D5_6",
+      "target_id": "D5_6_1"
+    },
+    {
+      "source_id": "D5_6",
+      "target_id": "D5_6_2"
+    },
+    {
+      "source_id": "D5_7",
+      "target_id": "D5_7_1"
+    },
+    {
+      "source_id": "D5_9_1",
+      "target_id": "D5_9_2"
+    },
+    {
+      "source_id": "D5_9_2",
+      "target_id": "D5_9_3"
+    },
+    {
+      "source_id": "D6_5_1",
+      "target_id": "D6_5_2"
+    },
+    {
+      "source_id": "D7_1_2",
+      "target_id": "D7_1_2_1"
+    },
+    {
+      "source_id": "D7_1_2",
+      "target_id": "D7_1_2_2"
+    },
+    {
+      "source_id": "D7_6",
+      "target_id": "D7_6_1"
+    },
+    {
+      "source_id": "D8_4",
+      "target_id": "D8_4_1"
+    },
+    {
+      "source_id": "J1_2",
+      "target_id": "J6_1"
+    },
+    {
+      "source_id": "J6_1",
+      "target_id": "J6_2"
+    },
+    {
+      "source_id": "J6_2",
+      "target_id": "J6_3"
+    },
+    {
+      "source_id": "J6_3",
+      "target_id": "J6_7"
+    },
+    {
+      "source_id": "J6_7",
+      "target_id": "J6_8"
+    },
+    {
+      "source_id": "J2_1",
+      "target_id": "J6_3"
+    },
+    {
+      "source_id": "J3_1",
+      "target_id": "J6_8"
+    },
+    {
+      "source_id": "J5_1",
+      "target_id": "J5_4"
+    },
+    {
+      "source_id": "J9_1",
+      "target_id": "J9_2"
+    },
+    {
+      "source_id": "J9_2",
+      "target_id": "J9_3"
+    },
+    {
+      "source_id": "J9_3",
+      "target_id": "J9_4"
+    }
+  ],
+  "ability_nodes": [
+    {
+      "id": "ABILITY_CODE_READING",
+      "name": "程序阅读与执行追踪",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够根据代码和运行规则追踪程序状态与输出。"
+    },
+    {
+      "id": "ABILITY_CONTROL_FLOW",
+      "name": "控制流程分析",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够分析选择、循环、递归等控制流程。"
+    },
+    {
+      "id": "ABILITY_FUNCTION_ABSTRACTION",
+      "name": "函数抽象与模块化",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够设计函数边界、参数和模块组织。"
+    },
+    {
+      "id": "ABILITY_DATA_ORGANIZATION",
+      "name": "数据组织与算法应用",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够选择并使用序列、线性数据结构和基础算法。"
+    },
+    {
+      "id": "ABILITY_OOP_MODELING",
+      "name": "面向对象建模",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够使用类、对象、继承、多态和接口组织程序。"
+    },
+    {
+      "id": "ABILITY_DEBUGGING",
+      "name": "程序调试与异常处理能力",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够定位错误并使用异常、断言和调试工具修复问题。"
+    },
+    {
+      "id": "ABILITY_FILE_DATA",
+      "name": "文件与数据处理",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够完成文件读写、序列化和数据持久化。"
+    },
+    {
+      "id": "ABILITY_TEST_ENGINEERING",
+      "name": "测试与工程实践",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够编写测试、维护代码质量并进行版本协作。"
+    },
+    {
+      "id": "ABILITY_CONCURRENCY",
+      "name": "并发程序设计",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够创建线程并处理同步、互斥和并发安全。"
+    },
+    {
+      "id": "ABILITY_OOAD",
+      "name": "OOAD建模能力",
+      "type": "Ability",
+      "aliases": [],
+      "description": "能够完成用例、类图和顺序图等 OOAD 建模。"
+    }
+  ],
+  "ability_relations": [
+    {
+      "source_id": "A1",
+      "target_id": "ABILITY_CODE_READING",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "B",
+      "target_id": "ABILITY_CONTROL_FLOW",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "C",
+      "target_id": "ABILITY_FUNCTION_ABSTRACTION",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "D",
+      "target_id": "ABILITY_DATA_ORGANIZATION",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "F",
+      "target_id": "ABILITY_DEBUGGING",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "G",
+      "target_id": "ABILITY_FILE_DATA",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "H",
+      "target_id": "ABILITY_TEST_ENGINEERING",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "I",
+      "target_id": "ABILITY_CONCURRENCY",
+      "type": "develops_ability"
+    },
+    {
+      "source_id": "J",
+      "target_id": "ABILITY_OOAD",
+      "type": "develops_ability"
+    }
+  ],
+  "technology_nodes": [
+    {
+      "id": "PLATFORM_JAVA_SE",
+      "name": "Java SE",
+      "type": "TechnologyPlatform",
+      "aliases": [
+        "JavaSE"
+      ],
+      "evidence_terms": [
+        "Java SE",
+        "JavaSE"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "PLATFORM_JAVA_EE",
+      "name": "Java EE",
+      "type": "TechnologyPlatform",
+      "aliases": [
+        "JavaEE"
+      ],
+      "evidence_terms": [
+        "Java EE",
+        "JavaEE"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "PLATFORM_JAKARTA_EE",
+      "name": "Jakarta EE",
+      "type": "TechnologyPlatform",
+      "aliases": [],
+      "evidence_terms": [
+        "Jakarta EE"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "FRAMEWORK_SPRING_BOOT",
+      "name": "Spring Boot",
+      "type": "LibraryFramework",
+      "aliases": [],
+      "evidence_terms": [
+        "Spring Boot"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "FRAMEWORK_EJB",
+      "name": "Enterprise JavaBeans",
+      "type": "LibraryFramework",
+      "aliases": [
+        "EJB",
+        "Enterprice JavaBeans"
+      ],
+      "evidence_terms": [
+        "Enterprise JavaBeans",
+        "Enterprice JavaBeans"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "FRAMEWORK_SERVLET_API",
+      "name": "Servlet API",
+      "type": "LibraryFramework",
+      "aliases": [
+        "Java Servlet API",
+        "JavaServlets API"
+      ],
+      "evidence_terms": [
+        "Servlet API",
+        "Java Servlet API",
+        "JavaServlets API"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "FRAMEWORK_JMS",
+      "name": "Java Message Service",
+      "type": "LibraryFramework",
+      "aliases": [
+        "JMS",
+        "JavaMessage Services",
+        "Java Message Services"
+      ],
+      "evidence_terms": [
+        "Java Message Service",
+        "JavaMessage Services",
+        "Java Message Services"
+      ],
+      "require_material_evidence": true
+    },
+    {
+      "id": "FRAMEWORK_JSP",
+      "name": "JavaServer Pages",
+      "type": "LibraryFramework",
+      "aliases": [
+        "JSP",
+        "Java Server Pages"
+      ],
+      "evidence_terms": [
+        "JavaServer Pages",
+        "Java Server Pages"
+      ],
+      "require_material_evidence": true
+    }
+  ],
+  "technology_relations": [
+    {
+      "source_id": "PLATFORM_JAVA_SE",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "PLATFORM_JAVA_EE",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "PLATFORM_JAKARTA_EE",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_SPRING_BOOT",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_EJB",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_SERVLET_API",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_JMS",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_JSP",
+      "target_language": "Java",
+      "type": "supports_language"
+    },
+    {
+      "source_id": "FRAMEWORK_EJB",
+      "target_id": "PLATFORM_JAKARTA_EE",
+      "type": "built_on_platform"
+    },
+    {
+      "source_id": "FRAMEWORK_SERVLET_API",
+      "target_id": "PLATFORM_JAKARTA_EE",
+      "type": "built_on_platform"
+    },
+    {
+      "source_id": "FRAMEWORK_JMS",
+      "target_id": "PLATFORM_JAKARTA_EE",
+      "type": "built_on_platform"
+    },
+    {
+      "source_id": "FRAMEWORK_JSP",
+      "target_id": "PLATFORM_JAVA_EE",
+      "type": "built_on_platform"
+    }
+  ],
+  "question_mapping_policy": {
+    "version": "v1",
+    "roles": {
+      "primary": {
+        "weight": 1.0
+      },
+      "secondary": {
+        "weight": 0.6
+      }
+    },
+    "cognitive_levels": [
+      "remember",
+      "understand",
+      "apply",
+      "analyze",
+      "evaluate",
+      "create"
+    ],
+    "metadata_fields": [
+      "role_weight",
+      "cognitive_level",
+      "mapping_status"
+    ],
+    "legacy_policy": "字段为可选；历史习题映射不因缺失这些字段而失效。"
+  },
+  "upgrade_notes": [
+    "在 v0.8 基础上复核算法课程 131 个候选节点与 56 条候选关系。",
+    "只纳入有直接教材证据、可唯一归入课程树且不与既有节点重复的内容。",
+    "v0.9 未新增 Schema 实体或关系类型；新增内容均由既有教学类型与关系类型表达。",
+    "课程历史、相邻学科、零散符号、背景应用和证据不足项保留在候选报告，不进入正式图谱。",
+    "补足调试与错误模式单元的直接证据词，使已有的“断言与调试”子知识点可被正式物化。",
+    "v0.11 根据 OODC C++ 课件直接证据补全函数重载、内联函数、常成员、拷贝构造函数、友元与操作符重载。",
+    "已有虚继承、静态成员等节点仅补充课程术语别名，不把习题干扰项或宽泛关键词写入正式别名。",
+    "赋值兼容与 C++ 多范式等缺少充分直接材料证据的内容继续留在复核层，不进入正式课程树。",
+    "根据课件直接证据新增约瑟夫环问题、非功能需求与FURPS、对象图和部署图。",
+    "将调试、参数传递、排序、树、散列和用例建模候选词收敛为既有节点的对齐与证据词，不重复扩张课程树。",
+    "CRUD 等建模反例及教材名、教师名、工具名继续留在候选复核层，不进入正式课程知识树。",
+    "按最终范围决策移除算法设计与分析（L）及其全部子树；它不再作为独立课程或课程局部目录出现。",
+    "按关系抽样复核撤回基本数据类型→字符串、运算符与表达式→输入输出的严格先修关系，以及面向对象编程→面向对象建模的能力培养关系。",
+    "后续重建默认使用 v0.14；v0.13 及更早目录仅作为可追溯历史快照。"
+  ],
+  "release_policy": {
+    "retired_catalog_roots": [
+      "L"
+    ],
+    "retracted_prerequisites": [
+      [
+        "A2_1",
+        "D1_1"
+      ],
+      [
+        "A3_1",
+        "A3_2"
+      ]
+    ],
+    "retracted_ability_relations": [
+      [
+        "E",
+        "ABILITY_OOP_MODELING",
+        "develops_ability"
+      ]
+    ]
+  }
+}

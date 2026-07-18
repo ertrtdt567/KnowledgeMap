@@ -1,0 +1,127 @@
+{
+  "release_version": "v2026.07.18",
+  "generated_at": "2026-07-17T18:45:52.797200+00:00",
+  "producer": "publish_formal_release.py",
+  "source_versions": {
+    "graph": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\course_centered_v12_with_questions\\standard_graph.json",
+    "questions": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_questions.json",
+    "mappings": "C:\\Users\\23189\\Documents\\Codex\\2026-07-02\\zhi-s\\work\\oop_kg_demo\\output\\programming_kg\\questions\\unified_v1_review\\formal_precise_question_knowledge_links.json",
+    "catalog": "programming_curriculum_v0_14_delivery"
+  },
+  "artifacts": {
+    "graph": {
+      "file": "standard_graph_v2026.07.18.json",
+      "sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8",
+      "nodes": 2612,
+      "edges": 6059
+    },
+    "questions": {
+      "file": "questions_v2026.07.18.json",
+      "sha256": "87A8C086BF2AC70F6962965E0E364F0CD3A7938989F00CDCF08A09C016B9B761",
+      "questions": 45
+    },
+    "mappings": {
+      "file": "question_knowledge_links_v2026.07.18.json",
+      "sha256": "9BC9B7DBECDAB21FF88DA414F08C49BE0278D2DE244C106196EA07D8DAC4F734",
+      "mapping_records": 45,
+      "valid_mapping_links": 73
+    },
+    "consistency_report": {
+      "file": "release_consistency_report.json",
+      "sha256": "88E103965FF6171126F1034199E129E02B2DEBACA54E46DC1C85A8C32A11FB89"
+    },
+    "rdf_turtle": {
+      "file": "rdf/standard_graph.ttl",
+      "sha256": "7CEBDDE6FB98DC0C54EBEB25FB57872EAF989CAE0BFCB8DD7115AF2B5E67D2F6"
+    },
+    "rdf_xml": {
+      "file": "rdf/standard_graph.rdf",
+      "sha256": "6012131A5B3DF996C5077822C913A8A5478678614864F9F486DFC51B4DA3922B"
+    },
+    "rdf_parser_validation": {
+      "file": "rdf/rdf_validation_report.json",
+      "sha256": "4DDD9DBE45949F7089E56ABBA3ED3EDB902FB10044F913FC0D4F46A7722B7EE2",
+      "nodes": 2612,
+      "edges": 6059,
+      "passed": true
+    },
+    "rdf_sparql_execution": {
+      "query": "rdf/validate_counts.sparql",
+      "query_sha256": "3EB3198A80110DB11E48085C94D76BE9DC1E94D97E80E0B2EE700F5753E73D21",
+      "result": "rdf/sparql_query_result.json",
+      "result_sha256": "C2C175A27CE961DE1FB65A6E24AB2EB1922B80E1A2594F1A8FDBEA2B1F7EDDEA",
+      "report": "rdf/sparql_query_result.md",
+      "report_sha256": "2E2402453B3EFAFCA162201FAAE6F3115CA552301D2F12C66ED838FDE0150659",
+      "engine": "stdlib limited SPARQL COUNT evaluator v1 (release query only)",
+      "nodes": 2612,
+      "edges": 6059,
+      "passed": true
+    },
+    "reproducibility": {
+      "readme": "reproducibility/README.md",
+      "release_reproduction_report": {
+        "file": "reproducibility/release_reproduction_report.json",
+        "sha256": "1700E9EC3D2E081AD79D8BE7BA3FAE99887F1E9C91C3544CF34E3969BB0768F1",
+        "exact_graph_hash_match": true
+      },
+      "publish_script": {
+        "file": "reproducibility/publish_formal_release.py",
+        "sha256": "2D7AEAD67CDBFA41FB1014B0DD73CEDA123A0B2BBEAC2AC0E7D7A5D804569419"
+      },
+      "rdf_export_script": {
+        "file": "reproducibility/export_rdf.py",
+        "sha256": "3D2AF309FB84E08B96E584ECD1D3850629B60B35C68C1AD4E6EDD8C841A553F6"
+      },
+      "sparql_validation_script": {
+        "file": "reproducibility/run_sparql_validation.py",
+        "sha256": "D00A5E4D6330AB93181B2698336A3E71EE5AB85733DAF495E922D8B3CBB1270D"
+      }
+    },
+    "neo4j_import": {
+      "file": "neo4j_import/import_graph.cypher",
+      "sha256": "4F64B3EAC77D52A26C1F03A1BB32E3FCF22508AC43C9E83C7B7163EE322C0CB2"
+    },
+    "cross_format_validation": {
+      "file": "cross_format_validation.json",
+      "sha256": "6048B79693B66B1D6AAD8141FDB2ADA1FB220CF6EAB252DBCE6E205773F1F269"
+    },
+    "question_mapping_full_review": {
+      "json": "question_mapping_full_review_v1.json",
+      "json_sha256": "66B4AC496DFB6F8C7176A4197A1022E7F5AAA9A8EED91A98EA427A0C7FA159C7",
+      "report": "question_mapping_full_review_v1.md",
+      "report_sha256": "23879AC8F2FED009D459D055BAB9EAFA47F0527E92C98CB27E83E4A505648E58",
+      "reviewed_questions": 45,
+      "reviewed_links": 73,
+      "correct_links": 73,
+      "incorrect_links": 0,
+      "pending_links": 0,
+      "mapping_precision": 1.0
+    },
+    "acceptance_documentation": {
+      "index": "docs/README.md",
+      "required": [
+        "docs/01_需求规格说明书.md",
+        "docs/02_系统架构设计.md",
+        "docs/03_部署运维手册.md",
+        "docs/04_用户操作指南.md"
+      ],
+      "supplementary": [
+        "docs/05_前后端接口与版本约定.md",
+        "docs/06_质量验证与交付清单.md"
+      ]
+    }
+  },
+  "compatibility": {
+    "api_and_frontend_must_load_from_manifest": true,
+    "neo4j_import_must_use_graph_artifact": "standard_graph_v2026.07.18.json",
+    "legacy_snapshots_are_not_formal_release": true
+  },
+  "distribution": {
+    "formal_graph": "standard_graph_v2026.07.18.json",
+    "frontend_copy": "frontend\\standard_graph.json",
+    "frontend_questions": "frontend\\combined_official_questions.json",
+    "frontend_mappings": "frontend\\question_knowledge_links.json",
+    "neo4j_source": "neo4j_import/import_graph.cypher",
+    "same_graph_sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8"
+  }
+}

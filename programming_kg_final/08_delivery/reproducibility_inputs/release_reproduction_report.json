@@ -1,0 +1,20 @@
+{
+  "schema_version": "release_reproduction_report_v1",
+  "tested_at": "2026-07-18T02:54:04.1011251Z",
+  "script": "publish_formal_release.py",
+  "generated_at_argument": "2026-07-17T18:45:52.797200+00:00",
+  "inputs": {
+    "pre_release_graph_sha256": "E2FACD80A065CC304D3982AC08D66A8719198B95A8DA2EBF5B3EF94EFBE8B6D8",
+    "questions_sha256": "87A8C086BF2AC70F6962965E0E364F0CD3A7938989F00CDCF08A09C016B9B761",
+    "mappings_sha256": "EBE735FEB4FBC9297972E04DBA50A6C63C3ABECDBB32CD47B01B30AB30940CC4"
+  },
+  "expected_graph_sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8",
+  "reproduced_graph_sha256": "791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8",
+  "exact_match": true,
+  "counts": {
+    "nodes": 2612,
+    "relationships": 6059,
+    "questions": 45,
+    "mapping_links": 73
+  }
+}

@@ -6,9 +6,14 @@
 
 - 完整图谱（课程知识点 + 习题 + 映射）：`08_delivery/standard_graph.json.gz`
 - 纯课程知识图谱：`04_curriculum/outputs/course_centered_standard_graph.json.gz`
-- 最终课程目录：`config/programming_curriculum_v0_13_candidate_finalized.json`
-- 完整图审计：`08_delivery/frontend_complete_graph_audit.json`
+- 最终课程目录：`config/programming_curriculum_v0_14_delivery.json`
+- 正式版本清单：`08_delivery/release_manifest.json`
+- 完整图审计：`08_delivery/formal_quality_audit.json`
+- RDF 正式数据、查询与验证：`08_delivery/rdf/`
+- 验收文档：`08_delivery/docs/`
 - 全流程实现说明：`docs/项目完整实现总结.md`
+
+正式版本为 `v2026.07.18`：2,612 个节点、6,059 条关系，图谱 SHA256 为 `791BA16A6B3B6DC04A71B28BC608C18ACDEAC51F344B08E6398666295971B1F8`。
 
 运行 `python tools/restore_artifacts.py` 可将所有 `.json.gz` 恢复为 JSON。恢复后，前端应使用 `08_delivery/standard_graph.json`。
 
@@ -52,10 +57,10 @@
 6. 运行 `06_questions/README.md` 中的题库统一与映射流程
 7. `python src/build_frontend_complete_graph.py ...`
 8. `python src/import_to_neo4j.py --execute --clear ...`
+9. `python src/export_rdf.py ...` 并使用 `src/run_sparql_validation.py` 保存查询结果
 
 完整参数和最终产物对应关系见各阶段 README。
 
 ## 版本边界
 
 本发布包不包含：原始 PPT/PDF/Word、API 响应缓存、失败模型输出、烟雾测试目录、已移除的算法设计课程、早期 OOP Demo 快照。上述内容不影响最终图谱复现；原始课程资料需由项目组按授权方式单独保存。
-
